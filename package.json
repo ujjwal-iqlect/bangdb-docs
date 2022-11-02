@@ -1,5 +1,6 @@
 {
   "name": "bangdb-documentation",
+  "homepage": "https://bangdb.com/docs/",
   "version": "0.1.0",
   "private": true,
   "scripts": {

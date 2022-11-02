@@ -1,171 +1,358 @@
 export const SidebarData = [
   {
     title: "Get Started",
-    path: "/bangdb-server",
     subNav: [
       {
-        title: "Users",
-        path: "/overview/users",
+        title: "Server",
+        path: "/server-getting-started",
       },
       {
-        title: "Revenue",
-        path: "/overview/revenue",
+        title: "BangDB on CPD IBM",
+        path: "/cloud-pak-for-data",
+      },
+      {
+        title: "Benchmark",
+        path: "/benchmark",
       },
     ],
   },
   {
-    title: "Reports",
-    path: "/reports",
+    title: "Introduction",
     subNav: [
       {
-        title: "Reports",
-        path: "/reports/reports1",
-        cName: "sub-nav",
+        title: "Overview",
+        path: "/overview",
       },
       {
-        title: "Reports 2",
-        path: "/reports/reports2",
-        cName: "sub-nav",
+        title: "Feature Details",
+        path: "/feature-details",
       },
       {
-        title: "Reports 3",
-        path: "/reports/reports3",
+        title: "Multi Flavor",
+        path: "/multi-flavour",
+      },
+      {
+        title: "Language Support",
+        path: "/language-support",
+      },
+      {
+        title: "Platform Support",
+        path: "/platform-support",
+      },
+      {
+        title: "License",
+        path: "/license",
+      },
+      {
+        title: "Patents",
+        path: "/patents",
       },
     ],
   },
   {
-    title: "Products",
-    path: "/products",
+    title: "Tech Overview",
     subNav: [
       {
-        title: "Ampere",
-        path: "/ampere",
-        cName: "amp",
+        title: "Architecture",
+        path: "/architecture",
+      },
+      {
+        title: "Core Database Design",
+        path: "/core-database-design",
+      },
+      {
+        title: "Access Methods",
+        path: "/access-methods",
       },
     ],
   },
 
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Index",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Overview",
+        path: "/index",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "Primary Index",
+        path: "/primary-index",
+      },
+      {
+        title: "Secondary Index",
+        path: "/secondary-index",
+      },
+      {
+        title: "Nested Index",
+        path: "/nested-index",
+      },
+      {
+        title: "Composite Index",
+        path: "/composite-index",
+      },
+      {
+        title: "Geospatial Index",
+        path: "/geospatial-index",
+      },
+      {
+        title: "Reversed Index",
+        path: "/reverse-index",
       },
     ],
   },
   {
-    title: "Support",
-    path: "/support",
+    title: "Developing with BangDB",
     subNav: [
       {
-        title: "Call us",
+        title: "Introduction",
+        path: "/developing-with-bangdb-embedded",
       },
       {
-        title: "Email us",
+        title: "Database",
+        path: "/database-embedded",
+      },
+      {
+        title: "Table",
+        path: "/table-embedded",
+        // Can have more nested items
+      },
+      {
+        title: "Query in BangDB",
+        path: "/dataquery",
       },
     ],
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Embedded API",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Introduction",
+        path: "/bangdb-api",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "Database Type",
+        path: "/bangdb-database-embedded",
+      },
+      {
+        title: "Table",
+        path: "/bangdb-table-embedded",
+      },
+      {
+        title: "Stream Manager",
+        path: "/bangdb-stream-manager-embedded",
+      },
+      {
+        title: "Notification Manager",
+        path: "/bangdb-notification-manager-embedded",
+      },
+      {
+        title: "Resource Manager",
+        path: "/bangdb-resource-manager-embedded",
+      },
+      {
+        title: "DB Param",
+        path: "/db-param-embedded",
+      },
+      {
+        title: "ML Helper",
+        path: "/bangdb-ml-helper-embedded",
+      },
+      {
+        title: "Transaction",
+        path: "/bangdb-transaction-embedded",
+      },
+      {
+        title: "TableEnv",
+        path: "/table-env-embedded",
+      },
+      {
+        title: "Scan Filter",
+        path: "/scanfilter-embedded",
+      },
+      {
+        title: "Result Set",
+        path: "/resultset-embedded",
+      },
+      {
+        title: "RTF Manager",
+        path: "/bangdb-rtf-manager-embedded",
+      },
+      {
+        title: "Helper Types",
+        path: "/helper-types-embedded",
       },
     ],
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Server API",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Basic Types",
+        path: "/api-server",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "Environment API",
+        path: "/bangdb-environment-api",
+      },
+      {
+        title: "Database",
+        path: "/bangdb-database-api",
+      },
+      {
+        title: "Table",
+        path: "/bangdb-table-api",
+      },
+      {
+        title: "Stream Manager",
+        path: "/bangdb-stream-manager-api",
+      },
+      {
+        title: "Notification Manager",
+        path: "/bangdb-notification-manager-api",
+      },
+      {
+        title: "Resource Manager",
+        path: "/bangdb-resource-manager-api",
+      },
+      {
+        title: "DB Param",
+        path: "/dbparam-type",
+      },
+      {
+        title: "ML Helper",
+        path: "/bangdb-ml-helper-api",
+      },
+      {
+        title: "Transaction",
+        path: "/bangdb-transaction-api",
+      },
+      {
+        title: "TableEnv",
+        path: "/table-env-api",
+      },
+      {
+        title: "Scan Filter",
+        path: "/scanfilter-api",
+      },
+      {
+        title: "Result Set",
+        path: "/resultset-api",
+      },
+      {
+        title: "BangDB Common",
+        path: "/bangdb-client-common",
       },
     ],
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Command Line Interface",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Overview",
+        path: "/cli-overview",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "DB Commands",
+        path: "/db-commands-cli",
+      },
+      {
+        title: "BRS Commands",
+        path: "/brs-commands-cli",
+      },
+      {
+        title: "Stream Commands",
+        path: "/stream-commands-cli",
+      },
+      {
+        title: "ML Commands",
+        path: "/ml-commands-cli",
+      },
+      {
+        title: "Replication Commands",
+        path: "/replication-commands-cli",
+      },
+      {
+        title: "Agent Commands",
+        path: "/agent-cli",
       },
     ],
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Complex Event Processing",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Overview",
+        path: "/complex-event-processing",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "Use Cases",
+        path: "/cep-use-cases",
+      },
+      {
+        title: "Examples",
+        path: "/cep-examples",
       },
     ],
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Examples for tryouts",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
-      },
-      {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "Hands on BangDB",
+        path: "/hands-on-bangdb",
       },
     ],
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Stream in BangDB",
     subNav: [
       {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Overview",
+        path: "/stream",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
-      },
-    ],
-  },
-  {
-    title: "Messages",
-    path: "/messages",
-    subNav: [
-      {
-        title: "Message 1",
-        path: "/messages/message1",
+        title: "Stream Manager",
+        path: "/stream-manager",
       },
       {
-        title: "Message 2",
-        path: "/messages/message2",
+        title: "Stream Processing",
+        path: "/stream-processing",
+      },
+      {
+        title: "Computed Attribute",
+        path: "/catr-computing-attribute",
+      },
+      {
+        title: "Group By",
+        path: "/group-by",
+      },
+      {
+        title: "Refer",
+        path: "/refer",
+      },
+      {
+        title: "Filter",
+        path: "/filter",
+      },
+      {
+        title: "Join",
+        path: "/join",
+      },
+      {
+        title: "CEPQ",
+        path: "/cep-complex-event-processing",
+      },
+      {
+        title: "Entity",
+        path: "/entity",
+      },
+      {
+        title: "Notification",
+        path: "/notification",
+      },
+      {
+        title: "Stream Join",
+        path: "/stream-join",
       },
     ],
   },
