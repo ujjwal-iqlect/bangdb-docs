@@ -283,6 +283,14 @@ export const SidebarData = [
       {
         title: "Overview",
         path: "/complex-event-processing",
+        nestedNav: [
+          {
+            title: "nest1",
+          },
+          {
+            title: "nest2",
+          },
+        ],
       },
       {
         title: "Use Cases",

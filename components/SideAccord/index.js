@@ -29,25 +29,26 @@ export default function SideAccord({ item }) {
           <DevNavAccordianTitle>
             <DevNavAccordianText>{item.title}</DevNavAccordianText>
           </DevNavAccordianTitle>
-          {/* DevNavSection will be toggled acoording to the state setExpanded  */}
-          {expanded &&
-            item.subNav.map((item, index) => {
-              return (
-                <DevNavSection>
-                  {/* Items inside the ul */}
-
-                  <DevNavAccordianSectionItem key={index}>
-                    <Link href={`${item.path}`}>
-                      <DevNavAccordianSectionTitle>
-                        <DevNavAccordianSectionText>
-                          {item.title}
-                        </DevNavAccordianSectionText>
-                      </DevNavAccordianSectionTitle>
-                    </Link>
-                  </DevNavAccordianSectionItem>
-                </DevNavSection>
-              );
-            })}
+          <DevNavSection>
+            {/* DevNavSection will be toggled acoording to the state setExpanded  */}
+            {expanded &&
+              item.subNav.map((item, index) => {
+                return (
+                  <>
+                    {/* Items inside the ul */}
+                    <DevNavAccordianSectionItem key={index}>
+                      <Link href={`${item.path}`}>
+                        <DevNavAccordianSectionTitle>
+                          <DevNavAccordianSectionText>
+                            {item.title}
+                          </DevNavAccordianSectionText>
+                        </DevNavAccordianSectionTitle>
+                      </Link>
+                    </DevNavAccordianSectionItem>
+                  </>
+                );
+              })}
+          </DevNavSection>
         </DevExpandableNav>
       </DevNavExpandable>
     </>
