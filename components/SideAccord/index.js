@@ -6,11 +6,10 @@ export default function SideAccord({ item }) {
   const [expanded, setExpanded] = useState(false);
 
   const showAccordion = () => setExpanded(!expanded);
-
   return (
-    <>
-      <DevNavExpandable>
-        <DevExpandableNav onClick={item.subNav && showAccordion}>
+    <div>
+      <DevNavExpandable onClick={item.subNav && showAccordion}>
+        <DevExpandableNav>
           <DevNavToggle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,26 +31,24 @@ export default function SideAccord({ item }) {
           <DevNavSection>
             {/* DevNavSection will be toggled acoording to the state setExpanded  */}
             {expanded &&
-              item.subNav.map((item, index) => {
+              item.subNav.map((i) => {
                 return (
-                  <>
+                  <React.Fragment key={i.id}>
                     {/* Items inside the ul */}
-                    <DevNavAccordianSectionItem key={index}>
-                      <Link href={`${item.path}`}>
-                        <DevNavAccordianSectionTitle>
-                          <DevNavAccordianSectionText>
-                            {item.title}
-                          </DevNavAccordianSectionText>
-                        </DevNavAccordianSectionTitle>
-                      </Link>
+                    <DevNavAccordianSectionItem>
+                      <DevNavAccordianSectionTitle href={`${i.path}`}>
+                        <DevNavAccordianSectionText>
+                          {i.title}
+                        </DevNavAccordianSectionText>
+                      </DevNavAccordianSectionTitle>
                     </DevNavAccordianSectionItem>
-                  </>
+                  </React.Fragment>
                 );
               })}
           </DevNavSection>
         </DevExpandableNav>
       </DevNavExpandable>
-    </>
+    </div>
   );
 }
 
@@ -144,7 +141,7 @@ const DevNavAccordianSectionItem = styled.li`
   margin: 0;
 `;
 
-const DevNavAccordianSectionTitle = styled.a`
+const DevNavAccordianSectionTitle = styled(Link)`
   padding: 6px 8px 6px 40px;
   border-radius: 0 16px 16px 0;
   margin-right: 8px;

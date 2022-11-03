@@ -60,8 +60,8 @@ export default function Sidebar() {
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
                 <DevNavList text="Overview" />
-                {SidebarData.map((item, index) => {
-                  return <SideAccord item={item} key={index} />;
+                {SidebarData.map((item) => {
+                  return <SideAccord key={item.id} item={item} />;
                 })}
               </ul>
             </div>
