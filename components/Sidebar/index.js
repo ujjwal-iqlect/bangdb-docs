@@ -209,7 +209,7 @@ const SidebarToggleButton = styled.button`
   padding: 0;
   position: fixed;
   text-decoration: none;
-  transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.5s ease,
+  transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.7s ease,
     -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   transform: translateX(calc(229px - 8px));

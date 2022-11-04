@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
+import SideItem from "../SideItem";
 
 export default function SideAccord({ item }) {
   const [expanded, setExpanded] = useState(false);
@@ -8,13 +8,14 @@ export default function SideAccord({ item }) {
   const showAccordion = () => setExpanded(!expanded);
   return (
     <div>
-      <DevNavExpandable onClick={item.subNav && showAccordion}>
+      <DevNavExpandable>
         <DevExpandableNav>
-          <DevNavToggle>
+          <DevNavToggle onClick={showAccordion}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               style={{
                 transform: expanded ? "rotateX(180deg)" : "rotateX(0deg)",
+                transition: "transform 0.2s ease",
               }}
               height="24px"
               viewBox="0 0 24 24"
@@ -25,25 +26,14 @@ export default function SideAccord({ item }) {
               <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
             </svg>
           </DevNavToggle>
-          <DevNavAccordianTitle>
+          <DevNavAccordianTitle onClick={showAccordion}>
             <DevNavAccordianText>{item.title}</DevNavAccordianText>
           </DevNavAccordianTitle>
           <DevNavSection>
             {/* DevNavSection will be toggled acoording to the state setExpanded  */}
             {expanded &&
-              item.subNav.map((i) => {
-                return (
-                  <React.Fragment key={i.id}>
-                    {/* Items inside the ul */}
-                    <DevNavAccordianSectionItem>
-                      <DevNavAccordianSectionTitle href={`${i.path}`}>
-                        <DevNavAccordianSectionText>
-                          {i.title}
-                        </DevNavAccordianSectionText>
-                      </DevNavAccordianSectionTitle>
-                    </DevNavAccordianSectionItem>
-                  </React.Fragment>
-                );
+              item.childrens.map((item) => {
+                return <SideItem key={item.id} item={item} />;
               })}
           </DevNavSection>
         </DevExpandableNav>
@@ -132,31 +122,4 @@ const DevNavSection = styled.ul`
   padding: 0;
   -webkit-transition: height 1ms;
   transition: height 1ms;
-`;
-
-// Accordian Item styles
-
-const DevNavAccordianSectionItem = styled.li`
-  line-height: 20px;
-  margin: 0;
-`;
-
-const DevNavAccordianSectionTitle = styled(Link)`
-  padding: 6px 8px 6px 40px;
-  border-radius: 0 16px 16px 0;
-  margin-right: 8px;
-  color: #202124;
-  display: flex;
-  user-select: none;
-  cursor: pointer;
-  &:hover {
-    background: #f1f3f4;
-  }
-`;
-
-const DevNavAccordianSectionText = styled.span`
-  overflow: hidden;
-  color: #202124;
-  font-family: "Roboto", sans-serif;
-  text-overflow: ellipsis;
 `;

@@ -2,7 +2,7 @@ export const SidebarData = [
   {
     id: "1",
     title: "Get Started",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Server",
@@ -16,14 +16,30 @@ export const SidebarData = [
       {
         id: "3",
         title: "Benchmark",
-        path: "/benchmark",
+        childrens: [
+          {
+            id: "1",
+            title: "Throughput-1B Records",
+            path: "/throughput",
+          },
+          {
+            id: "2",
+            title: "YCSB Benchmark for BangDB",
+            path: "/ycsb",
+          },
+          {
+            id: "3",
+            title: "(YCSB) BangDB vs Others",
+            path: "/bangdb-vs-other-dbs",
+          },
+        ],
       },
     ],
   },
   {
     id: "2",
     title: "Introduction",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Overview",
@@ -64,7 +80,7 @@ export const SidebarData = [
   {
     id: "3",
     title: "Tech Overview",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Architecture",
@@ -86,7 +102,7 @@ export const SidebarData = [
   {
     id: "4",
     title: "Index",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Overview",
@@ -127,7 +143,7 @@ export const SidebarData = [
   {
     id: "5",
     title: "Developing with BangDB",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Introduction",
@@ -154,7 +170,7 @@ export const SidebarData = [
   {
     id: "6",
     title: "Embedded API",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Introduction",
@@ -230,7 +246,7 @@ export const SidebarData = [
   {
     id: "7",
     title: "Server API",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Basic Types",
@@ -306,7 +322,7 @@ export const SidebarData = [
   {
     id: "8",
     title: "Command Line Interface",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Overview",
@@ -347,17 +363,19 @@ export const SidebarData = [
   {
     id: "9",
     title: "Complex Event Processing",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Overview",
         path: "/complex-event-processing",
-        nestedNav: [
+        childrens: [
           {
             title: "nest1",
+            path: "/nest1",
           },
           {
             title: "nest2",
+            path: "/nest2",
           },
         ],
       },
@@ -376,7 +394,7 @@ export const SidebarData = [
   {
     id: "10",
     title: "Examples for tryouts",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Hands on BangDB",
@@ -387,7 +405,7 @@ export const SidebarData = [
   {
     id: "11",
     title: "Stream in BangDB",
-    subNav: [
+    childrens: [
       {
         id: "1",
         title: "Overview",
