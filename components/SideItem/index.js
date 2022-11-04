@@ -54,7 +54,7 @@ export default function SideItem({ item }) {
             {expanded &&
               item.childrens.map((item) => {
                 return (
-                  <DevNavAccordianSectionItem>
+                  <DevNavAccordianSectionItem key={item.id}>
                     <DevNavAccordianSectionTitle
                       style={{
                         paddingLeft: "56px",
