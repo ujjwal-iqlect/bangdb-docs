@@ -105,6 +105,7 @@ const DevNavAccordianTitle = styled.div`
 const DevNavAccordianText = styled.span`
   overflow: hidden;
   color: rgba(0, 0, 0, 0.65);
+  user-select: none;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   text-overflow: ellipsis;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { SidebarData } from "../../pages/SidebarData";
+import { SidebarData } from "../SidebarData";
 import SideAccord from "../SideAccord";
 import DevNavList from "../DevNavList";
 
