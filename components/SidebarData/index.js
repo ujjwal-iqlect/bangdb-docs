@@ -6,12 +6,54 @@ export const SidebarData = [
       {
         id: "1",
         title: "Server",
-        path: "/server-getting-started",
+        childrens: [
+          {
+            id: "1",
+            title: "Overview",
+            path: "/server-getting-started",
+          },
+          {
+            id: "2",
+            title: "Install and Run",
+            path: "/server-install",
+          },
+          {
+            id: "3",
+            title: "Docker Image",
+            path: "/docker-images",
+          },
+          {
+            id: "4",
+            title: "BangDB Config",
+            path: "/bangdb-config",
+          },
+          {
+            id: "5",
+            title: "Sample Program",
+            path: "/sample-client-application",
+          },
+        ],
       },
       {
         id: "2",
         title: "BangDB on CPD IBM",
-        path: "/cloud-pak-for-data",
+        childrens: [
+          {
+            id: "1",
+            title: "Overview",
+            path: "/cloud-pak-for-data",
+          },
+          {
+            id: "2",
+            title: "Using OC Command Tool",
+            path: "/deploy-bangdb-oc-tool",
+          },
+          {
+            id: "3",
+            title: "Using Helm Chart",
+            path: "/deploy-bangdb-helm-chart",
+          },
+        ],
       },
       {
         id: "3",
@@ -19,16 +61,21 @@ export const SidebarData = [
         childrens: [
           {
             id: "1",
+            title: "Overview",
+            path: "/benchmark",
+          },
+          {
+            id: "2",
             title: "Throughput-1B Records",
             path: "/throughput",
           },
           {
-            id: "2",
+            id: "3",
             title: "YCSB Benchmark for BangDB",
             path: "/ycsb",
           },
           {
-            id: "3",
+            id: "4",
             title: "(YCSB) BangDB vs Others",
             path: "/bangdb-vs-other-dbs",
           },
@@ -157,8 +204,33 @@ export const SidebarData = [
       {
         id: "3",
         title: "Table",
-        path: "/table-embedded",
-        // Can have more nested items
+        childrens: [
+          {
+            id: "1",
+            title: "Introduction",
+            path: "/table-embedded",
+          },
+          {
+            id: "2",
+            title: "Normal Table",
+            path: "/normal-table-embedded",
+          },
+          {
+            id: "3",
+            title: "Wide Table",
+            path: "/wide-table-embedded",
+          },
+          {
+            id: "4",
+            title: "Large Table",
+            path: "/large-table-embedded",
+          },
+          {
+            id: "5",
+            title: "Primitive Table",
+            path: "/primitive-table-embedded",
+          },
+        ],
       },
       {
         id: "4",
@@ -368,16 +440,6 @@ export const SidebarData = [
         id: "1",
         title: "Overview",
         path: "/complex-event-processing",
-        childrens: [
-          {
-            title: "nest1",
-            path: "/nest1",
-          },
-          {
-            title: "nest2",
-            path: "/nest2",
-          },
-        ],
       },
       {
         id: "2",
@@ -464,6 +526,32 @@ export const SidebarData = [
       {
         id: "12",
         title: "Stream Join",
+        childrens: [
+          {
+            id: "1",
+            title: "Overview",
+            path: "/stream-join",
+          },
+          {
+            id: "2",
+            title: "Example 1",
+            path: "/join-example-1",
+          },
+          {
+            id: "3",
+            title: "Example 2",
+            path: "/join-example-2",
+          },
+          {
+            id: "4",
+            title: "Example 3",
+            path: "/join-example-3",
+          },
+        ],
+      },
+      {
+        id: "13",
+        title: "Working with Stream",
         path: "/stream-join",
       },
     ],

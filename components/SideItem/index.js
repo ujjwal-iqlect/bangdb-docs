@@ -50,7 +50,7 @@ export default function SideItem({ item }) {
               <DevNavText>{item.title}</DevNavText>
             </DevNavTitle>
           </DevExpandableNav>
-          <div>
+          <ul>
             {expanded &&
               item.childrens.map((item) => {
                 return (
@@ -68,7 +68,7 @@ export default function SideItem({ item }) {
                   </DevNavAccordianSectionItem>
                 );
               })}
-          </div>
+          </ul>
         </DevNavExpandable>
       )}
     </React.Fragment>
