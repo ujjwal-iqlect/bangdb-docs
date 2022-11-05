@@ -464,6 +464,7 @@ export const SidebarData = [
       },
     ],
   },
+  // Graph is skipped because it has it's own sidebar data
   {
     id: "11",
     title: "Stream in BangDB",
