@@ -7,14 +7,3 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
-.hidden {
-  display: none !important;
-}
-
-a,
-li {
-  text-decoration: none;
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-}

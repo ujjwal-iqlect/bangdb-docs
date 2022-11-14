@@ -88,6 +88,7 @@ const DevNavAccordianSectionTitle = styled(Link)`
   margin-right: 8px;
   user-select: none;
   color: #202124;
+  text-decoration: none;
   display: flex;
   user-select: none;
   cursor: pointer;

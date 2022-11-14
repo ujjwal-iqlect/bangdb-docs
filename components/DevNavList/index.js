@@ -24,6 +24,7 @@ const DevNavTitle = styled(Link)`
   border-radius: 0 16px 16px 0;
   display: flex;
   padding: 6px 8px 6px 24px;
+  text-decoration: none;
   word-break: break-word;
   margin-right: 8px;
   margin-bottom: 12px;

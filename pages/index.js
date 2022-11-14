@@ -1,4 +1,5 @@
 import Head from "next/head";
+import DevArticle from "../components/DevArticle";
 import Sidebar from "../components/Sidebar";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         />
       </Head>
       <Sidebar />
+      <DevArticle />
     </div>
   );
 }
