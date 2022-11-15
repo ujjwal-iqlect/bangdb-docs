@@ -7,6 +7,7 @@ import DevNavList from "../DevNavList";
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
   const [iconHover, setIconHover] = useState(false);
+  const [query, setQuery] = useState("");
 
   const showSidebar = () => setSidebar(!sidebar);
   const handleIconHoverMouseEnter = () => setIconHover(true);
@@ -42,8 +43,7 @@ export default function Sidebar() {
             type="text"
             placeholder="Filter"
             name="filter"
-            aria-label="Type to filter"
-            role="searchbox"
+            onChange={(e) => setQuery(e.target.value.toLowerCase())}
           />
 
           <FilterClearButton
@@ -60,7 +60,9 @@ export default function Sidebar() {
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
                 <DevNavList text="Overview" />
-                {SidebarData.map((item) => {
+                {SidebarData.filter((data) =>
+                  data.title.toLowerCase().includes(query)
+                ).map((item) => {
                   return <SideAccord key={item.id} item={item} />;
                 })}
               </ul>
