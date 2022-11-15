@@ -149,7 +149,8 @@ export default function DevArticle() {
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>
-                    Lorem ipsum dolor sit amet <a href={"/done"}>consectetur</a>
+                    Lorem ipsum dolor sit amet
+                    <Link href={"/done"}> consectetur </Link>
                     adipisicing elit. Voluptas enim dolorem iusto minima saepe
                     omnis doloribus sunt in! Vero unde possimus quidem hic iste
                     nesciunt nisi praesentium quibusdam dignissimos voluptatem!

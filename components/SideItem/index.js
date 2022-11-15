@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function SideItem({ item }) {
   const [expanded, setExpanded] = useState(false);
+  const router = useRouter();
 
   const showNestedAccordion = () => setExpanded(!expanded);
 
@@ -12,8 +14,18 @@ export default function SideItem({ item }) {
       {!item.childrens ? (
         <div>
           <DevNavAccordianSectionItem>
-            <DevNavAccordianSectionTitle href={`${item.path}`}>
-              <DevNavAccordianSectionText>
+            <DevNavAccordianSectionTitle
+              href={`${item.path}`}
+              style={{
+                background: router.pathname === item.path ? "#d7effe" : null,
+              }}
+            >
+              <DevNavAccordianSectionText
+                style={{
+                  fontWeight: router.pathname === item.path ? "700" : null,
+                  color: "black",
+                }}
+              >
                 {item.title}
               </DevNavAccordianSectionText>
             </DevNavAccordianSectionTitle>

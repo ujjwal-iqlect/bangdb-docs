@@ -3,11 +3,13 @@ import styled from "styled-components";
 import { SidebarData } from "../SidebarData";
 import SideAccord from "../SideAccord";
 import DevNavList from "../DevNavList";
+import { useRouter } from "next/router";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
+  const router = useRouter();
 
   const showSidebar = () => setSidebar(!sidebar);
   const handleIconHoverMouseEnter = () => setIconHover(true);
@@ -185,7 +187,7 @@ const SidebarBlur = styled.div`
   bottom: 0;
   left: 0;
   height: 64px;
-  -webkit-mask-image: -webkit-linear-gradient(transparent, #000 28px);
+  mask-image: -webkit-linear-gradient(transparent, #000 28px);
   pointer-events: none;
   position: fixed;
   width: calc(269px - 8px);

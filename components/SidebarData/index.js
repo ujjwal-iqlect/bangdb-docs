@@ -90,7 +90,7 @@ export const SidebarData = [
       {
         id: "1",
         title: "Overview",
-        path: "/overview",
+        path: "/",
       },
       {
         id: "2",
