@@ -11,9 +11,8 @@ const Alert = forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export default function serverInstall() {
+export default function ServerInstall() {
   const [open, setOpen] = useState(false);
-
   const handleClick = () => setOpen(true);
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
@@ -347,7 +346,7 @@ export default function serverInstall() {
                   Run the server There are two ways to run the server, using the
                   server binary directly OR using the helper script
                 </p>
-                <p>Let's use helper script</p>
+                <p>Let&apos;s use helper script</p>
                 <div className="doc-code">
                   <div className="doc-code-buttons-container">
                     <CopyToClipboard text={"./bangdb-server start"}>
@@ -379,7 +378,7 @@ export default function serverInstall() {
 
                 <div className="doc-code">
                   <pre className="doc-terminal-output">
-                    Status 'bangdb-server-2.0' : Running
+                    Status &apos;bangdb-server-2.0`&apos;` : Running
                   </pre>
                 </div>
                 <p>And you may stop the server by</p>
@@ -394,7 +393,7 @@ export default function serverInstall() {
                   </div>
                   <pre className="doc-terminal">./bangdb-server stop</pre>
                 </div>
-                <p>That's it.</p>
+                <p>That&apos;s it.</p>
                 <p>
                   You can also directly run bangdb-server using the binary, it
                   will allow you to provide command line argument as well. This
@@ -412,8 +411,8 @@ export default function serverInstall() {
                 <p>
                   It is super important to learn this if you wish to have more
                   control on how server is run To run the server using this
-                  option, you need to go to bin folder and run the server that's
-                  it.
+                  option, you need to go to bin folder and run the server
+                  that&apos;s it.
                 </p>
                 <div className="doc-code">
                   <div className="doc-code-buttons-container">
@@ -538,7 +537,7 @@ export default function serverInstall() {
                         color: "#b80672",
                       }}
                     >
-                      //so on...
+                      {String.raw`//so on...`}
                     </span>
                   </pre>
                 </div>
@@ -570,7 +569,7 @@ export default function serverInstall() {
                   </div>
                   <pre className="doc-terminal">./bangdb-server start</pre>
                 </div>
-                <p>Go to bench folder, let's go to cpp folder for now</p>
+                <p>Go to bench folder, let&apos;s go to cpp folder for now</p>
                 <div className="doc-code">
                   <div className="doc-code-buttons-container">
                     <CopyToClipboard text={"cd bench/server_cpp"}>
@@ -607,8 +606,8 @@ export default function serverInstall() {
                   <pre className="doc-terminal">./bench</pre>
                 </div>
                 <p>
-                  It will run simple put, get and scan and it's throughput Now
-                  run the java test, from main folder
+                  It will run simple put, get and scan and it&apos;s throughput
+                  Now run the java test, from main folder
                 </p>
                 <div className="doc-code">
                   <div className="doc-code-buttons-container">
@@ -651,7 +650,7 @@ export default function serverInstall() {
                         color: "#b80672",
                       }}
                     >
-                      //so on...
+                      {String.raw`//so on...`}
                     </span>
                   </pre>
                 </div>
