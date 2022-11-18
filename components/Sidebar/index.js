@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { SidebarData } from "../SidebarData";
 import SideAccord from "../SideAccord";
 import DevNavList from "../DevNavList";
-import { useRouter } from "next/router";
+import { SidebarData } from "../SidebarData";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
-  const router = useRouter();
 
   const showSidebar = () => setSidebar(!sidebar);
   const handleIconHoverMouseEnter = () => setIconHover(true);
@@ -107,6 +105,15 @@ export default function Sidebar() {
     </>
   );
 }
+
+// export async function getServerSideProps(context) {
+//   let myData = await fetch(`localhost:3000/api/SidebarData`);
+//   let drake = await myData.json();
+
+//   return {
+//     props: { drake },
+//   };
+// }
 
 const SidebarBG = styled.div`
   bottom: 0;

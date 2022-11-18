@@ -13,6 +13,7 @@ const Alert = forwardRef(function Alert(props, ref) {
 
 export default function DevArticle() {
   const [open, setOpen] = useState(false);
+  const [tab, setTab] = useState(1);
 
   const handleClick = () => setOpen(true);
   const handleClose = (event, reason) => {
@@ -300,6 +301,46 @@ export default function DevArticle() {
                       </tr>
                     </tbody>
                   </table>
+                </div>
+                <div className={styles["tab-shifter"]}>
+                  <div className={styles["tab-wrapper"]}>
+                    <div className={styles.tab} onClick={() => setTab(1)}>
+                      <span className={tab !== 1 ? null : `${styles.active}`}>
+                        C++
+                      </span>
+                    </div>
+                    <div className={styles.tab} onClick={() => setTab(2)}>
+                      <span className={tab !== 2 ? null : `${styles.active}`}>
+                        Java
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: tab === 1 ? "block" : "none",
+                  }}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    quam minima aspernatur repellendus corporis omnis explicabo
+                    assumenda, ea optio perferendis, quasi esse ad quas
+                    laudantium voluptatem officiis adipisci exercitationem
+                    veritatis?
+                  </p>
+                </div>
+                <div
+                  style={{
+                    display: tab === 2 ? "block" : "none",
+                  }}
+                >
+                  <p>
+                    Java ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    quam minima aspernatur repellendus corporis omnis explicabo
+                    assumenda, ea optio perferendis, quasi esse ad quas
+                    laudantium voluptatem officiis adipisci exercitationem
+                    veritatis?
+                  </p>
                 </div>
               </div>
             </DocArticle>

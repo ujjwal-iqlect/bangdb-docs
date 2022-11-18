@@ -6,6 +6,7 @@ export default function SideAccord({ item }) {
   const [expanded, setExpanded] = useState(false);
 
   const showAccordion = () => setExpanded(!expanded);
+
   return (
     <div>
       <DevNavExpandable>
@@ -29,12 +30,15 @@ export default function SideAccord({ item }) {
           <DevNavAccordianTitle onClick={showAccordion}>
             <DevNavAccordianText>{item.title}</DevNavAccordianText>
           </DevNavAccordianTitle>
-          <DevNavSection>
+          <DevNavSection
+            style={{
+              height: expanded ? "100%" : "0",
+            }}
+          >
             {/* DevNavSection will be toggled acoording to the state setExpanded  */}
-            {expanded &&
-              item.childrens.map((item) => {
-                return <SideItem key={item.id} item={item} />;
-              })}
+            {item.childrens.map((item) => {
+              return <SideItem key={item.id} item={item} />;
+            })}
           </DevNavSection>
         </DevExpandableNav>
       </DevNavExpandable>

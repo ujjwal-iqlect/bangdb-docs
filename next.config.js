@@ -15,4 +15,8 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  images: {
+    domains: ["bangdb.com"],
+  },
+};

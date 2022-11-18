@@ -1,5 +1,6 @@
 .article-body {
   margin-top: 16px;
+  line-height: 24px;
 }
 
 .article-body h1,
@@ -34,6 +35,9 @@
 }
 
 .article-body p {
+  color: #202124;
+  font-size: 15px;
+  line-height: 24px;
   margin: 16px 0;
 }
 
@@ -47,12 +51,24 @@
   list-style: disc outside;
 }
 
-.article-body ul li {
+.article-body ol {
+  padding-left: 40px;
+  list-style: decimal outside;
+}
+
+.article-body ul li,
+.article-body ol li {
   margin: 12px 0;
+  color: #202124;
 }
 
 .article-body strong {
   font-weight: 700;
+}
+
+.article-body img {
+  height: auto;
+  max-width: 100%;
 }
 
 .article-body a {
@@ -60,6 +76,23 @@
   word-break: break-all;
   text-decoration: none;
   outline: none;
+}
+
+.article-body a.external::after {
+  font: normal normal normal 24px/1 Material Icons;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  word-wrap: normal;
+  content: "open_in_new";
+  font-size: 18px;
+  margin-block: 0;
+  margin-inline: 4px 0;
+  vertical-align: text-bottom;
 }
 
 .article-body pre {
@@ -75,12 +108,12 @@
 }
 
 /* .article-body pre code {
-  font-size: 15px;
-  background: #f8f9fa;
-  font-family: "Roboto Mono", monospace;
-  overflow-x: unset;
-  padding: 0 !important;
-}*/
+    font-size: 15px;
+    background: #f8f9fa;
+    font-family: "Roboto Mono", monospace;
+    overflow-x: unset;
+    padding: 0 !important;
+  }*/
 
 .article-body pre::-webkit-scrollbar {
   width: 8px;
@@ -168,18 +201,18 @@
 }
 
 /* .doc-code-buttons-container button:first-child::before {
-  font: normal normal normal 24px/1 Material Icons;
-  content: "brightness_medium";
-  font-size: 18px;
-  margin-inline: 4px;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga";
-  font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  vertical-align: text-bottom;
-} */
+    font: normal normal normal 24px/1 Material Icons;
+    content: "brightness_medium";
+    font-size: 18px;
+    margin-inline: 4px;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    vertical-align: text-bottom;
+  } */
 
 .doc-code-buttons-container .copy-button::before {
   font: normal normal normal 24px/1 Material Icons;

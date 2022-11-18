@@ -1,6 +1,5 @@
 import Head from "next/head";
 import DevArticle from "../components/DevArticle";
-import Sidebar from "../components/Sidebar";
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
           content="Best NoSQL database in the industry"
         />
       </Head>
-      <Sidebar />
       <DevArticle />
     </div>
   );
