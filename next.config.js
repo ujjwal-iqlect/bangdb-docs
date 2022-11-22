@@ -19,4 +19,7 @@ module.exports = {
   images: {
     domains: ["bangdb.com"],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
