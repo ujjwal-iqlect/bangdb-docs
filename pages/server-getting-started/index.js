@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from "@mui/material/Alert";
 import styled from "styled-components";
 
 export default function serverGettingStarted() {

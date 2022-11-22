@@ -6,7 +6,7 @@ export default function DevNavList(props) {
   return (
     <>
       <DevNavItem>
-        <DevNavTitle href={"/"}>
+        <DevNavTitle href={props.url}>
           <DevNavText>{props.text}</DevNavText>
         </DevNavTitle>
       </DevNavItem>

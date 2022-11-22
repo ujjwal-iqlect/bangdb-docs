@@ -6,6 +6,8 @@ import MuiAlert from "@mui/material/Alert";
 import Image from "next/image";
 import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
+import Codebox from "../../components/Codebox";
+import CodeboxOutput from "../../components/CodeboxOutput";
 
 const Alert = forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -26,17 +28,17 @@ export default function ServerInstall() {
   return (
     <React.Fragment>
       <Head>
-        <title>BangDB Server - Documentation</title>
+        <title>Install and run BangDB Server</title>
         <meta
           name="description"
-          content="Get started with BangDB Server - Get the BangDB2.0 from github or download page If you take from GitHub then it downloads all the packages."
+          content="Proper step by step guide to install and run bangdb server. You will find README here, which has the steps to install and run the server..."
         ></meta>
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="BangDB Server - Documentation" />
+        <meta property="og:title" content="Install and run BangDB Server" />
         <meta
           property="og:description"
-          content="Get started with BangDB Server - Get the BangDB2.0 from github or download page If you take from GitHub then it downloads all the packages."
+          content="Proper step by step guide to install and run bangdb server. You will find README here, which has the steps to install and run the server..."
         />
         <meta
           property="og:image"
@@ -45,10 +47,10 @@ export default function ServerInstall() {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@IQLECT" />
-        <meta name="twitter:title" content="BangDB Server - Documentation" />
+        <meta name="twitter:title" content="Install and run BangDB Server" />
         <meta
           name="twitter:description"
-          content="Get started with BangDB Server - Get the BangDB2.0 from github or download page If you take from GitHub then it downloads all the packages."
+          content="Proper step by step guide to install and run bangdb server. You will find README here, which has the steps to install and run the server..."
         />
         <meta
           name="twitter:image"
@@ -142,30 +144,7 @@ export default function ServerInstall() {
                   </li>
                   <li>
                     Simply use <strong>wget</strong>.
-                    <div className="doc-code">
-                      <div className="doc-code-buttons-container">
-                        <CopyToClipboard text={wgetOSCode}>
-                          <button
-                            className="copy-button"
-                            onClick={handleClick}
-                          ></button>
-                        </CopyToClipboard>
-                      </div>
-                      <pre className="doc-terminal">{wgetOSCode}</pre>
-                      <Snackbar
-                        open={open}
-                        autoHideDuration={6000}
-                        onClose={handleClose}
-                      >
-                        <Alert
-                          onClose={handleClose}
-                          severity="success"
-                          sx={{ width: "100%" }}
-                        >
-                          Copied to clipboard!
-                        </Alert>
-                      </Snackbar>
-                    </div>
+                    <Codebox code={wgetOSCode} copy={wgetOSCode} />
                   </li>
                   <li>
                     Or, use the{" "}
@@ -181,145 +160,49 @@ export default function ServerInstall() {
                   download using <strong>wget</strong>
                 </p>
                 <h4>Ubuntu 16</h4>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={
-                        "wget https://bangdb.com/downloads/bangdb_2.0_ubuntu16.tar.gz"
-                      }
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    wget https://bangdb.com/downloads/bangdb_2.0_ubuntu16.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu16.tar.gz"
+                  copy="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu16.tar.gz"
+                />
                 <h4>Ubuntu 18</h4>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={
-                        "wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz"
-                      }
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz"
+                  copy="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz"
+                />
                 <h4>Ubuntu 20</h4>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={
-                        "wget https://bangdb.com/downloads/bangdb_2.0_ubuntu20.tar.gz"
-                      }
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    wget https://bangdb.com/downloads/bangdb_2.0_ubuntu20.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu20.tar.gz"
+                  copy="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu20.tar.gz"
+                />
                 <h4>CentOS 7</h4>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={
-                        "wget https://bangdb.com/downloads/bangdb_2.0_centos7.tar.gz"
-                      }
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    wget https://bangdb.com/downloads/bangdb_2.0_centos7.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="wget https://bangdb.com/downloads/bangdb_2.0_centos7.tar.gz"
+                  copy="wget https://bangdb.com/downloads/bangdb_2.0_centos7.tar.gz"
+                />
                 <h4>CentOS 8</h4>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={
-                        "wget https://bangdb.com/downloads/bangdb_2.0_centos8.tar.gz"
-                      }
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    wget https://bangdb.com/downloads/bangdb_2.0_centos8.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="wget https://bangdb.com/downloads/bangdb_2.0_centos8.tar.gz"
+                  copy="wget https://bangdb.com/downloads/bangdb_2.0_centos8.tar.gz"
+                />
                 <h4>RHEL 8</h4>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={
-                        "wget wget https://bangdb.com/downloads/bangdb_2.0_rhel8.tar.gz"
-                      }
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    wget https://bangdb.com/downloads/bangdb_2.0_rhel8.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="wget https://bangdb.com/downloads/bangdb_2.0_rhel8.tar.gz"
+                  copy="wget wget https://bangdb.com/downloads/bangdb_2.0_rhel8.tar.gz"
+                />
                 <p>
                   The downloaded tar file will be like this (for Ubuntu 18
                   bangdb_2.0_ubuntu18.tar.gz)
                   <br /> Untar this file
                 </p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard
-                      text={"tar -xzvf bangdb_2.0_ubuntu18.tar.gz "}
-                    >
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">
-                    tar -xzvf bangdb_2.0_ubuntu18.tar.gz
-                  </pre>
-                </div>
+                <Codebox
+                  code="tar -xzvf bangdb_2.0_ubuntu18.tar.gz"
+                  copy="tar -xzvf bangdb_2.0_ubuntu18.tar.gz"
+                />
                 <h3>Step 2</h3>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"cd bangdb_2.0_ubuntu18"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">cd bangdb_2.0_ubuntu18</pre>
-                </div>
+                <Codebox
+                  code="cd bangdb_2.0_ubuntu18"
+                  copy="cd bangdb_2.0_ubuntu18"
+                />
                 <p>
                   You will find README here, which has the steps to install and
                   run the BangDB server, must follow the steps provided in the
@@ -329,70 +212,31 @@ export default function ServerInstall() {
                   Run the install.sh file (May run for few min and finally
                   everything should be set up)
                 </p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"bash install.sh"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">bash install.sh</pre>
-                </div>
-
+                <Codebox code="bash install.sh" copy="bash install.sh" />
                 <h3>Step 3</h3>
                 <p>
                   Run the server There are two ways to run the server, using the
                   server binary directly OR using the helper script
                 </p>
                 <p>Let&apos;s use helper script</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-server start"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-server start</pre>
-                </div>
-
+                <Codebox
+                  code="./bangdb-server start"
+                  copy="./bangdb-server start"
+                />
                 <p>
                   This will run the server in background You may check the
                   status of BangDB server using
                 </p>
-
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-server status"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-server status</pre>
-                </div>
-
-                <div className="doc-code">
-                  <pre className="doc-terminal-output">
-                    Status &apos;bangdb-server-2.0`&apos;` : Running
-                  </pre>
-                </div>
+                <Codebox
+                  code="./bangdb-server status"
+                  copy="./bangdb-server status"
+                />
+                <CodeboxOutput code="Status 'bangdb-server-2.0' : Running" />
                 <p>And you may stop the server by</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-server stop"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-server stop</pre>
-                </div>
+                <Codebox
+                  code="./bangdb-server stop"
+                  copy="./bangdb-server stop"
+                />
                 <p>That&apos;s it.</p>
                 <p>
                   You can also directly run bangdb-server using the binary, it
@@ -414,40 +258,16 @@ export default function ServerInstall() {
                   option, you need to go to bin folder and run the server
                   that&apos;s it.
                 </p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"cd bin"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">cd bin</pre>
-                </div>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-server-2.0"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-server-2.0</pre>
-                </div>
+                <Codebox code="cd bin" copy="cd bin" />
+                <Codebox
+                  code="./bangdb-server-2.0"
+                  copy="./bangdb-server-2.0"
+                />
                 <p>use {"-help"} command line arg to see all the options</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-server-2.0 -help"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-server-2.0 -help</pre>
-                </div>
+                <Codebox
+                  code="./bangdb-server-2.0 -help"
+                  copy="./bangdb-server-2.0 -help"
+                />
                 <p>
                   There are few parameters that should be set and please see
                   <Link href={"/bangdb-config"}> bangdb config page</Link> to
@@ -460,66 +280,14 @@ export default function ServerInstall() {
                   added features. Next you should run cli and the test benchmark
                   and check all is fine. Use the cli
                 </p>
-
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"cd cli"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">cd cli</pre>
-                </div>
-
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-cli-2.0"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-cli-2.0</pre>
-                </div>
+                <Codebox code="cd cli" copy="cd cli" />
+                <Codebox code="./bangdb-cli-2.0" copy="./bangdb-cli-2.0" />
                 <p>To see the tables</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"show tables"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">show tables</pre>
-                </div>
+                <Codebox code="show tables" copy="show tables" />
                 <p>To see BangDB servertype</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"show servertype"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">show servertype</pre>
-                </div>
+                <Codebox code="show servertype" copy="show servertype" />
                 <p>To see BangDB help</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"help"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">help</pre>
-                </div>
+                <Codebox code="help" copy="help" />
                 <p>To see help for BangDB Stream</p>
                 <div className="doc-code">
                   <div className="doc-code-buttons-container">
@@ -541,7 +309,6 @@ export default function ServerInstall() {
                     </span>
                   </pre>
                 </div>
-
                 <p>
                   BangDB cli is quite comprehensive and supports all activities
                   that we can perform on BangDB, from DDL to DML to some admin
@@ -558,81 +325,31 @@ export default function ServerInstall() {
                   Make sure server is running or{" "}
                 </p>
                 <p>Run the server</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bangdb-server start"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bangdb-server start</pre>
-                </div>
+                <Codebox
+                  code="./bangdb-server start"
+                  copy="./bangdb-server start"
+                />
                 <p>Go to bench folder, let&apos;s go to cpp folder for now</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"cd bench/server_cpp"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">cd bench/server_cpp</pre>
-                </div>
+                <Codebox
+                  code="cd bench/server_cpp"
+                  copy="cd bench/server_cpp"
+                />
                 <p>Build the test</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"bash build.sh"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">bash build.sh</pre>
-                </div>
+                <Codebox code="bash build.sh" copy="bash build.sh" />
                 <p>This will build a bench file, now run the bench</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"./bench"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">./bench</pre>
-                </div>
+                <Codebox code="./bench" copy="./bench" />
                 <p>
                   It will run simple put, get and scan and it&apos;s throughput
                   Now run the java test, from main folder
                 </p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"cd bench/server_java"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">cd bench/server_java</pre>
-                </div>
+                <Codebox
+                  code="cd bench/server_java"
+                  copy="cd bench/server_java"
+                />
                 <p>Compile</p>
-                <div className="doc-code">
-                  <div className="doc-code-buttons-container">
-                    <CopyToClipboard text={"bash make-app.sh"}>
-                      <button
-                        className="copy-button"
-                        onClick={handleClick}
-                      ></button>
-                    </CopyToClipboard>
-                  </div>
-                  <pre className="doc-terminal">bash make-app.sh</pre>
-                </div>
+                <Codebox code="bash make-app.sh" copy="bash make-app.sh" />
                 <p>Run</p>
+
                 <div className="doc-code">
                   <div className="doc-code-buttons-container">
                     <CopyToClipboard text={"bash exapp.sh"}>

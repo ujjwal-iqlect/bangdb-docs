@@ -1,6 +1,58 @@
+.main-container {
+  display: flex;
+  flex: 1 0;
+  flex-direction: column;
+  margin-top: 156.979px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.container {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: minmax(269px, 1fr) minmax(752px, 1200px) minmax(
+      160px,
+      1fr
+    );
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+}
+
+.article-content {
+  align-self: start;
+  grid-column: 2;
+  display: block;
+  position: relative;
+  grid-row: 1;
+  margin: 24px 0;
+  max-width: 1200px;
+  min-width: 0;
+}
+
+.article {
+  border: 1px solid #dadce0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px;
+}
+
 .article-body {
   margin-top: 16px;
   line-height: 24px;
+}
+
+.article-title {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  letter-spacing: -0.5px;
+  margin-inline-end: 83px;
+  vertical-align: middle;
 }
 
 .article-body h1,
@@ -135,6 +187,14 @@
   padding: 16px 24px 16px 60px;
 }
 
+.doc-note p,
+.doc-note ul,
+.doc-note li,
+.doc-note ol,
+.doc-note div {
+  color: #01579b;
+}
+
 .doc-note::before {
   font: normal normal normal 24px/1 Material Icons;
   -webkit-font-smoothing: antialiased;
@@ -147,6 +207,10 @@
   -webkit-font-feature-settings: "liga";
   -moz-font-feature-settings: "liga";
   font-feature-settings: "liga";
+}
+
+.doc-note ul li {
+  color: #01579b;
 }
 
 .doc-note a {
@@ -240,11 +304,11 @@
   position: relative;
 }
 
-.doc-terminal::before {
+/* .doc-terminal::before {
   color: #bdc1c6;
   content: "$";
   padding-right: 8px;
-}
+} */
 
 .doc-terminal::-webkit-scrollbar {
   width: 8px;
@@ -293,6 +357,16 @@
   overflow: auto;
 }
 
+.table-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #d4d7d9;
+  border-radius: 8px;
+}
+
 .table-container table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -338,6 +412,7 @@
   display: flex;
   border-bottom: 1px solid #dadce0;
   flex: 1;
+  margin: 0 0 35px;
   position: relative;
   height: 48px;
 }

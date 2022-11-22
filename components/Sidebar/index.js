@@ -59,7 +59,7 @@ export default function Sidebar() {
               <ul style={{ paddingBottom: "150px" }}>
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
-                <DevNavList text="Overview" />
+                <DevNavList text="Overview" url="/overview" />
                 {SidebarData.filter((data) =>
                   data.title.toLowerCase().includes(query)
                 ).map((item) => {

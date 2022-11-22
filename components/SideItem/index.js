@@ -23,7 +23,7 @@ export default function SideItem({ item }) {
               <DevNavAccordianSectionText
                 style={{
                   fontWeight: router.pathname === item.path ? "700" : null,
-                  color: "black",
+                  color: router.pathname === item.path ? "black" : null,
                 }}
               >
                 {item.title}
@@ -32,8 +32,8 @@ export default function SideItem({ item }) {
           </DevNavAccordianSectionItem>
         </div>
       ) : (
-        <DevNavExpandable onClick={showNestedAccordion}>
-          <DevExpandableNav>
+        <DevNavExpandable>
+          <DevExpandableNav onClick={showNestedAccordion}>
             <a>
               <svg
                 style={{
@@ -62,24 +62,31 @@ export default function SideItem({ item }) {
               <DevNavText>{item.title}</DevNavText>
             </DevNavTitle>
           </DevExpandableNav>
-          <ul>
-            {expanded &&
-              item.childrens.map((item) => {
-                return (
-                  <DevNavAccordianSectionItem key={item.id}>
-                    <DevNavAccordianSectionTitle
+          <ul style={{ display: !expanded ? "none" : "block" }}>
+            {item.childrens.map((item) => {
+              return (
+                <DevNavAccordianSectionItem key={item.id}>
+                  <DevNavAccordianSectionTitle
+                    style={{
+                      paddingLeft: "56px",
+                      background:
+                        router.pathname === item.path ? "#d7effe" : null,
+                    }}
+                    href={`${item.path}`}
+                  >
+                    <DevNavAccordianSectionText
                       style={{
-                        paddingLeft: "56px",
+                        fontWeight:
+                          router.pathname === item.path ? "700" : null,
+                        color: router.pathname === item.path ? "black" : null,
                       }}
-                      href={`${item.path}`}
                     >
-                      <DevNavAccordianSectionText>
-                        {item.title}
-                      </DevNavAccordianSectionText>
-                    </DevNavAccordianSectionTitle>
-                  </DevNavAccordianSectionItem>
-                );
-              })}
+                      {item.title}
+                    </DevNavAccordianSectionText>
+                  </DevNavAccordianSectionTitle>
+                </DevNavAccordianSectionItem>
+              );
+            })}
           </ul>
         </DevNavExpandable>
       )}
