@@ -4,6 +4,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 import Codebox from "../../components/Codebox";
 import CodeboxOutput from "../../components/CodeboxOutput";
 import HighlightedCpp from "../../components/HighlightedCpp";
+import HighlightedOutput from "../../components/HighlightedOutput";
 
 export default function DbCommandsCli() {
   return (
@@ -181,31 +182,31 @@ export default function DbCommandsCli() {
                     and it&apos;s very efficient.
                   </p>
                 </aside>
-                <p>Let’s select NORMAL_KEY (0)</p>
+                <p>Let&apos;s select NORMAL_KEY (0)</p>
                 <CodeboxOutput
                   code={`key size in num of bytes (at least 8 bytes, max 128 bytes, as low as possible but high enough for the key) (or Enter for default (24)):`}
                 />
-                <p>Let’s go with default 24 bytes</p>
+                <p>Let&apos;s go with default 24 bytes</p>
                 <CodeboxOutput
                   code={`primary key arrangement (index) type [ BTREE (2) | EXTHASH (1) ] (or Enter for default (2)):`}
                 />
                 <p>
                   Primary keys could be arranged in sorted (BTREE, actually
-                  B+ExtTree) manner or hashed (EXTHASH). Let’s go with BTREE as
-                  it’s a good choice most of the time
+                  B+ExtTree) manner or hashed (EXTHASH). Let&apos;s go with
+                  BTREE as it&apos;s a good choice most of the time
                 </p>
                 <CodeboxOutput
                   code={`Method for key sort [ Lexicographically (1) | Quasi Lexicographically (2) ] (or Enter for default (2)):`}
                 />
                 <p>
-                  We can further tell how to arrange if sorted, let’s go with
-                  default
+                  We can further tell how to arrange if sorted, let&apos;s go
+                  with default
                 </p>
                 <CodeboxOutput
                   code={`Direction for key sort [ Ascending (3) | Descending (4) ] (or Enter for default (3)):`}
                 />
                 <p>
-                  Let’s go with ascending, default Now it will flush our
+                  Let&apos;s go with ascending, default Now it will flush our
                   selection on the terminal and ask for confirmation.
                 </p>
                 <CodeboxOutput
@@ -239,7 +240,7 @@ Please type 'a' for abort or 'c' for commit [ a | c ]:`}
                 <CodeboxOutput
                   code={`Key Type [NORMAL_KEY (1) | NORMAL_KEY_LONG (2)] (or Enter to set default (1)):`}
                 />
-                <p>Let’s select NORMAL_KEY (1)</p>
+                <p>Let&apos;s select NORMAL_KEY (1)</p>
                 <CodeboxOutput
                   code={`Key size (or Enter to set default (24)):`}
                 />
@@ -255,7 +256,7 @@ Please type 'a' for abort or 'c' for commit [ a | c ]:`}
                   Select yes (y) for duplicate index finally it asks for
                   confirmation before commit
                 </p>
-                <CodeboxOutput
+                <HighlightedOutput
                   code={`Please type 'a' for abort or 'c' for commit [ a | c ]: 
 // select c for commit and it will create the index`}
                 />
@@ -269,17 +270,132 @@ Please type 'a' for abort or 'c' for commit [ a | c ]:`}
                 />
                 <p>select data from the table now</p>
                 <Codebox code={`select * from mytable`} />
-                <CodeboxOutput
-                  code={`// It will return something like this;
-+---------+------------------------------------------------------------------------------------------------------------+
-|key    |val                                                                           | 
-+---------+------------------------------------------------------------------------------------------------------------+
-|user1  |{"firstname":"sachin","org":"bangdb","city":"bangalore","_pk":"user1","_v":1} | 
-+---------+------------------------------------------------------------------------------------------------------------+
+                <HighlightedOutput
+                  code={`// It will return something like this
+                  +---------+------------------------------------------------------------------------------+
+                  |key      |val                                                                           | 
+                  +---------+------------------------------------------------------------------------------+
+                  |user1    |{"firstname":"sachin","org":"bangdb","city":"bangalore","_pk":"user1","_v":1} | 
+                  +---------+------------------------------------------------------------------------------+
+                  total rows retrieved = 1 (1)`}
+                />
+                <p>We can also scan using firstname</p>
+                <Codebox
+                  code={`select * from mytable where firstname = "sachin"`}
+                />
+                <HighlightedOutput
+                  code={`
++---------+-------------------------------------------------------------------------------+ 
+|key      | val                                                                           |
++---------+-------------------------------------------------------------------------------+
+|user1    | {"firstname":"sachin","org":"bangdb","city":"bangalore","_pk":"user1","_v":1} | 
++---------+-------------------------------------------------------------------------------+ 
 total rows retrieved = 1 (1)`}
                 />
-                <p></p>
-                <CodeboxOutput code={``} />
+                <p>
+                  Even though we didn&apos;t create index on &quot;org&quot;,
+                  still we can scan for this
+                </p>
+                <Codebox code={`select * from mytable where org = "bangdb"`} />
+                <HighlightedOutput
+                  code={`+---------+-------------------------------------------------------------------------------+
+|key      | val                                                                           | 
++---------+-------------------------------------------------------------------------------+
+|user1    | {"firstname":"sachin","org":"bangdb","city":"bangalore","_pk":"user1","_v":1} | 
++---------+-------------------------------------------------------------------------------+ 
+total rows retrieved = 1 (1)`}
+                />
+                <p>
+                  We can use primary keys for select along with other filter
+                </p>
+                <Codebox
+                  code={`select * from mytable where _pk > "user" and org = "bangdb"`}
+                />
+                <p>
+                  If we wish to limit the number of rows to be returned then we
+                  use &quot;limit n&quot; where n is number of rows Default
+                  value of limit is 10
+                </p>
+                <Codebox
+                  code={`select * from mytable where _pk > "user" and org = "bangdb" limit 20`}
+                />
+                <p>
+                  Let&apos;s use reverse index now, since we enabled them during
+                  table creation. But for this let&apos;s insert few docs and
+                  reverse index few keys/fields
+                </p>
+                <HighlightedCpp
+                  code={`insert into mytable values "user1" {
+  "firstname":"sachin", 
+  "org":"bangdb",
+  "city":"bangalore",
+  "fav_quote":"Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things"
+  }
+}
+revidx fav_quote`}
+                />
+                <aside className="doc-note">
+                  <strong>Note: </strong>We added{" "}
+                  <code>&quot;revidx fav_quote&quot;</code> in the end. This is
+                  to tell the db that reverse index this field. We can have
+                  multiple fields here separated by comma.
+                </aside>
+                <p>
+                  Now we will use reverse index based search, the query again
+                  looks similar. We wish to select all the rows where
+                  &quot;fav_quote&quot; field contains &quot;Truth&quot;,
+                  &quot;confusion&quot; and &quot;simplicity&quot; tokens.
+                </p>
+                <HighlightedCpp
+                  code={`select * from mytable where fav_quote = "Truth, confusion, simplicity" scanning for pk range [null : null] and query = {"query":[{"match_words":"Truth, confusion, simplicity","joinop":1,"field":"fav_quote"}]}`}
+                />
+                <HighlightedOutput
+                  code={`+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+|key      |val                                                                                                                                                                                            | 
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+|user1    |{"firstname":"sachin","org":"bangdb","city":"bangalore","fav_quote":"Truth is ever to be found in simplicity, | | | and not in the multiplicity and confusion of things","_pk":"user1","_v":1} | 
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+total rows retrieved = 1 (1)`}
+                />
+                <p>Count number of records</p>
+                <Codebox code={`select count(*) from mytable`} />
+                <p>
+                  We can add all those filters that we can for select query, for
+                  example:
+                </p>
+                <HighlightedCpp
+                  code={`select count(*) from mytable where _pk > "user"`}
+                />
+                <p>Update the record</p>
+                <HighlightedCpp
+                  code={`update mytable set val = {"name":"sachin sinha","city":"delhi"} where _pk = "user1" and city = "delhi"`}
+                />
+                <p>
+                  To delete a key (we can give all those filters that we can for
+                  select query)
+                </p>
+                <HighlightedCpp
+                  code={`delete from mytable where _pk = "user1"`}
+                />
+                <p>Dump the table on disk (force to write it on disk)</p>
+                <HighlightedCpp code={`dump table mytable table`} />
+                <HighlightedOutput code={`mytable dumped successfully`} />
+                <p>Drop the index</p>
+                <HighlightedCpp code={`drop index mytable.firstname`} />
+                <HighlightedOutput
+                  code={`you are going to permanently drop and delete the index files do you still wish to drop the index...? [ yes | no ]: yes 
+dropping index mytable.firstname ... 
+Index mytable.firstname dropped successfully`}
+                />
+                <p>
+                  Drop the table now, this will permanently delete the table
+                </p>
+                <HighlightedCpp code={`drop table mytable`} />
+                <HighlightedOutput
+                  code={`you are going to permanently drop and delete the table files you may close the table and move the table files as archive instead do you still wish to drop the table...? [ yes | no ]: yes
+dropping table mytable ... 
+table mytable dropped successfully`}
+                />
               </div>
             </article>
           </div>

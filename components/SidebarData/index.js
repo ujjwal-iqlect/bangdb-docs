@@ -153,7 +153,7 @@ export const SidebarData = [
       {
         id: "1",
         title: "Overview",
-        path: "/index",
+        path: "/index-bangdb",
       },
       {
         id: "2",

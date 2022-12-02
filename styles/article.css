@@ -364,9 +364,9 @@ code {
   vertical-align: text-bottom;
 }
 
-.doc-api-code > p:last-child {
+/* .doc-api-code > p:last-child {
   margin-bottom: 0;
-}
+} */
 
 .doc-code {
   border: 1px solid #e8eaed;
