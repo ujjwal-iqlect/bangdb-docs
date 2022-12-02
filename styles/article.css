@@ -1,3 +1,7 @@
+code {
+  font-family: "Roboto Mono";
+}
+
 .main-container {
   display: flex;
   flex: 1 0;
@@ -111,6 +115,8 @@
 .article-body ul li,
 .article-body ol li {
   margin: 12px 0;
+  line-height: 20px;
+  font-size: 15px;
   color: #202124;
 }
 
@@ -234,6 +240,131 @@
 }
 
 .doc-note > p:last-child {
+  margin-bottom: 0;
+}
+
+.doc-warning {
+  display: block;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 32px 0;
+  color: #bf360c;
+  background: #feefe3;
+  padding: 16px 24px 16px 60px;
+}
+
+.doc-warning p,
+.doc-warning ul,
+.doc-warning li,
+.doc-warning ol,
+.doc-warning div {
+  color: #bf360c;
+}
+
+.doc-warning::before {
+  font: normal normal normal 24px/1 Material Icons;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  word-wrap: normal;
+  margin-left: -36px;
+  content: "warning";
+  float: left;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.doc-warning ul li {
+  color: #bf360c;
+}
+
+.doc-warning strong {
+  color: #bf360c;
+}
+
+.doc-warning a {
+  color: #bf360c;
+  text-decoration: underline;
+  background: #e1f5fe;
+}
+
+.doc-warning a::after {
+  font: normal normal normal 24px/1 Material Icons;
+  content: "open_in_new";
+  font-size: 18px;
+  margin-inline: 4px;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: text-bottom;
+}
+
+.doc-warning > p:last-child {
+  margin-bottom: 0;
+}
+
+.doc-api-code {
+  display: block;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 32px 0;
+  /* color: #20019b; */
+  background: #e1fee7;
+  border-left: 8px solid rgb(44, 139, 53);
+  padding: 16px 24px 16px 60px;
+}
+
+/* .doc-api-code p,
+.doc-api-code ul,
+.doc-api-code li,
+.doc-api-code ol,
+.doc-api-code div {
+  color: #20019b;
+}
+
+.doc-api-code::before {
+  font: normal normal normal 24px/1 Material Icons;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  word-wrap: normal;
+  margin-left: -36px;
+  content: "star";
+  float: left;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+} 
+
+.doc-api-code ul li {
+  color: #01579b;
+} */
+
+.doc-api-code a {
+  color: #20019b;
+  text-decoration: underline;
+  /* background: #e1f5fe; */
+}
+
+.doc-api-code a::after {
+  font: normal normal normal 24px/1 Material Icons;
+  content: "open_in_new";
+  font-size: 18px;
+  margin-inline: 4px;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: text-bottom;
+}
+
+.doc-api-code > p:last-child {
   margin-bottom: 0;
 }
 

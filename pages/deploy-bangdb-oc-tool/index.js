@@ -5,7 +5,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import Codebox from "../../components/Codebox";
 
-export default function UsingOcCommandTool() {
+export default function DeployBangdbOcTool() {
   const bangdbYaml = String.raw` selector:
   matchLabels:
     deployment: bangdb

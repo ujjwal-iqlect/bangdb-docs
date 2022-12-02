@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function serverGettingStarted() {
+export default function ServerGettingStarted() {
   const binariesCode = String.raw`bangdb_2.0_centos7.tar.gz
 
 bangdb_2.0_centos8.tar.gz

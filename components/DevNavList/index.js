@@ -1,13 +1,28 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 export default function DevNavList(props) {
+  const router = useRouter();
+
   return (
     <>
       <DevNavItem>
-        <DevNavTitle href={props.url}>
-          <DevNavText>{props.text}</DevNavText>
+        <DevNavTitle
+          href={props.url}
+          style={{
+            background: router.pathname === props.url ? "#d7effe" : null,
+          }}
+        >
+          <DevNavText
+            style={{
+              fontWeight: router.pathname === props.url ? "700" : null,
+              color: router.pathname === props.url ? "black" : null,
+            }}
+          >
+            {props.text}
+          </DevNavText>
         </DevNavTitle>
       </DevNavItem>
     </>

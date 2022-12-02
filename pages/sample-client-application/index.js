@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Codebox from "../../components/Codebox";
 import Breadcrumb from "../../components/Breadcrumb";
 
-export default function SampleProgram() {
+export default function SampleClientApplication() {
   const [tab, setTab] = useState(1);
 
   const createEnvDBObjectCpCode = String.raw`DBParam dpm;

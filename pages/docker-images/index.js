@@ -5,7 +5,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import Codebox from "../../components/Codebox";
 
-export default function ServerInstall() {
+export default function DockerImages() {
   const runDockerContainerCodeNonSSL = String.raw`docker run -it --name bangdb --volume=data:/bin/data --volume=logdir:/bin/logdir -p 18080:18080 -p 10101:10101 --ulimit nofile=300000:300000 --ulimit nproc=100000:100000 --ulimit core=-1 --memory="4g" --memory-swap="4g" --cpus="4" -d bangdb/bangdb-server`;
 
   const runDockerContainerCodeSSL = String.raw`docker run -it --name bangdb-ssl --volume=data:/bin/data --volume=logdir:/bin/logdir -p 18080:18080 -p 10101:10101 --ulimit nofile=300000:300000 --ulimit nproc=100000:100000 --ulimit core=-1 --memory="4g" --memory-swap="4g" --cpus="4" -d bangdb-server-ssl/2.0`;

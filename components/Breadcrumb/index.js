@@ -74,6 +74,7 @@ const DocBreadCrumbItem = styled.li`
 
 const DocBreadCrumbLink = styled(Link)`
   display: flex;
+  text-decoration: none;
   align-items: center;
   color: #5f6368;
 `;

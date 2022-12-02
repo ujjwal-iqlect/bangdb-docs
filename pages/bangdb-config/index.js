@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Codebox from "../../components/Codebox";
 import CodeboxOutput from "../../components/CodeboxOutput";
 
-export default function SampleProgram() {
+export default function BangdbConfig() {
   const confCode = String.raw`Usage:
 -i [master | slave] 
 -r [yes | no] 

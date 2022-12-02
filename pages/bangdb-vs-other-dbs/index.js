@@ -6,7 +6,7 @@ import Codebox from "../../components/Codebox";
 import Breadcrumb from "../../components/Breadcrumb";
 import ImageGrid from "../../components/ImageGrid";
 
-export default function Ycsb() {
+export default function BangdbVsOtherDbs() {
   return (
     <React.Fragment>
       <Head>

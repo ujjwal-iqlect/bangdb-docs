@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Component {...pageProps} />
-      <Sidebar />
+      {pageProps.noLayout ? <></> : <Sidebar />}
     </div>
   );
 }

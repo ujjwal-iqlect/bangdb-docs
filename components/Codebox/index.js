@@ -20,11 +20,13 @@ export default function Codebox(props) {
   return (
     <div className="doc-code">
       <div className="doc-code-buttons-container">
-        <CopyToClipboard text={props.copy}>
+        <CopyToClipboard text={props.code}>
           <button className="copy-button" onClick={handleClick}></button>
         </CopyToClipboard>
       </div>
-      <pre className="doc-terminal">{props.code}</pre>
+      <pre className="doc-terminal" style={props.style}>
+        {props.code}
+      </pre>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
           Copied to clipboard!

@@ -5,7 +5,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import Codebox from "../../components/Codebox";
 
-export default function UsingHelmChart() {
+export default function DeployBangdbHelmChart() {
   return (
     <React.Fragment>
       <Head>

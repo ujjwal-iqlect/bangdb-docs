@@ -182,7 +182,7 @@ export const SidebarData = [
       },
       {
         id: "7",
-        title: "Reversed Index",
+        title: "Reverse Index",
         path: "/reverse-index",
       },
     ],
