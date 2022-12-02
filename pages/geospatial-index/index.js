@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import HighlightedCpp from "../../components/HighlightedCpp";
 import Breadcrumb from "../../components/Breadcrumb";
-import HighlightedJson from "../../components/HighlightedJson";
 
 export default function GeoSpatialIndex() {
   const geoSpatialIndexForTableSetupCode = String.raw`TableEnv tenv;
@@ -143,15 +142,15 @@ tenv.setAllowDuplicate(true);
                   set up the Geo Spatial filter.
                 </p>
 
-                <HighlightedJson
+                <HighlightedCpp
                   code={String.raw`{"location":{"lat":12.8282,"lon":77.5454},"index":"geohash","distance":1000}`}
                 />
                 <p>Or</p>
-                <HighlightedJson
+                <HighlightedCpp
                   code={String.raw`{"location":{"lat":12.8282,"lon":77.5454},"index":"geohash","distance":1000,"neighbors":1} 
  // uses neighbors or`}
                 />
-                <HighlightedJson
+                <HighlightedCpp
                   code={String.raw`{"box":{"left_bot":{"lat":12.8282,"lon":77.5454},"right_top":{"lat":12.9282,"lon":77.9454}},"index":"geohash"}`}
                 />
                 <aside className="doc-note">
