@@ -11,7 +11,7 @@ const Alert = forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export default function DevArticle() {
+export default function DevArticle({ getit }) {
   const [open, setOpen] = useState(false);
   const [tab, setTab] = useState(1);
 
@@ -92,7 +92,13 @@ export default function DevArticle() {
   return (
     <React.Fragment>
       <MainWrapper>
-        <Main>
+        <Main
+          style={{
+            gridTemplateColumns: getit
+              ? "1fr minmax(752px,936px) 1fr"
+              : `minmax(269px, 1fr) minmax(752px, 936px) minmax(160px, 1fr)`,
+          }}
+        >
           <DocContent>
             <DocArticle>
               <DocBreadCrumb>

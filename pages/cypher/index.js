@@ -3,24 +3,24 @@ import Head from "next/head";
 import Breadcrumb from "../../components/Breadcrumb";
 import HighlightedCpp from "../../components/HighlightedCpp";
 
-export default function JoinExampleTwo() {
+export default function Cypher() {
   return (
     <React.Fragment>
       <Head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Join Example 2 - BangDB</title>
+        <title>Join Example 3 - BangDB</title>
         <meta
           name="description"
-          content="Join Example 2 - Two streams, namely temp and pressure will join with each other using active, passive rule (3, 5) where pressure stream..."
+          content="Join Example 3 - Temperature, Pressure and Vibration streams, Joining in active-passive mode. Let's look at an example of IOT scenario."
         />
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Join Example 2 - BangDB" />
+        <meta property="og:title" content="Join Example 3 - BangDB" />
         <meta
           property="og:description"
-          content="Join Example 2 - Two streams, namely temp and pressure will join with each other using active, passive rule (3, 5) where pressure stream..."
+          content="Join Example 3 - Temperature, Pressure and Vibration streams, Joining in active-passive mode. Let's look at an example of IOT scenario."
         />
         <meta
           property="og:image"
@@ -29,10 +29,10 @@ export default function JoinExampleTwo() {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@IQLECT" />
-        <meta name="twitter:title" content="Join Example 2 - BangDB" />
+        <meta name="twitter:title" content="Join Example 3 - BangDB" />
         <meta
           name="twitter:description"
-          content="Join Example 2 - Two streams, namely temp and pressure will join with each other using active, passive rule (3, 5) where pressure stream..."
+          content="Join Example 3 - Temperature, Pressure and Vibration streams, Joining in active-passive mode. Let's look at an example of IOT scenario."
         />
         <meta
           name="twitter:image"
@@ -45,19 +45,14 @@ export default function JoinExampleTwo() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Stream in BangDB" url="/stream" />
-              <h1 className="article-title">Join - Example 2</h1>
+              <h1 className="article-title">Cypher in Sidebar</h1>
               <div className="article-body">
                 <h2>
-                  Temperature and Pressure streams joining with active -passive
-                  [ 3 and 5 option for active -passive ]
+                  Temperature and Pressure STREAMS Joining in Active-Passive
+                  Mode [ 2 and 4 mode ]
                 </h2>
                 <h2>Example</h2>
-                <p>
-                  Again same IOT scenario, but we will limit to two streams for
-                  clarity. These two streams, namely temp and pressure will join
-                  with each other using active, passive rule (3, 5) where
-                  pressure stream is active stream and temp is passive one.
-                </p>
+                <p>Same as previous problem, let&apos;s see the output.</p>
                 <p>Let&apos;s define the schema first.</p>
                 <HighlightedCpp
                   code={`{
@@ -77,17 +72,14 @@ export default function JoinExampleTwo() {
             },
             {
                "name":"point",
-               "type":5,
-               "kysz":48,
-               "sidx":1,
-               "stat":1
+               "type":9
             }
          ],
          "join":[
             {
                "name":"temp_pressure_join",
-               "type":3,
-               "tloc":3000,
+               "type":2,
+               "tloc":300,
                "iatr":[
                   "temp",
                   "point"
@@ -122,17 +114,14 @@ export default function JoinExampleTwo() {
             },
             {
                "name":"point",
-               "type":5,
-               "kysz":48,
-               "sidx":1,
-               "stat":1
+               "type":9
             }
          ],
          "join":[
             {
                "name":"temp_pressure_join",
-               "type":5,
-               "tloc":3000,
+               "type":4,
+               "tloc":300,
                "ratr":[
                   "temp",
                   "point"
@@ -164,10 +153,7 @@ export default function JoinExampleTwo() {
          "attr":[
             {
                "name":"point",
-               "type":5,
-               "kysz":48,
-               "sidx":1,
-               "stat":1
+               "type":9
             },
             {
                "name":"temp",
@@ -182,7 +168,7 @@ export default function JoinExampleTwo() {
    ]
 }`}
                 />
-                <p>Now pump data:</p>
+                <p>Here is the output:</p>
                 <HighlightedCpp
                   code={`put [ temp_stream ] : {"temp":70.1, "point":1}
 put [ pressure_stream ] : {"pressure":10.2, "point":2}
@@ -195,181 +181,116 @@ put [ pressure_stream ] : {"pressure":12.1, "point":2}
 put [ temp_stream ] : {"temp":71.2, "point":1}
 put [ pressure_stream ] : {"pressure":12.5, "point":1}`}
                 />
-                <p>Here is the data for temp stream:</p>
+                <p>Here is the data in the temp stream:</p>
                 <HighlightedCpp
                   code={`{
    "temp":70.10000000000001,
    "point":1,
-   "_pk":1584945351349346,
+   "_pk":1584946101515817,
    "_v":1
 }
 {
    "temp":71.10000000000001,
    "point":2,
-   "_pk":1584945351429690,
+   "_pk":1584946101611668,
    "_v":1
 }
 {
    "temp":71.2,
    "point":1,
-   "_pk":1584945351491986,
+   "_pk":1584946101674582,
    "_v":1
 }`}
                 />
-                <p>Here is the data for pressure stream:</p>
+                <p>Here is the data in the pressure stream:</p>
                 <HighlightedCpp
-                  code={`{
+                  code={` {
    "pressure":10.2,
    "point":2,
-   "_pk":1584945351359800,
+   "_pk":1584946101526004,
    "_v":1
 }
 {
    "pressure":11.1,
    "point":1,
-   "_pk":1584945351372994,
+   "_pk":1584946101540463,
    "_v":1
 }
 {
    "pressure":11.5,
    "point":1,
-   "_pk":1584945351388063,
+   "_pk":1584946101562172,
    "_v":1
 }
 {
    "pressure":11.8,
    "point":1,
-   "_pk":1584945351399370,
+   "_pk":1584946101579064,
    "_v":1
 }
 {
    "pressure":11.9,
    "point":1,
-   "_pk":1584945351450466,
+   "_pk":1584946101632106,
    "_v":1
 }
 {
    "pressure":12.1,
    "point":2,
-   "_pk":1584945351461066,
+   "_pk":1584946101643448,
    "_v":1
 }
 {
    "pressure":12.5,
    "point":1,
-   "_pk":1584945351523036,
+   "_pk":1584946101705836,
    "_v":1
 }`}
                 />
-                <p>Here is the data for joined temp_pressure stream:</p>
                 <p></p>
-                <HighlightedCpp code={``} />
-
-                <p>Here is the data in vibration stream:</p>
+                <HighlightedCpp
+                  code={`----------scan for stream [ pressure_stream : 836447675855282773 ] 
+fetched = 7;`}
+                />
                 <HighlightedCpp
                   code={`{
    "pressure":11.1,
-   "_pk":1584945351372994,
+   "_pk":1584946101540463,
    "temp":70.10000000000001,
    "point":1,
-   "_jpk1":1584945351349346,
+   "_jpk1":1584946101515817,
    "_v":1
 }
 {
    "pressure":11.5,
-   "_pk":1584945351388063,
+   "_pk":1584946101562172,
    "temp":70.10000000000001,
    "point":1,
-   "_jpk1":1584945351349346,
+   "_jpk1":1584946101515817,
    "_v":1
 }
 {
    "pressure":11.8,
-   "_pk":1584945351399370,
+   "_pk":1584946101579064,
    "temp":70.10000000000001,
    "point":1,
-   "_jpk1":1584945351349346,
-   "_v":1
-}
-{
-   "pressure":11.9,
-   "_pk":1584945351450466,
-   "temp":70.10000000000001,
-   "point":1,
-   "_jpk1":1584945351349346,
+   "_jpk1":1584946101515817,
    "_v":1
 }
 {
    "pressure":12.1,
-   "_pk":1584945351461066,
+   "_pk":1584946101643448,
    "temp":71.10000000000001,
    "point":2,
-   "_jpk1":1584945351429690,
+   "_jpk1":1584946101611668,
    "_v":1
 }
 {
    "pressure":12.5,
-   "_pk":1584945351523036,
+   "_pk":1584946101705836,
    "temp":71.2,
    "point":1,
-   "_jpk1":1584945351491986,
-   "_v":1
-}`}
-                />
-                <p>Here are the data in temp_pressure stream:</p>
-                <HighlightedCpp
-                  code={`{
-   "pressure":10.2,
-   "_pk":1584944534266887,
-   "temp":70.10000000000001,
-   "point":1,
-   "_jpk1":1584944534256620,
-   "_v":1
-}
-{
-   "temp":71.10000000000001,
-   "point":1,
-   "_pk":1584944534362863,
-   "pressure":11.1,
-   "_jpk1":1584944534280460,
-   "_v":1
-}
-{
-   "temp":71.2,
-   "point":1,
-   "_pk":1584944534396958,
-   "pressure":11.5,
-   "_jpk1":1584944534308709,
-   "_v":1
-}`}
-                />
-                <p>Here are the data in temp_pressure_vibration stream:</p>
-                <HighlightedCpp
-                  code={`{
-   "vibration":30,
-   "_pk":1584944534296090,
-   "temp":70.10000000000001,
-   "pressure":10.2,
-   "point":1,
-   "_jpk1":1584944534266887,
-   "_v":1
-}
-{
-   "temp":71.10000000000001,
-   "pressure":11.1,
-   "point":1,
-   "_pk":1584944534362863,
-   "vibration":40,
-   "_jpk1":1584944534320131,
-   "_v":1
-}
-{
-   "temp":71.2,
-   "pressure":11.5,
-   "point":1,
-   "_pk":1584944534396958,
-   "vibration":50,
-   "_jpk1":1584944534384031,
+   "_jpk1":1584946101674582,
    "_v":1
 }`}
                 />
@@ -380,4 +301,10 @@ put [ pressure_stream ] : {"pressure":12.5, "point":1}`}
       </section>
     </React.Fragment>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: { graph: true },
+  };
 }

@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import SideAccord from "../SideAccord";
 import DevNavList from "../DevNavList";
-import { SidebarData } from "../SidebarData";
+import { HelpGuideSidebarData } from "../HelpGuideSidebarData";
 
-export default function Sidebar({ sidebar, setSidebar }) {
-  // const [sidebar, setSidebar] = useState(false);
+export default function HlepGuideSidebar({ sidebar, setSidebar }) {
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
 
   const showSidebar = () => setSidebar(!sidebar);
-
   const handleIconHoverMouseEnter = () => setIconHover(true);
   const handleIconHoverMouseLeave = () => setIconHover(false);
 
@@ -61,7 +59,7 @@ export default function Sidebar({ sidebar, setSidebar }) {
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
                 <DevNavList text="Overview" url="/overview" />
-                {SidebarData.filter((data) =>
+                {HelpGuideSidebarData.filter((data) =>
                   data.title.toLowerCase().includes(query)
                 ).map((item) => {
                   return <SideAccord key={item.id} item={item} />;

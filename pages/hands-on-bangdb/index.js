@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
 import Codebox from "../../components/Codebox";
-import HighlightedOutput from "../../components/HighlightedOutput";
 
 export default function HandsOnBangdb() {
   return (
@@ -40,10 +39,7 @@ export default function HandsOnBangdb() {
         <main className="container">
           <div className="article-content">
             <article className="article">
-              <Breadcrumb
-                text="Complex Event Processing"
-                url="/complex-event-processing"
-              />
+              <Breadcrumb text="Example for Tryouts" url="/hands-on-bangdb" />
               <h1 className="article-title">Hands on BangDB</h1>
               <div className="article-body">
                 <p>Tryout different operations and play with the DB</p>
