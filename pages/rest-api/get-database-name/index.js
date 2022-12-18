@@ -76,6 +76,6 @@ export default function GetDatabaseName() {
 
 export async function getStaticProps(context) {
   return {
-    props: { restApiSidebar: true },
+    props: { apiSidebar: true },
   };
 }

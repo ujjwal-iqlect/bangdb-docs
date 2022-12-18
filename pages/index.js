@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebars/Sidebar";
 import DevArticle from "../components/DevArticle";
 
 export default function Home() {

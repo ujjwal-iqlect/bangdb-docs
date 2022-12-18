@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import Breadcrumb from "../../../components/Breadcrumb";
 import DocArticle from "../../../components/DocArticle";
-import HighlightedCpp from "../../../components/HighlightedCpp";
 import HighlightedOutput from "../../../components/HighlightedOutput";
 import Codebox from "../../../components/Codebox";
 
@@ -120,6 +119,6 @@ export default function GetTheGeneralInfoStatisticsOfTheTables() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { restApiSidebar: true },
+    props: { apiSidebar: true },
   };
 }

@@ -1,48 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
 import styled from "styled-components";
 import SideItem from "../SideItem";
 
 export default function SideAccord({ item }) {
-  const [expanded, setExpanded] = useState(false);
+  const [expandedAccordion, setExpandedAccordion] = useState(false);
+  const router = useRouter();
+  const scrollToRef = useRef();
 
-  const showAccordion = () => setExpanded(!expanded);
+  const showAccordion = () => setExpandedAccordion(!expandedAccordion);
+  const pathExists = item.childrens.find((a) => a.path === router.pathname);
+
+  useEffect(() => {
+    if (item.childrens) {
+      if (pathExists) {
+        setExpandedAccordion(true);
+        console.log(scrollToRef.current);
+        scrollToRef.current.scrollIntoView();
+      }
+    }
+  }, []);
 
   return (
-    <div>
-      <DevNavExpandable>
-        <DevExpandableNav>
-          <DevNavToggle onClick={showAccordion}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              style={{
-                transform: expanded ? "rotateX(180deg)" : "rotateX(0deg)",
-                transition: "transform 0.2s ease",
-              }}
-              height="24px"
-              viewBox="0 0 24 24"
-              width="24px"
-              fill="#5f6368"
-            >
-              <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
-            </svg>
-          </DevNavToggle>
-          <DevNavAccordianTitle onClick={showAccordion}>
-            <DevNavAccordianText>{item.title}</DevNavAccordianText>
-          </DevNavAccordianTitle>
-          <DevNavSection
+    <DevNavExpandable>
+      <DevExpandableNav>
+        <DevNavToggle onClick={showAccordion}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
             style={{
-              height: expanded ? "100%" : "0",
+              transform: expandedAccordion
+                ? "rotateX(180deg)"
+                : "rotateX(0deg)",
+              transition: "transform 0.2s ease",
             }}
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#5f6368"
           >
-            {/* DevNavSection will be toggled acoording to the state setExpanded  */}
-            {item.childrens.map((item) => {
-              return <SideItem key={item.id} item={item} />;
-            })}
-          </DevNavSection>
-        </DevExpandableNav>
-      </DevNavExpandable>
-    </div>
+            <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+          </svg>
+        </DevNavToggle>
+        <DevNavAccordianTitle
+          onClick={showAccordion}
+          // ref={scrollToRef}
+        >
+          <DevNavAccordianText>{item.title}</DevNavAccordianText>
+        </DevNavAccordianTitle>
+        <DevNavSection
+          style={{
+            height: expandedAccordion ? "100%" : "0",
+          }}
+        >
+          {/* DevNavSection will be toggled acoording to the state setExpandedAccordion  */}
+          {item.childrens.map((item) => {
+            return (
+              <SideItem
+                expandedAccordion={expandedAccordion}
+                setExpandedAccordion={setExpandedAccordion}
+                pathExists={pathExists}
+                scrollToRef={scrollToRef}
+                key={item.id}
+                item={item}
+              />
+            );
+          })}
+        </DevNavSection>
+      </DevExpandableNav>
+    </DevNavExpandable>
   );
 }
 

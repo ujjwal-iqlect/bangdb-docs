@@ -1,25 +1,23 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  reactStrictMode: true,
-  compiler: {
-    styledComponents: true,
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/about",
-        destination: "/",
-      },
-    ];
-  },
-};
-
 module.exports = {
   images: {
     domains: ["bangdb.com"],
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
+  },
+  async redirects() {
+    return [
+      {
+        source: "/swagger-api",
+        destination: "https://bangdb.com/swagger-api",
+        permanent: false,
+      },
+    ];
   },
 };

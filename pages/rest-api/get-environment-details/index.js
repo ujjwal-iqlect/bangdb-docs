@@ -95,6 +95,6 @@ export default function GetEnviromentDetails() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { restApiSidebar: true },
+    props: { apiSidebar: true },
   };
 }

@@ -1,13 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function SideItem({ item }) {
-  const [expanded, setExpanded] = useState(false);
+export default function SideItem({
+  item,
+  scrollToRef,
+  pathExists,
+  expandedAccordion,
+  setExpandedAccordion,
+}) {
+  const [expandedChildAccordion, setExpandedChildAccordion] = useState(false);
   const router = useRouter();
 
-  const showNestedAccordion = () => setExpanded(!expanded);
+  const showChildAccordion = () =>
+    setExpandedChildAccordion(!expandedChildAccordion);
+
+  useEffect(() => {
+    if (item.childrens) {
+      const pathExistss = item.childrens.find(
+        (a) => a.path === router.pathname
+      );
+      if (pathExistss) {
+        setExpandedChildAccordion(true);
+        setExpandedAccordion(true);
+        scrollToRef.current.scrollIntoView();
+      }
+    }
+  }, []);
 
   return (
     <React.Fragment>
@@ -21,6 +41,7 @@ export default function SideItem({ item }) {
               }}
             >
               <DevNavAccordianSectionText
+                ref={pathExists === item ? scrollToRef : undefined}
                 style={{
                   fontWeight: router.pathname === item.path ? "700" : null,
                   color: router.pathname === item.path ? "black" : null,
@@ -33,11 +54,13 @@ export default function SideItem({ item }) {
         </div>
       ) : (
         <DevNavExpandable>
-          <DevExpandableNav onClick={showNestedAccordion}>
+          <DevExpandableNav onClick={showChildAccordion}>
             <a>
               <svg
                 style={{
-                  transform: expanded ? "rotate(0deg)" : "rotate(-90deg)",
+                  transform: expandedChildAccordion
+                    ? "rotate(0deg)"
+                    : "rotate(-90deg)",
                   position: "absolute",
                   cursor: "pointer",
                   textRendering: "optimizeLegibility",
@@ -62,7 +85,7 @@ export default function SideItem({ item }) {
               <DevNavText>{item.title}</DevNavText>
             </DevNavTitle>
           </DevExpandableNav>
-          <ul style={{ display: !expanded ? "none" : "block" }}>
+          <ul style={{ display: !expandedChildAccordion ? "none" : "block" }}>
             {item.childrens.map((item) => {
               return (
                 <DevNavAccordianSectionItem key={item.id}>
@@ -124,7 +147,7 @@ const DevNavAccordianSectionText = styled.span`
   text-overflow: ellipsis;
 `;
 
-// Nested Accordion styles
+// Child Accordion styles
 
 const DevNavExpandable = styled.li`
   line-height: 20px;

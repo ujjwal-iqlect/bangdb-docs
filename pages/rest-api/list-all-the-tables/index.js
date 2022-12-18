@@ -112,6 +112,6 @@ export default function ListAllTheTables() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { restApiSidebar: true },
+    props: { apiSidebar: true },
   };
 }

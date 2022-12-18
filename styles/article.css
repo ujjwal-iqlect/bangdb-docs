@@ -615,3 +615,8 @@ code {
   display: block;
   position: absolute;
 }
+
+.expand-container > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}

@@ -113,6 +113,6 @@ export default function GetTheServerStats() {
 
 export async function getStaticProps(context) {
   return {
-    props: { restApiSidebar: true },
+    props: { apiSidebar: true },
   };
 }
