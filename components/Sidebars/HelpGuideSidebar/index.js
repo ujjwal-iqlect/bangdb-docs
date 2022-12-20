@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SideAccord from "../../SideAccord";
 import { HelpGuideSidebarData } from "../HelpGuideSidebarData";
 
-export default function HlepGuideSidebar({ sidebar, setSidebar }) {
+export default function HelpGuideSidebar({ sidebar, setSidebar }) {
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
 
@@ -57,7 +57,6 @@ export default function HlepGuideSidebar({ sidebar, setSidebar }) {
               <ul style={{ paddingBottom: "150px" }}>
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
-                <DevNavList text="Overview" url="/overview" />
                 {HelpGuideSidebarData.filter((data) =>
                   data.title.toLowerCase().includes(query)
                 ).map((item) => {

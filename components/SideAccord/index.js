@@ -7,15 +7,18 @@ export default function SideAccord({ item }) {
   const [expandedAccordion, setExpandedAccordion] = useState(false);
   const router = useRouter();
   const scrollToRef = useRef();
-
-  const showAccordion = () => setExpandedAccordion(!expandedAccordion);
   const pathExists = item.childrens.find((a) => a.path === router.pathname);
+
+  const toggleAccordion = () => setExpandedAccordion(!expandedAccordion);
+
+  // Opening the accordion if their children's path matches with current page URL
 
   useEffect(() => {
     if (item.childrens) {
       if (pathExists) {
         setExpandedAccordion(true);
-        console.log(scrollToRef.current);
+
+        // Scroll the active element into view
         scrollToRef.current.scrollIntoView();
       }
     }
@@ -24,7 +27,7 @@ export default function SideAccord({ item }) {
   return (
     <DevNavExpandable>
       <DevExpandableNav>
-        <DevNavToggle onClick={showAccordion}>
+        <DevNavToggle onClick={toggleAccordion}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             style={{
@@ -42,18 +45,16 @@ export default function SideAccord({ item }) {
             <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
           </svg>
         </DevNavToggle>
-        <DevNavAccordianTitle
-          onClick={showAccordion}
-          // ref={scrollToRef}
-        >
+        <DevNavAccordianTitle onClick={toggleAccordion}>
           <DevNavAccordianText>{item.title}</DevNavAccordianText>
         </DevNavAccordianTitle>
+        {/* DevNavSection will be toggled acoording to the state setExpandedAccordion  */}
         <DevNavSection
           style={{
             height: expandedAccordion ? "100%" : "0",
           }}
         >
-          {/* DevNavSection will be toggled acoording to the state setExpandedAccordion  */}
+          {/* Mapping through the data */}
           {item.childrens.map((item) => {
             return (
               <SideItem
@@ -72,9 +73,9 @@ export default function SideAccord({ item }) {
   );
 }
 
+// Styles
+
 const DevNavExpandable = styled.li`
-  // margin-top: 12px;
-  // border-bottom: 1px solid #dadce0;
   border-top: 1px solid #dadce0;
   padding: 11px 0;
   line-height: 20px;

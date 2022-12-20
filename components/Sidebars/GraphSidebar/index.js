@@ -56,10 +56,12 @@ export default function GraphSidebar({ sidebar, setSidebar }) {
         <nav>
           <div>
             <div>
-              <ul style={{ paddingBottom: "150px" }}>
+              <ul
+                className="expand-container"
+                style={{ paddingBottom: "150px" }}
+              >
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
-                <DevNavList text="Overview" url="/overview" />
                 {GraphSidebarData.filter((data) =>
                   data.title.toLowerCase().includes(query)
                 ).map((item) => {
@@ -107,15 +109,6 @@ export default function GraphSidebar({ sidebar, setSidebar }) {
     </>
   );
 }
-
-// export async function getServerSideProps(context) {
-//   let myData = await fetch(`localhost:3000/api/SidebarData`);
-//   let drake = await myData.json();
-
-//   return {
-//     props: { drake },
-//   };
-// }
 
 const SidebarBG = styled.div`
   bottom: 0;

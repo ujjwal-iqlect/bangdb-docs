@@ -356,7 +356,16 @@ export default function GraphAndCypher() {
             </Link>{" "}
             to learn bit more about Graph and Cypher in BangDB.
           </p>
-          <p>Checkout the graph document here</p>
+          <p>
+            Checkout the graph document{" "}
+            <Link
+              target="_blank"
+              href={`https://bangdb.com/wp-content/uploads/2022/10/Graph-and-Cypher-BangDB-2.0.pdf`}
+            >
+              here
+            </Link>
+            .
+          </p>
         </div>
       </DocArticle>
     </React.Fragment>

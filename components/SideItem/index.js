@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -12,19 +12,20 @@ export default function SideItem({
 }) {
   const [expandedChildAccordion, setExpandedChildAccordion] = useState(false);
   const router = useRouter();
+  const childScrollToRef = useRef();
 
   const showChildAccordion = () =>
     setExpandedChildAccordion(!expandedChildAccordion);
 
   useEffect(() => {
     if (item.childrens) {
-      const pathExistss = item.childrens.find(
+      const childPathExists = item.childrens.find(
         (a) => a.path === router.pathname
       );
-      if (pathExistss) {
+      if (childPathExists) {
         setExpandedChildAccordion(true);
         setExpandedAccordion(true);
-        scrollToRef.current.scrollIntoView();
+        ChildScrollToRef.current.scrollIntoView();
       }
     }
   }, []);
