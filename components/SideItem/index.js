@@ -13,20 +13,18 @@ export default function SideItem({
   const [expandedChildAccordion, setExpandedChildAccordion] = useState(false);
   const router = useRouter();
   const childScrollToRef = useRef();
+  const childPathExists = item.childrens
+    ? item.childrens.find((a) => a.path === router.pathname)
+    : null;
 
   const showChildAccordion = () =>
     setExpandedChildAccordion(!expandedChildAccordion);
 
   useEffect(() => {
-    if (item.childrens) {
-      const childPathExists = item.childrens.find(
-        (a) => a.path === router.pathname
-      );
-      if (childPathExists) {
-        setExpandedChildAccordion(true);
-        setExpandedAccordion(true);
-        ChildScrollToRef.current.scrollIntoView();
-      }
+    if (item.childrens && childPathExists) {
+      setExpandedChildAccordion(true);
+      setExpandedAccordion(true);
+      // childScrollToRef.current.scrollIntoView();
     }
   }, []);
 
@@ -89,7 +87,10 @@ export default function SideItem({
           <ul style={{ display: !expandedChildAccordion ? "none" : "block" }}>
             {item.childrens.map((item) => {
               return (
-                <DevNavAccordianSectionItem key={item.id}>
+                <DevNavAccordianSectionItem
+                  key={item.id}
+                  // ref={childPathExists === item ? childScrollToRef : undefined}
+                >
                   <DevNavAccordianSectionTitle
                     style={{
                       paddingLeft: "56px",

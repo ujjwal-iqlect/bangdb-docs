@@ -111,7 +111,7 @@ export default function GetTheServerStats() {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   return {
     props: { apiSidebar: true },
   };
