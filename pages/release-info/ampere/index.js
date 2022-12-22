@@ -92,6 +92,6 @@ export default function AmpereReleaseInfo() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { releasSidebar: true },
+    props: { releaseSidebar: true },
   };
 }

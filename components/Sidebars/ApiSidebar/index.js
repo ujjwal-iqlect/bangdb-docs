@@ -70,7 +70,11 @@ export default function ApiSidebar({ sidebar, setSidebar }) {
           </div>
         </nav>
       </DeveloperNavigation>
-      <SidebarBlur></SidebarBlur>
+      <SidebarBlur
+        style={{
+          transform: !sidebar ? "translate(0,0px)" : "translate(-279px, 0px)",
+        }}
+      ></SidebarBlur>
       <SidebarToggleButton
         onClick={() => {
           setSidebar(!sidebar);

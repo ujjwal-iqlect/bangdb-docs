@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import SideAccord from "../../SideAccord";
-import { HelpGuideSidebarData } from "../HelpGuideSidebarData";
+import { ReleaseSidebarData } from "../ReleaseSidebarData";
 
 export default function HelpGuideSidebar({ sidebar, setSidebar }) {
   const [iconHover, setIconHover] = useState(false);
@@ -60,7 +60,7 @@ export default function HelpGuideSidebar({ sidebar, setSidebar }) {
               >
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
-                {HelpGuideSidebarData.filter((data) =>
+                {ReleaseSidebarData.filter((data) =>
                   data.title.toLowerCase().includes(query)
                 ).map((item) => {
                   return <SideAccord key={item.id} item={item} />;
