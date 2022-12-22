@@ -36,7 +36,7 @@ code {
 }
 
 .article {
-  border: 1px solid #dadce0;
+  /* border: 1px solid #dadce0; */
   background: #fff;
   border-radius: 8px;
   padding: 40px;
