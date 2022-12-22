@@ -86,7 +86,7 @@ const Footer = styled.div`
 `;
 
 const LearnMore = styled(Link)`
-  color: #7b1fa2;
+  color: #1769e0;
   height: auto;
   margin: 24px 16px 0 0;
   align-items: center;
