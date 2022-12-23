@@ -25,6 +25,7 @@ export default function Home() {
                   style={{
                     marginBottom: "2rem 0",
                     textAlign: "center",
+                    color: "#fff",
                     fontWeight: "500",
                   }}
                 >
@@ -93,7 +94,7 @@ const MainSection = styled.section`
   margin-top: 45px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background: #f8f9fa;
+  background: #073042;
   color: #202124;
 `;
 
@@ -115,7 +116,7 @@ const HeaderText = styled.div`
 const MainHeading = styled.h2`
   font: 700 40px/48px Raleway;
   text-align: center;
-  color: #000;
+  color: #fff;
 `;
 
 const MainDescription = styled.div`
@@ -126,6 +127,7 @@ const MainDescription = styled.div`
 const BoxSection = styled.section`
   display: grid;
   padding: 60px 0;
-  gap: 50px;
-  grid-template-columns: repeat(3, 380px);
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: repeat(3, 300px);
 `;
