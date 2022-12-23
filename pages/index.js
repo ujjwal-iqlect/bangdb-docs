@@ -47,32 +47,41 @@ export default function Home() {
         <BoxSection>
           <Box
             headline={"Manual"}
-            para={"Start using BangDB NoSQL Database."}
+            para={
+              "Get started with BangDB NoSQL database and power your application."
+            }
             link={"/overview"}
           />
           <Box
             headline={"Use Cases"}
-            para={"Start using BangDB NoSQL Database."}
+            para={
+              "Here are some helpful use cases to help you get started with BangDB NoSQL database."
+            }
             link={"/use-cases/iot-vehicle-monitoring/introduction"}
           />
           <Box
             headline={"Help Guides"}
-            para={"Start using BangDB NoSQL Database."}
+            para={
+              "Learn about BangDB algorithms and their hyperparameter, classification, regression, k-means etc."
+            }
             link={"/ml-help-guide/bangdb-algorithms-and-their-hyperparameter"}
           />
           <Box
             headline={"Rest API"}
-            para={"Start using BangDB NoSQL Database."}
+            para={
+              "Learn more about BangDB REST API, how it works and it's capabilities & features."
+            }
             link={"/rest-api/api-introduction"}
           />
           <Box
             headline={"Graph & Cypher"}
-            para={"Start using BangDB NoSQL Database."}
+            para={`Learn about graph, introduce yourself to cypher,
+            and find useful resources.`}
             link={"/graph-and-cypher"}
           />
           <Box
             headline={"Release Info"}
-            para={"Start using BangDB NoSQL Database."}
+            para={"Release notes for Ampere and BangDB NoSQL database."}
             link={"/release-info/ampere"}
           />
         </BoxSection>
@@ -81,7 +90,7 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   return {
     props: {
       noSidebar: true,
