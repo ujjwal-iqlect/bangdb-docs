@@ -2,7 +2,7 @@
 
 module.exports = {
   images: {
-    domains: ["bangdb.com", "www.gstatic.com"],
+    domains: ["bangdb.com"],
   },
   eslint: {
     ignoreDuringBuilds: true,

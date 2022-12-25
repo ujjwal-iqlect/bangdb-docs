@@ -7,10 +7,39 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BangDB Documentation</title>
         <meta
           name="description"
-          content="Best NoSQL database in the industry"
+          content="Welcome to the BangDB Documentation. Find the guides, samples,
+          and references you need to use the database and get started."
+        />
+        <meta property="og:site_name" content="BangDB Docs" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="BangDB Documentation" />
+        <meta
+          property="og:description"
+          content="Welcome to the BangDB Documentation. Find the guides, samples,
+          and references you need to use the database and get started."
+        />
+        <meta
+          property="og:image"
+          content="https://bangdb.com/wp-content/uploads/2021/05/BangDBLogo_nowhite.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@IQLECT" />
+        <meta name="twitter:title" content="BangDB Documentation" />
+        <meta
+          name="twitter:description"
+          content="Welcome to the BangDB Documentation. Find the guides, samples,
+          and references you need to use the database and get started."
+        />
+        <meta
+          name="twitter:image"
+          content="https://bangdb.com/wp-content/uploads/2021/05/BangDBLogo_nowhite.png"
         />
       </Head>
       {/* <GcWrapper>

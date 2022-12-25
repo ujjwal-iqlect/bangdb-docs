@@ -50,7 +50,7 @@ export default function GetStatsOfAGraphTable() {
 
       <DocArticle>
         <Breadcrumb text="Stream in BangDB" url="/stream" />
-        <h1 className="article-title"></h1>
+        <h1 className="article-title">Get the stats of a graph table</h1>
         <div className="article-body">
           <p>To get the stats of a given graph table:</p>
           <p>
