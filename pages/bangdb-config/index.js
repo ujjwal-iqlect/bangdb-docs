@@ -36,17 +36,17 @@ Options:
   return (
     <React.Fragment>
       <Head>
-        <title>Docker Images - BangDB</title>
+        <title>BangDB Config - BangDB</title>
         <meta
           name="description"
-          content="The docker images are available publicly for use. it's available at docker hub. There are two ways in which images are created."
+          content="BangDB Config - There are several parameters that BangDB exposes for users to configure BangDB for optimal running and performance."
         ></meta>
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Docker Images - BangDB" />
         <meta
           property="og:description"
-          content="The docker images are available publicly for use. it's available at docker hub. There are two ways in which images are created."
+          content="BangDB Config - There are several parameters that BangDB exposes for users to configure BangDB for optimal running and performance."
         />
         <meta
           property="og:image"
@@ -58,7 +58,7 @@ Options:
         <meta name="twitter:title" content="Docker Images - BangDB" />
         <meta
           name="twitter:description"
-          content="The docker images are available publicly for use. it's available at docker hub. There are two ways in which images are created."
+          content="BangDB Config - There are several parameters that BangDB exposes for users to configure BangDB for optimal running and performance."
         />
         <meta
           name="twitter:image"

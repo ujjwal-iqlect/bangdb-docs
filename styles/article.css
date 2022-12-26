@@ -981,34 +981,126 @@ No additional styling for now
   font: 600 14px/20px Raleway;
 }
 
-/* .get-started {
-  display: flex;
-  flex: 0 0 auto;
+/* Searchbar styles */
+
+.search-wrapper-wrapper {
+  max-width: 650px;
+  margin: 25px auto;
+  width: 100%;
 }
 
-.gs-wrapper {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
+.search-wrapper {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.s-input {
+  border: 0;
+  border-radius: 3px;
+  font: 400 14px/20px Roboto;
+  height: 40px;
+  line-height: normal;
+  padding: 1rem 6rem 1rem 1rem;
+  display: block;
+  color: #202124;
+  transition: all 0.15s ease-out;
+  width: 100%;
+  text-align: left;
+  background: #f5f8fa;
+}
+
+.s-input:focus {
+  outline: 0;
+  border: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.search-button {
+  display: flex;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 8px;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  opacity: 1;
-  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  bottom: 1px;
+  cursor: pointer;
+  height: 40px;
+  pointer-events: all;
+  position: absolute;
+  width: 80px;
+  right: 0;
+  top: 0;
 }
 
-.gs-wrapper a {
+.search-button::after {
+  font: normal normal normal 18px/1 Material Icons;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  word-wrap: normal;
+  content: "search";
+  vertical-align: text-bottom;
+  color: #073042;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-left: 26px;
+  margin-right: 20px;
+}
+
+/* Search page styles */
+
+.bangdb-search {
+  display: flex;
+  flex-direction: column;
+  max-width: 1380px;
+  margin-bottom: 40px !important;
+  padding: 0 0 0 36px;
+  margin: 50px auto 40px auto;
+  width: 100%;
+}
+
+.search-results-stats {
+  padding-top: 22px;
+}
+
+.search-results-stats span {
+  position: relative;
+  color: #202124;
+  top: 10px;
+  line-height: 90px;
+}
+
+.search-results-wrapper {
+  padding-right: 20px;
+}
+
+.search-result {
+  margin-bottom: 25px;
+}
+
+.search-result a {
   text-decoration: none;
+}
+
+.search-result h3 {
+  font-family: Roboto, sans-serif;
+  margin: 0 0 5px;
+  font-size: 1rem;
+  font-weight: 500;
   color: #1769e0;
-  padding: 0 24px;
-  font: 600 14px/20px Raleway;
-} */
+  text-shadow: 0 0 1px transparent;
+}
+
+.search-result p {
+  font-size: 14px;
+  color: #202124;
+  margin: 0 0 5px;
+}

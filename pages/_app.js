@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { AppProvider } from "../Context";
-import { Context } from "../components/Context";
+// import { Context } from "../components/Context";
 import "../styles/globals.css";
 import styles from "../styles/article.css";
 import Header from "../components/Header";
@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps }) {
           return <Header />;
         }
       })()}
-      <Context.Provider value={{ sidebar, setSidebar }}>
+      <AppProvider>
         <Component {...pageProps} />
-      </Context.Provider>
+      </AppProvider>
       {(() => {
         if (pageProps.helpGuideSidebar) {
           return <HelpGuideSidebar sidebar={sidebar} setSidebar={setSidebar} />;

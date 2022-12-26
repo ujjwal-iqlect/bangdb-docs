@@ -18,6 +18,11 @@ module.exports = {
         destination: "https://bangdb.com/swagger-api",
         permanent: false,
       },
+      {
+        source: "/search/",
+        destination: "/404",
+        permanent: false,
+      },
     ];
   },
 };

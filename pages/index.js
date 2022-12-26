@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
 import Box from "../components/Box";
+import Searchbar from "../components/Searchbar";
 
 export default function Home() {
   return (
@@ -61,6 +62,11 @@ export default function Home() {
                   Welcome to the BangDB Documentation. Find the guides, samples,
                   and references you need to use the database and get started.
                 </p>
+                <Searchbar
+                  placeholder={
+                    "Search all documentation and learning resources"
+                  }
+                />
               </MainDescription>
             </HeaderText>
           </Header>

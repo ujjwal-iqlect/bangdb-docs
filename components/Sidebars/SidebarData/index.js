@@ -553,7 +553,7 @@ export const SidebarData = [
       {
         id: "13",
         title: "Working with Stream",
-        path: "/stream-join",
+        path: "/working-with-streams",
       },
     ],
   },
