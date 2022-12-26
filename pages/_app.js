@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { AppProvider } from "../Context";
-// import { Context } from "../components/Context";
 import "../styles/globals.css";
 import styles from "../styles/article.css";
 import Header from "../components/Header";
@@ -10,6 +9,8 @@ import HelpGuideSidebar from "../components/Sidebars/HelpGuideSidebar";
 import ApiSidebar from "../components/Sidebars/ApiSidebar";
 import GraphSidebar from "../components/Sidebars/GraphSidebar";
 import ReleaseSidebar from "../components/Sidebars/ReleaseSidebar";
+import StreamSidebar from "../components/Sidebars/StreamSidebar";
+import CepSidebar from "../components/Sidebars/CepSidebar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -36,6 +37,10 @@ function MyApp({ Component, pageProps }) {
             return null;
           } else if (pageProps.releaseSidebar) {
             return <ReleaseSidebar />;
+          } else if (pageProps.streamSidebar) {
+            return <StreamSidebar />;
+          } else if (pageProps.cepSidebar) {
+            return <CepSidebar />;
           } else {
             return <Sidebar />;
           }

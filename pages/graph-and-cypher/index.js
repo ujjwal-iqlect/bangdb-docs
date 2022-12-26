@@ -3,9 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
 import DocArticle from "../../components/DocArticle";
-import HighlightedOutput from "../../components/HighlightedOutput";
-import HighlightedJava from "../../components/HighlightedJava";
-import HighlightedCpp from "../../components/HighlightedCpp";
 
 export default function GraphAndCypher() {
   return (
@@ -220,6 +217,10 @@ export default function GraphAndCypher() {
             <table>
               <tbody>
                 <tr>
+                  <th>Query</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
                   <td>SYMM</td>
                   <td>symmetric relations</td>
                 </tr>
@@ -235,6 +236,10 @@ export default function GraphAndCypher() {
             <table>
               <tbody>
                 <tr>
+                  <th>Query</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
                   <td>ALL_PATH</td>
                   <td>all paths between any two given nodes</td>
                 </tr>
@@ -249,6 +254,10 @@ export default function GraphAndCypher() {
           <div className="table-container">
             <table>
               <tbody>
+                <tr>
+                  <th>Query</th>
+                  <th>Description</th>
+                </tr>
                 <tr>
                   <td>ADD</td>
                   <td>adding two or more sets ( UNION )</td>

@@ -88,11 +88,28 @@ export default function Home() {
             link={"/overview"}
           />
           <Box
-            headline={"Use Cases"}
+            headline={"Rest API"}
             para={
-              "Here are some helpful use cases to help you get started with BangDB NoSQL database."
+              "Learn more about BangDB REST API, how it works and it's capabilities & features."
             }
-            link={"/use-cases/iot-vehicle-monitoring/introduction"}
+            link={"/rest-api/api-introduction"}
+          />
+          <Box
+            headline={"Stream"}
+            para={`Learn about stream concepts, how stream processing happens,
+                and how to work with it.`}
+            link={"/stream"}
+          />
+          <Box
+            headline={"Graph & Cypher"}
+            para={`Learn about graph, introduce yourself to cypher,
+              and find useful resources.`}
+            link={"/graph-and-cypher"}
+          />
+          <Box
+            headline={"Complex Event Processing"}
+            para={`Learn about Complex Event Processing, it's use-cases and examples.`}
+            link={"/complex-event-processing"}
           />
           <Box
             headline={"Help Guides"}
@@ -102,21 +119,17 @@ export default function Home() {
             link={"/ml-help-guide/bangdb-algorithms-and-their-hyperparameter"}
           />
           <Box
-            headline={"Rest API"}
+            headline={"Use Cases"}
             para={
-              "Learn more about BangDB REST API, how it works and it's capabilities & features."
+              "Here are some helpful use cases to help you get started with BangDB NoSQL database."
             }
-            link={"/rest-api/api-introduction"}
-          />
-          <Box
-            headline={"Graph & Cypher"}
-            para={`Learn about graph, introduce yourself to cypher,
-            and find useful resources.`}
-            link={"/graph-and-cypher"}
+            link={"/use-cases/iot-vehicle-monitoring/introduction"}
           />
           <Box
             headline={"Release Info"}
-            para={"Release notes for Ampere and BangDB NoSQL database."}
+            para={
+              "Release info & feature notes for Ampere and BangDB NoSQL database."
+            }
             link={"/release-info/ampere"}
           />
         </BoxSection>

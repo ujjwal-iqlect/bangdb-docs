@@ -176,3 +176,9 @@ export default function Entity() {
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}

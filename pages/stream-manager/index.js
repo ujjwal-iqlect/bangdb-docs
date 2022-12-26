@@ -315,3 +315,9 @@ export default function StreamManager() {
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}

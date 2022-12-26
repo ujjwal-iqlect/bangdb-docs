@@ -381,3 +381,9 @@ put [ pressure_stream ] : {"pressure":12.5, "point":1}`}
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}

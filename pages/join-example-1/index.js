@@ -561,3 +561,9 @@ put [ vibration_stream ] : {"vibration":60, "point":1}`}
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}

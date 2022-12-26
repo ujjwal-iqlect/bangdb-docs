@@ -259,3 +259,9 @@ export default function ComplexEventProcessing() {
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { cepSidebar: true },
+  };
+}

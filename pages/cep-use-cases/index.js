@@ -116,3 +116,9 @@ export default function CepUseCases() {
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { cepSidebar: true },
+  };
+}

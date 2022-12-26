@@ -434,126 +434,12 @@ export const SidebarData = [
   },
   {
     id: "9",
-    title: "Complex Event Processing",
-    childrens: [
-      {
-        id: "1",
-        title: "Overview",
-        path: "/complex-event-processing",
-      },
-      {
-        id: "2",
-        title: "Use Cases",
-        path: "/cep-use-cases",
-      },
-      {
-        id: "3",
-        title: "Examples",
-        path: "/cep-examples",
-      },
-    ],
-  },
-  {
-    id: "10",
     title: "Examples for tryouts",
     childrens: [
       {
-        id: "1",
+        id: "0",
         title: "Hands on BangDB",
         path: "/hands-on-bangdb",
-      },
-    ],
-  },
-  // Graph is skipped because it has it's own sidebar data
-  {
-    id: "11",
-    title: "Stream in BangDB",
-    childrens: [
-      {
-        id: "1",
-        title: "Overview",
-        path: "/stream",
-      },
-      {
-        id: "2",
-        title: "Stream Manager",
-        path: "/stream-manager",
-      },
-      {
-        id: "3",
-        title: "Stream Processing",
-        path: "/stream-processing",
-      },
-      {
-        id: "4",
-        title: "Computed Attribute",
-        path: "/catr-computing-attribute",
-      },
-      {
-        id: "5",
-        title: "Group By",
-        path: "/group-by",
-      },
-      {
-        id: "6",
-        title: "Refer",
-        path: "/refer",
-      },
-      {
-        id: "7",
-        title: "Filter",
-        path: "/filter",
-      },
-      {
-        id: "8",
-        title: "Join",
-        path: "/join",
-      },
-      {
-        id: "9",
-        title: "CEPQ",
-        path: "/cep-complex-event-processing",
-      },
-      {
-        id: "10",
-        title: "Entity",
-        path: "/entity",
-      },
-      {
-        id: "11",
-        title: "Notification",
-        path: "/notification",
-      },
-      {
-        id: "12",
-        title: "Stream Join",
-        childrens: [
-          {
-            id: "1",
-            title: "Overview",
-            path: "/stream-join",
-          },
-          {
-            id: "2",
-            title: "Example 1",
-            path: "/join-example-1",
-          },
-          {
-            id: "3",
-            title: "Example 2",
-            path: "/join-example-2",
-          },
-          {
-            id: "4",
-            title: "Example 3",
-            path: "/join-example-3",
-          },
-        ],
-      },
-      {
-        id: "13",
-        title: "Working with Stream",
-        path: "/working-with-streams",
       },
     ],
   },

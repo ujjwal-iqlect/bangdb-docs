@@ -329,3 +329,9 @@ export default function Refer() {
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}

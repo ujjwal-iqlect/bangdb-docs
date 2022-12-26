@@ -54,7 +54,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
             <table>
               <tbody>
                 <tr>
-                  <th colspan="5" rowspan="1">
+                  <th colSpan="5" rowSpan="1">
                     <h2
                       style={{
                         textAlign: "center",
@@ -66,12 +66,12 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </th>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Scaling</span>
                     </p>
                   </td>
-                  <td colspan="4" rowspan="1">
+                  <td colSpan="4" rowSpan="1">
                     <p>
                       <span>
                         Scaling before applying{" "}
@@ -97,12 +97,12 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Tune Param</span>
                     </p>
                   </td>
-                  <td colspan="4" rowspan="1">
+                  <td colSpan="4" rowSpan="1">
                     <p>
                       <span>
                         Proper choice of C and gamma is critical to the
@@ -121,7 +121,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <th colspan="5" rowspan="1">
+                  <th colSpan="5" rowSpan="1">
                     <h2
                       style={{
                         textAlign: "center",
@@ -133,39 +133,39 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </th>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Parameters</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>values</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>Definition</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Tips</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="3">
+                  <td colSpan="1" rowSpan="3">
                     <p>
                       <span>SVM_Type</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>0 - C-SVC</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="3">
+                  <td colSpan="2" rowSpan="3">
                     <p>
                       <span>
                         C-SVC, NuSVC and One-className SVM performes binary and
@@ -183,41 +183,41 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="3">
+                  <td colSpan="1" rowSpan="3">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>1 - Nu-SVC</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>2 - ONE-className SVM</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="4">
+                  <td colSpan="1" rowSpan="4">
                     <p>
                       <span>Kernel Type</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>0 - Linear</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>linear: u&apos;*v</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="4">
+                  <td colSpan="1" rowSpan="4">
                     <p>
                       <span>
                         Radial Basis Function is a general purpose kernel, used
@@ -252,24 +252,24 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>1 - Polynomial</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>polynomial: (gamma*u&apos;*v + coef0)^degree</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>2 - RBF</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>radial basis function: exp(-gamma*|u-v|^2)</span>
                     </p>
@@ -284,29 +284,29 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>3 - Sigmoid</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>sigmoid: tanh(gamma*u&apos;*v + coef0)</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Gamma</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>[0.000122,8]</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         gamma defines how much influence a single training
@@ -315,20 +315,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Degree</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Degree of the polynomial kernel function. Ignored by all
@@ -336,20 +336,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Coef0</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Independent term in kernel function. It is only
@@ -357,22 +357,22 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Cost (C)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>[0.031250,8192]</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         The parameter C, trades off misclassification of
@@ -384,7 +384,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         C is 1 by default and it&apos;s a reasonable default
@@ -396,17 +396,17 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>NU</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>(0,1]</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         It&apos;s a{" "}
@@ -432,7 +432,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         Nu approximates value = the fraction of training errors
@@ -442,15 +442,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Cachesize</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         For C-SVC, SVR, NuSVC and NuSVR, the size of the kernel
@@ -459,7 +459,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         If you have enough RAM available, it is recommended to
@@ -470,15 +470,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Termination Criterion</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Tolerance for stopping criterion. The stopping tolerance
@@ -487,20 +487,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Shrinking</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         The shrinking are there to save the training time.They
@@ -511,7 +511,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         We found that if the number of iterations is large, then
@@ -521,33 +521,33 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Probability_Estimates</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>Whether to enable probability estimates.</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>nr_weight</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         nr_weight is the number of elements in the array
@@ -557,12 +557,12 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <th colspan="5" rowspan="1">
+                  <th colSpan="5" rowSpan="1">
                     <h2
                       style={{
                         textAlign: "center",
@@ -574,39 +574,39 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </th>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Parameters</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>values</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>Definition</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Tips</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="2">
+                  <td colSpan="1" rowSpan="2">
                     <p>
                       <span>SVM_Type</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>3 - Epsilon-SVR</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="2">
+                  <td colSpan="2" rowSpan="2">
                     <p>
                       <span>
                         The Nu parameter in Nu-SVM can be used to control the
@@ -621,34 +621,34 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="2">
+                  <td colSpan="1" rowSpan="2">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>4 - Nu-SVR</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="4">
+                  <td colSpan="1" rowSpan="4">
                     <p>
                       <span>Kernel Type</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>0 - Linear</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>linear: u&apos;*v</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="4">
+                  <td colSpan="1" rowSpan="4">
                     <p>
                       <span>
                         Radial Basis Function is a general purpose kernel, used
@@ -683,24 +683,24 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>1 - Polynomial</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>polynomial: (gamma*u&apos;*v + coef0)^degree</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>2 - RBF</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>radial basis function: exp(-gamma*|u-v|^2)</span>
                     </p>
@@ -715,29 +715,29 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>3 - Sigmoid</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>sigmoid: tanh(gamma*u&apos;*v + coef0)</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Gamma</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>[0.000122,8]</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         gamma defines how much influence a single training
@@ -746,20 +746,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Degree</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Degree of the polynomial kernel function. Ignored by all
@@ -767,20 +767,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Coef0</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Independent term in kernel function. It is only
@@ -788,22 +788,22 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Cost (C)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>[0.031250,8192]</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Regularization parameter. The strength of the
@@ -812,7 +812,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         C is 1 by default and it&apos;s a reasonable default
@@ -824,17 +824,17 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>NU</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>(0,1]</span>
                     </p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         It&apos;s a hyperparameter for nu-SVC, one-className SVM
@@ -852,7 +852,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         Nu approximates value = the fraction of training errors
@@ -862,15 +862,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Epsilon_SVR (P)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Epsilon in the epsilon-SVR model. It specifies the
@@ -880,20 +880,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Cachesize</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         For C-SVC, Epsilon-SVR, NuSVC and NuSVR, the size of the
@@ -902,7 +902,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         If you have enough RAM available, it is recommended to
@@ -913,15 +913,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Termination Criterion</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         Tolerance for stopping criterion. The stopping tolerance
@@ -930,20 +930,20 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Shrinking</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
                         The shrinking are there to save the training time.They
@@ -954,7 +954,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       </span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         We found that if the number of iterations is large, then
@@ -964,25 +964,25 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Probability_Estimates</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="2" rowspan="1">
+                  <td colSpan="2" rowSpan="1">
                     <p>
                       <span>Whether to enable probability estimates.</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
                 </tr>
                 <tr>
-                  <th colspan="5" rowspan="1">
+                  <th colSpan="5" rowSpan="1">
                     <h2
                       style={{
                         textAlign: "center",
@@ -994,34 +994,34 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </th>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Parameters</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>values</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>Definition</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="3">
+                  <td colSpan="1" rowSpan="3">
                     <p>
                       <span>Solver</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>11 - L2-regularized L2-loss SVR primal</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="3">
+                  <td colSpan="3" rowSpan="3">
                     <p>
                       <span>
                         We have 3 linear Regression solvers, by combining
@@ -1039,29 +1039,29 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>12 - L2-regularized L2-loss SVR dual</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>13 - L2-regularized L1-loss SVR dual</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Cost (C)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         The parameter C, trades off misclassification of
@@ -1075,15 +1075,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Epsilon_SVR (P)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Epsilon in the epsilon-SVR model. It specifies the
@@ -1095,15 +1095,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Termination Criterion</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Tolerance for stopping criterion. The stopping tolerance
@@ -1114,15 +1114,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Folds</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         V-fold for Cross Validation. In v-fold cross-validation,
@@ -1137,7 +1137,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <th colspan="5" rowspan="1">
+                  <th colSpan="5" rowSpan="1">
                     <h2
                       style={{
                         textAlign: "center",
@@ -1149,29 +1149,29 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </th>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Parameters</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>values</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>Definition</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="3">
+                  <td colSpan="1" rowSpan="3">
                     <p>
                       <span>Solver</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         0 - L2-regularized logistic regression primal,
@@ -1187,7 +1187,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       <span>3 - L2-regularized L1-loss SVC dual,</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="3">
+                  <td colSpan="3" rowSpan="3">
                     <p>
                       <span>
                         We have 8 linear Classification solvers, by combining
@@ -1206,7 +1206,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>
                         4 - Support Vector Classification by Crammer and Singer
@@ -1215,7 +1215,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>5 - L1-regularized L2-loss SVC</span>
                     </p>
@@ -1228,15 +1228,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Cost (C)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Regularization parameter. The strength of the
@@ -1247,15 +1247,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Bias</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Conside : w_1 * x_1 + w_2 * x_2 + w_3 * x_3 + … + w_bias
@@ -1267,15 +1267,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Termination Criterion</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Tolerance for stopping criterion. The stopping tolerance
@@ -1286,15 +1286,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Folds</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         V-fold for Cross Validation. In v-fold cross-validation,
@@ -1309,15 +1309,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>nr_weight</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         nr_weight is the number of elements in the array
@@ -1329,15 +1329,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Weight (wi)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         set the parameter C of className i to weight*C, for
@@ -1347,15 +1347,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Weight_Label</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         These weights are used to change the penalty for
@@ -1366,7 +1366,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <th colspan="5" rowspan="1">
+                  <th colSpan="5" rowSpan="1">
                     <h2
                       style={{
                         textAlign: "center",
@@ -1378,64 +1378,64 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </th>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Parameters</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>values</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>Definition</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Kernel Type</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>0. LINEAR</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>linear: u&apos;*v</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>1. POLYNOMIAL</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>polynomial: (gamma*u&apos;*v + coef0)^degree</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>2. RBF</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>radial basis function: exp(-gamma*|u-v|^2)</span>
                     </p>
@@ -1450,30 +1450,30 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>3. SIGMOID</span>
                     </p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>sigmoid: tanh(gamma*u&apos;*v + coef0)</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Gamma</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         gamma defines how much influence a single training
@@ -1484,15 +1484,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Coef0</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Degree of the polynomial kernel function. Ignored by all
@@ -1502,15 +1502,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Degree</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Independent term in kernel function. It is only
@@ -1521,15 +1521,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Dimension (Number of Attributes)</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Number of input attributes / columns in the training
@@ -1539,30 +1539,30 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Number of Centers</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>Number of clusters</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Stopping Criteria</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Tolerance for stopping criterion. The stopping tolerance
@@ -1573,15 +1573,15 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p>
                       <span>Number of Rows</span>
                     </p>
                   </td>
-                  <td colspan="1" rowspan="1">
+                  <td colSpan="1" rowSpan="1">
                     <p></p>
                   </td>
-                  <td colspan="3" rowspan="1">
+                  <td colSpan="3" rowSpan="1">
                     <p>
                       <span>
                         Total number of records / rows in the training data

@@ -920,3 +920,9 @@ put [ pizza_stream ] passed : {"oid":3, "status":"3", "custid":13}`}
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { cepSidebar: true },
+  };
+}

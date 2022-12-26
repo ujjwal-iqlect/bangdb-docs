@@ -9,6 +9,7 @@ export default function Searchbar({ placeholder }) {
   const submitHandler = (e) => {
     e.preventDefault();
     router.push(`/search?q=${query}`);
+    setQuery("");
   };
 
   return (

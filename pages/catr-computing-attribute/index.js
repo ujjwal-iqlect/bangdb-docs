@@ -479,3 +479,9 @@ export default function CatrComputingAttribute() {
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}

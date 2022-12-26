@@ -293,3 +293,9 @@ public long getGpbyId(long schemaid, long streamid, String gpby_attr_list)`}
     </React.Fragment>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { streamSidebar: true },
+  };
+}
