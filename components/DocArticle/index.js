@@ -1,8 +1,8 @@
 import React from "react";
-import { useCustomContext } from "../Context";
+import { useGlobalContext } from "../../Context";
 
 export default function DocArticle({ children }) {
-  const { sidebar } = useCustomContext();
+  const { sidebar } = useGlobalContext();
   return (
     <React.Fragment>
       <section className="main-container">

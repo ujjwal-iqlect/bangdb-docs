@@ -3,9 +3,10 @@ import styled from "styled-components";
 import SideAccord from "../../SideAccord";
 import DevNavList from "../../DevNavList";
 import { SidebarData } from "../SidebarData";
+import { useGlobalContext } from "../../../Context";
 
-export default function Sidebar({ sidebar, setSidebar }) {
-  // const [sidebar, setSidebar] = useState(false);
+export default function Sidebar() {
+  const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
 

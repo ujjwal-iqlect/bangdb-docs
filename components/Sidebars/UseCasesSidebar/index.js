@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import SideAccord from "../../SideAccord";
 import { UseCasesSidebarData } from "../UseCasesSidebarData";
+import { useGlobalContext } from "../../../Context";
 
-export default function UseCasesSidebar({ sidebar, setSidebar }) {
+export default function UseCasesSidebar() {
+  const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
 

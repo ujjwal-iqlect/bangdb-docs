@@ -12,37 +12,35 @@ import GraphSidebar from "../components/Sidebars/GraphSidebar";
 import ReleaseSidebar from "../components/Sidebars/ReleaseSidebar";
 
 function MyApp({ Component, pageProps }) {
-  const [sidebar, setSidebar] = useState(false);
-
   return (
     <div>
-      {(() => {
-        if (pageProps.noHeader) {
-          return <></>;
-        } else {
-          return <Header />;
-        }
-      })()}
       <AppProvider>
+        {(() => {
+          if (pageProps.noHeader) {
+            return <></>;
+          } else {
+            return <Header />;
+          }
+        })()}
         <Component {...pageProps} />
+        {(() => {
+          if (pageProps.helpGuideSidebar) {
+            return <HelpGuideSidebar />;
+          } else if (pageProps.graphSidebar) {
+            return <GraphSidebar />;
+          } else if (pageProps.useCasesSidebar) {
+            return <UseCasesSidebar />;
+          } else if (pageProps.apiSidebar) {
+            return <ApiSidebar />;
+          } else if (pageProps.noSidebar) {
+            return null;
+          } else if (pageProps.releaseSidebar) {
+            return <ReleaseSidebar />;
+          } else {
+            return <Sidebar />;
+          }
+        })()}
       </AppProvider>
-      {(() => {
-        if (pageProps.helpGuideSidebar) {
-          return <HelpGuideSidebar sidebar={sidebar} setSidebar={setSidebar} />;
-        } else if (pageProps.graphSidebar) {
-          return <GraphSidebar sidebar={sidebar} setSidebar={setSidebar} />;
-        } else if (pageProps.useCasesSidebar) {
-          return <UseCasesSidebar sidebar={sidebar} setSidebar={setSidebar} />;
-        } else if (pageProps.apiSidebar) {
-          return <ApiSidebar sidebar={sidebar} setSidebar={setSidebar} />;
-        } else if (pageProps.noSidebar) {
-          return null;
-        } else if (pageProps.releaseSidebar) {
-          return <ReleaseSidebar sidebar={sidebar} setSidebar={setSidebar} />;
-        } else {
-          return <Sidebar sidebar={sidebar} setSidebar={setSidebar} />;
-        }
-      })()}
     </div>
   );
 }

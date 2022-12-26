@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import SideAccord from "../../SideAccord";
 import { GraphSidebarData } from "../GraphSidebarData";
+import { useGlobalContext } from "../../../Context";
 import { useRouter } from "next/router";
 
-export default function GraphSidebar({ sidebar, setSidebar }) {
+export default function GraphSidebar() {
+  const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
   const router = useRouter();

@@ -5,16 +5,17 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   // const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
   const [query, setQuery] = useState("");
 
   return (
-    <AppContext.Provider value={{ query, setQuery }}>
+    <AppContext.Provider value={{ sidebar, setSidebar, query, setQuery }}>
       {children}
     </AppContext.Provider>
   );
 };
 
-// gloabal custom hook
+// global custom hook
 const useGlobalContext = () => {
   return useContext(AppContext);
 };

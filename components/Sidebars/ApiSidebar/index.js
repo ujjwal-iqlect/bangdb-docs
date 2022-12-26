@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useGlobalContext } from "../../../Context";
 import SideAccord from "../../SideAccord";
 import { ApiSidebarData } from "../ApiSidebarData";
 
-export default function ApiSidebar({ sidebar, setSidebar }) {
+export default function ApiSidebar() {
+  const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
   const [query, setQuery] = useState("");
 
