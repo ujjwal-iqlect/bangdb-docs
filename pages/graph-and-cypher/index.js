@@ -43,7 +43,7 @@ export default function GraphAndCypher() {
 
       <DocArticle>
         <Breadcrumb text="Stream in BangDB" url="/stream" />
-        <h1 className="article-title">Graph and Cypher - BangDB</h1>
+        <h1 className="article-title">Graph and Cypher</h1>
         <div className="article-body">
           <p>
             Graph and Cypher in BangDB is quite powerful and allows users to

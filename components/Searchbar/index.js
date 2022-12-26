@@ -8,8 +8,10 @@ export default function Searchbar({ placeholder }) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    router.push(`/search?q=${query}`);
-    setQuery("");
+    if (!query.startsWith(" ")) {
+      router.push(`/search?q=${query}`);
+      setQuery("");
+    }
   };
 
   return (
@@ -19,10 +21,12 @@ export default function Searchbar({ placeholder }) {
           <form onSubmit={submitHandler}>
             <input
               type="search"
+              min={1}
               value={query}
               onChange={(e) => setQuery(e.target.value.toLowerCase())}
               placeholder={placeholder}
               className="s-input"
+              required
             />
             <span className="search-button"></span>
           </form>

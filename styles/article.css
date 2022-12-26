@@ -1104,3 +1104,36 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #202124;
   margin: 0 0 5px;
 }
+
+@media screen and (max-width: 850px) {
+  .container {
+    display: block;
+    min-width: 100%;
+  }
+
+  .article-content {
+    margin: 0;
+  }
+
+  .article {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .article-title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .article-title {
+    font-size: 28px;
+  }
+
+  .article-body h2 {
+    font-size: 20px;
+  }
+}

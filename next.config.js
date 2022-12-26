@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         source: "/search/",
-        destination: "/404",
+        destination: "/",
         permanent: false,
       },
     ];

@@ -25,13 +25,14 @@ export default function Search() {
         <div className="search-results-stats">
           <span>
             Showing {FilteredData.length}{" "}
-            {FilteredData.length > 1 ? "results" : "result"} for &quot;{q}&quot;
+            {FilteredData.length > 1 ? "results" : "result"} for &quot;{q}
+            &quot;
           </span>
         </div>
         <div className="search-results-wrapper">
           {FilteredData.map((item, index) => {
             return (
-              <div className="search-result">
+              <div className="search-result" key={index}>
                 <Link href={item.path}>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
@@ -47,6 +48,6 @@ export default function Search() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { noSidebar: true },
+    props: { noSidebar: true, noHeader: true },
   };
 }
