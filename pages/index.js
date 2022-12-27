@@ -53,7 +53,7 @@ export default function Home() {
               <MainDescription>
                 <p
                   style={{
-                    marginBottom: "2rem 0",
+                    marginBottom: "2rem",
                     textAlign: "center",
                     color: "#fff",
                     fontWeight: "500",
@@ -72,13 +72,7 @@ export default function Home() {
           </Header>
         </Inner>
       </MainSection>
-      <div
-        style={{
-          maxWidth: "1380px",
-          padding: "0 5rem",
-          margin: "0 auto",
-        }}
-      >
+      <BoxSectionWrapper>
         <BoxSection>
           <Box
             headline={"Manual"}
@@ -133,7 +127,7 @@ export default function Home() {
             link={"/release-info/ampere"}
           />
         </BoxSection>
-      </div>
+      </BoxSectionWrapper>
     </>
   );
 }
@@ -159,6 +153,9 @@ const Inner = styled.div`
   margin: 0 auto;
   padding: 0 64px;
   max-width: 1380px;
+  @media screen and (max-width: 580px) {
+    padding: 0 30px;
+  }
 `;
 
 const Header = styled.div`
@@ -174,17 +171,56 @@ const MainHeading = styled.h2`
   font: 700 40px/48px Raleway;
   text-align: center;
   color: #fff;
+  @media screen and (max-width: 670px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 405px) {
+    font-size: 23px;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 20px;
+  }
 `;
 
 const MainDescription = styled.div`
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: #3c4043;
+  & p {
+    @media screen and (max-width: 670px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 490px) {
+      line-height: 1.5;
+    }
+    @media screen and (max-width: 405px) {
+      font-size: 12px;
+    }
+  }
+`;
+
+const BoxSectionWrapper = styled.div`
+  max-width: 1380px;
+  padding: 0 5rem;
+  margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    padding: 0 1rem;
+  }
 `;
 
 const BoxSection = styled.section`
   display: grid;
   padding: 60px 0;
-  justify-content: center;
-  gap: 30px;
-  grid-template-columns: repeat(3, 300px);
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  @media screen and (min-width: 1024px) {
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 300px);
+  }
+  @media screen and (max-width: 500px) {
+    padding: 30px 0;
+  }
 `;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import SideAccord from "../../SideAccord";
 import { GraphSidebarData } from "../GraphSidebarData";
@@ -14,6 +14,14 @@ export default function GraphSidebar() {
   const showSidebar = () => setSidebar(!sidebar);
   const handleIconHoverMouseEnter = () => setIconHover(true);
   const handleIconHoverMouseLeave = () => setIconHover(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= "1024") {
+      setSidebar(true);
+    }
+  }, []);
+
+  console.log(sidebar);
 
   return (
     <>
@@ -159,6 +167,9 @@ const DevNavFilter = styled.div`
   position: sticky;
   top: 0;
   z-index: 2;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const FilterIcon = styled.svg`

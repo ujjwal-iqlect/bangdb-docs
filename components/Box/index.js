@@ -4,21 +4,19 @@ import Link from "next/link";
 
 export default function Box({ headline, para, link }) {
   return (
-    <>
-      <Card>
-        <CardInner>
-          <CardBody>
-            <Headline>{headline}</Headline>
-            <Para>{para}</Para>
-          </CardBody>
-          <Footer>
-            <div style={{ marginTop: "-10px" }}>
-              <LearnMore href={link}>Learn More</LearnMore>
-            </div>
-          </Footer>
-        </CardInner>
-      </Card>
-    </>
+    <Card>
+      <CardInner>
+        <CardBody>
+          <Headline>{headline}</Headline>
+          <Para>{para}</Para>
+        </CardBody>
+        <Footer>
+          <div style={{ marginTop: "-10px" }}>
+            <LearnMore href={link}>Learn More</LearnMore>
+          </div>
+        </Footer>
+      </CardInner>
+    </Card>
   );
 }
 

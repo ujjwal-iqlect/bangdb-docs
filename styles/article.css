@@ -1105,7 +1105,9 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 5px;
 }
 
-@media screen and (max-width: 850px) {
+/* Responsive Styles */
+
+@media screen and (max-width: 1024px) {
   .container {
     display: block;
     min-width: 100%;
