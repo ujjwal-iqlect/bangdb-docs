@@ -49,7 +49,7 @@ export default function Home() {
         <Inner>
           <Header>
             <HeaderText>
-              <MainHeading>Documentation for BangDB</MainHeading>
+              <MainHeading>BangDB Documentation</MainHeading>
               <MainDescription>
                 <p
                   style={{
@@ -174,14 +174,9 @@ const MainHeading = styled.h2`
   @media screen and (max-width: 670px) {
     font-size: 30px;
   }
-  @media screen and (max-width: 480px) {
-    font-size: 25px;
-  }
-  @media screen and (max-width: 405px) {
-    font-size: 23px;
-  }
+
   @media screen and (max-width: 380px) {
-    font-size: 20px;
+    font-size: 25px;
   }
 `;
 
