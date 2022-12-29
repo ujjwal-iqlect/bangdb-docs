@@ -1107,6 +1107,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* Responsive Styles */
 
+@media screen and (max-width: 1050px) {
+  .article-title {
+    font-size: 35px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     display: block;
@@ -1138,4 +1144,24 @@ input[type="search"]::-webkit-search-results-decoration {
   .article-body h2 {
     font-size: 20px;
   }
+}
+
+.ham-menu {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.ham-button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.ham-button:hover {
+  border-radius: 9999px;
+  background: #f7f7f7;
 }
