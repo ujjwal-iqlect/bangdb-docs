@@ -1,9 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Breadcrumb from "../../../components/Breadcrumb";
+// import Breadcrumb from "../../../components/Breadcrumb";
 import DocArticle from "../../../components/DocArticle";
-import HighlightedOutput from "../../../components/HighlightedOutput";
 import HighlightedJava from "../../../components/HighlightedJava";
 import Link from "next/link";
 
@@ -324,7 +323,12 @@ export default function HGChartCreation() {
             We are here showing a candle graph which shows the Total Sum of
             Sales, specific to Countries.
           </p>
-          {/* Candle country chart img */}
+          <Image
+            width="898"
+            height="448"
+            src="https://bangdb.com/wp-content/uploads/2022/12/candle-graph-sales-by-country-bangdb-ampere.png"
+            alt="Candle graph - sales by country - BangDB Ampere"
+          />
           <p>
             If you scroll down, you will see the options to set Y-axis n2ame,
             Chart Name, Dashboard Name, and Dashboard Description
@@ -359,18 +363,42 @@ export default function HGChartCreation() {
             heights or lengths proportional to the values(Sum of Sales) that
             they represent.
           </p>
+          <Image
+            width="973"
+            height="510"
+            src="https://bangdb.com/wp-content/uploads/2022/12/bar-graph-sales-by-country-bangdb-ampere.png"
+            alt="Bar graph - sales by country - BangDB Ampere"
+          />
           <h3>Pie chart</h3>
           <p>
             It divided countries into circular statistical slices to illustrate
             the sum of sales proportion.
           </p>
+          <Image
+            width="964"
+            height="505"
+            src="https://bangdb.com/wp-content/uploads/2022/12/pie-chart-sales-by-country-bangdb-ampere.png"
+            alt="Pie chart - sales by country - BangDB Ampere"
+          />
           <h3>Donut chart</h3>
           <p>
             It divided countries into slices to illustrate the sum of sales
             proportion.
           </p>
+          <Image
+            width="1354"
+            height="555"
+            src="https://bangdb.com/wp-content/uploads/2022/12/donut-chart-sales-by-country-bangdb-ampere.png"
+            alt="Donut graph - sales by country - BangDB Ampere"
+          />
           <h3>Radar chart</h3>
           <p>It shows data as a 2-Dimensional graph.</p>
+          <Image
+            width="970"
+            height="505"
+            src="https://bangdb.com/wp-content/uploads/2022/12/radar-chart-sales-by-country-bangdb-ampere.png"
+            alt="Radar graph - sales by country - BangDB Ampere"
+          />
           <h3>Area graph</h3>
           <p>
             If our data has a DATE column then we can use some other types of
@@ -392,12 +420,48 @@ export default function HGChartCreation() {
               the countries.
             </li>
           </ul>
+          <Image
+            width="1057"
+            height="501"
+            src="https://bangdb.com/wp-content/uploads/2022/12/area-graph-config-sales-by-country-bangdb-ampere.png"
+            alt="Area graph config - sales by country - BangDB Ampere"
+          />
+          <Image
+            width="969"
+            height="505"
+            src="https://bangdb.com/wp-content/uploads/2022/12/area-graph-sales-by-country-bangdb-ampere.png"
+            alt="Area graph - sales by country - BangDB Ampere"
+          />
           <h3>Scatter chart</h3>
+          <Image
+            width="972"
+            height="511"
+            src="https://bangdb.com/wp-content/uploads/2022/12/scatter-chart-sales-by-country-bangdb-ampere.png"
+            alt="Scatter graph - sales by country - BangDB Ampere"
+          />
           <h2>Sales by State</h2>
           <h3>Candle graph</h3>
+          <Image
+            width="970"
+            height="505"
+            src="https://bangdb.com/wp-content/uploads/2022/12/candle-graph-sales-by-state-bangdb-ampere.png"
+            alt="Candle graph - sales by state - BangDB Ampere"
+          />
           <h3>Bar graph</h3>
+          <Image
+            width="972"
+            height="511"
+            src="https://bangdb.com/wp-content/uploads/2022/12/bar-graph-sales-by-state-bangdb-ampere.png"
+            alt="Bar graph - sales by state - BangDB Ampere"
+          />
           <h2>Sales by City</h2>
           <h3>Candle graph</h3>
+          <Image
+            width="970"
+            height="507"
+            src="https://bangdb.com/wp-content/uploads/2022/12/scatter-chart-sales-by-country-bangdb-ampere.png"
+            alt="Candle graph - sales by city - BangDB Ampere"
+          />
           <p>
             In a similar way we can use other suggested queries also. After
             saving all the charts, you can go to the dashboard and rearrange
@@ -408,6 +472,12 @@ export default function HGChartCreation() {
             BanDB allows us to use all these visualization tools which are
             available in the Graph section.
           </p>
+          <Image
+            width="493"
+            height="49"
+            src="https://bangdb.com/wp-content/uploads/2022/12/chart-options-that-are-available-in-graph-section-bangdb-ampere.png"
+            alt="Chart optiions available in graph section - BangDB Ampere"
+          />
           <p>
             But before creating charts we need to follow some prerequisites:
           </p>
@@ -603,19 +673,55 @@ export default function HGChartCreation() {
             code={`S=>(@P Country:*);RETURN P.name AS Country, P.SalesAmount AS "Sales Amount" SORT_DESC "Sales Amount"`}
           />
           <h3>Table chart</h3>
+          <Image
+            width="1395"
+            height="418"
+            src="https://bangdb.com/wp-content/uploads/2022/12/table-chart-country-specific-details-Bangdb-Ampere.png"
+            alt="Table chart - country specific sales - BangDB Ampere"
+          />
           <h3>Bar chart</h3>
+          <Image
+            width="1396"
+            height="619"
+            src="https://bangdb.com/wp-content/uploads/2022/12/bar-chart-country-specific-details-Bangdb-Ampere.png"
+            alt="Bar chart - country specific sales - BangDB Ampere"
+          />
           <p>
             You can select X-axis and Y-axis from the dropdown. If you click on
             the three-horizontal lines, you can even change the color of bars
             inside.
           </p>
+          <Image
+            width="771"
+            height="640"
+            src="https://bangdb.com/wp-content/uploads/2022/12/different-color-options-that-are-available-for-bars-bangdb-ampere.png"
+            alt="Different color options for bars - BangDB Ampere"
+          />
           <p>
             If you scroll down, you can give the chart name and dashboard name
             as we did in the stream section.
           </p>
           <h3>Pie chart</h3>
+          <Image
+            width="1375"
+            height="628"
+            src="https://bangdb.com/wp-content/uploads/2022/12/pie-chart-country-specific-details-Bangdb-Ampere.png"
+            alt="Pie chart - country specific sales - BangDB Ampere"
+          />
           <h3>Donut chart</h3>
+          <Image
+            width="1378"
+            height="601"
+            src="https://bangdb.com/wp-content/uploads/2022/12/donut-chart-country-specific-details-Bangdb-Ampere.png"
+            alt="Donut chart - country specific sales - BangDB Ampere"
+          />
           <h3>Min/Max cards</h3>
+          <Image
+            width="1390"
+            height="354"
+            src="https://bangdb.com/wp-content/uploads/2022/12/min-max-card-country-specific-details-Bangdb-Ampere.png"
+            alt="Min/Max card - country specific sales - BangDB Ampere"
+          />
           <ul>
             <li>
               In MAX card: It shows the Top-5 countries where Sale is Highest
@@ -629,17 +735,41 @@ export default function HGChartCreation() {
             code={`S=>(@P State:*);RETURN P.name AS State, P.SalesAmount AS "Sales Amount" SORT_DESC "Sales Amount"`}
           />
           <h3>Pie Chart</h3>
+          <Image
+            width="1390"
+            height="643"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Pie-chart-state-specific-sales-BangDB-Ampere.png"
+            alt="Pie chart - country specific sales - BangDB Ampere"
+          />
           <h3>Bar Chart</h3>
+          <Image
+            width="1327"
+            height="696"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Bar-chart-state-specific-sales-BangDB-Ampere.png"
+            alt="Bar chart - country specific sales - BangDB Ampere"
+          />
           <h3>Sales details of all the Cities in a specific Country</h3>
           <HighlightedJava
             code={`S=>(@P State:*);RETURN P.name AS State, P.SalesAmount AS "Sales Amount" SORT_DESC "Sales Amount"`}
           />
           <h3>Bar chart</h3>
+          <Image
+            width="1330"
+            height="694"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Bar-chart-sales-details-of-all-cities-in-a-specific-country-BangDB-Ampere.png"
+            alt="Bar chart - sales details of all cities in a specific country - BangDB Ampere"
+          />
           <h3>Sales details of all the States in a specific Country</h3>
           <HighlightedJava
             code={`S{UNIQUE_IN_CONTEXT}=>(@C Country:{name = "##Country"})-[@ HAS]->(@P State:*);RETURN P.name AS State, P.SalesAmount AS "Sales Amount" SORT_DESC "Sales Amount"`}
           />
           <h3>Stack-Bar Chart</h3>
+          <Image
+            width="1324"
+            height="681"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Stack-bar-chart-sales-details-of-all-states-in-a-specific-country-BangDB-Ampere.png"
+            alt="Stack Bar chart - sales details of all states in a specific country - BangDB Ampere"
+          />
           <p>
             In a similar way, we can make different queries and make charts as
             per the requirement.
@@ -651,13 +781,31 @@ export default function HGChartCreation() {
             <li>It also has a feature to create copies of the dashboard.</li>
           </ul>
           <p>By clicking on the 3 dots we can see all these options.</p>
+          <Image
+            width="547"
+            height="289"
+            src="https://bangdb.com/wp-content/uploads/2022/12/dashboard-options-features-BangDB-Ampere.png"
+            alt="Dashboard options/features - BangDB Ampere"
+          />
           <h3>Rename the dashboard title</h3>
           <p>Click on the edit button on the top right side of the page.</p>
+          <Image
+            width="1039"
+            height="523"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Rename-the-dashboard-title-BangDB-Ampere.png"
+            alt="Rename the dashboard title - BangDB Ampere"
+          />
           <h3>Rename the chart</h3>
           <p>
             Click on the Chart name(e.g. Here chart name is &apos;Chart1&apos;)
             and you will be able to rename the chart name.
           </p>
+          <Image
+            width="616"
+            height="670"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Rename-the-chart-in-a-dashboard-BangDB-Ampere.png"
+            alt="Rename the chart in a dashboard - BangDB Ampere"
+          />
           <h3>Chart Modifications and some more Information</h3>
           <p>
             If you click on the 3 dots on the top right side of the chart, one
@@ -678,6 +826,12 @@ export default function HGChartCreation() {
             <li>Increase/Decrease the font size of the Chart Title.</li>
             <li>More Information: Advance modifications</li>
           </ul>
+          <Image
+            width="691"
+            height="262"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Chart-modifications-and-other-options-BangDB-Ampere.png"
+            alt="Chart modifications and other options in a dashboard - BangDB Ampere"
+          />
           <p>
             If you click on more information, You will get options to make
             advance changes like:
@@ -688,12 +842,24 @@ export default function HGChartCreation() {
             <li>Definition update</li>
           </ul>
           <p>You can make all the changes and see the result in real time.</p>
+          <Image
+            width="1041"
+            height="312"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Edit-a-chart-in-a-dashboard-BangDB-Ampere.png"
+            alt="Edit a chart in a dashboard - BangDB Ampere"
+          />
           <h3>Other features:</h3>
           <ul>
             <li>BangDB allows us to see the chart in Full-screen mode.</li>
             <li>We can also download the chart in PNG format.</li>
           </ul>
           <h2>Final Dashboard Template:</h2>
+          <Image
+            width="793"
+            height="862"
+            src="https://bangdb.com/wp-content/uploads/2022/12/Final-dashboard-template-BangDB-Ampere.png"
+            alt="Final dashboard template - BangDB Ampere"
+          />
         </div>
       </DocArticle>
     </React.Fragment>
