@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-// import Breadcrumb from "../../../components/Breadcrumb";
+import Breadcrumb from "../../../components/Breadcrumb";
 import DocArticle from "../../../components/DocArticle";
 import HighlightedJava from "../../../components/HighlightedJava";
 import Link from "next/link";
