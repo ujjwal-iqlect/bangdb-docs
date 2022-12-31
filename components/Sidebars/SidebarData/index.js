@@ -443,4 +443,26 @@ export const SidebarData = [
       },
     ],
   },
+  {
+    id: "10",
+    title: "BangDB High availability",
+    childrens: [
+      {
+        id: "0",
+        title: "Overview",
+        path: "/bangdb-high-availability",
+      },
+    ],
+  },
+  {
+    id: "1`",
+    title: "BangDB Disaster recovery",
+    childrens: [
+      {
+        id: "0",
+        title: "Overview",
+        path: "/bangdb-disaster-recovery",
+      },
+    ],
+  },
 ];
