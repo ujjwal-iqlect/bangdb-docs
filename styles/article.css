@@ -92,6 +92,12 @@ code {
   padding-right: 40px;
 }
 
+.article h5 {
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  margin: 24px 0 16px;
+}
+
 .article-body p {
   color: #202124;
   font-size: 15px;
