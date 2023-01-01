@@ -445,6 +445,17 @@ export const SidebarData = [
   },
   {
     id: "10",
+    title: "Replication",
+    childrens: [
+      {
+        id: "0",
+        title: "Overview",
+        path: "/replication",
+      },
+    ],
+  },
+  {
+    id: "11",
     title: "BangDB High availability",
     childrens: [
       {
@@ -455,7 +466,7 @@ export const SidebarData = [
     ],
   },
   {
-    id: "1`",
+    id: "12`",
     title: "BangDB Disaster recovery",
     childrens: [
       {
