@@ -14,9 +14,15 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: "/swagger-api",
+        source: "/rest-api/swagger-api",
         destination: "https://bangdb.com/swagger-api",
-        permanent: false,
+        permanent: true,
+      },
+      {
+        source: "/rest-api/postman-api",
+        destination:
+          "https://elements.getpostman.com/view/fork?collection=22899570-0b6d5c05-d2ab-4c0d-9ea3-3313bc32c302&referrer=https%3A%2F%2F34.234.70.163%2Fpostman-api%2F",
+        permanent: true,
       },
       {
         source: "/search/",

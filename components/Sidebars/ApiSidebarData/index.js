@@ -336,4 +336,26 @@ export const ApiSidebarData = [
       },
     ],
   },
+  {
+    id: "1",
+    title: "Swagger API",
+    childrens: [
+      {
+        id: "0",
+        title: "Swagger API",
+        path: "/rest-api/swagger-api",
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "Postman API",
+    childrens: [
+      {
+        id: "0",
+        title: "Postman API",
+        path: "/rest-api/postman-api",
+      },
+    ],
+  },
 ];
