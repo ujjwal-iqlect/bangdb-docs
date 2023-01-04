@@ -90,28 +90,28 @@ export const GraphSidebarData = [
       },
       {
         id: "17",
-        title: "Return star",
-        path: "/graph-and-cypher/return-star",
-      },
-      {
-        id: "18",
-        title: "Nested query",
-        path: "/graph-and-cypher/nested-query",
-      },
-      {
-        id: "19",
-        title: "Chain query",
-        path: "/graph-and-cypher/chain-query",
-      },
-      {
-        id: "20",
         title: "Similarity",
         path: "/graph-and-cypher/similarity",
       },
       {
-        id: "21",
+        id: "18",
         title: "Cluster",
         path: "/graph-and-cypher/cluster",
+      },
+      {
+        id: "19",
+        title: "Return star",
+        path: "/graph-and-cypher/return-star",
+      },
+      {
+        id: "20",
+        title: "Nested query",
+        path: "/graph-and-cypher/nested-query",
+      },
+      {
+        id: "21",
+        title: "Chain query",
+        path: "/graph-and-cypher/chain-query",
       },
       {
         id: "22",

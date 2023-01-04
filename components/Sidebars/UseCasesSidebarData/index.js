@@ -110,7 +110,7 @@ export const UseCasesSidebarData = [
       {
         id: "1",
         title: "Overview",
-        path: "/use-cases/ml-usecases/overview",
+        path: "/use-cases/ml-usecases",
       },
       {
         id: "2",

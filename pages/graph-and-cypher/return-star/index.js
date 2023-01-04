@@ -64,6 +64,106 @@ export default function ReturnStar() {
             we can easily check all the properties, for that query with less
             computation and effort.
           </p>
+          <p>First we need to create a new graph and insert data:</p>
+          <HighlightedJava code={`CREATE GRAPH g6`} />
+          <HighlightedJava code={`USE GRAPH g6`} />
+          <HighlightedJava
+            code={`CREATE (Person:UdoHalstein {"first_name":"Udo", "last_name":"Halstein"})
+
+CREATE (Person:RobrechtMiloslav {"first_name":"Robrecht", "last_name":"Miloslav"})
+
+CREATE (Person:MonroeMaksymilian {"first_name":"Monroe", "last_name":"Maksymilian"})
+
+CREATE (Person:SkylerGavril {"first_name":"Skyler","last_name":"Gavril"})
+
+CREATE (Person:EuantheRossana {"first_name":"Euanthe","last_name":"Rossana"})
+
+CREATE (Person:JasmineRhea {"first_name":"Jasmine","last_name":"Rhea"})
+
+CREATE (Person:SousannaPinar {"first_name":"Sousanna","last_name":"Pinar"})
+
+CREATE (Person:ChelleJessie {"first_name":"Chelle", "last_name":"Jessie"})
+
+CREATE (Car:Ford_Focus {"constructor":"Ford", "model":"Focus"})
+
+CREATE (Car:Toyota_Corolla {"constructor":"Toyota", "model":"Corolla"})
+
+CREATE (Car:Kia_Rio {"constructor":"Kia", "model":"Rio"})
+
+CREATE (Car:Hyundai_Elantra {"constructor":"Hyundai", "model":"Elantra"})
+
+CREATE (Car:Ford_Fiesta {"constructor":"Ford", "model":"Fiesta"})
+
+CREATE (Car:Renault_Clio {"constructor":"Renault", "model":"Clio"})
+
+CREATE (Accident:123 {"date":"19/05/2014","location":"New Jersey"})
+
+CREATE (Accident:234 {"date":"23/05/2014","location":"Florida"})
+
+CREATE (Accident:345 {"date":"27/05/2014","location":"Florida"})
+
+CREATE (Car:Ford_Focus)-[IS_INVOLVED {"claim_total":"4817"}]->(Accident:123)
+
+CREATE (Car:Toyota_Corolla)-[IS_INVOLVED {"claim_total":"4693"}]->(Accident:123)
+
+CREATE (Car:Kia_Rio)-[IS_INVOLVED {"claim_total":"4157"}]->(Accident:234)
+
+CREATE (Car:Hyundai_Elantra)-[IS_INVOLVED {"claim_total":"4001"}]->(Accident:234)
+
+CREATE (Car:Ford_Focus)-[IS_INVOLVED {"claim_total":"4513"}]->(Accident:345)
+
+CREATE (Car:Renault_Clio)-[IS_INVOLVED {"claim_total":"4307"}]->(Accident:345)
+
+CREATE (Person:UdoHalstein)-[DRIVER {"claim_total":"19068","info":"Driver"}]->(Car:Ford_Focus)
+
+CREATE (Person:UdoHalstein)-[PASSENGER {"claim_total":"19447","info":"Passenger"}]->(Car:Kia_Rio)
+
+CREATE (Person:UdoHalstein)-[PASSENGER {"claim_total":"19346","info":"Passenger"}]->(Car:Ford_Fiesta)
+
+CREATE (Person:RobrechtMiloslav)-[DRIVER {"claim_total":"19359","info":"Driver"}]->(Car:Toyota_Corolla)
+
+CREATE (Person:RobrechtMiloslav)-[PASSENGER {"claim_total":"19658","info":"Passenger"}]->(Car:Hyundai_Elantra)
+
+CREATE (Person:RobrechtMiloslav)-[PASSENGER {"claim_total":"19282","info":"Passenger"}]->(Car:Renault_Clio)
+
+CREATE (Person:MonroeMaksymilian)-[DRIVER {"claim_total":"19425","info":"Driver"}]->(Car:Kia_Rio)
+
+CREATE (Person:MonroeMaksymilian)-[PASSENGER {"claim_total":"19535","info":"Passenger"}]->(Car:Ford_Focus)
+
+CREATE (Person:MonroeMaksymilian)-[PASSENGER {"claim_total":"19779","info":"Passenger"}]->(Car:Renault_Clio)
+
+CREATE (Person:SkylerGavril)-[DRIVER {"claim_total":"19010","info":"Driver"}]->(Car:Hyundai_Elantra)
+
+CREATE (Person:SkylerGavril)-[PASSENGER {"claim_total":"19423","info":"Passenger"}]->(Car:Ford_Fiesta)
+
+CREATE (Person:SkylerGavril)-[PASSENGER {"claim_total":"19971","info":"Passenger"}]->(Car:Toyota_Corolla)
+
+CREATE (Person:EuantheRossana)-[DRIVER {"claim_total":"19940","info":"Driver"}]->(Car:Ford_Fiesta)
+
+CREATE (Person:EuantheRossana)-[PASSENGER {"claim_total":"19474","info":"Passenger"}]->(Car:Hyundai_Elantra)
+
+CREATE (Person:EuantheRossana)-[PASSENGER {"claim_total":"19762","info":"Passenger"}]->(Car:Ford_Focus)
+
+CREATE (Person:JasmineRhea)-[DRIVER {"claim_total":"19558","info":"Driver"}]->(Car:Renault_Clio)
+
+CREATE (Person:JasmineRhea)-[PASSENGER {"claim_total":"19224","info":"Passenger"}]->(Car:Toyota_Corolla)
+
+CREATE (Person:JasmineRhea)-[PASSENGER {"claim_total":"19520","info":"Passenger"}]->(Car:Kia_Rio)
+
+CREATE (Person:SousannaPinar)-[IS_DOCTOR {"info":"Doctor"}]->(Person:UdoHalstein)
+
+CREATE (Person:SousannaPinar)-[IS_DOCTOR {"info":"Doctor"}]->(Person:MonroeMaksymilian)
+
+CREATE (Person:SousannaPinar)-[IS_DOCTOR {"info":"Doctor"}]->(Person:EuantheRossana)
+
+CREATE (Person:ChelleJessie)-[IS_LAWYER {"info":"Lawyer"}]->((Person:RobrechtMiloslav)
+
+CREATE (Person:ChelleJessie)-[IS_LAWYER {"info":"Lawyer"}]->((Person:MonroeMaksymilian)
+
+CREATE (Person:ChelleJessie)-[IS_LAWYER {"info":"Lawyer"}]->((Person:SkylerGavril)
+
+CREATE (Person:ChelleJessie)-[IS_LAWYER {"info":"Lawyer"}]->((Person:EuantheRossana)`}
+          />
           <p>
             To Return all the sub_props, sub_label, obj_props, rels, obj_label
             for query with Subject, Relation, & Object.

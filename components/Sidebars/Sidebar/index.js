@@ -8,7 +8,7 @@ import { useGlobalContext } from "../../../Context";
 export default function Sidebar() {
   const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
-  const [query, setQuery] = useState("");
+  const { filterQuery, setFilterQuery } = useGlobalContext();
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -43,9 +43,9 @@ export default function Sidebar() {
           </FilterIcon>
           <DevNavInput
             type="text"
-            placeholder="Filter"
+            placeholder="Filter Topics"
             name="filter"
-            onChange={(e) => setQuery(e.target.value.toLowerCase())}
+            onChange={(e) => setFilterQuery(e.target.value.toLowerCase())}
           />
 
           <FilterClearButton
@@ -63,7 +63,7 @@ export default function Sidebar() {
                 {/* Accords will appear here */}
                 <DevNavList text="Overview" url="/overview" />
                 {SidebarData.filter((data) =>
-                  data.title.toLowerCase().includes(query)
+                  data.title.toLowerCase().includes(filterQuery)
                 ).map((item) => {
                   return (
                     <SideAccord

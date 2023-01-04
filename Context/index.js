@@ -7,9 +7,19 @@ const AppProvider = ({ children }) => {
   // const [sidebar, setSidebar] = useState(false);
   const [sidebar, setSidebar] = useState(false);
   const [query, setQuery] = useState("");
+  const [filterQuery, setFilterQuery] = useState("");
 
   return (
-    <AppContext.Provider value={{ sidebar, setSidebar, query, setQuery }}>
+    <AppContext.Provider
+      value={{
+        sidebar,
+        setSidebar,
+        query,
+        setQuery,
+        filterQuery,
+        setFilterQuery,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
