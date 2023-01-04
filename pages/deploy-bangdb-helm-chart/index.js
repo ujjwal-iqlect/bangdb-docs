@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import DocArticle from "../../components/DocArticle";
 import Codebox from "../../components/Codebox";
 
@@ -149,24 +148,6 @@ export default function DeployBangdbHelmChart() {
               configuration settings of the database.
             </li>
           </ol>
-          <Codebox
-            code="oc apply -f bangdb.yaml"
-            copy="oc apply -f bangdb.yaml"
-          />
-          <p>
-            This deployment creates a single pod running 'BangDB'. To verify the
-            deployment you can check the logs of the pod created. The logs
-            should appear as shown below saying 'BangDB' service is up and
-            running.
-          </p>
-          <Image
-            src={
-              "https://bangdb.com/wp-content/uploads/2021/08/bangdb_openshift_startup_log.png"
-            }
-            alt="Deploy BangDB on OpenShift"
-            width={1600}
-            height={601}
-          />
         </div>
       </DocArticle>
     </React.Fragment>

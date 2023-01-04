@@ -145,7 +145,7 @@ const MainSection = styled.section`
   margin-top: 45px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background: #073042;
+  background: #1769e0;
   color: #202124;
 `;
 
