@@ -106,7 +106,7 @@ export default function HandsOnBangdb() {
                   <Link href={"/bangdb-ml-examples"}>ML Usecase section</Link>{" "}
                   to check it out.
                 </p>
-                <h3>YCSB Benchmark</h3>
+                <h2>YCSB Benchmark</h2>
                 <p>
                   YCSB benchmark can be run and you may compare BangDB with
                   other databases as well. Please see{" "}

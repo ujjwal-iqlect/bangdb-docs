@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Breadcrumb from "../../components/Breadcrumb";
 import HighlightedCpp from "../../components/HighlightedCpp";
 import HighlightedJava from "../../components/HighlightedJava";
@@ -61,6 +62,51 @@ export default function BangDBTableEmbedded() {
                   There are very few APIs here to deal with. For simplicity,
                   naming has been done to help understand the API.
                 </p>
+                <p>Here is the convention:</p>
+                <div className="doc-api-code">
+                  <p>ClosedType is enum with following values:</p>
+                  <p>
+                    <strong>NORMAL_TABLE and PRIMITIVE_TABLE</strong>
+                    <br />
+                    Key/val - operations
+                    <br />
+                    val is opaque data, text, fixed native type etc.
+                    <br />
+                    index is not supported
+                    <br />
+                    put(), get(), del(), scan() are the ops
+                  </p>
+                  <p>
+                    <strong>WIDE_TABLE</strong>
+                    Document data
+                    <br />
+                    index is supported
+                    <br />
+                    put_doc(), scan_doc(), get(), del() are ops
+                    <br />
+                    put_text() &amp; scan_text() are used
+                  </p>
+                  <p>
+                    when we wish to store text with reverse indexing fr entire
+                    text. The text is normal sentence and not necessarily json
+                    (mostly not json, for json use put_doc() and scan_doc())
+                  </p>
+                  <p>
+                    <strong>LARGE_TABLE</strong>
+                    Large data, files etc.
+                    <br />
+                    put_file(), put_large_data(), get_file(), get_large_data(),
+                    and few more apis
+                    <br />
+                    Index can&apos;t be created
+                    <br />
+                    primary key has to be COMPOSITE type
+                  </p>
+                  <p>
+                    Please see more on this at{" "}
+                    <Link href="/bangdb-client-common">bangdb common</Link>.
+                  </p>
+                </div>
                 <div
                   style={{
                     display: tab === 1 ? "block" : "none",

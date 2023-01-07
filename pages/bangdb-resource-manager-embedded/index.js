@@ -128,6 +128,27 @@ export default function BangDBResourceManagerEmbedded() {
                 <HighlightedCpp
                   code={`long put_file(char *bucket_info, char *key, char *fpath, InsertOptions iop, bool force = false);`}
                 />
+                <div className="doc-api-code">
+                  <p>InsertOptions is an enum with following values:</p>
+                  <p>
+                    INSERT_UNIQUE, //if non-existing then insert else return
+                    <br />
+                    UPDATE_EXISTING, //if existing then update else return
+                    <br />
+                    INSERT_UPDATE, //insert if non-existing else update
+                    <br />
+                    DELETE_EXISTING, //delete if existing
+                    <br />
+                    UPDATE_EXISTING_INPLACE, //only for inplace update
+                    <br />
+                    INSERT_UPDATE_INPLACE, //only for inplace update
+                    <br />
+                  </p>
+                  <p>
+                    Please see more on this at{" "}
+                    <Link href="/bangdb-client-common">bangdb common</Link>.
+                  </p>
+                </div>
                 <p>
                   It returns -1 for error else 0 or more than 0 To download a
                   file from a bucket to local system.
@@ -178,6 +199,26 @@ export default function BangDBResourceManagerEmbedded() {
                 <HighlightedCpp
                   code={`int close_resource_manager(CloseType closetype = DEFAULT, bool force = false);`}
                 />
+                <div className="doc-api-code">
+                  <p>ClosedType is enum with following values:</p>
+                  <p>
+                    DEFAULT_AT_CLIENT
+                    <br />
+                    CONSERVATIVE_AT_SERVER
+                    <br />
+                    OPTIMISTIC_AT_SERVER,
+                    <br />
+                    CLEANCLOSE_AT_SERVER,
+                    <br />
+                    SIMPLECLOSE_AT_SERVER,
+                    <br />
+                    DEFAULT_AT_SERVER
+                  </p>
+                  <p>
+                    Please see more on this at{" "}
+                    <Link href="/bangdb-client-common">bangdb common</Link>.
+                  </p>
+                </div>
                 <p>It returns -1 for error or 0 or positive number.</p>
               </div>
             </article>

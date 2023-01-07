@@ -151,8 +151,8 @@ export default function RunSqlLikeQueriesForTables() {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   return {
-    props: { restApiSidebar: true },
+    props: { apiSidebar: true },
   };
 }

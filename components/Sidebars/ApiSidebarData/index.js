@@ -95,7 +95,7 @@ export const ApiSidebarData = [
           {
             id: "14",
             title: "Delete key-value document",
-            path: "/rest-api/eelete-a-key-and-value-document",
+            path: "/rest-api/delete-a-key-and-value-document",
           },
           {
             id: "15",
