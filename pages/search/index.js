@@ -6,18 +6,15 @@ import Link from "next/link";
 export default function Search() {
   const router = useRouter();
   const { q } = router.query;
-  const FilteredData = [];
-
-  {
-    SearchData.filter((item) => {
-      if (
-        item.title.toLowerCase().includes(q) ||
-        item.description.toLowerCase().includes(q)
-      ) {
-        FilteredData.push(item);
-      }
-    });
-  }
+  const FilteredData = SearchData.filter(
+    (item) =>
+      item.title.toLowerCase().includes(q) ||
+      item.description.toLowerCase().includes(q)
+  ).sort(
+    (a, b) =>
+      b.title.toLowerCase().startsWith(q.toLowerCase()) -
+      a.title.toLowerCase().startsWith(q.toLowerCase())
+  );
 
   return (
     <>

@@ -557,9 +557,9 @@ export const SearchData = [
     path: "/rest-api/add-index-to-a-table",
   },
   {
-    title: "undefined",
-    description: "undefined",
-    path: "/rest-api/eelete-a-key-and-value-document",
+    title: "Delete a key and value document",
+    description: "How to delete a key and value document?",
+    path: "/rest-api/delete-a-key-and-value-document",
   },
   {
     title: "Insert document/data into a table - BangDB REST API",
