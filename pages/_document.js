@@ -46,6 +46,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
           ></link>
+          <meta
+            name="google-site-verification"
+            content="7lOuvOztsKzDWKraEagiPtl3PM4bRWAjrGxIY2_lZkQ"
+          />
         </Head>
         <body>
           <Main />
