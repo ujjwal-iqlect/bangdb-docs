@@ -780,7 +780,21 @@ No additional styling for now
   position: relative;
 }
 
-.skid-row-tabs > nav > tab > a {
+.srt-activated::after {
+  height: 3px;
+  background: #5f6368;
+  border-radius: 3px 3px 0 0;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  margin: 0 auto;
+  right: 0;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.skid-row-tabs nav tab a {
   color: #5f6368;
   font-weight: 500;
   text-decoration: none;

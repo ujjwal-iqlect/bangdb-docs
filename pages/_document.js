@@ -32,6 +32,12 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charSet="UTF-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
           <link rel="icon" type="image/png" href="bangdb-fav-icon.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link

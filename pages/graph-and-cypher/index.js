@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Breadcrumb from "../../components/Breadcrumb";
 import DocArticle from "../../components/DocArticle";
+import Breadcrumb from "../../components/Breadcrumb";
+import HighlightedJava from "../../components/HighlightedJava";
 
 export default function GraphAndCypher() {
   return (
@@ -74,16 +75,16 @@ export default function GraphAndCypher() {
                   <th>Description</th>
                 </tr>
                 <tr>
-                  <td>CREATE () -[]-&gt; ()</td>
+                  <td>CREATE()-[]-&gt;()</td>
                   <td>for creating node or triple</td>
                 </tr>
                 <tr>
-                  <td>S=&gt;() -[]-&gt; ()</td>
+                  <td>S=&gt;()-[]-&gt;()</td>
                   <td>for querying data</td>
                 </tr>
                 <tr>
                   <td>
-                    &lt;op USING attr1 SORT_DESC attr2 LIMIT n&lgt; query1 ++
+                    &lt;op USING attr1 SORT_DESC attr2 LIMIT n&gt; query1 ++
                     query2
                   </td>
                   <td>operation on disjoint sets of queries</td>
@@ -332,7 +333,7 @@ export default function GraphAndCypher() {
             Data is processed from left to right. There could be several triples
             chained to form a query, like.
           </p>
-          <p>S1=&gt;() -[]-&gt; () -[]-&gt; () …</p>
+          <p>S1=&gt;()-[]-&gt;()-[]-&gt;() …</p>
           <p>
             Here in the above example, the first triple will intermediate-output
             a set of results, these intermediate-output will become input from
@@ -347,13 +348,52 @@ export default function GraphAndCypher() {
             like following. This in contrast with the chain query, where object
             of the first triple becomes the subject of the second one and so on
           </p>
-          <p>S2=&gt;[S1=&gt;() -[]-&gt; ()] -[]-&gt; () …</p>
+          <p>S2=&gt;[S1=&gt;()-[]-&gt;()]-[]-&gt;() …</p>
           <p>We will see the examples for these in subsequent sections.</p>
+          <h2>Merger nodes (deep merge)</h2>
+          <p>
+            MERGE function allows us to merge two nodes deeply. Which means all
+            the relationships (in or out) and properties of relationships,
+            properties on node are all merged.
+          </p>
+          <p>
+            Secondary node is finally deleted and all relationships pointing
+            towards and out of secondary nodes are also moved completely.
+          </p>
+          <p>
+            Primary node is the node in which the secondary node will get
+            merged. Arrow (&apos;&lt;-&apos;) points towards primary node.
+          </p>
+          <p>To merge node (label:id2) into (label:id1)</p>
+          <HighlightedJava code={`MERGE (label:id1)<-[*]-(label:id2)`} />
+          <p>To merge node (label:id1) into (label:id2)</p>
+          <HighlightedJava code={`MERGE (label:id1)-[*]->(label:id2)`} />
+          <p>
+            <strong>&apos;*&apos;</strong> could be replaced with{" "}
+            <strong>;</strong>
+          </p>
+          <p>
+            KEEP_PRIM_PROP = same as &apos;*&apos;, means keep the property of
+            primary node in case of duplicate key
+          </p>
+          <p>KEEP_SEC_PROP = keep secondary node property in case of clash</p>
+          <p>
+            KEEP_BOTH = keep duplicate properties (both primary and secondary)
+          </p>
+          <h2>Delete node</h2>
+          <p>
+            DELETE function allows us to delete a node deeply. Which means all
+            the relationships (in or out) and properties of relationships,
+            properties on node are all deleted.
+          </p>
+          <p>To delete node (label:id)</p>
+          <HighlightedJava code={`DELETE (label:id)`} />
           <p>
             We will use BangDB CLI to perform these exercises. But before we go
             there, let&apos;s see how BangDB Cypher is different from the
             original Cypher.
           </p>
+
           <p>
             Checkout a sample use cases{" "}
             <Link

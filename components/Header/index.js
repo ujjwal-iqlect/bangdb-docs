@@ -58,6 +58,9 @@ export default function Header() {
                       Pricing
                     </Link>
                   </tab>
+                  <tab className="srt-activated">
+                    <Link href={"/"}>Docs</Link>
+                  </tab>
                   <tab>
                     <Link href={"https://bangdb.com/blog"} className="srt">
                       Blog

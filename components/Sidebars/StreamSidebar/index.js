@@ -41,7 +41,7 @@ export default function StreamSidebar() {
           </FilterIcon>
           <DevNavInput
             type="text"
-            placeholder="Filter"
+            placeholder="Filter Topics"
             name="filter"
             onChange={(e) => setQuery(e.target.value.toLowerCase())}
           />

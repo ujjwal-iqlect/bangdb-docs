@@ -64,7 +64,6 @@ export default function BangDBTableEmbedded() {
                 </p>
                 <p>Here is the convention:</p>
                 <div className="doc-api-code">
-                  <p>ClosedType is enum with following values:</p>
                   <p>
                     <strong>NORMAL_TABLE and PRIMITIVE_TABLE</strong>
                     <br />
@@ -78,6 +77,7 @@ export default function BangDBTableEmbedded() {
                   </p>
                   <p>
                     <strong>WIDE_TABLE</strong>
+                    <br />
                     Document data
                     <br />
                     index is supported
@@ -93,6 +93,7 @@ export default function BangDBTableEmbedded() {
                   </p>
                   <p>
                     <strong>LARGE_TABLE</strong>
+                    <br />
                     Large data, files etc.
                     <br />
                     put_file(), put_large_data(), get_file(), get_large_data(),
