@@ -82,13 +82,16 @@ export default function ServerInstall() {
           >
             <li>
               Pick and take the tar file from the{" "}
-              <Link href={"https://bangdb.com/download/"}>download page</Link>
+              <Link target="_blank" href="https://bangdb.com/download/">
+                download page
+              </Link>
             </li>
             <li>
               Clone the BangDB public{" "}
               <Link
                 className="external"
-                href={"https://github.com/sachin-sinha/BangDB"}
+                target="_blank"
+                href="https://github.com/sachin-sinha/BangDB"
               >
                 Github repo
               </Link>

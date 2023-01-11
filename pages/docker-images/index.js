@@ -76,16 +76,18 @@ export default function DockerImages() {
             The docker images are available publicly for use. it's available at
             the{" "}
             <Link
+              target="_blank"
               className="external"
-              href={"https://hub.docker.com/r/bangdb/bangdb-server"}
+              href="https://hub.docker.com/r/bangdb/bangdb-server"
             >
               Docker hub
             </Link>
             <br />
             The docker file is available at{" "}
             <Link
+              target="_blank"
               className="external"
-              href={"https://github.com/sachin-sinha/BangDB"}
+              href="https://github.com/sachin-sinha/BangDB"
             >
               Github
             </Link>{" "}
@@ -94,20 +96,18 @@ export default function DockerImages() {
           <ul>
             <li>
               <Link
+                target="_blank"
                 className="external"
-                href={
-                  "https://github.com/sachin-sinha/bangdb_helm/tree/master/non-ssl"
-                }
+                href="https://github.com/sachin-sinha/bangdb_helm/tree/master/non-ssl"
               >
                 Non-SSL BangDB Docker file
               </Link>
             </li>
             <li>
               <Link
+                target="_blank"
                 className="external"
-                href={
-                  "https://github.com/sachin-sinha/bangdb_helm/tree/master/ssl"
-                }
+                href="https://github.com/sachin-sinha/bangdb_helm/tree/master/ssl"
               >
                 SSL BangDB Docker file
               </Link>
@@ -160,7 +160,7 @@ export default function DockerImages() {
           />
           <p>
             Now, create a folder (in the same dir where Dockerfile is kept)
-            names “certificate”
+            names &quot;certificate&quot;
           </p>
           <Codebox code="mkdir certificate" copy="mkdir certificate" />
           <p>

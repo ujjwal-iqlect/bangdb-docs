@@ -29,6 +29,11 @@ module.exports = {
         destination: "/",
         permanent: false,
       },
+      {
+        source: "/db-param",
+        destination: "/dbparam-type",
+        permanent: true,
+      },
     ];
   },
 };
