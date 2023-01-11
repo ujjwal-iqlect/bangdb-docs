@@ -106,6 +106,13 @@ export default function Home() {
             link={"/complex-event-processing"}
           />
           <Box
+            headline={"ML"}
+            para={
+              "BangDB natively integrated ML (and DL) capabilities, we don't need to have separate ML architecture."
+            }
+            link={"/use-cases/ml-usecases"}
+          />
+          <Box
             headline={"Help Guides"}
             para={
               "Learn about BangDB algorithms and their hyperparameter, classification, regression, k-means etc."

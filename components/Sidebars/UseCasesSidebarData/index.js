@@ -103,45 +103,4 @@ export const UseCasesSidebarData = [
       },
     ],
   },
-  {
-    id: "4",
-    title: "ML Usecases",
-    childrens: [
-      {
-        id: "1",
-        title: "Overview",
-        path: "/use-cases/ml-usecases",
-      },
-      {
-        id: "2",
-        title: "Credit risk analysis",
-        path: "/use-cases/ml-usecases/credit-risk-analysis",
-      },
-      {
-        id: "3",
-        title: "Forecast product demand",
-        path: "/use-cases/ml-usecases/forecast-product-demand",
-      },
-      {
-        id: "4",
-        title: "Data clustering analysis",
-        path: "/use-cases/ml-usecases/data-clustering-analysis",
-      },
-      {
-        id: "5",
-        title: "Online shoppers purchasing intention",
-        path: "/use-cases/ml-usecases/online-shoppers-purchasing-intention",
-      },
-      {
-        id: "6",
-        title: "Amazon sentiment analysis",
-        path: "/use-cases/ml-usecases/amazon-sentiment-analysis",
-      },
-      {
-        id: "7",
-        title: "Rainfall prediction",
-        path: "/use-cases/ml-usecases/rainfall-prediction",
-      },
-    ],
-  },
 ];

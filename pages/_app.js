@@ -11,6 +11,7 @@ import GraphSidebar from "../components/Sidebars/GraphSidebar";
 import ReleaseSidebar from "../components/Sidebars/ReleaseSidebar";
 import StreamSidebar from "../components/Sidebars/StreamSidebar";
 import CepSidebar from "../components/Sidebars/CepSidebar";
+import MlSidebar from "../components/Sidebars/MlSidebar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -41,6 +42,8 @@ function MyApp({ Component, pageProps }) {
             return <StreamSidebar />;
           } else if (pageProps.cepSidebar) {
             return <CepSidebar />;
+          } else if (pageProps.mlSidebar) {
+            return <MlSidebar />;
           } else {
             return <Sidebar />;
           }
