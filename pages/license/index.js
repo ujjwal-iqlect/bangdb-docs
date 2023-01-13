@@ -68,18 +68,20 @@ export default function License() {
                 <p>
                   BangDB 2.0 Enterprise edition comes with enterprise commercial
                   license and please get in touch with us to know more about it.
-                  Please visit the
+                  Please visit the{" "}
                   <Link
                     className="external"
                     href={"https://bangdb.com/contact-us"}
                     target={"_blank"}
                   >
                     contact page
-                  </Link>
+                  </Link>{" "}
                   or send an e-mail to{" "}
-                  <Link href={"mailto:info@bangdb.com"}>info@bangdb.com</Link>{" "}
+                  <Link target="_blank" href={"mailto:info@bangdb.com"}>
+                    info@bangdb.com
+                  </Link>{" "}
                   or{" "}
-                  <Link href={"mailto:sachin@bangdb.com"}>
+                  <Link target="_blank" href={"mailto:sachin@bangdb.com"}>
                     sachin@bangdb.com
                   </Link>
                 </p>
