@@ -26,7 +26,7 @@ export default function Header() {
       <div className="header-wrapper">
         <div className="top-header-wrapper">
           <div className="logo-wrapper">
-            <Link className="logo-link" href={"/"}>
+            <Link className="logo-link" href={"https://bangdb.com/"}>
               <Image
                 src="https://bangdb.com/wp-content/uploads/2021/12/docs-logo.png"
                 alt="BangDB Logo"
