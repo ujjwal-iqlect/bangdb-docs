@@ -182,8 +182,8 @@ const MainHeading = styled.h2`
     font-size: 30px;
   }
 
-  @media screen and (max-width: 405px) {
-    font-size: 26px;
+  @media screen and (max-width: 410px) {
+    font-size: 28px;
   }
 
   @media screen and (max-width: 380px) {
@@ -201,9 +201,6 @@ const MainDescription = styled.div`
     @media screen and (max-width: 490px) {
       line-height: 1.5;
     }
-    @media screen and (max-width: 405px) {
-      font-size: 12px;
-    }
   }
 `;
 
@@ -219,7 +216,7 @@ const BoxSectionWrapper = styled.div`
 const BoxSection = styled.section`
   display: grid;
   padding: 60px 0;
-  gap: 0.8rem;
+  gap: 1.875rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   @media screen and (min-width: 1024px) {
     justify-content: center;
