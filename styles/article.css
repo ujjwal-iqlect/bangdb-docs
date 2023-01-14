@@ -723,13 +723,17 @@ header {
 }
 
 .mobile-nav {
-  /* margin: 2rem; */
+  margin-top: 2rem;
   width: 100%;
 }
 
 .mobile-nav-row-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.mobile-nav-row-wrapper a {
+  text-decoration: none;
 }
 
 .mobile-nav-row {
@@ -759,15 +763,15 @@ header {
 
 .mobile-download-button {
   width: 100%;
-  padding: 16px;
+  padding: 5px 10px;
 }
 
 .mobile-download-button p {
   color: #fff;
-  font: 600 16px Raleway;
+  font: 700 16px Raleway;
   line-height: 150%;
   text-align: center;
-  padding: 16px 16px;
+  padding: 12px 16px;
   border: 1px solid rgb(224 224 224);
   border-radius: 999px;
   white-space: nowrap;
@@ -778,16 +782,16 @@ header {
 
 .mobile-gs-button {
   width: 100%;
-  padding: 16px;
+  padding: 5px 10px;
 }
 
 .mobile-gs-button p {
-  color: #191c1e;
-  font: 600 16px Raleway;
+  color: #fff;
+  font: 700 16px Raleway;
   line-height: 150%;
   text-align: center;
-  padding: 16px 16px;
-  background: #fbc91b;
+  padding: 12px 16px;
+  background: #1769e0;
   border-radius: 999px;
   white-space: nowrap;
   cursor: pointer;

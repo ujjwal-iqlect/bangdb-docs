@@ -173,29 +173,46 @@ export default function Header() {
           </div>
           {/* Nav items */}
           <div className="mobile-nav-row-wrapper">
-            <div className="mobile-nav-row">
-              <span>Pricing</span>
-            </div>
+            <Link href="https://bangdb.com/pricing">
+              <div className="mobile-nav-row">
+                <span>Pricing</span>
+              </div>
+            </Link>
           </div>
           <div className="mobile-nav-row-wrapper">
-            <div className="mobile-nav-row">
-              <span>Docs</span>
-            </div>
+            <Link href="/">
+              <div className="mobile-nav-row">
+                <span>Docs</span>
+              </div>
+            </Link>
           </div>
           <div className="mobile-nav-row-wrapper">
-            <div className="mobile-nav-row">
-              <span>Blog</span>
-            </div>
+            <Link href="https://bangdb.com/blog">
+              <div className="mobile-nav-row">
+                <span>Blog</span>
+              </div>
+            </Link>
           </div>
           <div className="mobile-nav-row-wrapper">
-            <div className="mobile-nav-row">
-              <span>About</span>
-            </div>
+            <Link href="https://bangdb.com/about">
+              <div className="mobile-nav-row">
+                <span>About</span>
+              </div>
+            </Link>
           </div>
           <div className="mobile-nav-row-wrapper">
-            <div className="mobile-nav-row">
-              <span>Contact</span>
-            </div>
+            <Link href="https://bangdb.com/resources">
+              <div className="mobile-nav-row">
+                <span>Resources</span>
+              </div>
+            </Link>
+          </div>
+          <div className="mobile-nav-row-wrapper">
+            <Link href="https://bangdb.com/contact-us">
+              <div className="mobile-nav-row">
+                <span>Contact</span>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="mobile-nav">
