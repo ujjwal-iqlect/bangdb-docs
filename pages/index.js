@@ -182,6 +182,10 @@ const MainHeading = styled.h2`
     font-size: 30px;
   }
 
+  @media screen and (max-width: 405px) {
+    font-size: 26px;
+  }
+
   @media screen and (max-width: 380px) {
     font-size: 25px;
   }
