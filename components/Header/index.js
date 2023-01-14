@@ -223,7 +223,7 @@ export default function Header() {
                   <p>Download</p>
                 </div>
               </Link>
-              <Link href="https://bangdb.com/download">
+              <Link href="https://cloud.bangdb.com">
                 <div className="mobile-gs-button">
                   <p>Get Started</p>
                 </div>
