@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Breadcrumb from "../../../../components/Breadcrumb";
 import DocArticle from "../../../../components/DocArticle";
 import Codebox from "../../../../components/Codebox";
@@ -57,8 +58,15 @@ export default function MLUCcreditRiskAnalysis() {
             data and deciding whom to give the loan in the future. The data file
             contains complete loan data for all loans issued between 2007-2015.
             The data contains the indicator of default, payment information,
-            credit history, etc. This is taken from Kaggle, here is the problem
-            statement in detail.
+            credit history, etc. This is taken from Kaggle,{" "}
+            <Link
+              href="https://www.kaggle.com/datasets/sonujha090/xyzcorp-lendingdata"
+              className="external"
+              target="_blank"
+            >
+              here
+            </Link>{" "}
+            is the problem statement in detail.
           </p>
           <p>
             The data is divided into training and test data. We have used the

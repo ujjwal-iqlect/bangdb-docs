@@ -64,6 +64,7 @@ export default function DeleteATable() {
 }`}
           />
           <h2>Stream processing</h2>
+          <p>All stream related API starts with /stream</p>
           <h3>Register schema for stream processing</h3>
           <p>
             <strong>Method</strong> : POST

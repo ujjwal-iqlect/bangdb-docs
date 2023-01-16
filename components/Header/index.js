@@ -30,10 +30,10 @@ export default function Header() {
             <div className="logo-wrapper">
               <Link className="logo-link" href={"https://bangdb.com/"}>
                 <Image
-                  src="https://bangdb.com/wp-content/uploads/2021/12/docs-logo.png"
+                  src="https://bangdb.com/wp-content/uploads/2022/09/BangDB-LOGO-black.png"
                   alt="BangDB Logo"
-                  width={137}
-                  height={30}
+                  width="134"
+                  height="58"
                 />
               </Link>
             </div>

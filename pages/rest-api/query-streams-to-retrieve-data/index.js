@@ -80,7 +80,7 @@ export default function QueryStreamsToRetrieveData() {
               looks like, note where condition, limit etc are optional.
             </li>
             <HighlightedCpp
-              code={`select * from <schema_name>.<stream_name> where <condFitions> <limit> <limit_number>`}
+              code={`select * from <schema_name>.<stream_name> where <conditions> <limit> <limit_number>`}
             />
 
             <li>
@@ -100,7 +100,7 @@ export default function QueryStreamsToRetrieveData() {
             />
           </ol>
           <p>
-            For examples, let&apos;s register another schema which does little
+            For example, let&apos;s register another schema which does little
             more than previous one. Below is the schema:
           </p>
           <HighlightedCpp

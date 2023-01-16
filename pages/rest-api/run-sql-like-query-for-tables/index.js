@@ -4,14 +4,14 @@ import Breadcrumb from "../../../components/Breadcrumb";
 import DocArticle from "../../../components/DocArticle";
 import HighlightedCpp from "../../../components/HighlightedCpp";
 import HighlightedOutput from "../../../components/HighlightedOutput";
-import Codebox from "../../../components/Codebox";
+import HighlightedJava from "../../../components/HighlightedJava";
 
 export default function RunSqlLikeQueriesForTables() {
   return (
     <React.Fragment>
       <Head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Run SQL like query for tables - BangDB REST API</title>
         <meta
@@ -105,7 +105,7 @@ export default function RunSqlLikeQueriesForTables() {
             have more data in the table for the query and we need to call it
             again. This time we will copy whatever other attribute is there in
             the request json doc as they are (no need to copy
-            “more_data_to_come”) along with the original sql query
+            &quot;more_data_to_come&quot;) along with the original sql query
           </p>
 
           <aside className="doc-note">
@@ -114,7 +114,7 @@ export default function RunSqlLikeQueriesForTables() {
           </aside>
 
           <p>Example</p>
-          <Codebox
+          <HighlightedJava
             code={`curl -H "Content-Type: application/json" -d '{"sql": "select * from my_table_test"}' -X POST http://192.168.1.105:18080/db/mydb/query`}
           />
           <p>Response</p>

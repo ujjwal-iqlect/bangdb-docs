@@ -102,7 +102,7 @@ export default function Join() {
                   <strong>Note: </strong>&quot;notf&quot; key, it says once
                   joined send notification using notif id 123. The notification
                   can be sent for filter as well. Please see{" "}
-                  <Link href={"/notificaton"}>notificaton</Link> for more info.
+                  <Link href={"/notification"}>notificaton</Link> for more info.
                   <p>
                     One important thing to note here is &quot;type&quot;, which
                     is the type. It has meaning and there are more than one

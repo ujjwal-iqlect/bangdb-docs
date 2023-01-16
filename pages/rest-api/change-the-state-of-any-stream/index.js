@@ -75,9 +75,9 @@ export default function ChangeTheStateOfAnyStream() {
           <p>Response</p>
           <HighlightedOutput
             code={`{
-   "errcode": 0,
-   "error": [
-   "the stream [ visitor ] is already enabled"
+   "errcode":0,
+   "error":[
+      "the stream [ visitor ] is already enabled"
    ]
 }`}
           />

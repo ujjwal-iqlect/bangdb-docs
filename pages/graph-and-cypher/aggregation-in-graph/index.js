@@ -239,7 +239,7 @@ CREATE (person:ramesh)-[BUYS {"amount":165.5}]->(product:electronics)`}
             product he/she bought
           </p>
           <HighlightedJava
-            code={`S=>(@p person:*)-[@b BUYS]->(@s product:*); RETURN p.name AS buyer s.name AS product`}
+            code={`S=>(@p person:*)-[@b BUYS]->(@s product:*); RETURN p.name AS buyer, s.name AS product`}
           />
           <HighlightedOutput
             code={`+-----------+------+
@@ -262,7 +262,7 @@ CREATE (person:ramesh)-[BUYS {"amount":165.5}]->(product:electronics)`}
             unique pair and for this we will use UNIQUE keyword
           </p>
           <HighlightedJava
-            code={`S{UNIQUE}=>(@p person:*)-[@b BUYS]->(@s product:*); RETURN p.name AS buyer s.name AS product`}
+            code={`S{UNIQUE}=>(@p person:*)-[@b BUYS]->(@s product:*); RETURN p.name AS buyer, s.name AS product`}
           />
           <HighlightedOutput
             code={`+-----------+------+

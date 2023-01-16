@@ -51,7 +51,7 @@ export default function CreateAGraphTable() {
             for the same instead it uses something like &lt;var_name&gt;=&gt;
             before the query.
           </p>
-          <p>For ex; S=&gt;</p>
+          <p>For ex: S=&gt;</p>
           <p>
             To find the data we&apos;ve created so far, we can start looking for
             all nodes labelled with the <em>Movie</em> label.

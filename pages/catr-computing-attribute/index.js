@@ -341,7 +341,10 @@ export default function CatrComputingAttribute() {
                   expect few additions and they are:
                 </p>
                 <aside className="doc-api-code">
-                  <p>&quot;opnm&quot;: here we use &quot;PRED&quot;</p>
+                  <p>
+                    <strong>&quot;opnm&quot;</strong> : here we use
+                    &quot;PRED&quot;
+                  </p>
                   <p>
                     <strong>&quot;model&quot;</strong> : name of the model that
                     we have trained

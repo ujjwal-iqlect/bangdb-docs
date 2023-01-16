@@ -50,109 +50,67 @@ export default function MLUCamazonSentimentAnalysis() {
 
       <DocArticle>
         <Breadcrumb text="Stream in BangDB" url="/stream" />
-        <h1 className="article-title">Data clustering analysis</h1>
+        <h1 className="article-title">Amazon Sentiment Analysis</h1>
         <div className="article-body">
-          <p>Credit Card Data Clustering Analysis using Kmeans on BangDB</p>
+          <p>
+            Training sentiment model using BangDB IE (Information Extraction)
+            module
+          </p>
           <h2>Problem Statement</h2>
           <p>
-            This case requires developing a customer segmentation to define
-            marketing strategy. The Dataset summarizes the usage behavior of
-            about 14360 active credit card holders during the last 6 months. The
-            file is at a customer level with 18 behavioural variables.
+            We have to categorize opinions expressed in feedback forums. This
+            can be utilized for a feedback management system. We classify
+            individual comments/reviews.and we also determine overall rating
+            based on individual comments/reviews.
+          </p>
+          <p>
+            So that company can get a complete idea on feedback provided by
+            customers and can take care of those particular fields. This makes
+            more loyal Customers to the company, increase in business, fame,
+            brand value, profits.
           </p>
           <p>
             This is taken from Kaggle, here is the{" "}
             <Link
               className="external"
               target={`_blank`}
-              href={`https://www.kaggle.com/datasets/arjunbhasin2013/ccdata`}
+              href={`https://www.kaggle.com/datasets/bittlingmayer/amazonreviews`}
             >
               problem statement in detail
             </Link>
             .
           </p>
-          <h2>Objective</h2>
-          <p>Build a model to perform customer segmentation.</p>
           <h2>Get help doc</h2>
           <p>Download the file and follow the help doc to complete the task.</p>
           <Codebox
-            code={`wget https://bangdb.com/downloads/CrediCardClustering.zip`}
+            code={`wget https://bangdb.com/downloads/AmazonSentimentAnalysis.zip`}
           />
+          <h2>Objective</h2>
+          <p>
+            The task is to build a model that will determine the class ( level_1
+            or level_2) of the text.
+          </p>
           <h2>Data description</h2>
           <p>
-            The dataset contains 14360 events and 18 attributes. The dataset
-            consists of both continuous as well as categorical attributes.
+            This dataset consists of Amazon customer reviews (input text) and
+            star ratings (output labels). The training file is in CSV format. We
+            have to convert the training file from CSV to JSON for training.
+            Converting data from : __label__2 Great necklace: I love the color
+            of the stone and how it hangs on my neck. It&apos;s a great necklace
+            for the price. To :{" "}
+            {`{"label":"2","text":"Great necklace: I love the color of the stone and how it hangs on my neck. It&apos;s a great necklace for the price."}`}
           </p>
-          <aside className="doc-api-code">
-            <p>The columns are:</p>
-            <p>
-              CUSTID,
-              <br />
-              BALANCE,
-              <br />
-              BALANCEFREQUENCY,
-              <br />
-              PURCHASES,
-              <br />
-              ONEOFFPURCHASES,
-              <br />
-              INSTALLMENTSPURCHASES,
-              <br />
-              CASHADVANCE,
-              <br />
-              PURCHASESFREQUENCY,
-              <br />
-              ONEOFFPURCHASESFREQUENCY,
-              <br />
-              ONEOFFPURCHASESFREQUENCY,
-              <br />
-              CASHADVANCE,
-              <br />
-              PURCHASESFREQUENCY,
-              <br />
-              ONEOFFPURCHASESFREQUENCY,
-              <br />
-              PURCHASESINSTALLMENTSFREQUENCY,
-              <br />
-              CASHADVANCEFREQUENCY,
-              <br />
-              CASHADVANCETR,
-              <br />
-              PURCHASESTRX,
-              <br />
-              CREDITLIMIT,
-              <br />
-              PAYMENTS,
-              <br />
-              MINIMUM_PAYMENTS,
-              <br />
-              PRCFULLPAYMENT,
-              <br />
-              TENURE.
-            </p>
-          </aside>
           <h2>Algorithm</h2>
           <p>
-            We have to do customer segmentation for the given problem. To do
-            this we are selecting the kernel k-means algorithm (KKmeans). In
-            kernel k-means before clustering, points are mapped to a
-            higher-dimensional feature space using a nonlinear function, and
-            then kernel k-means partitions the points by linear separators in
-            the new space.
+            We are going to use the algorithm IE_sent which is in build.
+            It&apos;s ready to use algorithm only for sentiment analysis. User
+            have to provide data in json format and provide labels.
           </p>
           <h2>Approach</h2>
           <p>
-            There are three ways to train a model on bangdb. One is to directly
-            register the meta_data for training ( we call it json request which
-            contains all the details about the model ), the second is to create
-            mage_data for training by following the workflow on CLI and the
-            third is by using APIs.
-          </p>
-          <p>
-            Here we will be training the model using all methods. On bangdb, we
-            have the option of training a model from a file (file format can be
-            CSV or JSON) containing training data or from streaming data. Here
-            we are training the model from a CSV file.
+            The requirements are - a training file in json format and data type
+            is categorical with only two attributes one is label and other is
+            text.
           </p>
           <h2>Method</h2>
           <p>Using CLI workflow.</p>

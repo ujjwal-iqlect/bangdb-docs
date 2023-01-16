@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Breadcrumb from "../../../components/Breadcrumb";
 import DocArticle from "../../../components/DocArticle";
 
@@ -76,12 +77,7 @@ export default function AlgorithmsAndTheirHyperParameter() {
                       <span>
                         Scaling before applying{" "}
                         <span>
-                          <a
-                            href="https://bangdb.com/bangdb-ml-examples/"
-                            data-wpel-link="internal"
-                          >
-                            ML
-                          </a>
+                          <Link href="/use-cases/ml-usecases">ML</Link>
                         </span>{" "}
                         algorithms is very important. The main advantage of
                         scaling is to avoid attributes in greater numeric ranges
@@ -409,19 +405,11 @@ export default function AlgorithmsAndTheirHyperParameter() {
                   <td colSpan="2" rowSpan="1">
                     <p>
                       <span>
-                        It&apos;s a{" "}
-                        <a
-                          href="https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)"
-                          data-wpel-link="external"
-                          rel="nofollow external noopener noreferrer"
-                        >
-                          <span>hyperparameter</span>
-                        </a>{" "}
-                        for nu-SVC, one-className SVM and nu-SVR. It is similar
-                        to C. nu is upper bound on the fraction of errors and
-                        lower bound on the fraction of number of support
-                        vectors( number of support vectors determine the run
-                        time).
+                        It&apos;s a hyperparameter for nu-SVC, one-className SVM
+                        and nu-SVR. It is similar to C. nu is upper bound on the
+                        fraction of errors and lower bound on the fraction of
+                        number of support vectors( number of support vectors
+                        determine the run time).
                       </span>
                     </p>
                     <p>

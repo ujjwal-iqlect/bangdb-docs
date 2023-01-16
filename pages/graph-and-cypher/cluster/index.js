@@ -279,7 +279,7 @@ CREATE (person:mahender)-[BUYS {"price":135.36}]->(product:coffee)`}
           />
           <p>Let&apos;s train the cluster now</p>
           <HighlightedJava
-            code={`S{CLUSTER(user_cluster),3}=>(@p person:*); RETURN p.name AS person p.age AS age p.married AS married p.num_child AS num_child p.edu AS edu p.income AS income p.job AS job`}
+            code={`S{CLUSTER(user_cluster),3}=>(@p person:*); RETURN p.name AS person, p.age AS age, p.married AS married, p.num_child AS num_child, p.edu AS edu, p.income AS income, p.job AS job`}
           />
           <HighlightedOutput
             code={`{
@@ -367,7 +367,7 @@ CREATE (person:mahender)-[BUYS {"price":135.36}]->(product:coffee)`}
             number of times they are bought.
           </p>
           <HighlightedJava
-            code={`S=>(@p person:*)-[@c user_cluster {_cluster_ = $$person:suman}]->(@p2 person:*)-[@b BUYS]->(@pr product:*); RETURN pr.name AS product COUNT(p.name) AS num_times SORT_DESC num_times LIMIT 5`}
+            code={`S=>(@p person:*)-[@c user_cluster {_cluster_ = $$person:suman}]->(@p2 person:*)-[@b BUYS]->(@pr product:*); RETURN pr.name AS product, COUNT(p.name) AS num_times SORT_DESC num_times LIMIT 5`}
           />
           <HighlightedOutput
             code={`+-------+---------+

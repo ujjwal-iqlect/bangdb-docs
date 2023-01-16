@@ -76,7 +76,9 @@ export default function CreateATable() {
           <aside className="doc-note">
             <strong>Note: </strong>Not all params are required for table
             creation and there could be many more attributes here as we create
-            table , please see the detail documentations for the same.
+            table , please see the{" "}
+            <Link href="/table-env-api">detail documentations</Link> for the
+            same.
           </aside>
           <p>Here is some information regarding these parameters.</p>
           <p>
@@ -87,7 +89,7 @@ export default function CreateATable() {
           <ul>
             <li>
               <strong>table name</strong> : alphanumeric and
-              &apos;_&apos;(underscore) is allowed. Should be less than 64 bytes
+              &quot;_&quot;(underscore) is allowed. Should be less than 64 bytes
               (ideally).
             </li>
             <li>

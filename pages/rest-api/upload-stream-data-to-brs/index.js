@@ -56,7 +56,7 @@ export default function UploadStreamDataToBrs() {
             <strong>Method</strong> : POST
           </p>
           <p>
-            <strong>URI</strong> : /stream/&lt;upload_data&gt;
+            <strong>URI</strong> : /stream/upload_data
           </p>
           <p>
             <strong>Body</strong> : JSON doc with details for uploading the data

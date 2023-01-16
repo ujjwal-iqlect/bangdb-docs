@@ -155,7 +155,7 @@ CREATE (Person:polly)-[CALLS]->(Person:john)`}
             has made two calls to John.
           </p>
           <HighlightedJava
-            code={`s=>(@p1 Person:*)-[@c CALLS]->(@p2 Person:*); RETURN p1.name AS Caller p2.name AS Callee`}
+            code={`s=>(@p1 Person:*)-[@c CALLS]->(@p2 Person:*); RETURN p1.name AS Caller, p2.name AS Callee`}
           />
           <HighlightedOutput
             code={`+------+------+
@@ -182,7 +182,7 @@ CREATE (Person:polly)-[CALLS]->(Person:john)`}
             same.
           </p>
           <HighlightedJava
-            code={`s{UNIQUE}=>(@p1 Person:*)-[@c CALLS]->(@p2 Person:*); RETURN p1.name AS Caller p2.name AS Callee`}
+            code={`s{UNIQUE}=>(@p1 Person:*)-[@c CALLS]->(@p2 Person:*); RETURN p1.name AS Caller, p2.name AS Callee`}
           />
           <HighlightedOutput
             code={`+------+------+
@@ -216,7 +216,7 @@ CREATE (Person:polly)-[CALLS]->(Person:john)`}
             result.
           </p>
           <HighlightedJava
-            code={`s{UNIQUE}=>(@p1 Person:*)-[@c CALLS]->(@p2 Person:*); RETURN p1.name AS Caller p2.name AS Callee`}
+            code={`s{UNIQUE}=>(@p1 Person:*)-[@c CALLS]->(@p2 Person:*); RETURN p1.name AS Caller, p2.name AS Callee`}
           />
           <HighlightedOutput
             code={`+------+------+

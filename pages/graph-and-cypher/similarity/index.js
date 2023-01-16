@@ -134,7 +134,7 @@ CREATE (person:steve)-[BUYS {"amount": 3}]->( product:mango)`}
             same as the label, in this case &apos;person&apos;)
           </p>
           <HighlightedJava
-            code={`S{SIMILARITY}=>(@p person:*)-[@b BUYS]->(@c product:*); RETURN p.name AS person b.amount AS amount c.name AS product`}
+            code={`S{SIMILARITY}=>(@p person:*)-[@b BUYS]->(@c product:*); RETURN p.name AS person, b.amount AS amount, c.name AS product`}
           />
           <HighlightedOutput
             code={`{
@@ -152,7 +152,7 @@ CREATE (person:steve)-[BUYS {"amount": 3}]->( product:mango)`}
             query.
           </p>
           <HighlightedJava
-            code={`S{SIMILARITY, 10}=>(@p person:*)-[@b BUYS]->(@c product:*); RETURN p.name AS person b.amount AS amount c.name AS product`}
+            code={`S{SIMILARITY, 10}=>(@p person:*)-[@b BUYS]->(@c product:*); RETURN p.name AS person, b.amount AS amount, c.name AS product`}
           />
           <p>
             The query also updates the graph by adding a relationship _SIMILAR_
@@ -167,7 +167,7 @@ CREATE (person:steve)-[BUYS {"amount": 3}]->( product:mango)`}
             hence we will use _SIMILAR_
           </p>
           <HighlightedJava
-            code={`S=>(@p person:*)-[@b _SIMILAR_]->(@c person:*); RETURN p.name AS person1 c.name AS person2 b.similarity AS similarity`}
+            code={`S=>(@p person:*)-[@b _SIMILAR_]->(@c person:*); RETURN p.name AS person1, c.name AS person2, b.similarity AS similarity`}
           />
           <HighlightedOutput
             code={`+-------+----------+-------+
@@ -206,7 +206,7 @@ CREATE (person:steve)-[BUYS {"amount": 3}]->( product:mango)`}
           />
           <p>Or, to view only the results where score is greater than 0.95</p>
           <HighlightedJava
-            code={`S=>(@p person:*)-[@b _SIMILAR_]->(@c person:*); RETURN p.name AS person1 c.name AS person2 b.similarity AS similarity WHERE similarity > 0.95`}
+            code={`S=>(@p person:*)-[@b _SIMILAR_]->(@c person:*); RETURN p.name AS person1, c.name AS person2, b.similarity AS similarity WHERE similarity > 0.95`}
           />
           <HighlightedOutput
             code={`+-------+----------+-------+
@@ -229,7 +229,7 @@ CREATE (person:steve)-[BUYS {"amount": 3}]->( product:mango)`}
             compute the scores and return to the user in a structured manner.
           </aside>
           <HighlightedJava
-            code={`S{SIMILARITY_TEST}=>(@p person:*)-[@b BUYS]->(@c product:*); RETURN p.name AS person b.amount AS amount c.name AS product`}
+            code={`S{SIMILARITY_TEST}=>(@p person:*)-[@b BUYS]->(@c product:*); RETURN p.name AS person, b.amount AS amount, c.name AS product`}
           />
           <HighlightedOutput
             code={`{

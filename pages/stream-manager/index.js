@@ -49,7 +49,7 @@ export default function StreamManager() {
               <div className="article-body">
                 <p>
                   Stream Manager - Before we go and describe the stream and how
-                  do define things and process, let&apos;s just look at the apis
+                  do define things and process, let&apos;s just look at the APIs
                   that&apos;s required to do most of the stuff. Now let&apos;s
                   get into the concept of BangDB Stream Manager.
                 </p>

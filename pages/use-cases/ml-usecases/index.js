@@ -116,7 +116,7 @@ export default function MLUC() {
               </Link>
             </p>
             <p>
-              <Link href={`/use-cases/ml-use-cases/credit-risk-analysis`}>
+              <Link href={`/use-cases/ml-usecases/credit-risk-analysis`}>
                 Get Started
               </Link>
             </p>
@@ -135,7 +135,7 @@ export default function MLUC() {
               </Link>
             </p>
             <p>
-              <Link href={`/use-cases/ml-use-cases/forecast-product-demand`}>
+              <Link href={`/use-cases/ml-usecases/forecast-product-demand`}>
                 Get Started
               </Link>
             </p>
@@ -154,7 +154,7 @@ export default function MLUC() {
               </Link>
             </p>
             <p>
-              <Link href={`/use-cases/ml-use-cases/data-clustering-analysis`}>
+              <Link href={`/use-cases/ml-usecases/data-clustering-analysis`}>
                 Get Started
               </Link>
             </p>
@@ -174,7 +174,7 @@ export default function MLUC() {
             </p>
             <p>
               <Link
-                href={`/use-cases/ml-use-cases/online-shoppers-purchasing-intention`}
+                href={`/use-cases/ml-usecases/online-shoppers-purchasing-intention`}
               >
                 Get Started
               </Link>
@@ -194,7 +194,7 @@ export default function MLUC() {
               </Link>
             </p>
             <p>
-              <Link href={`/use-cases/ml-use-cases/amazon-sentiment-analysis`}>
+              <Link href={`/use-cases/ml-usecases/amazon-sentiment-analysis`}>
                 Get Started
               </Link>
             </p>
@@ -210,7 +210,7 @@ export default function MLUC() {
               </Link>
             </p>
             <p>
-              <Link href={`/use-cases/ml-use-cases/rainfall-prediction`}>
+              <Link href={`/use-cases/ml-usecases/rainfall-prediction`}>
                 Get Started
               </Link>
             </p>
