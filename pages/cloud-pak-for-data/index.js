@@ -48,9 +48,8 @@ export default function CloudPakForData() {
             cloud of their choice BangDB is integrated with{" "}
             <Link
               className="external"
-              href={
-                "https://community.ibm.com/community/user/cloudpakfordata/partners-catalog"
-              }
+              href="https://community.ibm.com/community/user/cloudpakfordata/partners-catalog"
+              target="_blank"
             >
               CPD platform of IBM as co-sell partner
             </Link>

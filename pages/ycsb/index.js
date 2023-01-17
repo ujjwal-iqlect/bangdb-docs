@@ -80,24 +80,12 @@ export default function Ycsb() {
           <h2>How to set up and run YCSB benchmark test for BangDB</h2>
           <h3>Step 1</h3>
           <p>Take BangDB 2.0 and run the server</p>
-          <Codebox
-            code="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz"
-            copy="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz"
-          />
-          <Codebox
-            code="tar -xzvf bangdb_2.0_ubuntu18.tar.gz"
-            copy="tar -xzvf bangdb_2.0_ubuntu18.tar.gz"
-          />
-          <Codebox
-            code="cd bangdb_2.0_ubuntu18"
-            copy="cd bangdb_2.0_ubuntu18"
-          />
+          <Codebox code="wget https://bangdb.com/downloads/bangdb_2.0_ubuntu18.tar.gz" />
+          <Codebox code="tar -xzvf bangdb_2.0_ubuntu18.tar.gz" />
+          <Codebox code="cd bangdb_2.0_ubuntu18" />
           <Codebox code="bash install.sh" copy="bash install.sh" />
           <Codebox code="cd bin" copy="cd bin" />
-          <Codebox
-            code="./bangdb-server-2.0 -d ycsb -b yes"
-            copy="./bangdb-server-2.0 -d ycsb -b yes"
-          />
+          <Codebox code="./bangdb-server-2.0 -d ycsb -b yes" />
           <h2>
             Checkout getting started section or github to install the BangDB
           </h2>
@@ -106,43 +94,27 @@ export default function Ycsb() {
             Checkout YCSB code from{" "}
             <Link
               className="external"
+              target="_blank"
               href={"https://github.com/sachin-sinha/YCSB/tree/db_bangdb"}
             >
               Github
             </Link>
           </p>
-          <Codebox
-            code="git clone https://github.com/sachin-sinha/YCSB"
-            copy="git clone https://github.com/sachin-sinha/YCSB"
-          />
+          <Codebox code="git clone https://github.com/sachin-sinha/YCSB" />
           <Codebox code="cd YCSB" copy="cd YCSB" />
-          <Codebox
-            code="git checkout db_bangdb"
-            copy="git checkout db_bangdb"
-          />
-          <Codebox
-            code="mvn -pl site.ycsb:bangdb-binding -am clean package"
-            copy="mvn -pl site.ycsb:bangdb-binding -am clean package"
-          />
+          <Codebox code="git checkout db_bangdb" />
+          <Codebox code="mvn -pl site.ycsb:bangdb-binding -am clean package" />
           <p>That's it. Now we are ready to run the tests.</p>
           <p>Load the data</p>
-          <Codebox
-            code="./bin/ycsb load bangdb -threads 128 -s -P workloads/workloada"
-            copy="./bin/ycsb load bangdb -threads 128 -s -P workloads/workloada"
-          />
+          <Codebox code="./bin/ycsb load bangdb -threads 128 -s -P workloads/workloada" />
           <p>Run the workload</p>
-          <Codebox
-            code="./bin/ycsb run bangdb -threads 128 -s -P workloads/workloada"
-            copy="./bin/ycsb run bangdb -threads 128 -s -P workloads/workloada"
-          />
+          <Codebox code="./bin/ycsb run bangdb -threads 128 -s -P workloads/workloada" />
           <p>
             See the{" "}
             <Link
-              target={"_blank"}
+              target="_blank"
               className="external"
-              href={
-                "https://github.com/sachin-sinha/YCSB/blob/db_bangdb/bangdb/README.md"
-              }
+              href="https://github.com/sachin-sinha/YCSB/blob/db_bangdb/bangdb/README.md"
             >
               README file
             </Link>{" "}
