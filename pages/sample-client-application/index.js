@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Codebox from "../../components/Codebox";
+import HighlightedCpp from "../../components/HighlightedCpp";
+import HighlightedJava from "../../components/HighlightedJava";
 import DocArticle from "../../components/DocArticle";
 import Breadcrumb from "../../components/Breadcrumb";
 
@@ -705,35 +707,26 @@ else {
             }}
           >
             <p>Let's first create the env and db object</p>
-            <Codebox
-              code={createEnvDBObjectCpCode}
-              copy={createEnvDBObjectCpCode}
-            />
+            <HighlightedCpp code={createEnvDBObjectCpCode} />
             <p>Now we need table to start the operations</p>
-            <Codebox code={startOprtCpCode} copy={startOprtCpCode} />
+            <HighlightedCpp code={startOprtCpCode} />
             <p>Let's get the db description and print</p>
-            <Codebox code={getDBDescPrintCpCode} copy={getDBDescPrintCpCode} />
+            <HighlightedCpp code={getDBDescPrintCpCode} />
             <p>We may get the table description as well</p>
-            <Codebox code={getTableDescCpCode} copy={getTableDescCpCode} />
+            <HighlightedCpp code={getTableDescCpCode} />
             <p>Now let's put some data and read it</p>
-            <Codebox code={putReadDataCpCode} copy={putReadDataCpCode} />
+            <HighlightedCpp code={putReadDataCpCode} />
             <p>
               Use the previous key with INSERT_UNIQUE flag and it should return
               1, which means key already exists
             </p>
-            <Codebox
-              code={prevKeyInsertUniqueCpCode}
-              copy={prevKeyInsertUniqueCpCode}
-            />
+            <HighlightedCpp code={prevKeyInsertUniqueCpCode} />
             <p>Delete the key now</p>
-            <Codebox code={deleteKeyCpCode} copy={deleteKeyCpCode} />
+            <HighlightedCpp code={deleteKeyCpCode} />
             <p>Scan the table now</p>
-            <Codebox code={scanTableCpCode} copy={scanTableCpCode} />
+            <HighlightedCpp code={scanTableCpCode} />
             <p>Create a normal table with long as key</p>
-            <Codebox
-              code={createNormalTableCpCode}
-              copy={createNormalTableCpCode}
-            />
+            <HighlightedCpp code={createNormalTableCpCode} />
             <p>Drop a table now</p>
             <p>There are two ways to do this</p>
             <ol>
@@ -744,91 +737,71 @@ else {
               </li>
             </ol>
             <p>Let's drop the table using 2</p>
-            <Codebox
-              code={dropTableUsingTwoCpCode}
-              copy={dropTableUsingTwoCpCode}
-            />
+            <HighlightedCpp code={dropTableUsingTwoCpCode} />
 
             <p>
               Let's create wide table now, table that deals with json doc, but
               it can also store simple text
             </p>
-            <Codebox
-              code={createWideTableCpCode}
-              copy={createWideTableCpCode}
-            />
+            <HighlightedCpp code={createWideTableCpCode} />
             <p>Put few keys and vals and get them</p>
-            <Codebox code={putFewKeysCpCode} copy={putFewKeysCpCode} />
+            <HighlightedCpp code={putFewKeysCpCode} />
             <p>
               Scan for some key range - this will recursively scan until all
               keys and values are scanned
             </p>
-            <Codebox
-              code={scanForSomeKeyRangeCpCode}
-              copy={scanForSomeKeyRangeCpCode}
-            />
+            <HighlightedCpp code={scanForSomeKeyRangeCpCode} />
             <p>May count number of keys as well, with or without range</p>
-            <Codebox code={countNokCpCode} copy={countNokCpCode} />
+            <HighlightedCpp code={countNokCpCode} />
             <p>
               Try now with json doc - usually we should only put docs or
               non-docs, mixing may not be very logical, hence let's create new
               wide table
             </p>
-            <Codebox
-              code={createNewWideTableCpCode}
-              copy={createNewWideTableCpCode}
-            />
+            <HighlightedCpp code={createNewWideTableCpCode} />
             <p>Add few indexes</p>
-            <Codebox code={addFewIndexesCpCode} copy={addFewIndexesCpCode} />
+            <HighlightedCpp code={addFewIndexesCpCode} />
             <p>Now let's put some docs</p>
-            <Codebox code={putSomeDocsCpCode} copy={putSomeDocsCpCode} />
+            <HighlightedCpp code={putSomeDocsCpCode} />
             <p>
               Let's define some query for which we wish to scan the data, query
               selects data where “org=iqlect”
             </p>
-            <Codebox
-              code={defineSomeQueryCpCode}
-              copy={defineSomeQueryCpCode}
-            />
+            <HighlightedCpp code={defineSomeQueryCpCode} />
             <p>Now select all where family favsports = cricket</p>
-            <Codebox code={selectAllFFCpCode} copy={selectAllFFCpCode} />
+            <HighlightedCpp code={selectAllFFCpCode} />
             <p>We can simply count with filter/query as well</p>
-            <Codebox
-              code={countWithFilterCpCode}
-              copy={countWithFilterCpCode}
-            />
+            <HighlightedCpp code={countWithFilterCpCode} />
             <p>Let's check number of tables in the DB</p>
-            <Codebox code={checkNOTblCpCode} copy={checkNOTblCpCode} />
+            <HighlightedCpp code={checkNOTblCpCode} />
             <p>
               Get all table list and print - note you will get these tables in
               describe database or describe table api calls as well
             </p>
-            <Codebox code={getTableListCpCode} copy={getTableListCpCode} />
+            <HighlightedCpp code={getTableListCpCode} />
             <p>
               Drop the “org” index and put some value and then scan using index
             </p>
-            <Codebox code={dropOrgIndexCpCode} copy={dropOrgIndexCpCode} />
+            <HighlightedCpp code={dropOrgIndexCpCode} />
             <p>
               Now we can still put docs and query for index “org”, even though
               it's not there, db would still fetch the results for the query.
               Index helps the performance of query however it's not needed for
               the query
             </p>
-            <Codebox code={putDocsAgainCpCode} copy={putDocsAgainCpCode} />
+            <HighlightedCpp code={putDocsAgainCpCode} />
             <p>
               You may close the table when done or in the end when you close
               database, all tables get closed as well
             </p>
-            <Codebox code={closeTableCpCode} copy={closeTableCpCode} />
+            <HighlightedCpp code={closeTableCpCode} />
             <p>Close the db, it will close all other db resources as well</p>
-            <Codebox code={closeDBCpCode} copy={closeDBCpCode} />
+            <HighlightedCpp code={closeDBCpCode} />
             <p>
               You can{" "}
               <Link
                 className="external"
-                href={
-                  "https://bangdb.com/downloads/sample_client_app_cpp.tar.gz"
-                }
+                href="https://bangdb.com/downloads/sample_client_app_cpp.tar.gz"
               >
                 download the sample test file
               </Link>{" "}
@@ -841,101 +814,86 @@ else {
             }}
           >
             <p>Load the lib and create the env and db</p>
-            <Codebox code={loadLibJCode} copy={loadLibJCode} />
+            <HighlightedJava code={loadLibJCode} />
             <p>
               Let's create a normal table, note for normal table val is opaque
             </p>
-            <Codebox
-              code={createNormalTableJCode}
-              copy={createNormalTableJCode}
-            />
+            <HighlightedJava code={createNormalTableJCode} />
             <p>Let's get the db description and print</p>
-            <Codebox code={getDBDescPrintJCode} copy={getDBDescPrintJCode} />
+            <HighlightedJava code={getDBDescPrintJCode} />
             <p>Let's put some key and value</p>
-            <Codebox code={putSomeKeyValueJCode} copy={putSomeKeyValueJCode} />
+            <HighlightedJava code={putSomeKeyValueJCode} />
             <p>
               Use the previous key to INSERT_UNIQUE, it should return 1, which
               means key already exists, also when called get(), it will return
               the updated data
             </p>
-            <Codebox
-              code={prevKeyInsertUniqueJCode}
-              copy={prevKeyInsertUniqueJCode}
-            />
+            <HighlightedJava code={prevKeyInsertUniqueJCode} />
             <p>Delete the key now</p>
-            <Codebox code={deleteKeyJCode} copy={deleteKeyJCode} />
+            <HighlightedJava code={deleteKeyJCode} />
             <p>Scan the table now</p>
-            <Codebox code={scanTableJCode} copy={scanTableJCode} />
+            <HighlightedJava code={scanTableJCode} />
             <p>Create a normal table with long as key</p>
-            <Codebox
-              code={createNTLongAsKeyJCode}
-              copy={createNTLongAsKeyJCode}
-            />
+            <HighlightedJava code={createNTLongAsKeyJCode} />
             <p>Put key val</p>
-            <Codebox code={putKeyValJCode} copy={putKeyValJCode} />
+            <HighlightedJava code={putKeyValJCode} />
             <p>Drop a table now</p>
             <p>There are two ways to do this:</p>
             <ol>
               <li>Call dropTable() on BangDBDatabse</li>
               <li>
-                Close the table and tell server to clean close it – I.e. delete
+                Close the table and tell server to clean close it - I.e. delete
                 everything for the table
               </li>
             </ol>
             <p>Let's drop the table using 2</p>
-            <Codebox code={dropTblUsingTwoJCode} copy={dropTblUsingTwoJCode} />
+            <HighlightedJava code={dropTblUsingTwoJCode} />
             <p>
               Let's create wide table now, table that deals with json doc, but
               it can also store simple text
             </p>
-            <Codebox code={createWideTableJCode} copy={createWideTableJCode} />
+            <HighlightedJava code={createWideTableJCode} />
             <p>Put few keys and vals</p>
-            <Codebox code={putFewKeyValJCode} copy={putFewKeyValJCode} />
+            <HighlightedJava code={putFewKeyValJCode} />
             <p>
               Scan for some key range - this will recursively scan until all
               keys and values are scanned
             </p>
-            <Codebox code={scanForKeyRangeJCode} copy={scanForKeyRangeJCode} />
+            <HighlightedJava code={scanForKeyRangeJCode} />
             <p>
               Try now json doc - usually we should only put docs or non-docs,
               mixing may not be very logical
             </p>
             <p>Hence let's create new wide table</p>
-            <Codebox
-              code={createNewWideTableJCode}
-              copy={createNewWideTableJCode}
-            />
+            <HighlightedJava code={createNewWideTableJCode} />
             <p>Let's add few indexes as well</p>
             <p>
               This one creates an index on String type field where max size is
               16
             </p>
-            <Codebox code={addFewIndexesJCode} copy={addFewIndexesJCode} />
+            <HighlightedJava code={addFewIndexesJCode} />
             <p>Let's add some data</p>
-            <Codebox code={addSomeDataJCode} copy={addSomeDataJCode} />
+            <HighlightedJava code={addSomeDataJCode} />
             <p>
               Let's define some query for which we wish to scan the data. Let's
               use the query select * from t4 where “org” = “iqlect”
             </p>
-            <Codebox code={selectOrgSelectJCode} copy={selectOrgSelectJCode} />
+            <HighlightedJava code={selectOrgSelectJCode} />
             <p>Now select all where family favsports = cricket</p>
-            <Codebox code={selectFFJCode} copy={selectFFJCode} />
+            <HighlightedJava code={selectFFJCode} />
             <p>We can also count for the given query</p>
-            <Codebox
-              code={countForGivenQueryJCode}
-              copy={countForGivenQueryJCode}
-            />
+            <HighlightedJava code={countForGivenQueryJCode} />
             <p>Now, let's just check the tables</p>
-            <Codebox code={checkTablesJCode} copy={checkTablesJCode} />
+            <HighlightedJava code={checkTablesJCode} />
             <p>
               Get all table list and print - note you will get these tables in
               describe database or describe table api calls as well
             </p>
-            <Codebox code={getTableListJCode} copy={getTableListJCode} />
+            <HighlightedJava code={getTableListJCode} />
             <p>
               Drop the “org” index and put some value and then scan using index
             </p>
-            <Codebox code={dropOrgPutValJCode} copy={dropOrgPutValJCode} />
+            <HighlightedJava code={dropOrgPutValJCode} />
             <p>
               Now we put the doc again, and search using same index and even
               though the index is deleted, db will still fetch the data for
@@ -945,24 +903,22 @@ else {
               <strong>Note: </strong>Index is not needed for query to be
               successful, however index improves the performance significantly
             </aside>
-            <Codebox code={putDocAgainJCode} copy={putDocAgainJCode} />
+            <HighlightedJava code={putDocAgainJCode} />
             <p>
               You may close the table when done or in the end when you close
               database, all tables get closed as well
             </p>
-            <Codebox code={closeTableJCode} copy={closeTableJCode} />
+            <HighlightedJava code={closeTableJCode} />
             <p>
               To close the db, simply call the closeDatabase(), this clears
               every other resources in the db
             </p>
-            <Codebox code={closeDBJCode} copy={closeDBJCode} />
+            <HighlightedJava code={closeDBJCode} />
             <p>
               You can{" "}
               <Link
                 className="external"
-                href={
-                  "https://bangdb.com/downloads/sample_client_app_cpp.tar.gz"
-                }
+                href="https://bangdb.com/downloads/sample_client_app_cpp.tar.gz"
               >
                 download the sample test file
               </Link>{" "}
