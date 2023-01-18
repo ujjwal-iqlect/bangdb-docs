@@ -90,7 +90,7 @@ export default function Sidebar() {
         style={{
           borderRadius: sidebar ? "0 20px 20px 0" : "50%",
           left: sidebar ? "-223px" : null,
-          background: sidebar ? "#073042" : null,
+          background: sidebar ? "#1769e0" : null,
         }}
       >
         <svg
@@ -101,7 +101,7 @@ export default function Sidebar() {
           height="24px"
           viewBox="0 0 24 24"
           width="24px"
-          fill={iconHover || sidebar ? "#fff" : "#073042"}
+          fill={iconHover || sidebar ? "#fff" : "#1769e0"}
         >
           <path d="M0 0h24v24H0V0z" fill="none" />
           <path
@@ -221,9 +221,9 @@ const SidebarToggleButton = styled.button`
   width: 40px;
   -webkit-box-align: center;
   align-items: center;
-  color: #073042;
+  color: #1769e0;
   box-shadow: none;
-  border: 2px solid #073042;
+  border: 2px solid #1769e0;
   bottom: 16px;
   height: 40px;
   -webkit-box-pack: center;
@@ -238,7 +238,7 @@ const SidebarToggleButton = styled.button`
   transform: translateX(calc(229px - 8px));
   z-index: 999;
   &:hover {
-    background: #073042;
+    background: #1769e0;
     color: #fff;
   }
 `;

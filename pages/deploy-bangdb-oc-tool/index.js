@@ -5,7 +5,7 @@ import Image from "next/image";
 import Codebox from "../../components/Codebox";
 
 export default function DeployBangdbOcTool() {
-  const bangdbYaml = String.raw` selector:
+  const bangdbYaml = String.raw`selector:
   matchLabels:
     deployment: bangdb
 template:
@@ -98,12 +98,9 @@ template:
             is the yaml file, bangdb.yaml for deployment object. Please don't
             forget to change the value of namespace in the yaml file below.
           </p>
-          <Codebox code={bangdbYaml} copy={bangdbYaml} />
+          <Codebox code={bangdbYaml} />
           <p>Now you can run the following command from the Bastion node.</p>
-          <Codebox
-            code="oc apply -f bangdb.yaml"
-            copy="oc apply -f bangdb.yaml"
-          />
+          <Codebox code="oc apply -f bangdb.yaml" />
           <p>
             This deployment creates a single pod running 'BangDB'. To verify the
             deployment you can check the logs of the pod created. The logs
