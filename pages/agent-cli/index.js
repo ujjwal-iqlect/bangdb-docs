@@ -69,7 +69,7 @@ export default function AgentCommandsCli() {
             the basic things that can be done by the agent.
           </p>
           <HighlightedOutput
-            code={`agent related commands
+            code={`// agent related commands
 register collector /home/sachin/collector.conf where server = IP:PORT
 activate agent collector_name where server = IP:PORT
 pause agent collector_name where server = IP:PORT

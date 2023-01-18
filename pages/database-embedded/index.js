@@ -8,23 +8,23 @@ export default function DatabaseEmbedded() {
   const [tab, setTab] = useState(1);
 
   const createDatabaseCppCode = String.raw`db_param dpm;
-  dpm.setTransactionType(DB_TRANSACTION_NONE);
-  bangdb_database *bdb = bangdb_database::getInstance("mydb", *dpm);
-  if(!bdb)
-  {
-      printf(""db could not be created, quitting\n");
-      //handle the error
-  }
-  // DBParam sets the db environment, see the section to know more about it`;
+dpm.setTransactionType(DB_TRANSACTION_NONE);
+bangdb_database *bdb = bangdb_database::getInstance("mydb", *dpm);
+if(!bdb)
+{
+    printf(""db could not be created, quitting\n");
+    //handle the error
+}
+// DBParam sets the db environment, see the section to know more about it`;
 
   const createDatabaseJavaCode = String.raw`DBParam dp;
-  dp.setTransactionType(DB_MULTIOPS_TRANSACTION_NONE);
-  BangDBDatabase bdb = new BangDBDatabase("mydb", dp);
-  if(bdb == null){
-   System.out.println("db could not be created, quitting");
-   // handle error, possibly return from here
-  }
-  // DBParam sets the db environment, see the section to know more about it`;
+dp.setTransactionType(DB_MULTIOPS_TRANSACTION_NONE);
+BangDBDatabase bdb = new BangDBDatabase("mydb", dp);
+if(bdb == null){
+ System.out.println("db could not be created, quitting");
+ // handle error, possibly return from here
+}
+// DBParam sets the db environment, see the section to know more about it`;
 
   return (
     <React.Fragment>

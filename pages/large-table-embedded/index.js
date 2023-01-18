@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import DocArticle from "../../components/DocArticle";
 import Breadcrumb from "../../components/Breadcrumb";
 import HighlightedCpp from "../../components/HighlightedCpp";
 import HighlightedJava from "../../components/HighlightedJava";
@@ -8,51 +9,51 @@ export default function LargeTableEmbedded() {
   const [tab, setTab] = useState(1);
 
   const cppCode = String.raw`bool flag = true;
-  DBParam dp;
-  dp.setTransactionType(DB_TRANSACTION_NONE);
-  BangDBDatabase * bdb = new BangDBDatabase("mydb", & dp);
-  if (!bdb) {
-      printf("db could not be created, quitting\n");
-      //return or handle error
-  }
-  // db_param sets the db environment, see the section to know more about it
-  // create a large table
-  TableEnv te;
-  te.setTableType(LARGE_TABLE);
-  // large table must have composite primary key, else db will throw error
-  te.setKeyType(COMPOSITE_KEY);
-  te.setKeySize(64); // set key size keeping ~32 bytes for system to add/consume
-  BangDBTable * large_tbl = bdb -> getTable("my_large_tbl", & te, OPENCREATE);
-  if (!large_tbl) {
-      printf("we could not create the table my_large_tbl\n");
-      flag = false;
-      // handle error
-  }
-  // let's load large file
-  const char * file_path = "libbangdb.so.2.0";
-  const char * fkey = "bangdb_2_0_binary";
-  FDT fk;
-  set_fat( & fk, fkey);
-  if (large_tbl -> putFile( & fk, file_path, INSERT_UNIQUE) < 0) {
-      printf("error in putting large file\n");
-      flag = false;
-      // handle error
-  }
-  const char * file_name = "linbangdb.so.2.0_new_name";
-  const char * download_fpath = "/tmp";
-  if (large_tbl -> getFile( & fk, file_name, download_fpath) < 0) {
-      printf("get file error\n");
-      flag = false;
-      // handle error
-  }
-  int nslices = large_tbl -> countSliceLarge_data( & fk);
-  printf("num of slices for the file = %d\n", nslices);
-  const char * finfo = large_tbl -> listLargeDataKeys(fkey);
-  printf("the file info = %s\n", finfo);
-  delete[] finfo;
-  delete large_tbl;
-  bdb -> closeDatabase(DEFAULT);
-  delete bdb;`;
+DBParam dp;
+dp.setTransactionType(DB_TRANSACTION_NONE);
+BangDBDatabase * bdb = new BangDBDatabase("mydb", & dp);
+if (!bdb) {
+    printf("db could not be created, quitting\n");
+    //return or handle error
+}
+// db_param sets the db environment, see the section to know more about it
+// create a large table
+TableEnv te;
+te.setTableType(LARGE_TABLE);
+// large table must have composite primary key, else db will throw error
+te.setKeyType(COMPOSITE_KEY);
+te.setKeySize(64); // set key size keeping ~32 bytes for system to add/consume
+BangDBTable * large_tbl = bdb -> getTable("my_large_tbl", & te, OPENCREATE);
+if (!large_tbl) {
+    printf("we could not create the table my_large_tbl\n");
+    flag = false;
+    // handle error
+}
+// let's load large file
+const char * file_path = "libbangdb.so.2.0";
+const char * fkey = "bangdb_2_0_binary";
+FDT fk;
+set_fat( & fk, fkey);
+if (large_tbl -> putFile( & fk, file_path, INSERT_UNIQUE) < 0) {
+    printf("error in putting large file\n");
+    flag = false;
+    // handle error
+}
+const char * file_name = "linbangdb.so.2.0_new_name";
+const char * download_fpath = "/tmp";
+if (large_tbl -> getFile( & fk, file_name, download_fpath) < 0) {
+    printf("get file error\n");
+    flag = false;
+    // handle error
+}
+int nslices = large_tbl -> countSliceLarge_data( & fk);
+printf("num of slices for the file = %d\n", nslices);
+const char * finfo = large_tbl -> listLargeDataKeys(fkey);
+printf("the file info = %s\n", finfo);
+delete[] finfo;
+delete large_tbl;
+bdb -> closeDatabase(DEFAULT);
+delete bdb;`;
 
   const javaCode = String.raw`System.loadLibrary("bangdb-java");
 System.out.println("load banagdb-java successful");
@@ -136,47 +137,41 @@ else
         />
       </Head>
 
-      <section className="main-container">
-        <main className="container">
-          <div className="article-content">
-            <article className="article">
-              <Breadcrumb text="Developing with BangDB" url="/" />
-              <h1 className="article-title">Large Table</h1>
-              <div className="article-body">
-                <div className="tab-shifter">
-                  <div className="tab-wrapper">
-                    <div className="tab" onClick={() => setTab(1)}>
-                      <span className={tab !== 1 ? null : "active"}>C++</span>
-                    </div>
-                    <div className="tab" onClick={() => setTab(2)}>
-                      <span className={tab !== 2 ? null : "active"}>Java</span>
-                    </div>
-                  </div>
-                </div>
-                <p>
-                  Here is a sample program which does most of the operations to
-                  help you understand the APIs and their usage.
-                </p>
-                <div
-                  style={{
-                    display: tab === 1 ? "block" : "none",
-                  }}
-                >
-                  <HighlightedCpp code={cppCode} />
-                </div>
-                <div
-                  style={{
-                    display: tab === 2 ? "block" : "none",
-                  }}
-                >
-                  {" "}
-                  <HighlightedJava code={javaCode} />
-                </div>
+      <DocArticle>
+        <Breadcrumb text="Developing with BangDB" url="/" />
+        <h1 className="article-title">Large Table</h1>
+        <div className="article-body">
+          <div className="tab-shifter">
+            <div className="tab-wrapper">
+              <div className="tab" onClick={() => setTab(1)}>
+                <span className={tab !== 1 ? null : "active"}>C++</span>
               </div>
-            </article>
+              <div className="tab" onClick={() => setTab(2)}>
+                <span className={tab !== 2 ? null : "active"}>Java</span>
+              </div>
+            </div>
           </div>
-        </main>
-      </section>
+          <p>
+            Here is a sample program which does most of the operations to help
+            you understand the APIs and their usage.
+          </p>
+          <div
+            style={{
+              display: tab === 1 ? "block" : "none",
+            }}
+          >
+            <HighlightedCpp code={cppCode} />
+          </div>
+          <div
+            style={{
+              display: tab === 2 ? "block" : "none",
+            }}
+          >
+            {" "}
+            <HighlightedJava code={javaCode} />
+          </div>
+        </div>
+      </DocArticle>
     </React.Fragment>
   );
 }
