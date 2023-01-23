@@ -338,7 +338,7 @@ export default function GraphAndCypher() {
                   <td>append two sets row wise</td>
                   <td>
                     <Image
-                      src="https://bangdb.com/wp-content/uploads/2023/01/append.svg"
+                      src="https://bangdb.com/wp-content/uploads/2023/01/a.svg"
                       alt="append"
                       width="80"
                       height="80"
