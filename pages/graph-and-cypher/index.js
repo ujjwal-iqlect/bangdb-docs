@@ -257,9 +257,27 @@ export default function GraphAndCypher() {
             <table>
               <tbody>
                 <tr>
-                  <th>Query</th>
-                  <th>Description</th>
-                  <th>Image</th>
+                  <th
+                    style={{
+                      width: "20%",
+                    }}
+                  >
+                    Query
+                  </th>
+                  <th
+                    style={{
+                      width: "45%",
+                    }}
+                  >
+                    Description
+                  </th>
+                  <th
+                    style={{
+                      width: "35%",
+                    }}
+                  >
+                    Venn diagram
+                  </th>
                 </tr>
                 <tr>
                   <td>ADD</td>
@@ -278,7 +296,7 @@ export default function GraphAndCypher() {
                   <td>difference of two sets ( DIFFERENCE )</td>
                   <td>
                     <Image
-                      src="https://bangdb.com/wp-content/uploads/2023/01/substract.svg"
+                      src="https://bangdb.com/wp-content/uploads/2023/01/sub.svg"
                       alt="substract"
                       width="80"
                       height="80"
@@ -298,7 +316,7 @@ export default function GraphAndCypher() {
                   </td>
                 </tr>
                 <tr>
-                  <td>JOIN</td>
+                  <td>JOIN or CROSS</td>
                   <td>join product of two sets ( INTERSECT )</td>
                   <td>
                     <Image
