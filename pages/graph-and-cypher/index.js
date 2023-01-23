@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import DocArticle from "../../components/DocArticle";
 import Breadcrumb from "../../components/Breadcrumb";
 import HighlightedJava from "../../components/HighlightedJava";
@@ -258,18 +259,91 @@ export default function GraphAndCypher() {
                 <tr>
                   <th>Query</th>
                   <th>Description</th>
+                  <th>Image</th>
                 </tr>
                 <tr>
                   <td>ADD</td>
                   <td>adding two or more sets ( UNION )</td>
-                </tr>
-                <tr>
-                  <td>CROSS</td>
-                  <td>cross product of two sets ( INTERSECT )</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/a.svg"
+                      alt="add (union)"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>SUBTRACT</td>
                   <td>difference of two sets ( DIFFERENCE )</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/substract.svg"
+                      alt="substract"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>DIFFERENCE</td>
+                  <td>difference of sets</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/Difference-query.svg"
+                      alt="difference"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>JOIN</td>
+                  <td>join product of two sets ( INTERSECT )</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/join.svg"
+                      alt="difference"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>LEFT_JOIN</td>
+                  <td>left set and values of joined part of second set</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/left_join.svg"
+                      alt="left-join"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>RIGHT_JOIN</td>
+                  <td>right set and values of joined part of first set</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/right_join.svg"
+                      alt="right-join"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>APPEND</td>
+                  <td>append two sets row wise</td>
+                  <td>
+                    <Image
+                      src="https://bangdb.com/wp-content/uploads/2023/01/append.svg"
+                      alt="append"
+                      width="80"
+                      height="80"
+                    />
+                  </td>
                 </tr>
                 <tr>
                   <td>PIPE</td>
