@@ -54,7 +54,7 @@ export default function RegisterSchemaForStreamProcessing() {
         <h1 className="article-title">Register schema for stream processing</h1>
         <div className="article-body">
           <p>Stream processing: All stream related API starts with /stream</p>
-          <h3>Register schema for stream processing</h3>
+
           <p>
             <strong>Method</strong> : POST
           </p>
