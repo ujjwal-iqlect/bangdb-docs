@@ -466,13 +466,24 @@ export const SidebarData = [
     ],
   },
   {
-    id: "12`",
+    id: "12",
     title: "BangDB Disaster recovery",
     childrens: [
       {
         id: "0",
         title: "Overview",
         path: "/bangdb-disaster-recovery",
+      },
+    ],
+  },
+  {
+    id: "13",
+    title: "Pen Test",
+    childrens: [
+      {
+        id: "0",
+        title: "Pen test report",
+        path: "/pen-test",
       },
     ],
   },
