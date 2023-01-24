@@ -54,7 +54,6 @@ export default function RegisterSchemaForStreamProcessing() {
         <h1 className="article-title">Register schema for stream processing</h1>
         <div className="article-body">
           <p>Stream processing: All stream related API starts with /stream</p>
-
           <p>
             <strong>Method</strong> : POST
           </p>
@@ -69,11 +68,9 @@ export default function RegisterSchemaForStreamProcessing() {
           </p>
           <p>Example</p>
           <HighlightedOutput
-            code={`curl -H "Content-Type: application/json" -d '{"schema": "ecomm","streams":
-[{"name":"visitor", "type":1, "swsz":86400,"inpt":[],"attr":
-[{"name":"vid","type":5,"kysz":24},{"name":"prod","type":5,"kysz":24},
-{"name":"refr","type":5,"kysz":48},{"name":"price","type":11},
-{"name":"items","type":9}]}]}' -X POST http://192.168.1.105:18080/stream`}
+            code={`curl -H "Content-Type: application/json" -d '{"schema": "ecomm","streams": [{"name":"visitor", "type":1,
+"swsz":86400,"inpt":[],"attr":[{"name":"vid","type":5,"kysz":24},{"name":"prod","type":5,"kysz":24},{"name":"refr","typ
+e":5,"kysz":48},{"name":"price","type":11},{"name":"items","type":9}]}]}' -X POST http://192.168.1.105:18080/stream`}
           />
           <aside className="doc-note">
             <strong>Note: </strong>The schema doc is typically much bigger than
