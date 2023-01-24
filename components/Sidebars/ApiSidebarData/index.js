@@ -108,6 +108,11 @@ export const ApiSidebarData = [
             path: "/rest-api/delete-a-table",
           },
           {
+            id: "17777",
+            title: "Register schema for stream processing",
+            path: "/rest-api/register-schema-for-stream-processing",
+          },
+          {
             id: "17",
             title: "Inset an event into a streams",
             path: "/rest-api/insert-an-event-into-a-stream",
