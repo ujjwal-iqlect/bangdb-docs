@@ -3,6 +3,7 @@ import Head from "next/head";
 import Breadcrumb from "../../../components/Breadcrumb";
 import DocArticle from "../../../components/DocArticle";
 import HighlightedOutput from "../../../components/HighlightedOutput";
+import HighlightedJava from "../../../components/HighlightedJava";
 import Codebox from "../../../components/Codebox";
 import Link from "next/link";
 
@@ -67,7 +68,7 @@ export default function RegisterSchemaForStreamProcessing() {
             processing. Please see the details for the json doc here.
           </p>
           <p>Example</p>
-          <HighlightedOutput
+          <HighlightedJava
             code={`curl -H "Content-Type: application/json" -d '{"schema": "ecomm","streams": [{"name":"visitor", "type":1,
 "swsz":86400,"inpt":[],"attr":[{"name":"vid","type":5,"kysz":24},{"name":"prod","type":5,"kysz":24},{"name":"refr","typ
 e":5,"kysz":48},{"name":"price","type":11},{"name":"items","type":9}]}]}' -X POST http://192.168.1.105:18080/stream`}
