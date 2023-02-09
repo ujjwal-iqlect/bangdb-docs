@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import SideAccord from "../../SideAccord";
-import { GraphSidebarData } from "../GraphSidebarData";
-import { useGlobalContext } from "../../../Context";
-import { useRouter } from "next/router";
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import SideAccord from '../../SideAccord';
+import { GraphSidebarData } from '../GraphSidebarData';
+import { useGlobalContext } from '../../../Context';
+import { useRouter } from 'next/router';
 
 export default function GraphSidebar() {
   const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const router = useRouter();
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -16,7 +16,7 @@ export default function GraphSidebar() {
   const handleIconHoverMouseLeave = () => setIconHover(false);
 
   useEffect(() => {
-    if (window.innerWidth <= "1024") {
+    if (window.innerWidth <= '1024') {
       setSidebar(true);
     }
   }, []);
@@ -27,48 +27,22 @@ export default function GraphSidebar() {
     <>
       <SidebarBG
         style={{
-          transform: !sidebar ? "translate(0,0px)" : "translate(-279px, 0px)",
+          transform: !sidebar ? 'translate(0,0px)' : 'translate(-279px, 0px)',
         }}
       ></SidebarBG>
       <DeveloperNavigation
         style={{
           transform: !sidebar
-            ? "translate(0,-60px)"
-            : "translate(-279px,-60px)",
+            ? 'translate(0,-60px)'
+            : 'translate(-279px,-60px)',
         }}
       >
-        <DevNavFilter>
-          <FilterIcon
-            xmlns="http://www.w3.org/2000/svg"
-            height="14px"
-            viewBox="0 0 24 24"
-            width="14px"
-            id="filter-icon"
-            fill="#5F6368"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
-          </FilterIcon>
-          <DevNavInput
-            type="text"
-            placeholder="Filter Topics"
-            name="filter"
-            onChange={(e) => setQuery(e.target.value.toLowerCase())}
-          />
-
-          <FilterClearButton
-            data-title="Clear filter"
-            aria-label="Clear filter"
-            role="button"
-            tabindex="0"
-          ></FilterClearButton>
-        </DevNavFilter>
         <nav>
           <div>
             <div>
               <ul
                 className="expand-container"
-                style={{ paddingBottom: "150px" }}
+                style={{ paddingBottom: '150px' }}
               >
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
@@ -84,7 +58,7 @@ export default function GraphSidebar() {
       </DeveloperNavigation>
       <SidebarBlur
         style={{
-          transform: !sidebar ? "translate(0,0px)" : "translate(-279px, 0px)",
+          transform: !sidebar ? 'translate(0,0px)' : 'translate(-279px, 0px)',
         }}
       ></SidebarBlur>
       <SidebarToggleButton
@@ -94,27 +68,27 @@ export default function GraphSidebar() {
         onMouseEnter={handleIconHoverMouseEnter}
         onMouseLeave={handleIconHoverMouseLeave}
         style={{
-          borderRadius: sidebar ? "0 20px 20px 0" : "50%",
-          left: sidebar ? "-223px" : null,
-          background: sidebar ? "#1769e0" : null,
+          borderRadius: sidebar ? '0 20px 20px 0' : '50%',
+          left: sidebar ? '-223px' : null,
+          background: sidebar ? '#1769e0' : null,
         }}
       >
         <svg
           style={{
-            pointerEvents: "none",
+            pointerEvents: 'none',
           }}
           xmlns="http://www.w3.org/2000/svg"
           height="24px"
           viewBox="0 0 24 24"
           width="24px"
-          fill={iconHover || sidebar ? "#fff" : "#1769e0"}
+          fill={iconHover || sidebar ? '#fff' : '#1769e0'}
         >
           <path d="M0 0h24v24H0V0z" fill="none" />
           <path
             d={
               sidebar
-                ? "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"
-                : "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"
+                ? 'M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z'
+                : 'M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z'
             }
           />
           {/* right angled <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" /> */}
@@ -179,7 +153,7 @@ const FilterIcon = styled.svg`
 `;
 
 const DevNavInput = styled.input.attrs({
-  type: "text",
+  type: 'text',
 })`
   background: #f1f3f4;
   border: 0;
@@ -187,7 +161,7 @@ const DevNavInput = styled.input.attrs({
   color: #7c7c7c;
   font-size: 14px;
   height: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 16px 32px;
   width: 100%;
   &:focus {
