@@ -1,28 +1,31 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/router";
-import styled from "styled-components";
-import SideItem from "../SideItem";
+import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import SideItem from '../SideItem';
+import { useGlobalContext } from '../../Context';
 
 export default function SideAccord({ item }) {
   const [expandedAccordion, setExpandedAccordion] = useState(false);
   const router = useRouter();
   const scrollToRef = useRef();
   const pathExists = item.childrens.find((a) => a.path === router.pathname);
+  const { filterQuery, setFilterQuery } = useGlobalContext();
 
   const toggleAccordion = () => setExpandedAccordion(!expandedAccordion);
 
   // Opening the accordion if their children's path matches with current page URL
 
   useEffect(() => {
+    console.log(filterQuery);
     if (item.childrens) {
       if (pathExists) {
         setExpandedAccordion(true);
 
         // Scroll the active element into view
-        scrollToRef.current.scrollIntoView();
+        // scrollToRef.current.scrollIntoView();
       }
     }
-  }, []);
+  }, [filterQuery]);
 
   return (
     <DevNavExpandable>
@@ -32,9 +35,9 @@ export default function SideAccord({ item }) {
             xmlns="http://www.w3.org/2000/svg"
             style={{
               transform: expandedAccordion
-                ? "rotateX(180deg)"
-                : "rotateX(0deg)",
-              transition: "transform 0.2s ease",
+                ? 'rotateX(180deg)'
+                : 'rotateX(0deg)',
+              transition: 'transform 0.2s ease',
             }}
             height="24px"
             viewBox="0 0 24 24"
@@ -51,22 +54,24 @@ export default function SideAccord({ item }) {
         {/* DevNavSection will be toggled acoording to the state setExpandedAccordion  */}
         <DevNavSection
           style={{
-            height: expandedAccordion ? "100%" : "0",
+            height: expandedAccordion ? '100%' : '0',
           }}
         >
           {/* Mapping through the data */}
-          {item.childrens.map((item) => {
-            return (
-              <SideItem
-                expandedAccordion={expandedAccordion}
-                setExpandedAccordion={setExpandedAccordion}
-                pathExists={pathExists}
-                scrollToRef={scrollToRef}
-                key={item.id}
-                item={item}
-              />
-            );
-          })}
+          {item.childrens
+            // .filter((i) => i.title.toLowerCase().includes(filterQuery))
+            .map((item) => {
+              return (
+                <SideItem
+                  expandedAccordion={expandedAccordion}
+                  setExpandedAccordion={setExpandedAccordion}
+                  pathExists={pathExists}
+                  scrollToRef={scrollToRef}
+                  key={item.id}
+                  item={item}
+                />
+              );
+            })}
         </DevNavSection>
       </DevExpandableNav>
     </DevNavExpandable>
@@ -80,7 +85,7 @@ const DevNavExpandable = styled.li`
   padding: 11px 0;
   line-height: 20px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const DevExpandableNav = styled.div`
@@ -138,7 +143,7 @@ const DevNavAccordianText = styled.span`
   color: rgba(0, 0, 0, 0.65);
   user-select: none;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-overflow: ellipsis;
 `;
 

@@ -1,8 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import styled from "styled-components";
-import Box from "../components/Box";
-import Searchbar from "../components/Searchbar";
+import React from 'react';
+import Head from 'next/head';
+import styled from 'styled-components';
+import Box from '../components/Box';
+import Searchbar from '../components/Searchbar';
 
 export default function Home() {
   return (
@@ -53,10 +53,10 @@ export default function Home() {
               <MainDescription>
                 <p
                   style={{
-                    marginBottom: "2rem",
-                    textAlign: "center",
-                    color: "#fff",
-                    fontWeight: "500",
+                    marginBottom: '2rem',
+                    textAlign: 'center',
+                    color: '#fff',
+                    fontWeight: '500',
                   }}
                 >
                   Welcome to the BangDB Documentation. Find the guides, samples,
@@ -64,7 +64,7 @@ export default function Home() {
                 </p>
                 <Searchbar
                   placeholder={
-                    "Search all documentation and learning resources"
+                    'Search all documentation and learning resources'
                   }
                 />
               </MainDescription>
@@ -75,63 +75,63 @@ export default function Home() {
       <BoxSectionWrapper>
         <BoxSection>
           <Box
-            headline={"Manual"}
+            headline={'Manual'}
             para={
-              "Get started with BangDB NoSQL database and power your application."
+              'Get started with BangDB NoSQL database and power your application.'
             }
-            link={"/overview"}
+            link={'/overview'}
           />
           <Box
-            headline={"Rest API"}
+            headline={'Rest API'}
             para={
               "Learn more about BangDB REST API, how it works and it's capabilities & features."
             }
-            link={"/rest-api/api-introduction"}
+            link={'/rest-api/api-introduction'}
           />
           <Box
-            headline={"Stream"}
+            headline={'Stream'}
             para={`Learn about stream concepts, how stream processing happens,
                 and how to work with it.`}
-            link={"/stream"}
+            link={'/stream'}
           />
           <Box
-            headline={"Graph & Cypher"}
+            headline={'Graph & Cypher'}
             para={`Learn about graph, introduce yourself to cypher,
               and find useful resources.`}
-            link={"/graph-and-cypher"}
+            link={'/graph-and-cypher'}
           />
           <Box
-            headline={"Complex Event Processing"}
+            headline={'Complex Event Processing'}
             para={`Learn about Complex Event Processing, it's use-cases and examples.`}
-            link={"/complex-event-processing"}
+            link={'/complex-event-processing'}
           />
           <Box
-            headline={"ML"}
+            headline={'ML'}
             para={
               "BangDB natively integrated ML (and DL) capabilities, we don't need to have separate ML architecture."
             }
-            link={"/use-cases/ml-usecases"}
+            link={'/use-cases/ml-usecases'}
           />
           <Box
-            headline={"Help Guides"}
+            headline={'Help Guides'}
             para={
-              "Learn about BangDB algorithms and their hyperparameter, classification, regression, k-means etc."
+              'Learn about BangDB algorithms and their hyperparameter, classification, regression, k-means etc.'
             }
-            link={"/ml-help-guide/bangdb-algorithms-and-their-hyperparameter"}
+            link={'/ml-help-guide/bangdb-algorithms-and-their-hyperparameter'}
           />
           <Box
-            headline={"Use Cases"}
+            headline={'Use Cases'}
             para={
-              "Here are some helpful use cases to help you get started with BangDB NoSQL database."
+              'Here are some helpful use cases to help you get started with BangDB NoSQL database.'
             }
-            link={"/use-cases/iot-vehicle-monitoring/introduction"}
+            link={'/use-cases/iot-vehicle-monitoring/introduction'}
           />
           <Box
-            headline={"Release Info"}
+            headline={'Release Info'}
             para={
-              "Release info & feature notes for Ampere and BangDB NoSQL database."
+              'Release info & feature notes for Ampere and BangDB NoSQL database.'
             }
-            link={"/release-info/ampere"}
+            link={'/release-info/ampere'}
           />
         </BoxSection>
       </BoxSectionWrapper>
@@ -149,9 +149,9 @@ export async function getServerSideProps(context) {
 
 const MainSection = styled.section`
   padding: 80px 0;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #1769e0;
   color: #202124;
 `;

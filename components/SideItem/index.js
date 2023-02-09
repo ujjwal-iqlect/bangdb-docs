@@ -1,7 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React, { useState, useRef, useEffect } from 'react';
+import styled from 'styled-components';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useGlobalContext } from '../../Context';
 
 export default function SideItem({
   item,
@@ -16,6 +17,7 @@ export default function SideItem({
   const childPathExists = item.childrens
     ? item.childrens.find((a) => a.path === router.pathname)
     : null;
+  const { filterQuery, setFilterQuery } = useGlobalContext();
 
   const showChildAccordion = () =>
     setExpandedChildAccordion(!expandedChildAccordion);
@@ -32,24 +34,26 @@ export default function SideItem({
     <React.Fragment>
       {!item.childrens ? (
         <div>
-          <DevNavAccordianSectionItem>
-            <DevNavAccordianSectionTitle
-              href={`${item.path}`}
-              style={{
-                background: router.pathname === item.path ? "#d7effe" : null,
-              }}
-            >
-              <DevNavAccordianSectionText
-                ref={pathExists === item ? scrollToRef : undefined}
+          {item.title.toLowerCase().includes(filterQuery) && (
+            <DevNavAccordianSectionItem>
+              <DevNavAccordianSectionTitle
+                href={`${item.path}`}
                 style={{
-                  fontWeight: router.pathname === item.path ? "700" : null,
-                  color: router.pathname === item.path ? "black" : null,
+                  background: router.pathname === item.path ? '#d7effe' : null,
                 }}
               >
-                {item.title}
-              </DevNavAccordianSectionText>
-            </DevNavAccordianSectionTitle>
-          </DevNavAccordianSectionItem>
+                <DevNavAccordianSectionText
+                  ref={pathExists === item ? scrollToRef : undefined}
+                  style={{
+                    fontWeight: router.pathname === item.path ? '700' : null,
+                    color: router.pathname === item.path ? 'black' : null,
+                  }}
+                >
+                  {item.title}
+                </DevNavAccordianSectionText>
+              </DevNavAccordianSectionTitle>
+            </DevNavAccordianSectionItem>
+          )}
         </div>
       ) : (
         <DevNavExpandable>
@@ -58,17 +62,17 @@ export default function SideItem({
               <svg
                 style={{
                   transform: expandedChildAccordion
-                    ? "rotate(0deg)"
-                    : "rotate(-90deg)",
-                  position: "absolute",
-                  cursor: "pointer",
-                  textRendering: "optimizeLegibility",
-                  textTransform: "none",
-                  transition: "transform 0.2s ease",
-                  wordWrap: "normal",
-                  left: "20px",
-                  top: "6px",
-                  userSelect: "none",
+                    ? 'rotate(0deg)'
+                    : 'rotate(-90deg)',
+                  position: 'absolute',
+                  cursor: 'pointer',
+                  textRendering: 'optimizeLegibility',
+                  textTransform: 'none',
+                  transition: 'transform 0.2s ease',
+                  wordWrap: 'normal',
+                  left: '20px',
+                  top: '6px',
+                  userSelect: 'none',
                 }}
                 xmlns="http://www.w3.org/2000/svg"
                 height="18px"
@@ -84,34 +88,37 @@ export default function SideItem({
               <DevNavText>{item.title}</DevNavText>
             </DevNavTitle>
           </DevExpandableNav>
-          <ul style={{ display: !expandedChildAccordion ? "none" : "block" }}>
-            {item.childrens.map((item) => {
-              return (
-                <DevNavAccordianSectionItem
-                  key={item.id}
-                  // ref={childPathExists === item ? childScrollToRef : undefined}
-                >
-                  <DevNavAccordianSectionTitle
-                    style={{
-                      paddingLeft: "56px",
-                      background:
-                        router.pathname === item.path ? "#d7effe" : null,
-                    }}
-                    href={`${item.path}`}
+
+          <ul style={{ display: !expandedChildAccordion ? 'none' : 'block' }}>
+            {item.childrens
+              .filter((ch) => ch.title.toLowerCase().includes(filterQuery))
+              .map((item) => {
+                return (
+                  <DevNavAccordianSectionItem
+                    key={item.id}
+                    // ref={childPathExists === item ? childScrollToRef : undefined}
                   >
-                    <DevNavAccordianSectionText
+                    <DevNavAccordianSectionTitle
                       style={{
-                        fontWeight:
-                          router.pathname === item.path ? "700" : null,
-                        color: router.pathname === item.path ? "black" : null,
+                        paddingLeft: '56px',
+                        background:
+                          router.pathname === item.path ? '#d7effe' : null,
                       }}
+                      href={`${item.path}`}
                     >
-                      {item.title}
-                    </DevNavAccordianSectionText>
-                  </DevNavAccordianSectionTitle>
-                </DevNavAccordianSectionItem>
-              );
-            })}
+                      <DevNavAccordianSectionText
+                        style={{
+                          fontWeight:
+                            router.pathname === item.path ? '700' : null,
+                          color: router.pathname === item.path ? 'black' : null,
+                        }}
+                      >
+                        {item.title}
+                      </DevNavAccordianSectionText>
+                    </DevNavAccordianSectionTitle>
+                  </DevNavAccordianSectionItem>
+                );
+              })}
           </ul>
         </DevNavExpandable>
       )}
@@ -145,7 +152,7 @@ const DevNavAccordianSectionText = styled.span`
   overflow: hidden;
   user-select: none;
   color: #202124;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-overflow: ellipsis;
 `;
 

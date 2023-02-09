@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import SideAccord from "../../SideAccord";
-import DevNavList from "../../DevNavList";
-import { SidebarData } from "../SidebarData";
-import { useGlobalContext } from "../../../Context";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import SideAccord from '../../SideAccord';
+import DevNavList from '../../DevNavList';
+import { SidebarData } from '../SidebarData';
+import { useGlobalContext } from '../../../Context';
 
 export default function Sidebar() {
   const { sidebar, setSidebar } = useGlobalContext();
@@ -19,14 +19,14 @@ export default function Sidebar() {
     <>
       <SidebarBG
         style={{
-          transform: !sidebar ? "translate(0,0px)" : "translate(-279px, 0px)",
+          transform: !sidebar ? 'translate(0,0px)' : 'translate(-279px, 0px)',
         }}
       ></SidebarBG>
       <DeveloperNavigation
         style={{
           transform: !sidebar
-            ? "translate(0,-60px)"
-            : "translate(-279px,-60px)",
+            ? 'translate(0,-60px)'
+            : 'translate(-279px,-60px)',
         }}
       >
         <DevNavFilter>
@@ -58,21 +58,24 @@ export default function Sidebar() {
         <nav>
           <div>
             <div>
-              <ul style={{ paddingBottom: "150px" }}>
+              <ul style={{ paddingBottom: '150px' }}>
                 {/* <DevNavList text="Overview" /> */}
                 {/* Accords will appear here */}
                 <DevNavList text="Overview" url="/overview" />
-                {SidebarData.filter((data) =>
-                  data.title.toLowerCase().includes(filterQuery)
-                ).map((item) => {
-                  return (
-                    <SideAccord
-                      setSidebar={setSidebar}
-                      key={item.id}
-                      item={item}
-                    />
-                  );
-                })}
+                {
+                  // SidebarData.filter((data) =>
+                  //   data.title.toLowerCase().includes(filterQuery)
+                  // )
+                  SidebarData.map((item) => {
+                    return (
+                      <SideAccord
+                        setSidebar={setSidebar}
+                        key={item.id}
+                        item={item}
+                      />
+                    );
+                  })
+                }
               </ul>
             </div>
           </div>
@@ -80,7 +83,7 @@ export default function Sidebar() {
       </DeveloperNavigation>
       <SidebarBlur
         style={{
-          transform: !sidebar ? "translate(0,0px)" : "translate(-279px, 0px)",
+          transform: !sidebar ? 'translate(0,0px)' : 'translate(-279px, 0px)',
         }}
       ></SidebarBlur>
       <SidebarToggleButton
@@ -88,27 +91,27 @@ export default function Sidebar() {
         onMouseEnter={handleIconHoverMouseEnter}
         onMouseLeave={handleIconHoverMouseLeave}
         style={{
-          borderRadius: sidebar ? "0 20px 20px 0" : "50%",
-          left: sidebar ? "-223px" : null,
-          background: sidebar ? "#1769e0" : null,
+          borderRadius: sidebar ? '0 20px 20px 0' : '50%',
+          left: sidebar ? '-223px' : null,
+          background: sidebar ? '#1769e0' : null,
         }}
       >
         <svg
           style={{
-            pointerEvents: "none",
+            pointerEvents: 'none',
           }}
           xmlns="http://www.w3.org/2000/svg"
           height="24px"
           viewBox="0 0 24 24"
           width="24px"
-          fill={iconHover || sidebar ? "#fff" : "#1769e0"}
+          fill={iconHover || sidebar ? '#fff' : '#1769e0'}
         >
           <path d="M0 0h24v24H0V0z" fill="none" />
           <path
             d={
               sidebar
-                ? "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"
-                : "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"
+                ? 'M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z'
+                : 'M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z'
             }
           />
           {/* right angled <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" /> */}
@@ -179,7 +182,7 @@ const FilterIcon = styled.svg`
 `;
 
 const DevNavInput = styled.input.attrs({
-  type: "text",
+  type: 'text',
 })`
   background: #f1f3f4;
   border: 0;
@@ -187,7 +190,7 @@ const DevNavInput = styled.input.attrs({
   color: #7c7c7c;
   font-size: 14px;
   height: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 16px 32px;
   width: 100%;
   &:focus {

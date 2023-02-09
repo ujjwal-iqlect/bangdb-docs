@@ -1,237 +1,166 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+
+const navigation = [
+  { name: 'Pricing', href: '#', current: false },
+  { name: 'Docs', href: '#', current: true },
+  { name: 'Blog', href: '#', current: false },
+  { name: 'About', href: '#', current: false },
+  { name: 'Contact', href: '#', current: false },
+  { name: 'Resources', href: '#', current: false },
+  { name: 'Products', href: '#', current: false },
+];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
 
 export default function Header() {
-  const [dropdown, setDropdown] = useState(false);
-  const [mobileHeader, setMobileHeader] = useState(false);
-
-  const showDropdown = () => {
-    setDropdown(true);
-  };
-
-  const hideDropdown = () => {
-    setDropdown(false);
-  };
-
-  const dropdownTabTextClass = dropdown
-    ? "dropdown-tab-text active"
-    : "dropdown-tab-text";
-
-  const toggleDropdownClass = dropdown
-    ? "dropdown-menu active"
-    : "dropdown-menu";
-
   return (
-    <React.Fragment>
-      <header className="header">
-        <div className="header-wrapper">
-          <div className="top-header-wrapper">
-            <div className="logo-wrapper">
-              <Link className="logo-link" href={"https://bangdb.com/"}>
-                <Image
-                  src="https://bangdb.com/wp-content/uploads/2022/09/BangDB-LOGO-black.png"
-                  alt="BangDB Logo"
-                  width="134"
-                  height="58"
-                />
-              </Link>
-            </div>
-            <div className="ham-menu" onClick={() => setMobileHeader(true)}>
-              <button className="ham-button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  width="24px"
-                  fill="#000000"
+    <Disclosure as="nav" className="bg-white">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="block h-8 w-auto lg:hidden"
+                    src="./bangdb-fav-icon.png"
+                    alt="Your Company"
+                  />
+                  <img
+                    className="hidden h-8 w-auto lg:block"
+                    src="./bangdb-fav-icon.png"
+                    alt="Your Company"
+                  />
+                </div>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? 'bg-gray-900 text-white'
+                            : 'text-black hover:bg-gray-900 hover:text-white',
+                          'px-3 py-2 rounded-md text-sm font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                    <Menu as="div" className="relative ml-3">
+                      <div>
+                        <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                          <span className="sr-only">Open user menu</span>
+                        </Menu.Button>
+                      </div>
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Item>
+                            {({ active }) => (
+                              <a
+                                href="#"
+                                className={classNames(
+                                  active ? 'bg-gray-100' : '',
+                                  'block px-4 py-2 text-sm text-gray-700'
+                                )}
+                              >
+                                Your Profile
+                              </a>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {({ active }) => (
+                              <a
+                                href="#"
+                                className={classNames(
+                                  active ? 'bg-gray-100' : '',
+                                  'block px-4 py-2 text-sm text-gray-700'
+                                )}
+                              >
+                                Settings
+                              </a>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {({ active }) => (
+                              <a
+                                href="#"
+                                className={classNames(
+                                  active ? 'bg-gray-100' : '',
+                                  'block px-4 py-2 text-sm text-gray-700'
+                                )}
+                              >
+                                Sign out
+                              </a>
+                            )}
+                          </Menu.Item>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
+                  type="button"
+                  className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z" />
-                </svg>
-              </button>
-            </div>
-            <div className="skid-row">
-              <div className="skid-row-upper-tabs">
-                <div className="skid-row-tabs">
-                  <nav>
-                    <tab>
-                      <Link href={"https://bangdb.com/pricing"} className="srt">
-                        Pricing
-                      </Link>
-                    </tab>
-                    <tab className="srt-activated">
-                      <Link href={"/"}>Docs</Link>
-                    </tab>
-                    <tab>
-                      <Link href={"https://bangdb.com/blog"} className="srt">
-                        Blog
-                      </Link>
-                    </tab>
-                    <tab>
-                      <Link href={"https://bangdb.com/about"} className="srt">
-                        About
-                      </Link>
-                    </tab>
-                    <tab>
-                      <Link
-                        href={"https://bangdb.com/contact-us"}
-                        className="srt"
-                      >
-                        Contact
-                      </Link>
-                    </tab>
-                    <tab>
-                      <Link
-                        href={"https://bangdb.com/resources"}
-                        className="srt"
-                      >
-                        Resources
-                      </Link>
-                    </tab>
-                    <tab
-                      className="dropdown-tab"
-                      onMouseOver={showDropdown}
-                      onMouseOut={hideDropdown}
-                    >
-                      <Link href={"#"} className={dropdownTabTextClass}>
-                        Products
-                      </Link>
-                      <div
-                        className={toggleDropdownClass}
-                        onMouseOver={showDropdown}
-                        onMouseOut={hideDropdown}
-                      >
-                        <tab>
-                          <Link href={"https://bangdb.com/ampere"}>Ampere</Link>
-                        </tab>
-                        <tab>
-                          <Link href={"https://bangdb.com/product"}>
-                            BangDB
-                          </Link>
-                        </tab>
-                      </div>
-                    </tab>
-                    <div className="download">
-                      <div className="download-wrapper">
-                        <Link href={"https://bangdb.com/download"}>
-                          Download
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="download">
-                      <div className="download-wrapper">
-                        <Link href={"https://cloud.bangdb.com"}>
-                          Get Started
-                        </Link>
-                      </div>
-                    </div>
-                  </nav>
-                </div>
+                  <span className="sr-only">View notifications</span>
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+
+                {/* Profile dropdown */}
               </div>
             </div>
           </div>
-        </div>
-      </header>
-      <div
-        style={{
-          display: mobileHeader ? "flex" : "none",
-        }}
-        className="mobile-nav-container"
-      >
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            flexDirection: "column",
-          }}
-        >
-          <div className="mobile-nav-header">
-            <img
-              className="mobile-nav-header-logo"
-              src="https://bangdb.com/wp-content/uploads/2021/05/cropped-BangDBLogo_nowhite.png"
-              width="50"
-              height="45"
-              alt="BangDB Logo Icon"
-            />
-            <div
-              className="mobile-nav-header-close-button"
-              onClick={() => setMobileHeader(false)}
-            >
-              {/* Close icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 0 24 24"
-                width="24px"
-                fill="#fff"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
-              </svg>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pt-2 pb-3">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? 'bg-gray-900 text-white'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
             </div>
-          </div>
-          {/* Nav items */}
-          <div className="mobile-nav-row-wrapper">
-            <Link href="https://bangdb.com/pricing">
-              <div className="mobile-nav-row">
-                <span>Pricing</span>
-              </div>
-            </Link>
-          </div>
-          <div className="mobile-nav-row-wrapper">
-            <Link href="/">
-              <div className="mobile-nav-row">
-                <span>Docs</span>
-              </div>
-            </Link>
-          </div>
-          <div className="mobile-nav-row-wrapper">
-            <Link href="https://bangdb.com/blog">
-              <div className="mobile-nav-row">
-                <span>Blog</span>
-              </div>
-            </Link>
-          </div>
-          <div className="mobile-nav-row-wrapper">
-            <Link href="https://bangdb.com/about">
-              <div className="mobile-nav-row">
-                <span>About</span>
-              </div>
-            </Link>
-          </div>
-          <div className="mobile-nav-row-wrapper">
-            <Link href="https://bangdb.com/resources">
-              <div className="mobile-nav-row">
-                <span>Resources</span>
-              </div>
-            </Link>
-          </div>
-          <div className="mobile-nav-row-wrapper">
-            <Link href="https://bangdb.com/contact-us">
-              <div className="mobile-nav-row">
-                <span>Contact</span>
-              </div>
-            </Link>
-          </div>
-        </div>
-        <div className="mobile-nav">
-          <div>
-            <div className="mobile-nav-button-container">
-              <Link href="https://bangdb.com/download">
-                <div className="mobile-download-button">
-                  <p>Download</p>
-                </div>
-              </Link>
-              <Link href="https://cloud.bangdb.com">
-                <div className="mobile-gs-button">
-                  <p>Get Started</p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   );
 }
