@@ -79,12 +79,12 @@ export default function Header() {
                       <img
                         className="block h-8 w-auto lg:hidden"
                         src="./bangdb-fav-icon.png"
-                        alt="Your Company"
+                        alt="BangDB"
                       />
                       <img
                         className="hidden h-8 w-auto lg:block"
                         src="./bangdb-fav-icon.png"
-                        alt="Your Company"
+                        alt="BangDB"
                       />
                     </Link>
                   </div>
