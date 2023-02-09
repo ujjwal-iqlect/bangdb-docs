@@ -78,12 +78,12 @@ export default function Header() {
                     <Link href="https://bangdb.com">
                       <img
                         className="block h-8 w-auto lg:hidden"
-                        src="./bangdb-fav-icon.png"
+                        src="/bangdb-fav-icon.png"
                         alt="BangDB"
                       />
                       <img
                         className="hidden h-8 w-auto lg:block"
-                        src="./bangdb-fav-icon.png"
+                        src="/bangdb-fav-icon.png"
                         alt="BangDB"
                       />
                     </Link>
