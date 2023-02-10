@@ -30,14 +30,14 @@ const solutions = [
   {
     name: 'Ampere',
     description: 'Interactive dashboard to ingest, process and visualise data.',
-    href: '#',
+    href: 'https://bangdb.com/ampere',
     icon: ChartBarIcon,
   },
   {
     name: 'BangDB NoSQL',
     description:
       'Multi-model, embedded, high performance, analytical, time-series NoSQL database.',
-    href: '#',
+    href: 'https://bangdb.com/product',
     icon: CircleStackIcon,
   },
 ];
@@ -78,13 +78,13 @@ export default function Header() {
                     <Link href="https://bangdb.com">
                       <img
                         className="block h-8 w-auto lg:hidden"
-                        src="./bangdb-fav-icon.png"
-                        alt="Your Company"
+                        src="/bangdb-fav-icon.png"
+                        alt="BangDB"
                       />
                       <img
                         className="hidden h-8 w-auto lg:block"
-                        src="./bangdb-fav-icon.png"
-                        alt="Your Company"
+                        src="/bangdb-fav-icon.png"
+                        alt="BangDB"
                       />
                     </Link>
                   </div>
