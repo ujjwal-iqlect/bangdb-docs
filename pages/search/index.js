@@ -1,7 +1,7 @@
-import { useRouter } from "next/router";
-import React from "react";
-import { SearchData } from "../../components/SearchData";
-import Link from "next/link";
+import { useRouter } from 'next/router';
+import React from 'react';
+import { SearchData } from '../../components/SearchData';
+import Link from 'next/link';
 
 export default function Search() {
   const router = useRouter();
@@ -21,8 +21,8 @@ export default function Search() {
       <main className="bangdb-search">
         <div className="search-results-stats">
           <span>
-            Showing {FilteredData.length}{" "}
-            {FilteredData.length > 1 ? "results" : "result"} for &quot;{q}
+            Showing {FilteredData.length}{' '}
+            {FilteredData.length > 1 ? 'results' : 'result'} for &quot;{q}
             &quot;
           </span>
         </div>
@@ -45,6 +45,6 @@ export default function Search() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { noSidebar: true, noHeader: true },
+    props: { noSidebar: true },
   };
 }

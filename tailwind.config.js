@@ -19,6 +19,8 @@ module.exports = {
       },
       colors: {
         dbblue: '#1769e0',
+        dbgray: '#dadce0',
+        dbblack: '#202124',
       },
     },
   },

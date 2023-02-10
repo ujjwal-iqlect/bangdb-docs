@@ -1,17 +1,18 @@
-import React, { useRef, useState } from "react";
-import { AppProvider } from "../Context";
-import "../styles/globals.css";
-import styles from "../styles/article.css";
-import Header from "../components/Header";
-import Sidebar from "../components/Sidebars/Sidebar";
-import UseCasesSidebar from "../components/Sidebars/UseCasesSidebar";
-import HelpGuideSidebar from "../components/Sidebars/HelpGuideSidebar";
-import ApiSidebar from "../components/Sidebars/ApiSidebar";
-import GraphSidebar from "../components/Sidebars/GraphSidebar";
-import ReleaseSidebar from "../components/Sidebars/ReleaseSidebar";
-import StreamSidebar from "../components/Sidebars/StreamSidebar";
-import CepSidebar from "../components/Sidebars/CepSidebar";
-import MlSidebar from "../components/Sidebars/MlSidebar";
+import React, { useRef, useState } from 'react';
+import { AppProvider } from '../Context';
+import '../styles/globals.css';
+import styles from '../styles/article.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Sidebar from '../components/Sidebars/Sidebar';
+import UseCasesSidebar from '../components/Sidebars/UseCasesSidebar';
+import HelpGuideSidebar from '../components/Sidebars/HelpGuideSidebar';
+import ApiSidebar from '../components/Sidebars/ApiSidebar';
+import GraphSidebar from '../components/Sidebars/GraphSidebar';
+import ReleaseSidebar from '../components/Sidebars/ReleaseSidebar';
+import StreamSidebar from '../components/Sidebars/StreamSidebar';
+import CepSidebar from '../components/Sidebars/CepSidebar';
+import MlSidebar from '../components/Sidebars/MlSidebar';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -46,6 +47,13 @@ function MyApp({ Component, pageProps }) {
             return <MlSidebar />;
           } else {
             return <Sidebar />;
+          }
+        })()}
+        {(() => {
+          if (pageProps.noHeader) {
+            return <></>;
+          } else {
+            return <Footer />;
           }
         })()}
       </AppProvider>
