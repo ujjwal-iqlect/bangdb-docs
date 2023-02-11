@@ -1,8 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Breadcrumb from "../../components/Breadcrumb";
-import DocArticle from "../../components/DocArticle";
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Breadcrumb from '../../components/Breadcrumb';
+import DocArticle from '../../components/DocArticle';
 
 export default function BangdbHighAvailability() {
   return (
@@ -60,12 +60,16 @@ export default function BangdbHighAvailability() {
           <p>
             High availability not only protects business from losing data but
             also provides mechanism for protecting the data and other critical
-            aspect of the business. The availability problems could be
-            categorized in following different buckets:
+            aspect of the business.
+          </p>
+          <h2>Availability Problems</h2>
+          <p>
+            The availability problems could be categorized in following
+            different buckets:
           </p>
           <ol
             style={{
-              listStyle: "upper-alpha",
+              listStyle: 'upper-alpha',
             }}
           >
             <li>
@@ -152,7 +156,7 @@ export default function BangdbHighAvailability() {
             </ul>
           </ol>
           <h2>High availability criteria</h2>
-          <ol style={{ listStyle: "upper-alpha" }}>
+          <ol style={{ listStyle: 'upper-alpha' }}>
             <li>
               <strong>Up time requirement</strong>
             </li>
