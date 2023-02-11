@@ -1,9 +1,9 @@
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Breadcrumb from "../../components/Breadcrumb";
-import DocArticle from "../../components/DocArticle";
-import HighlightedCpp from "../../components/HighlightedCpp";
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Breadcrumb from '../../components/Breadcrumb';
+import DocArticle from '../../components/DocArticle';
+import HighlightedCpp from '../../components/HighlightedCpp';
 
 export default function BangdbDisasterRecovery() {
   return (
@@ -97,11 +97,11 @@ export default function BangdbDisasterRecovery() {
             BangDB is currently being offered in following different manner:
           </p>
           <ol>
-            <li>Community</li>
+            <li>Community Edition</li>
             <li>SaaS</li>
             <li>Enterprise</li>
           </ol>
-          <h2>Features of BangDB</h2>
+          <h2>Here is the list of features of BangDB</h2>
           <Image
             width="1517"
             height="630"
@@ -125,6 +125,12 @@ export default function BangdbDisasterRecovery() {
             secure from any disruptions and data is never lost in any case.
           </p>
           <h2>Purpose of Disaster Recovery plan</h2>
+          <p>
+            Data is at the core of any application and business. It is
+            imperative and critical that data is never lost in any case or
+            scenario. Data loss may take place in real world for many different
+            reasons, and we can put them in following categories.
+          </p>
           <ol>
             <li>Catastrophic failure of system, infrastructure</li>
             <li>Calamities and natural disaster</li>
@@ -150,9 +156,12 @@ export default function BangdbDisasterRecovery() {
             data in any condition. However, it&apos;s also not straight forward
             to create the plan as it can get from simple to complex depending
             upon the criteria, context and requirement. Therefore, a lot of
-            inherent support is sought from the database itself. BangDB has
-            worked hard and continuously working to simplify the process yet
-            provide absolute guarantee for data recovery and persistence.
+            inherent support is sought from the database itself.
+          </p>
+          <p>
+            BangDB has worked hard and continuously working to simplify the
+            process yet provide absolute guarantee for data recovery and
+            persistence.
           </p>
           <h2>Backup considerations</h2>
           <p>
@@ -173,8 +182,26 @@ export default function BangdbDisasterRecovery() {
           </p>
           <ol>
             <li>Recovery point objective</li>
+            <li>Recovery time objective</li>
             <li>Cost & Budget</li>
           </ol>
+          <p>
+            BangDB had both above as its design goals. BangDB has several
+            elements in place to configure things in a way to be able to align
+            with the needs of the organization using simple configuration. But
+            the setup of these configurations is important hence defining the
+            above two goals are important before deciding the backup strategy.
+          </p>
+          <p>
+            There are tradeoff and the application owner, or the organization
+            has to work with. BangDB allows the flexibility and means to deal
+            with the requirements as required.
+          </p>
+          <p>
+            The other important aspect is the maintenance, resource cost for
+            managing the backups. These need to be evaluated in the entire
+            application or organization context.
+          </p>
           <div className="table-container">
             <table>
               <tbody>
@@ -190,7 +217,7 @@ export default function BangdbDisasterRecovery() {
                   </td>
                 </tr>
                 <tr>
-                  <td>Recovery point objective</td>
+                  <td>Recovery time objective</td>
                   <td>
                     How quickly the data should be recovered in case of an
                     incident. This includes the time to copy the data back to
@@ -246,7 +273,7 @@ export default function BangdbDisasterRecovery() {
             </table>
           </div>
           <h2>BangDB backup strategies</h2>
-          <ol style={{ listStyle: "upper-alpha" }}>
+          <ol style={{ listStyle: 'upper-alpha' }}>
             <li>
               <strong>Data dump strategy</strong>
             </li>
@@ -566,6 +593,27 @@ CHKPNT_FREQ = 933700`}
             src="https://bangdb.com/wp-content/uploads/2022/11/DR-1.svg"
             alt="Disaster Recovery 1"
           />
+          <h2>Critical Timeframe, System Impacts and Statements</h2>
+          <ul>
+            <li>Findings, what happened, when did it occur</li>
+            <li>Stake holders reported about the incidence</li>
+            <li>
+              Team and clients reported that they are somewhat vulnerable to an
+              outage (in case the availability is not set up or the entire
+              availability is at risk)
+            </li>
+            <li>Time assessment for data recovery</li>
+            <li>Start the Recovery process and update stake holders</li>
+            <li>
+              Collect the evidence of the incidents. Core dump if any, dblogs,
+              syslogs, binaris. Forward it for investigations to concerned team.
+              Take the backup of the db and log files if possible
+            </li>
+            <li>
+              Escalate as per plan and if necessary for possible outages and if
+              outages have occurred
+            </li>
+          </ul>
         </div>
       </DocArticle>
     </React.Fragment>
