@@ -3,10 +3,10 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <>
-      <footer className="w-full p-4 bg-white sm:p-6 dark:bg-gray-900">
-        <hr className="my-6 border-dbgray sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <footer className=" w-full p-4 bg-white sm:p-6">
+        <hr className="my-6 border-dbgray sm:mx-auto" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-dbblack sm:text-center dark:text-gray-400">
+          <span className="text-sm text-dbblack sm:text-center">
             © 2023{' '}
             <a href="https://bangdb.com" className="hover:underline">
               BangDB
@@ -17,7 +17,7 @@ export default function Footer() {
             <Link
               href="https://www.facebook.com/Iqlect"
               target="_blank"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"
@@ -36,7 +36,7 @@ export default function Footer() {
             <Link
               href="https://twitter.com/iqlect"
               target="_blank"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"
@@ -51,7 +51,7 @@ export default function Footer() {
             <Link
               href="https://github.com/sachin-sinha/BangDB"
               target="_blank"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900"
             >
               <svg
                 className="w-5 h-5"

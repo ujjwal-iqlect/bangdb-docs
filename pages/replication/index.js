@@ -1,11 +1,11 @@
-import React from "react";
-import Head from "next/head";
-import Link from "next/link";
-import Breadcrumb from "../../components/Breadcrumb";
-import DocArticle from "../../components/DocArticle";
-import HighlightedCpp from "../../components/HighlightedCpp";
-import HighlightedJava from "../../components/HighlightedJava";
-import HighlightedOutput from "../../components/HighlightedOutput";
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import Breadcrumb from '../../components/Breadcrumb';
+import DocArticle from '../../components/DocArticle';
+import HighlightedCpp from '../../components/HighlightedCpp';
+import HighlightedJava from '../../components/HighlightedJava';
+import HighlightedOutput from '../../components/HighlightedOutput';
 
 export default function Replication() {
   return (
@@ -62,7 +62,7 @@ export default function Replication() {
           <p>
             There could be only single Master node that can be there in any
             cluster, and the maximum numbers of slaves can be as configured
-            (default is 4).
+            (default is 2).
           </p>
           <h2>Configurations using bangdb.config file</h2>
           <p>
@@ -74,19 +74,22 @@ export default function Replication() {
             code={`SERVER_TYPE = 0
 ENABLE_REPLICATION = 1
 SERVER_ID = 0.0.0.0
-SERVER_PUBLIC_IP = <public ip="" of="" the="" server="">
-SERV_PORT = 10101 // change it based on the port num you use for master`}
+SERVER_PUBLIC_IP = <public ip of the server (this server which is master)>
+SERV_PORT = 10101 // change it based on the port num you use for master
+MASTER_SERVER_ID = <public ip of master>
+MASTER_SERV_PORT = <port of master>`}
           />
           <h3>For Slave</h3>
           <HighlightedCpp
             code={`SERVER_TYPE = 1
 ENABLE_REPLICATION = 1
 SERVER_ID = 0.0.0.0
-SERVER_PUBLIC_IP = <public ip="" of="" the="" server="">
+SERVER_PUBLIC_IP = <public ip of the server (this server, which is slave)>
 SERV_PORT = 10101 // change it based on the port num you use for slave
-MASTER_SERVER_ID = <public ip="" of="" master="">
-MASTER_SERV_PORT = <port of="" master="">   `}
+MASTER_SERVER_ID = <public ip of master>
+MASTER_SERV_PORT = <port of master>   `}
           />
+          <p>That&apos;s it. Now start the Master first and then slave</p>
           <h2>Configurations using command line argument</h2>
           <h3>For Master</h3>
           <HighlightedCpp
@@ -97,13 +100,13 @@ MASTER_SERV_PORT = <port of="" master="">   `}
             code={`./bangdb-server-2.0 -r yes -i slave -p <public_ip> -m <master_public_ip>:<master_port>`}
           />
           <aside className="doc-note">
-            <strong>Note: </strong>If you wish to run in tcp + http mode, add{" "}
+            <strong>Note: </strong>If you wish to run in tcp + http mode, add{' '}
             <strong>&quot;-c hybrid -w 18080&quot;</strong> to the command line
             for both master and slave.
           </aside>
           <h2>Failover</h2>
           <p>We can set up failover in two ways as following:</p>
-          <ol style={{ listStyle: "upper-alpha" }}>
+          <ol style={{ listStyle: 'upper-alpha' }}>
             <li>
               <strong>Auto Failover</strong>
             </li>
@@ -138,8 +141,7 @@ MASTER_SERV_PORT = <port of="" master="">   `}
                 This approach is very conservative and tries to maximize the
                 chances of finding another master as soon as possible. However,
                 there is a manual work involved in turning other masters to the
-                slaves of the new master. This is default method if
-                AUTO_SWITCH_OVER is defined with all slaves have SLAVE_ID=1
+                slaves of the new master.
               </p>
               <li>Optimistic</li>
               <p>
@@ -148,16 +150,37 @@ MASTER_SERV_PORT = <port of="" master="">   `}
                 switch themselves to this new master automatically. If the
                 remaining slaves for some reason (either when new master is
                 again unavailable or slaves are unable to connect to the new
-                master) find the new master unreachable, then they turn
-                themselves to masters.
+                master) find the new master unreachable, then one of the
+                remaining will turn itself to a new master.
               </p>
               <p>This is how we enable this scenario.</p>
+              <p>
+                When the original master comes back, then it checks if there is
+                another master already in the network, and if yes then it
+                becomes slave of the already running master. Therefore, the
+                entire orchestration ensures that master is always available in
+                the cluster and the machines can join the cluster at any time
+                relying totally on the cluster to ensure that they join properly
+                and automatically.
+              </p>
+              <p>
+                Slave checks if there is no master in the network, then one of
+                them becomes slave. If master re-joins, it checks whether if a
+                master is already available, and if yes then it becomes a salve
+                to the new master. And this can keep going without any human
+                interruption Following section describes this in detail using an
+                example.
+              </p>
               <p>Let&apos;s say we have one master and two slaves.</p>
               <p>
                 Then for slave 1 (192.168.1.107, 10101), set following in
                 bangdb.config
               </p>
-              <HighlightedCpp code={`SLAVE_ID = 1`} />
+              <HighlightedCpp
+                code={`SLAVE_ID = 1
+SLAVE_1_IP = 192.168.1.107
+SLAVE_1_PORT = 10101`}
+              />
               <p>For slave 2 (192.168.1.105, 10101)</p>
               <HighlightedCpp
                 code={`SLAVE_ID = 2 
@@ -194,6 +217,12 @@ SLAVE_1_PORT = 10101`}
                 <li>
                   If Slave 2 is not successful in contacting the new master,
                   then it will turn itself to a new master
+                </li>
+                <li>
+                  If the original master, then comes back, then it will check if
+                  there is another master in the network, if yes (in this case
+                  SLAVE = 1 is the new master, for ex.) then it will become
+                  slave of this new master.
                 </li>
               </ol>
             </ol>
@@ -276,7 +305,7 @@ show servertype
 show servertype where server = ip:port`}
             />
             <p>
-              etc… please visit <Link href="/">www.bangdb.com/developer</Link>{" "}
+              etc… please visit <Link href="/">www.bangdb.com/developer</Link>{' '}
               for more info. Check server type
             </p>
             <HighlightedJava code={`show servertype`} />
@@ -372,6 +401,9 @@ show servertype where server = ip:port`}
           <ul>
             <li>Start master and then slaves</li>
             <li>
+              Let slave 1 complete the sync up and then attach another slave
+            </li>
+            <li>
               Two slaves are good enough for most of the cases, however you may
               add more [ MAX_SLAVES controls this]
             </li>
@@ -379,7 +411,10 @@ show servertype where server = ip:port`}
               PING_THRESHOLD and PING_FREQ should be kept same for all slaves
               and master [ not mandatory but better]
             </li>
-            <li>Set REPLICA_READ_WRITE=0 [ by default it&apos;s 0]</li>
+            <li>
+              Set REPLICA_READ_WRITE=0 [ by default it&apos;s 0] - this ensure
+              write only on Master
+            </li>
             <li>
               Use cmd [ bdbc_s -p ping] to check health of the server. The
               server responds only when DB is up and ready to accept new
@@ -388,8 +423,8 @@ show servertype where server = ip:port`}
               10 times less with cmd
             </li>
             <li>
-              Try to keep PING_THRESHOLD = 10 or more and PING_FREQ = 10 or more
-              [ 10 sec is good]
+              Try to keep PING_THRESHOLD = 7 to 10 or more and PING_FREQ = 7 -
+              10 sec [ 10 sec is good]
             </li>
             <li>
               BangDB uses UDP based ping hence it&apos;s very lightweight. Since
@@ -405,9 +440,9 @@ show servertype where server = ip:port`}
               SLAVE_ID&gt;1) will become the slave of new master (SLAVE_ID=1)
             </li>
             <li>
-              Must provide SLAVE_1_IP and SLAVE_1_PORT for all the slaves with
-              SLAVE_ID&gt;1. SLAVE_1_IP and SLAVE_1_PORT are ip and port for
-              slave with SLAVE_ID=1
+              Must provide SLAVE_1_IP and SLAVE_1_PORT for all the slaves.
+              SLAVE_1_IP and SLAVE_1_PORT are ip and port for slave with
+              SLAVE_ID=1 and so on.
             </li>
           </ul>
         </div>
