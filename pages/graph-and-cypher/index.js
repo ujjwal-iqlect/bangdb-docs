@@ -1,10 +1,10 @@
-import React from "react";
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import DocArticle from "../../components/DocArticle";
-import Breadcrumb from "../../components/Breadcrumb";
-import HighlightedJava from "../../components/HighlightedJava";
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import DocArticle from '../../components/DocArticle';
+import Breadcrumb from '../../components/Breadcrumb';
+import HighlightedJava from '../../components/HighlightedJava';
 
 export default function GraphAndCypher() {
   return (
@@ -96,7 +96,7 @@ export default function GraphAndCypher() {
           <p>
             The &quot;()&quot; denotes subject or object and &quot;[]&quot;
             denotes relation (predicate) with &quot;-&gt;&quot; defining the
-            direction. The arrangement is always{" "}
+            direction. The arrangement is always{' '}
             <em>&quot;Subject Predicate Object&quot;</em>.
           </p>
           <p>
@@ -230,6 +230,22 @@ export default function GraphAndCypher() {
                   <td>ASYMM</td>
                   <td>asymmetric relations</td>
                 </tr>
+                <tr>
+                  <td>DISTINCT</td>
+                  <td>To get results for distinct key</td>
+                </tr>
+                <tr>
+                  <td>UNIQUE</td>
+                  <td>unique pair wise [ sub and obj pair, for their ids ]</td>
+                </tr>
+                <tr>
+                  <td>UNIQUE_IN_CONTEXT</td>
+                  <td>unique for given sub and obj, based on selection</td>
+                </tr>
+                <tr>
+                  <td>UNIQUE_SELECT</td>
+                  <td>unique for all selected attributes, taken together</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -259,21 +275,21 @@ export default function GraphAndCypher() {
                 <tr>
                   <th
                     style={{
-                      width: "20%",
+                      width: '20%',
                     }}
                   >
                     Query
                   </th>
                   <th
                     style={{
-                      width: "45%",
+                      width: '45%',
                     }}
                   >
                     Description
                   </th>
                   <th
                     style={{
-                      width: "35%",
+                      width: '35%',
                     }}
                   >
                     Venn diagram
@@ -461,7 +477,7 @@ export default function GraphAndCypher() {
           <p>To merge node (label:id1) into (label:id2)</p>
           <HighlightedJava code={`MERGE (label:id1)-[*]->(label:id2)`} />
           <p>
-            <strong>&apos;*&apos;</strong> could be replaced with{" "}
+            <strong>&apos;*&apos;</strong> could be replaced with{' '}
             <strong>;</strong>
           </p>
           <p>
@@ -487,18 +503,18 @@ export default function GraphAndCypher() {
           </p>
 
           <p>
-            Checkout a sample use cases{" "}
+            Checkout a sample use cases{' '}
             <Link
               href={`https://github.com/sachin-sinha/BangDB/tree/master/usecases/call_graph`}
               className="external"
               target="_blank"
             >
               here
-            </Link>{" "}
+            </Link>{' '}
             to learn bit more about Graph and Cypher in BangDB.
           </p>
           <p>
-            Checkout the graph document{" "}
+            Checkout the graph document{' '}
             <Link
               target="_blank"
               href={`https://bangdb.com/wp-content/uploads/2022/10/Graph-and-Cypher-BangDB-2.0.pdf`}
