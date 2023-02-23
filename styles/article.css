@@ -1081,6 +1081,7 @@ No additional styling for now
 
 .bangdb-search {
   border-radius: 2px;
+  min-height: 65vh;
   display: inline-block;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
