@@ -1,31 +1,31 @@
-import React from "react";
-import Head from "next/head";
-import Breadcrumb from "../../../components/Breadcrumb";
-import DocArticle from "../../../components/DocArticle";
-import HighlightedOutput from "../../../components/HighlightedOutput";
-import Codebox from "../../../components/Codebox";
+import React from 'react';
+import Head from 'next/head';
+import Breadcrumb from '../../../components/Breadcrumb';
+import DocArticle from '../../../components/DocArticle';
+import HighlightedOutput from '../../../components/HighlightedOutput';
+import Codebox from '../../../components/Codebox';
 
-export default function GetTheListOfTables() {
+export default function GetTheTablesCount() {
   return (
     <React.Fragment>
       <Head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Get the list of tables - BangDB REST API</title>
+        <title>Get the tables count - BangDB REST API</title>
         <meta
           name="description"
-          content="Learn how to get the list of tables in the database using BangDB 2.0 REST API. Read the documentation to know more about BangDB 2.0 REST API."
+          content="Learn how to get the tables count in the database using BangDB 2.0 REST API. Read the documentation to know more about BangDB 2.0 REST API."
         />
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="Get the list of tables - BangDB REST API"
+          content="Get the tables count - BangDB REST API"
         />
         <meta
           property="og:description"
-          content="Learn how to get the list of tables in the database using BangDB 2.0 REST API. Read the documentation to know more about BangDB 2.0 REST API."
+          content="Learn how to get the tables count in the database using BangDB 2.0 REST API. Read the documentation to know more about BangDB 2.0 REST API."
         />
         <meta
           property="og:image"
@@ -36,11 +36,11 @@ export default function GetTheListOfTables() {
         <meta name="twitter:site" content="@IQLECT" />
         <meta
           name="twitter:title"
-          content="Get the list of tables - BangDB REST API"
+          content="Get the tables count - BangDB REST API"
         />
         <meta
           name="twitter:description"
-          content="Learn how to get the list of tables in the database using BangDB 2.0 REST API. Read the documentation to know more about BangDB 2.0 REST API."
+          content="Learn how to get the tables count in the database using BangDB 2.0 REST API. Read the documentation to know more about BangDB 2.0 REST API."
         />
         <meta
           name="twitter:image"
@@ -50,9 +50,9 @@ export default function GetTheListOfTables() {
 
       <DocArticle>
         <Breadcrumb text="Stream in BangDB" url="/stream" />
-        <h1 className="article-title">Get the list of tables</h1>
+        <h1 className="article-title">Get the tables count</h1>
         <div className="article-body">
-          <p>To get the list of tables in the db:</p>
+          <p>To get tables count:</p>
           <p>
             <strong>Method</strong> : GET
           </p>
