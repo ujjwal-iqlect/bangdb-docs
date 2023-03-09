@@ -41,7 +41,7 @@ module.exports = {
       },
       {
         source: '/rest-api/get-the-list-of-tables',
-        destination: '/get-the-tables-count',
+        destination: '/rest-api/get-the-tables-count',
         permanent: true,
       },
     ];
