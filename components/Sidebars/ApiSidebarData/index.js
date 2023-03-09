@@ -44,8 +44,8 @@ export const ApiSidebarData = [
           },
           {
             id: '3',
-            title: 'Get the list of tables',
-            path: '/rest-api/get-the-list-of-tables',
+            title: 'Get the tables count',
+            path: '/rest-api/get-the-tables-count',
           },
           {
             id: '4',
