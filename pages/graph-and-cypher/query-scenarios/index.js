@@ -1,11 +1,11 @@
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Breadcrumb from "../../../components/Breadcrumb";
-import DocArticle from "../../../components/DocArticle";
-import HighlightedJava from "../../../components/HighlightedJava";
-import HighlightedOutput from "../../../components/HighlightedOutput";
-import Link from "next/link";
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Breadcrumb from '../../../components/Breadcrumb';
+import DocArticle from '../../../components/DocArticle';
+import HighlightedJava from '../../../components/HighlightedJava';
+import HighlightedOutput from '../../../components/HighlightedOutput';
+import Link from 'next/link';
 
 export default function QueryScenarios() {
   return (
@@ -54,7 +54,7 @@ export default function QueryScenarios() {
         <Breadcrumb text="Stream in BangDB" url="/stream" />
         <h1 className="article-title">Query Scenarios</h1>
         <div className="article-body">
-          <p>
+          <p id="moviesdata">
             In BangDB we have a variety of Cypher Query Types. In this document,
             we listed all the query types with examples.
           </p>
@@ -316,7 +316,7 @@ CREATE (Person:keanu)-[ACTED_IN]->(Movie:sidebyside)`}
           </p>
           <ul
             style={{
-              listStyle: "none",
+              listStyle: 'none',
             }}
           >
             <li>%Y - Year (1951)</li>
@@ -495,7 +495,7 @@ CREATE (Person:keanu)-[ACTED_IN]->(Movie:sidebyside)`}
             As you can see, BangDB provides us with this feature to format Date
             and Time. We can use different Terminologies also:
           </p>
-          <ul style={{ listStyle: "none" }}>
+          <ul style={{ listStyle: 'none' }}>
             <li>%F - YYYY/MM/DD</li>
             <li>%D - MM/DD/YYYY</li>
           </ul>
@@ -524,7 +524,7 @@ CREATE (Person:keanu)-[ACTED_IN]->(Movie:sidebyside)`}
           <p>
             <strong>Terminologies:</strong>
           </p>
-          <ul style={{ listStyle: "none" }}>
+          <ul style={{ listStyle: 'none' }}>
             <li>%Y - Year (1951)</li>
             <li>%y - Year (22)</li>
             <li>%m - Month (08)</li>
@@ -916,7 +916,7 @@ CREATE (Person:keanu)-[ACTED_IN]->(Movie:sidebyside)`}
               property on which we want both relations to combine their outputs
               & in return provide the Movie names which are common in both.
             </li>
-            <li>
+            <li id="salesdata">
               Here we can return other properties as well like we returned the
               released property of Movie Node Type which is in TimeStamp format.
               So, we used MATH_EXP to convert the TimeStamp into a readable
@@ -1517,7 +1517,7 @@ CREATE (Country:"Australia")-[HAS]->(City:"North Ryde")`}
             of the Sales amount for the following States in a specific country.
           </p>
           <p>
-            <strong>Output:</strong>
+            <strong id="patientdata">Output:</strong>
           </p>
           <HighlightedOutput
             code={`+---------------+---------+------------------+
@@ -1544,7 +1544,7 @@ CREATE (Country:"Australia")-[HAS]->(City:"North Ryde")`}
             system.
           </aside>
           <p>
-            Download the{" "}
+            Download the{' '}
             <Link
               href="https://drive.google.com/file/d/1MZAb2hsZz834C8akMqZTni-bi8auwC0v/view?usp=share_link"
               target="_blank"
@@ -1602,7 +1602,7 @@ insert into Patient.Data values null {"patientID": "P1", "weight": 55, "event": 
             prominent search.
           </p>
           <p>
-            <strong>PIPE Syntax:</strong>{" "}
+            <strong>PIPE Syntax:</strong>{' '}
             <em>
               &lt;PIPE USING
               &#96;variable_name&#96;&gt;S1=&gt;()-[]-&gt;();RETURN..... ++
@@ -1612,7 +1612,7 @@ insert into Patient.Data values null {"patientID": "P1", "weight": 55, "event": 
           <aside className="doc-note">
             <strong>Note: </strong>The variable_name should be available in both
             the queries & should be named the same that we are providing in the
-            starting as well i.e. variable_name. In the following example,{" "}
+            starting as well i.e. variable_name. In the following example,{' '}
             <strong>event_date</strong> is the variable name on which I want the
             PIPE Query to work.
           </aside>
