@@ -14,7 +14,7 @@ export default function ThirdPartyNotices() {
         ></meta>
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="License - BangDB" />
+        <meta property="og:title" content="Third party software notices and information - BangDB" />
         <meta
           property="og:description"
           content="Third party software notices and information - BangDB uses third-party libraries or other resources that may be distributed under licenses different than the BangDB software."
