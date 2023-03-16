@@ -177,11 +177,21 @@ export default function GraphAndCypher() {
                 </tr>
                 <tr>
                   <td>COUNT</td>
-                  <td>counting all using COUNT(*) or COUNT(A.col)</td>
+                  <td>
+                    count a particular entity using COUNT(attribute) or just
+                    number of rows using COUNT(*)
+                  </td>
                 </tr>
                 <tr>
                   <td>UCOUNT</td>
-                  <td>unique counting</td>
+                  <td>
+                    unique counting using probabilistic method (using
+                    hyperloglog)
+                  </td>
+                </tr>
+                <tr>
+                  <td>UCOUNT_ABS</td>
+                  <td>unique counting in absolute manner</td>
                 </tr>
                 <tr>
                   <td>AVG</td>
