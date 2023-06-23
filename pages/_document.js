@@ -1,6 +1,7 @@
-import Document from "next/document";
-import { Html, Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import Document from 'next/document';
+import { Html, Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
+import Script from 'next/script';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -57,6 +58,7 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="7lOuvOztsKzDWKraEagiPtl3PM4bRWAjrGxIY2_lZkQ"
           />
+          <script src="/tagManager.js"></script>
         </Head>
         <body>
           <Main />
