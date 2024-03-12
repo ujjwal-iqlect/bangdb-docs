@@ -75,6 +75,13 @@ export default function Home() {
       <BoxSectionWrapper>
         <BoxSection>
           <Box
+            headline={"About BangDB"}
+            para={
+              "Get started with BangDB NoSQL database and power your application."
+            }
+            link={"/about/motivation"}
+          />
+          <Box
             headline={"Manual"}
             para={
               "Get started with BangDB NoSQL database and power your application."
