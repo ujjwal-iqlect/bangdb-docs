@@ -43,7 +43,7 @@ export default function WhatsBangDB() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">What&apos; BangDB?</h1>
+              <h1 className="article-title">What&apos;s BangDB?</h1>
               <div className="article-body">
                 <p>
                   BangDB is a converged multi-model and multi-flavor database
