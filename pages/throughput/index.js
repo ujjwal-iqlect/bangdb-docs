@@ -163,10 +163,10 @@ Running the default test with 16 threads (connections), put and get 1000000 item
           <p>
             Also note that, there is C++ test app and Java test app available,
             and you may run from either of these. The build script is there to
-            help It's very simple to run the benchmark, simply take the BangDB,
+            help It&apos;s very simple to run the benchmark, simply take the BangDB,
             take the bench, follow the instruction given in the README and
-            that's it. Below is the details for running benchmark for Server
-            using java test app Here are the steps to run the bench First, let's
+            that&apos;s it. Below is the details for running benchmark for Server
+            using java test app Here are the steps to run the bench First, let&apos;s
             build the bench
           </p>
           <Codebox code="bash build.sh" copy="bash build.sh" />

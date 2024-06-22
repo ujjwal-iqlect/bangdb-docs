@@ -137,8 +137,8 @@ export default function SecondaryKeyIndex() {
                 <p>
                   We should check for error returned by the API put_doc, but
                   ignored for brevity. Here, we did not provide explicit primary
-                  key, therefore db will add <code>"pk"</code> field in the doc
-                  and use it as primary key. This <code>"pk"</code> is
+                  key, therefore db will add <code>&quot;pk&quot;</code> field in the doc
+                  and use it as primary key. This <code>&quot;pk&quot;</code> is
                   timestamp. Also, we didn&apos;t specify if we wanted reverse
                   index to be created or now, later we will see this as well.
                 </p>

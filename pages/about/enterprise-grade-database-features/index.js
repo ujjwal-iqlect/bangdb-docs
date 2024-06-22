@@ -175,7 +175,7 @@ export default function EnterpriseGradeDatabaseFeatures() {
                   </li>
                   <li>
                     Data is stored in binary format within BangDB. Which means
-                    these files can't be read.
+                    these files can&apos;t be read.
                   </li>
                   <li>
                     Data/ fields could be obfuscated based on input map by the
@@ -187,7 +187,7 @@ export default function EnterpriseGradeDatabaseFeatures() {
                     related activities.
                   </li>
                   <li>
-                    DB continuously writes and maintains users' activities log
+                    DB continuously writes and maintains users&apos; activities log
                     for every action.
                   </li>
                   <li>

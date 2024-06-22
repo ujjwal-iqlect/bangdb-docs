@@ -1691,7 +1691,7 @@ export default function PenTest() {
             <strong>Recommendation:</strong>
             <p>
               To prevent browsers from storing credentials entered into HTML
-              forms, include the attribute <code>autocomplete="off"</code>{" "}
+              forms, include the attribute <code>autocomplete=&quot;off&quot;</code>{" "}
               within the FORM tag (to protect all form fields) or within the
               relevant INPUT tags (to protect specific individual fields).
             </p>

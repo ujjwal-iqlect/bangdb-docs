@@ -104,7 +104,7 @@ export default function Ycsb() {
           <Codebox code="cd YCSB" copy="cd YCSB" />
           <Codebox code="git checkout db_bangdb" />
           <Codebox code="mvn -pl site.ycsb:bangdb-binding -am clean package" />
-          <p>That's it. Now we are ready to run the tests.</p>
+          <p>That&apos;s it. Now we are ready to run the tests.</p>
           <p>Load the data</p>
           <Codebox code="./bin/ycsb load bangdb -threads 128 -s -P workloads/workloada" />
           <p>Run the workload</p>

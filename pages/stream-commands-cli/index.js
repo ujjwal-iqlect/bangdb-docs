@@ -599,12 +599,12 @@ enter the input attributes on which this ops will be performed, (press Enter onc
 enter sequence [ 0 | 1 ], if 1 then it will be done before refer else post refr:1`}
                 />
                 <p>
-                  The sequence is important if let's say we wish to apply
+                  The sequence is important if let&apos;s say we wish to apply
                   operation on attribute which will be referred from other
                   stream. Order ensures we execute catr before or after refer.
                 </p>
                 <p>
-                  We can now select &quot;sidx&quot; and "stat" for this
+                  We can now select &quot;sidx&quot; and &quot;stat&quot; for this
                   computed attribute as well.
                 </p>
                 <HighlightedOutput
@@ -643,7 +643,7 @@ enable stat [ none(0) | count (1) | running stats (3) ]: 0
 should add, replace or add only if present [ add (1) | replace (2) | add only if not present (3) ]: 1 
 add another computed attribute ? [ yes | no ]: no`}
                 />
-                <p>Now let&apos;s add groupby. It's also a sub-workflow</p>
+                <p>Now let&apos;s add groupby. It&apos;s also a sub-workflow</p>
                 <HighlightedOutput
                   code={`What would you like to add (press Enter when done) [ attr (1) | catr (2) | refr (3) | gpby (4) | fltr (5) | join (6) | entity (7) | cep (8) | notifs (9) ]: 4 `}
                 />
@@ -663,7 +663,7 @@ enable stat (1,2,3) [ count (1) | unique count (2) | running stat (3) ]: 1
 add another gpby ? [ yes | no ]: no`}
                 />
                 <p>
-                  Now let's create <code>&quot;refr&quot;</code>, refer
+                  Now let&apos;s create <code>&quot;refr&quot;</code>, refer
                   attribute in another stream.
                 </p>
                 <HighlightedOutput
@@ -703,7 +703,7 @@ add refers (refr)... refr name: myrefr1
 should add, replace or add only if present [ add (1) | replace (2) | add only if not present (3) ]: 1 add another refr ? [ yes | no ]: no`}
                 />
                 <p>
-                  That's it to create the first schema (as shown above), now
+                  That&apos;s it to create the first schema (as shown above), now
                   simply commit the changes and it will create the schema.
                 </p>
                 <HighlightedOutput

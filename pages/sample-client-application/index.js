@@ -706,15 +706,15 @@ else {
               display: tab === 1 ? "block" : "none",
             }}
           >
-            <p>Let's first create the env and db object</p>
+            <p>Let&apos;s first create the env and db object</p>
             <HighlightedCpp code={createEnvDBObjectCpCode} />
             <p>Now we need table to start the operations</p>
             <HighlightedCpp code={startOprtCpCode} />
-            <p>Let's get the db description and print</p>
+            <p>Let&apos;s get the db description and print</p>
             <HighlightedCpp code={getDBDescPrintCpCode} />
             <p>We may get the table description as well</p>
             <HighlightedCpp code={getTableDescCpCode} />
-            <p>Now let's put some data and read it</p>
+            <p>Now let&apos;s put some data and read it</p>
             <HighlightedCpp code={putReadDataCpCode} />
             <p>
               Use the previous key with INSERT_UNIQUE flag and it should return
@@ -736,11 +736,11 @@ else {
                 everything for the table
               </li>
             </ol>
-            <p>Let's drop the table using 2</p>
+            <p>Let&apos;s drop the table using 2</p>
             <HighlightedCpp code={dropTableUsingTwoCpCode} />
 
             <p>
-              Let's create wide table now, table that deals with json doc, but
+              Let&apos;s create wide table now, table that deals with json doc, but
               it can also store simple text
             </p>
             <HighlightedCpp code={createWideTableCpCode} />
@@ -755,16 +755,16 @@ else {
             <HighlightedCpp code={countNokCpCode} />
             <p>
               Try now with json doc - usually we should only put docs or
-              non-docs, mixing may not be very logical, hence let's create new
+              non-docs, mixing may not be very logical, hence let&apos;s create new
               wide table
             </p>
             <HighlightedCpp code={createNewWideTableCpCode} />
             <p>Add few indexes</p>
             <HighlightedCpp code={addFewIndexesCpCode} />
-            <p>Now let's put some docs</p>
+            <p>Now let&apos;s put some docs</p>
             <HighlightedCpp code={putSomeDocsCpCode} />
             <p>
-              Let's define some query for which we wish to scan the data, query
+              Let&apos;s define some query for which we wish to scan the data, query
               selects data where “org=iqlect”
             </p>
             <HighlightedCpp code={defineSomeQueryCpCode} />
@@ -772,7 +772,7 @@ else {
             <HighlightedCpp code={selectAllFFCpCode} />
             <p>We can simply count with filter/query as well</p>
             <HighlightedCpp code={countWithFilterCpCode} />
-            <p>Let's check number of tables in the DB</p>
+            <p>Let&apos;s check number of tables in the DB</p>
             <HighlightedCpp code={checkNOTblCpCode} />
             <p>
               Get all table list and print - note you will get these tables in
@@ -785,8 +785,8 @@ else {
             <HighlightedCpp code={dropOrgIndexCpCode} />
             <p>
               Now we can still put docs and query for index “org”, even though
-              it's not there, db would still fetch the results for the query.
-              Index helps the performance of query however it's not needed for
+              it&apos;s not there, db would still fetch the results for the query.
+              Index helps the performance of query however it&apos;s not needed for
               the query
             </p>
             <HighlightedCpp code={putDocsAgainCpCode} />
@@ -816,12 +816,12 @@ else {
             <p>Load the lib and create the env and db</p>
             <HighlightedJava code={loadLibJCode} />
             <p>
-              Let's create a normal table, note for normal table val is opaque
+              Let&apos;s create a normal table, note for normal table val is opaque
             </p>
             <HighlightedJava code={createNormalTableJCode} />
-            <p>Let's get the db description and print</p>
+            <p>Let&apos;s get the db description and print</p>
             <HighlightedJava code={getDBDescPrintJCode} />
-            <p>Let's put some key and value</p>
+            <p>Let&apos;s put some key and value</p>
             <HighlightedJava code={putSomeKeyValueJCode} />
             <p>
               Use the previous key to INSERT_UNIQUE, it should return 1, which
@@ -846,10 +846,10 @@ else {
                 everything for the table
               </li>
             </ol>
-            <p>Let's drop the table using 2</p>
+            <p>Let&apos;s drop the table using 2</p>
             <HighlightedJava code={dropTblUsingTwoJCode} />
             <p>
-              Let's create wide table now, table that deals with json doc, but
+              Let&apos;s create wide table now, table that deals with json doc, but
               it can also store simple text
             </p>
             <HighlightedJava code={createWideTableJCode} />
@@ -864,18 +864,18 @@ else {
               Try now json doc - usually we should only put docs or non-docs,
               mixing may not be very logical
             </p>
-            <p>Hence let's create new wide table</p>
+            <p>Hence let&apos;s create new wide table</p>
             <HighlightedJava code={createNewWideTableJCode} />
-            <p>Let's add few indexes as well</p>
+            <p>Let&apos;s add few indexes as well</p>
             <p>
               This one creates an index on String type field where max size is
               16
             </p>
             <HighlightedJava code={addFewIndexesJCode} />
-            <p>Let's add some data</p>
+            <p>Let&apos;s add some data</p>
             <HighlightedJava code={addSomeDataJCode} />
             <p>
-              Let's define some query for which we wish to scan the data. Let's
+              Let&apos;s define some query for which we wish to scan the data. Let&apos;s
               use the query select * from t4 where “org” = “iqlect”
             </p>
             <HighlightedJava code={selectOrgSelectJCode} />
@@ -883,7 +883,7 @@ else {
             <HighlightedJava code={selectFFJCode} />
             <p>We can also count for the given query</p>
             <HighlightedJava code={countForGivenQueryJCode} />
-            <p>Now, let's just check the tables</p>
+            <p>Now, let&apos;s just check the tables</p>
             <HighlightedJava code={checkTablesJCode} />
             <p>
               Get all table list and print - note you will get these tables in

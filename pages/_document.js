@@ -58,7 +58,6 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="7lOuvOztsKzDWKraEagiPtl3PM4bRWAjrGxIY2_lZkQ"
           />
-          <script src="/tagManager.js"></script>
         </Head>
         <body>
           <Main />

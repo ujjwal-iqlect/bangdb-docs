@@ -214,7 +214,7 @@ export default function GraphProcessingInBangdb() {
                   many reasons we need it but to put it simply, without AI most
                   of the use cases may not be fully done. Therefore, all systems
                   use AI in some form. Since AI can work only if we have trained
-                  the model on our data or the contextual data. Therefore, it's
+                  the model on our data or the contextual data. Therefore, it&apos;s
                   a normal practice to take the data from database or stored in
                   some file system or in data lake etc. and then export the data
                   to an AI layer for training purpose. Once the model is trained
@@ -359,7 +359,7 @@ export default function GraphProcessingInBangdb() {
                 <p>
                   The BRS allows users to create buckets and put files/objects
                   into it. These files and objects are opaques to BRS hence it
-                  doesn't interpret it at all. There is no theoretical size
+                  doesn&apos;t interpret it at all. There is no theoretical size
                   limit for the files or objects. To handle large files, BangDB
                   splits the files into multiple parts, each of 1MB and then
                   stores them in the BRS. Upon request, the database assembles

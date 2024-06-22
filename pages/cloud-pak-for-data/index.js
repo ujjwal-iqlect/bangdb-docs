@@ -57,7 +57,7 @@ export default function CloudPakForData() {
           <h2>Deploy, Install and Run BangDB on CPD / OpenShift Platform</h2>
           <p>
             This document is a walk-through of the steps involved in deploying
-            'BangDB' database on OpenShift. Users can go to the section on CPD
+            &apos;BangDB&apos; database on OpenShift. Users can go to the section on CPD
             and find the BangDB on Cloud Pak for Data IBM, click the link to get
             started.
           </p>
@@ -74,17 +74,17 @@ export default function CloudPakForData() {
           </ul>
           <p>Details of each of these methods are given below.</p>
           <h3>Installation Requirements</h3>
-          <p>To run a 'BangDB' database on OpenShift you need to:</p>
+          <p>To run a &apos;BangDB&apos; database on OpenShift you need to:</p>
           <ol>
             <li>
               Create an OpenShift cluster. (openshift version 4 and above is
               supported)
             </li>
             <li>
-              Configure command line tool 'OC' on the bastion node. [ METHOD 1 ]
+              Configure command line tool &apos;OC&apos; on the bastion node. [ METHOD 1 ]
             </li>
             <li>
-              Configure 'helm' (version 3.0+) and 'git' on the bastion node.
+              Configure &apos;helm&apos; (version 3.0+) and &apos;git&apos; on the bastion node.
               (Required if you are deploying BangDB instance using helm [ METHOD
               2 ]
             </li>
@@ -94,7 +94,7 @@ export default function CloudPakForData() {
             provision your OpenShift cluster
           </aside>
           <p>
-            'BangDB' instance can be installed on an OpenShift cluster in
+            &apos;BangDB&apos; instance can be installed on an OpenShift cluster in
             several ways:
           </p>
           <ol>
@@ -103,7 +103,7 @@ export default function CloudPakForData() {
           </ol>
           <h3>Create a namespace</h3>
           <p>
-            You can deploy the 'BangDB' instance on a namespace of your choice.
+            You can deploy the &apos;BangDB&apos; instance on a namespace of your choice.
             To create a namespace run the below command from bastion node.
           </p>
           <aside className="doc-note">
@@ -124,7 +124,7 @@ export default function CloudPakForData() {
             copy="oc project <namespace>"
           />
           <p>
-            Let's go to next next pages for{" "}
+            Let&apos;s go to next next pages for{" "}
             <Link href={"/deploy-bangdb-oc-tool"}>METHOD1</Link> or{" "}
             <Link href={"/deploy-bangdb-helm-chart"}>METHOD2</Link> for
             deploying BangDB
