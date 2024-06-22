@@ -56,22 +56,24 @@ export default function Motivation() {
                   <strong> &quot;CRM Settings&quot; </strong>
                 </p>
 
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
+
                 <p>
                   Click on
                   <strong> &quot;Group settings&quot;</strong>
                 </p>
 
-                <Image
-                  alt="Data comparison - BangDB"
-                  width={493}
-                  height={470}
-                  src="/assets/about/2.png"
+                <img
+                  alt="Click on group settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_group_settings.jpg"
                 />
-
-                <p>
-                  Click on the settings icon next to the group where you want to
-                  add a company.
-                </p>
 
                 <p>Click on the "Distribute Lead to Company" tab</p>
 
@@ -79,6 +81,13 @@ export default function Motivation() {
                   Click on the delete icon next to the company which you want to
                   delete.
                 </p>
+
+                <img
+                  alt="Click on delete company icon  - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/delete_company.jpg"
+                />
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}

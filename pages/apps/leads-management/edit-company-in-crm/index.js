@@ -55,19 +55,24 @@ export default function Motivation() {
                 <p>
                   In order to add group in the CRM, Go to the
                   <strong> &quot;CRM Settings&quot; </strong>
-                  {/* {"->"}
-                  <strong> &quot;Company Setting&quot; </strong> */}
                 </p>
+
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
 
                 <p>
                   Click on <strong>&quot;Company Settings&quot;</strong>
                 </p>
 
-                <Image
-                  alt="Data comparison - BangDB"
-                  width={493}
-                  height={470}
-                  src="/assets/about/2.png"
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_company_settings.jpg"
                 />
 
                 <p>
@@ -80,6 +85,13 @@ export default function Motivation() {
                   companies. Click on that icon of the company you wish to edit
                 </p>
 
+                <img
+                  alt="Click on manage group - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_manage_company.jpg"
+                />
+
                 <p>
                   Now it will expand the selected company and show all the
                   related settings.
@@ -90,6 +102,13 @@ export default function Motivation() {
                   users, lead distribution at user level, setup notifications,
                   mails, lead id prefix etc.
                 </p>
+
+                <img
+                  alt="Company editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/company_editing.jpg"
+                />
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}

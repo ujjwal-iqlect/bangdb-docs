@@ -56,16 +56,23 @@ export default function Motivation() {
                   <strong> &quot;CRM Settings&quot; </strong>
                 </p>
 
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
+
                 <p>
                   Click on
                   <strong> &quot;Group settings&quot;</strong>
                 </p>
 
-                <Image
-                  alt="Data comparison - BangDB"
-                  width={493}
-                  height={470}
-                  src="/assets/about/2.png"
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_group_settings.jpg"
                 />
 
                 <p>
@@ -73,12 +80,26 @@ export default function Motivation() {
                   add a company.
                 </p>
 
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_manage_company.jpg"
+                />
+
                 <p>Click on the "Distribute Lead to Company" tab</p>
 
                 <p>
                   Enter the company name and description, then click{" "}
                   <strong>Add</strong>.
                 </p>
+
+                <img
+                  alt="Add company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/add_company.jpg"
+                />
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}
