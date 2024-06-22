@@ -1,6 +1,7 @@
 import React from "react";
 import { AppProvider } from "../Context";
 import "../styles/globals.css";
+import styles from "../styles/article.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebars/Sidebar";
@@ -13,6 +14,9 @@ import StreamSidebar from "../components/Sidebars/StreamSidebar";
 import CepSidebar from "../components/Sidebars/CepSidebar";
 import MlSidebar from "../components/Sidebars/MlSidebar";
 import AboutSidebar from "../components/Sidebars/AboutSidebar";
+import CommonSidebar from "../components/Sidebars/CommonSidebar";
+import { ApiSidebarData } from "../components/Sidebars/ApiSidebarData";
+import { leads_management_sidebar_data } from "../components/Sidebars/data";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -42,7 +46,7 @@ const sidebar = (pageProps) => {
       break;
 
     case pageProps.apiSidebar:
-      return <ApiSidebar />;
+      return <CommonSidebar data={ApiSidebarData} />;
       break;
 
     case pageProps.releaseSidebar:
@@ -63,6 +67,15 @@ const sidebar = (pageProps) => {
 
     case pageProps.aboutSidebar:
       return <AboutSidebar />;
+      break;
+
+    case pageProps.leads_management_sidebar:
+      return (
+        <CommonSidebar
+          data={leads_management_sidebar_data}
+          overviewURI="/apps/leads-management/overview"
+        />
+      );
       break;
 
     case pageProps.noSidebar:

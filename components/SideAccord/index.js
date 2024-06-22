@@ -7,7 +7,7 @@ export default function SideAccord({ item }) {
   const [expandedAccordion, setExpandedAccordion] = useState(false);
   const router = useRouter();
   const scrollToRef = useRef();
-  const pathExists = item.childrens.find((a) => a.path === router.pathname);
+  const pathExists = item?.childrens?.find((a) => a.path === router.pathname);
 
   const toggleAccordion = () => setExpandedAccordion(!expandedAccordion);
 
@@ -55,7 +55,7 @@ export default function SideAccord({ item }) {
           }}
         >
           {/* Mapping through the data */}
-          {item.childrens.map((item) => {
+          {item?.childrens?.map((item) => {
             return (
               <SideItem
                 expandedAccordion={expandedAccordion}

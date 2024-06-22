@@ -21,8 +21,6 @@ export default function GraphSidebar() {
     }
   }, []);
 
-  console.log(sidebar);
-
   return (
     <>
       <SidebarBG
