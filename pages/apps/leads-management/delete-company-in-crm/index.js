@@ -43,50 +43,51 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Add group in CRM</h1>
+              <h1 className="article-title">Delete company in group</h1>
               <div className="article-body">
                 <aside className="doc-note">
                   <strong>Note: </strong>
-                  You need to be CRM admin in order to access the CRM level
-                  settings.
+                  You need to be CRM admin OR Group Admin in order to access
+                  this setting.
                 </aside>
 
                 <p>
-                  In order to add group in the CRM, Go to the
+                  In order to add company in a group, Go to the
                   <strong> &quot;CRM Settings&quot; </strong>
                 </p>
 
-                <img
-                  alt="Click on crm settings - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
-                />
+                <p>
+                  Click on
+                  <strong> &quot;Group settings&quot;</strong>
+                </p>
 
-                <p>Click on &quot;Setup CRM&quot;</p>
-
-                <img
-                  alt="Click on setup crm - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_setup_crm.jpg"
+                <Image
+                  alt="Data comparison - BangDB"
+                  width={493}
+                  height={470}
+                  src="/assets/about/2.png"
                 />
 
                 <p>
-                  Here, add the group name along with group description and
-                  click on <strong>Add</strong>.
+                  Click on the settings icon next to the group where you want to
+                  add a company.
                 </p>
 
-                <img
-                  alt="Click on setup crm - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/add_group.jpg"
-                />
+                <p>Click on the "Distribute Lead to Company" tab</p>
+
+                <p>
+                  Click on the delete icon next to the company which you want to
+                  delete.
+                </p>
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}
-                  <strong>Save</strong>
+                  <strong>Save Group (Draft)</strong>.
+                </p>
+
+                <p>
+                  Changes are now saved locally, in order to save these changes
+                  on the app. Click on <strong>Save</strong>.
                 </p>
               </div>
             </article>

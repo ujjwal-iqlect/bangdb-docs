@@ -54,23 +54,35 @@ export default function Motivation() {
                 <p>
                   In order to add group in the CRM, Go to the
                   <strong> &quot;CRM Settings&quot; </strong>
-                  {"->"}
-                  <strong> &quot;Setup CRM&quot; </strong>
                 </p>
+
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
 
                 <p>Click on &quot;Setup CRM&quot;</p>
 
-                <Image
-                  alt="Data comparison - BangDB"
-                  width={493}
-                  height={470}
-                  src="/assets/about/2.png"
+                <img
+                  alt="Click on setup crm - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_setup_crm.jpg"
                 />
 
                 <p>
                   Here, click on the <strong>Delete</strong> icon which is right
                   next to the group you want to delete.
                 </p>
+
+                <img
+                  alt="Click on setup crm - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/delete_group.jpg"
+                />
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}

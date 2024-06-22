@@ -54,19 +54,24 @@ export default function Motivation() {
                 <p>
                   In order to add group in the CRM, Go to the
                   <strong> &quot;CRM Settings&quot; </strong>
-                  {/* {"->"}
-                  <strong> &quot;Group Setting&quot; </strong> */}
                 </p>
+
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
 
                 <p>
                   Click on <strong>&quot;Group Settings&quot;</strong>
                 </p>
 
-                <Image
-                  alt="Data comparison - BangDB"
-                  width={493}
-                  height={470}
-                  src="/assets/about/2.png"
+                <img
+                  alt="Click on group settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_group_settings.jpg"
                 />
 
                 <p>
@@ -78,6 +83,13 @@ export default function Motivation() {
                   groups. Click on that icon of the group you wish to edit
                 </p>
 
+                <img
+                  alt="Click on manage group - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_manage_group.jpg"
+                />
+
                 <p>
                   Now it will expand the selected group and show all the related
                   settings.
@@ -86,9 +98,16 @@ export default function Motivation() {
                 <p>
                   From here you can edit the group description, manage group
                   admins, create &amp; delete companies, lead distribution at
-                  group level, default severity, default due_date for the leads
-                  etc.
+                  company level, default severity, default due_date for the
+                  leads etc.
                 </p>
+
+                <img
+                  alt="Group editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/group_editing.jpg"
+                />
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}

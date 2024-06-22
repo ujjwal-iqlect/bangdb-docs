@@ -43,50 +43,62 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Add group in CRM</h1>
+              <h1 className="article-title">Edit company in CRM</h1>
               <div className="article-body">
                 <aside className="doc-note">
                   <strong>Note: </strong>
-                  You need to be CRM admin in order to access the CRM level
-                  settings.
+                  You need to be either the CRM admin or a Group admin or a
+                  Company admin of the company that you wish to edit, in order
+                  to edit the group.
                 </aside>
 
                 <p>
                   In order to add group in the CRM, Go to the
                   <strong> &quot;CRM Settings&quot; </strong>
+                  {/* {"->"}
+                  <strong> &quot;Company Setting&quot; </strong> */}
                 </p>
 
-                <img
-                  alt="Click on crm settings - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
-                />
+                <p>
+                  Click on <strong>&quot;Company Settings&quot;</strong>
+                </p>
 
-                <p>Click on &quot;Setup CRM&quot;</p>
-
-                <img
-                  alt="Click on setup crm - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_setup_crm.jpg"
+                <Image
+                  alt="Data comparison - BangDB"
+                  width={493}
+                  height={470}
+                  src="/assets/about/2.png"
                 />
 
                 <p>
-                  Here, add the group name along with group description and
-                  click on <strong>Add</strong>.
+                  Here, you will see list of all the companies you have access
+                  to.
                 </p>
 
-                <img
-                  alt="Click on setup crm - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/add_group.jpg"
-                />
+                <p>
+                  There is a settings icon provided right next to all the listed
+                  companies. Click on that icon of the company you wish to edit
+                </p>
+
+                <p>
+                  Now it will expand the selected company and show all the
+                  related settings.
+                </p>
+
+                <p>
+                  From here you can edit the company description, manage company
+                  users, lead distribution at user level, setup notifications,
+                  mails, lead id prefix etc.
+                </p>
 
                 <p>
                   Once you&apos;re done with your changes. Click on{" "}
-                  <strong>Save</strong>
+                  <strong>Save Company (Draft)</strong>.
+                </p>
+
+                <p>
+                  Changes are now saved locally, in order to save these changes
+                  on the app. Click on <strong>Save</strong>.
                 </p>
               </div>
             </article>

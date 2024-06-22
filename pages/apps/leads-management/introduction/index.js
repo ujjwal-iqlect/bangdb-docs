@@ -44,26 +44,50 @@ export default function Motivation() {
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
               <h1 className="article-title">Introduction</h1>
+
+              <aside className="doc-note">
+                <strong>Note: </strong>
+                You need to be CRM admin in order to access the CRM level
+                settings.
+              </aside>
+
               <div className="article-body">
                 <p>
                   In order to access the CRM settings, Click on the "CRM
                   Settings" link thats given in the top header section.
                 </p>
 
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
+
                 <p>Click on &quot;Setup CRM&quot;</p>
 
-                <aside className="doc-note">
-                  <strong>Note: </strong>
-                  You need to be CRM admin in order to access the CRM level
-                  settings.
-                </aside>
-
-                <Image
-                  alt="Data comparison - BangDB"
-                  width={493}
-                  height={470}
-                  src="/assets/about/2.png"
+                <img
+                  alt="Click on setup crm - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_setup_crm.jpg"
                 />
+
+                <p>
+                  From here you can manage the CRM admins, groups, lead
+                  distribution at group level etc.
+                </p>
+
+                <img
+                  alt="Crm editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/crm_editing.jpg"
+                />
+
+                <p>
+                  Once the changes are done. Click on <strong>Save</strong>.
+                </p>
               </div>
             </article>
           </div>
