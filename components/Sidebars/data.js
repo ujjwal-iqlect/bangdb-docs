@@ -114,7 +114,8 @@ export const leads_management_sidebar_data = [
         id: "4",
         title: "Activate/De-activate user from a company",
         path:
-          path_prefix + "/manage-account-users/activate-de-activate-user-from-company",
+          path_prefix +
+          "/manage-account-users/activate-de-activate-user-from-company",
       },
       {
         id: "5",
@@ -132,6 +133,27 @@ export const leads_management_sidebar_data = [
         id: "7",
         title: "Delete user from account",
         path: path_prefix + "/manage-account-users/delete-user",
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Stats",
+    childrens: [
+      {
+        id: "0",
+        title: "Stats for lead pipeline / company",
+        path: path_prefix + '/stats-for-company',
+      },
+      {
+        id: "1",
+        title: "Funnel analysis",
+        path: path_prefix,
+      },
+      {
+        id: "2",
+        title: "Clickstream & visitor analysis",
+        path: path_prefix + '/click-stream-and-visitor-analysis',
       },
     ],
   },
