@@ -45,8 +45,8 @@ export default function BangdbIntroduction() {
               <h1 className="article-title">Introduction to BangDB 2.0</h1>
               <div className="article-body">
                 <p>
-                  BangDB 2.0 is more than just a NoSql database, it's a
-                  predictive real-time NoSQL data analytics platform. It's
+                  BangDB 2.0 is more than just a NoSql database, it&apos;s a
+                  predictive real-time NoSQL data analytics platform. It&apos;s
                   designed to align with the future and enable the developers /
                   users to build use cases, solutions with ease and in simple
                   manner.
@@ -138,7 +138,7 @@ export default function BangdbIntroduction() {
                       className="external"
                       href={"https://bangdb.com/resources"}
                     >
-                      "How To" Videos
+                      &quot;How To&quot; Videos
                     </Link>
                   </li>
                   <li>

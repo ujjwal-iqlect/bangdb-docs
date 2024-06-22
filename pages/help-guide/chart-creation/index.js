@@ -815,7 +815,7 @@ export default function HGChartCreation() {
             <li>Delete the chart</li>
             <li>
               Pin the chart: If you want to move the chart, first we have to
-              Unpin it. After moving, we have to Pin in again so that it won't
+              Unpin it. After moving, we have to Pin in again so that it won&apos;t
               change it&apos;s position if page reloads happen.
             </li>
             <li>

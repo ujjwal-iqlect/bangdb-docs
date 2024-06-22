@@ -697,7 +697,7 @@ Options:
           <p>
             When BangDB runs as separate instance as BRS then it can have
             different DB name, whereas if it runs as part of the DB then it
-            shares the same name as DB's database
+            shares the same name as DB&apos;s database
           </p>
           <h4>BRS_SERVER_ID</h4>
           <p>
@@ -713,7 +713,7 @@ Options:
           </p>
           <h4>BRS_ML_BUCKET_NAME</h4>
           <p>
-            This sets the default bucket that's created by the DB at the start,
+            This sets the default bucket that&apos;s created by the DB at the start,
             you may use this (along with the default access key and secret key)
             to store files in this bucket
           </p>
@@ -721,28 +721,28 @@ Options:
           <p>
             BangDB can run as separate ML training server or as part of the DB
             as well. When it runs as part of the DB then it shares the IP else
-            it has it's own IP Using this param, you may set the IP of the
+            it has it&apos;s own IP Using this param, you may set the IP of the
             training server accordingly.
           </p>
           <h4>ML_TRAINING_SERVER_PORT</h4>
           <p>
             BangDB can run as separate ML training server or as part of the DB
             as well. When it runs as part of the DB then it shares the Port else
-            it has it's own Port. Using this param, you may set the Port of the
+            it has it&apos;s own Port. Using this param, you may set the Port of the
             training server accordingly.
           </p>
           <h4>ML_PRED_SERVER_IP</h4>
           <p>
             BangDB can run as separate ML prediction server or as part of the DB
             as well. When it runs as part of the DB then it shares the IP else
-            it has it's own IP Using this param, you may set the IP of the
+            it has it&apos;s own IP Using this param, you may set the IP of the
             prediction server accordingly
           </p>
           <h4>ML_PRED_SERVER_PORT</h4>
           <p>
             BangDB can run as separate ML prediction server or as part of the DB
             as well. When it runs as part of the DB then it shares the Port else
-            it has it's own Port. Using this param, you may set the Port of the
+            it has it&apos;s own Port. Using this param, you may set the Port of the
             prediction server accordingly.
           </p>
           <h4>BANGDB_ML_SERVER_TYPE</h4>
@@ -754,7 +754,7 @@ Options:
           <aside className="doc-note">
             <strong>Note: </strong>
             <br />0 - invalid [ default will be used - default is prediction
-            server ]<br />1 - Training Server [ no prediction will happen, it's
+            server ]<br />1 - Training Server [ no prediction will happen, it&apos;s
             a standalone training server ]
             <br />2 - Prediction Server [ no training will happen, only for
             prediction ]<br />3 - Hybrid - both train and predict at a single
@@ -792,7 +792,7 @@ Options:
           <p>
             The following are config params to tune the internal working of core
             BangDB. Therefore we need to be really sure before editing these.
-            Let's go and understand these params as well
+            Let&apos;s go and understand these params as well
           </p>
           <h4>PAGE_SPILT_FACTOR</h4>
           <p>
@@ -811,19 +811,19 @@ Options:
           </p>
           <h4>LOG_FLUSH_FREQ </h4>
           <p>
-            This is frequency of log flush initiation. It's tuned for higher
+            This is frequency of log flush initiation. It&apos;s tuned for higher
             performance for general cases, however, you may play with the number
             and set what works best for you
           </p>
           <h4>CHKPNT_ENABLED</h4>
           <p>
             This is set to checkpointing of WAL. 0 means not checkpointing else
-            yes. It's recommended to keep it ON, but for higher performance in
+            yes. It&apos;s recommended to keep it ON, but for higher performance in
             certain cases you may turn it off as well
           </p>
           <h4>CHKPNT_FREQ</h4>
           <p>
-            If checkpointing is ON then what's the frequency? Again this is set
+            If checkpointing is ON then what&apos;s the frequency? Again this is set
             for better performance in general, however you may chose to edit it
             for experimentation and select the right value
           </p>
@@ -849,7 +849,7 @@ Options:
           <p>
             To avoid this, BangDB keeps checking and reclaiming the log files
             not needed by the db, even in the case of DB crash and recovery.
-            It's a very complex process but very important. Therefore, we should
+            It&apos;s a very complex process but very important. Therefore, we should
             have this value properly set to ensure DB runs properly without
             filling the disk with log files.
           </p>
@@ -859,7 +859,7 @@ Options:
             logs could be reclaimed.
           </p>
           <aside className="doc-note">
-            <strong>Note: </strong>0 means don't do anything, 1 means archive in
+            <strong>Note: </strong>0 means don&apos;t do anything, 1 means archive in
             reclaim folder 2 means delete the log files usually, 2 is good
           </aside>
           <h4>LOG_RECLAIM_DIR</h4>
@@ -882,7 +882,7 @@ Options:
           <p>
             Maximum number of pages to look for scatter gather, put 0 to select
             the system supported number (suggested), else put whatever num, but
-            if it's more than system supported then it will be corrected to the
+            if it&apos;s more than system supported then it will be corrected to the
             system supported one. Ideally no need to change this
           </p>
           <h4>MAX_NUM_TABLE_HEADER_SLOT</h4>

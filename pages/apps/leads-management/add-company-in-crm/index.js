@@ -87,7 +87,7 @@ export default function Motivation() {
                   src="/assets/apps/leads-management/click_on_manage_company.jpg"
                 />
 
-                <p>Click on the "Distribute Lead to Company" tab</p>
+                <p>Click on the &quot;Distribute Lead to Company&quot; tab</p>
 
                 <p>
                   Enter the company name and description, then click{" "}

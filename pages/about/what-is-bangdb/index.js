@@ -211,12 +211,12 @@ export default function WhatsBangDB() {
                 </p>
 
                 <p>
-                  This is typical micro-service-oriented approach, which doesn't
+                  This is typical micro-service-oriented approach, which doesn&apos;t
                   fit well with a system like this. This has several issues
                   which are discussed above in detail. But apart from the
-                  mentioned issues like it's a costly affair, resource intensive
+                  mentioned issues like it&apos;s a costly affair, resource intensive
                   approach, takes too much time to build and ship, app layer
-                  becomes brittle leading to huge loss of team's productivity
+                  becomes brittle leading to huge loss of team&apos;s productivity
                   etc., there are core issues as well with this approach.
                 </p>
 
@@ -250,10 +250,10 @@ export default function WhatsBangDB() {
                 <p>
                   With convergence, we avoid these issues as well. Once data
                   reaches a node, all computations happen there. This also
-                  allows us to handle way more client's request for the same
+                  allows us to handle way more client&apos;s request for the same
                   configuration, which reduces cost, complexity and improves
                   performance. Managing such converged system is easy, and it
-                  doesn't even require a dedicated set of resources for the
+                  doesn&apos;t even require a dedicated set of resources for the
                   same.
                 </p>
 

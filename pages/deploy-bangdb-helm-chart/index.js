@@ -68,7 +68,7 @@ export default function DeployBangdbHelmChart() {
               code="git clone https://github.com/sachin-sinha/bangdb_helm"
               copy="git clone https://github.com/sachin-sinha/bangdb_helm"
             />
-            <li>Make sure the git branch being used is 'main'</li>
+            <li>Make sure the git branch being used is &apos;main&apos;</li>
             <Codebox code="cd bangdb_helm" copy="cd bangdb_helm" />
             <Codebox code="git checkout main" copy="git checkout main" />
             <li>Use the Helm CLI to install the Bangdb chart</li>
@@ -81,7 +81,7 @@ export default function DeployBangdbHelmChart() {
           <p>
             This will install the Bangdb chart with default configuration. It
             will create two PV claims that will be used by the Bangdb for its
-            'data' directory and 'logdir' directory. If you want to configure
+            &apos;data&apos; directory and &apos;logdir&apos; directory. If you want to configure
             Bangdb parameters, refer the <strong>Configuration </strong>
             section.
           </p>
@@ -117,13 +117,13 @@ export default function DeployBangdbHelmChart() {
               respectively).
             </li>
             <p>
-              To use a Storage Class, uncomment the 'storageClass' option and
+              To use a Storage Class, uncomment the &apos;storageClass&apos; option and
               set your desired storage class here. The default and the recommend
               size for the volumes are 4Gi. Both the data and logdir will use
               this value in the Volume Claims.
             </p>
             <p>
-              To disable Persistence, set 'enabled' to 'false' under the
+              To disable Persistence, set &apos;enabled&apos; to &apos;false&apos; under the
               persistence dictionary in values.yaml. Then the chart will instead
               use the emptydir volume for the data and logdir directories.
             </p>

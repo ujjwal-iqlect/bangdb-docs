@@ -75,7 +75,7 @@ export default function Motivation() {
                   src="/assets/apps/leads-management/click_on_group_settings.jpg"
                 />
 
-                <p>Click on the "Distribute Lead to Company" tab</p>
+                <p>Click on the &quot;Distribute Lead to Company&quot; tab</p>
 
                 <p>
                   Click on the delete icon next to the company which you want to

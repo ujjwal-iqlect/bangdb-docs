@@ -73,7 +73,7 @@ export default function DockerImages() {
         <h1 className="article-title">Docker Image</h1>
         <div className="article-body">
           <p>
-            The docker images are available publicly for use. it's available at
+            The docker images are available publicly for use. it&apos;s available at
             the{" "}
             <Link
               target="_blank"

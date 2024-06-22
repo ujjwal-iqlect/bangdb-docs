@@ -98,7 +98,7 @@ export default function Motivation() {
                   real-time too. The context is important, and we need to link
                   different data to get the right insight. Need to act in
                   real-time was never more emphasized than today. All of these
-                  are changing the users&apos; and clients' requirements and
+                  are changing the users&apos; and clients&apos; requirements and
                   even for a traditional humble use case, we need to address
                   these things in proper way to solve the problem in
                   satisfactorily manner.
@@ -148,7 +148,7 @@ export default function Motivation() {
                       src="/assets/about/3.png"
                     />
                     <p>
-                      It's largely real-time data. This is reflected in the
+                      It&apos;s largely real-time data. This is reflected in the
                       growth of real-time systems and databases.
                     </p>
                   </li>
@@ -165,7 +165,7 @@ export default function Motivation() {
                       src="/assets/about/4.png"
                     />
                     <p>
-                      It's largely connected data. This is reflected in the
+                      It&apos;s largely connected data. This is reflected in the
                       tremendous growth of Graph databases in past few years.
                     </p>
                   </li>
@@ -265,9 +265,9 @@ export default function Motivation() {
                     Stitching is such disparate and heterogenous systems is
                     extremely hard which takes tons of high-tech resources and
                     elongated period which results in huge spend upfront.
-                    Frankly, this can't be done by every company or team as this
+                    Frankly, this can&apos;t be done by every company or team as this
                     is totally different beast and needed to be done 100 percent
-                    in correct manner, else it won't work.
+                    in correct manner, else it won&apos;t work.
                   </p>
                   <li>
                     Managing and scaling is too complex, takes lots of time.
@@ -351,13 +351,13 @@ export default function Motivation() {
                   There are different systems / databases available in the
                   market and there are many leaders in their respective areas as
                   well. For example, Neo4j is leader in the Graph database
-                  space, but it can' handle document or time-series data well.
+                  space, but it can&apos; handle document or time-series data well.
                   Similarly, Mongodb is leader in the document database area,
-                  but it's very hard to bend it and align with the needs for
+                  but it&apos;s very hard to bend it and align with the needs for
                   streaming data analysis and deal with graph structure in truly
-                  native manner. Basically, we can't just take different
+                  native manner. Basically, we can&apos;t just take different
                   databases and put them together to work like a single combined
-                  system. And we also can't force all data to align with one
+                  system. And we also can&apos;t force all data to align with one
                   database structure and pretend to solve the problem which in
                   the first place needed to keep the data structure and context
                   intact.
@@ -376,7 +376,7 @@ export default function Motivation() {
                   We can argue, why a Document database is not sufficient to
                   handle all types of data? Using the same logic, why a Graph
                   database is not enough to deal with different kinds of data?
-                  Let's try and see why they alone are not adequate and, it's
+                  Let&apos;s try and see why they alone are not adequate and, it&apos;s
                   not recommended to force fit.
                 </p>
 

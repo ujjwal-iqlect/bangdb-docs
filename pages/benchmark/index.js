@@ -43,7 +43,7 @@ export default function Benchmark() {
           <h3>Throughput / IOPS for put and get for 1B records</h3>
           <p>
             BangDB is a high-performance converged NoSQL data platform designed
-            to handle fast moving data. It's especially suitable for EdgeAI,
+            to handle fast moving data. It&apos;s especially suitable for EdgeAI,
             which requires lot more than just a NoSQL store. For ex, ability to
             ingest data efficiently, then to process and analyze for finding
             interesting patterns or for prediction and finally store in a manner

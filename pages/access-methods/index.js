@@ -108,7 +108,7 @@ export default function AccessMethods() {
                 <p>
                   Btree should be used for storing data when order is important.
                   For example, to be able to retrieve data using range scan or
-                  query, it's very important that keys are sorted and stored in
+                  query, it&apos;s very important that keys are sorted and stored in
                   the order such that the range based selection can be done.
                 </p>
                 <h2>Hash (ExtHash*) data structure methodology</h2>
@@ -142,7 +142,7 @@ export default function AccessMethods() {
                     concurrently to get or put keys, which allows the db to
                     leverage multi cores machine very efficiently.
                   </li>
-                  <li>It's a deadlock proof design and implementation.</li>
+                  <li>It&apos;s a deadlock proof design and implementation.</li>
                 </ul>
                 <figure
                   style={{

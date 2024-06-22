@@ -68,10 +68,10 @@ export default function Architecture() {
                 </p>
                 <p>
                   The processing layer is where data is processed. Please note
-                  that the data is not yet on the file system and it's analysed
+                  that the data is not yet on the file system and it&apos;s analysed
                   much before that. Convergence allows BangDB to avoid network
                   hops and also hitting the file system before analysis, this
-                  reduces latency to a level which can't be matched with siloed
+                  reduces latency to a level which can&apos;t be matched with siloed
                   system
                 </p>
                 <p>

@@ -127,7 +127,7 @@ tenv.setAllowDuplicate(true);
                   longitude for a given location. Data/event is flowing into the
                   db. Now we must create the geohash index and add it to the
                   events in the incoming stream. To do so, we will use{" "}
-                  <code>"catr"</code>.
+                  <code>&quot;catr&quot;</code>.
                 </p>
                 <HighlightedCpp code={usingCATRCode} />
                 <aside className="doc-note">

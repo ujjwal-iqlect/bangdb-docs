@@ -53,8 +53,8 @@ export default function Motivation() {
 
               <div className="article-body">
                 <p>
-                  In order to access the CRM settings, Click on the "CRM
-                  Settings" link thats given in the top header section.
+                  In order to access the CRM settings, Click on the &quot;CRM
+                  Settings&quot; link thats given in the top header section.
                 </p>
 
                 <img

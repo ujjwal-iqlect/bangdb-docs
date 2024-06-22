@@ -93,18 +93,18 @@ template:
             METHOD 1 - Deploying BangDB on openshift using OC command line tool
           </h3>
           <p>
-            To Deploy BangDB on an openshift using OC command line tool - Let's
-            create a 'BangDB' instance as a Kubernetes deployment object. Here
-            is the yaml file, bangdb.yaml for deployment object. Please don't
+            To Deploy BangDB on an openshift using OC command line tool - Let&apos;s
+            create a &apos;BangDB&apos; instance as a Kubernetes deployment object. Here
+            is the yaml file, bangdb.yaml for deployment object. Please don&apos;t
             forget to change the value of namespace in the yaml file below.
           </p>
           <Codebox code={bangdbYaml} />
           <p>Now you can run the following command from the Bastion node.</p>
           <Codebox code="oc apply -f bangdb.yaml" />
           <p>
-            This deployment creates a single pod running 'BangDB'. To verify the
+            This deployment creates a single pod running &apos;BangDB&apos;. To verify the
             deployment you can check the logs of the pod created. The logs
-            should appear as shown below saying 'BangDB' service is up and
+            should appear as shown below saying &apos;BangDB&apos; service is up and
             running.
           </p>
           <Image

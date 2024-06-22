@@ -68,7 +68,7 @@ export default function UploadAnObjectInMemory() {
           </p>
           <p>Example</p>
           <aside className="doc-warning">
-            <strong>Warning: </strong> // deprecated, use{" "}
+            <strong>Warning: </strong> {`// deprecated, use`}{" "}
             <strong>
               <i>putfile</i>
             </strong>{" "}

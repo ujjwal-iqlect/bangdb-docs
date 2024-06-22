@@ -113,12 +113,12 @@ export default function WorkingWithBangDB() {
                   configurable parameters for simplifying the process and
                   enhancing the performance. The native clients ensure same
                   interface across different libraries and ways, which makes the
-                  user's code portable.
+                  user&apos;s code portable.
                 </p>
 
                 <p>
                   BangDB server manages the concurrent tens of thousands of TCP
-                  connections, therefore, these clients don't have to worry or
+                  connections, therefore, these clients don&apos;t have to worry or
                   manage these things. The network error handling or retrying
                   etc. are all built into these clients. The clients are
                   available in C, C++, Java, C# as of now and we will be adding
@@ -144,7 +144,7 @@ export default function WorkingWithBangDB() {
                   All actions and features are also supported by the REST API.
                   Since BangDB works as the TCP and REST server at the same
                   time, on two different ports for the same server process,
-                  therefore, it's quite efficient to use REST API and TCP based
+                  therefore, it&apos;s quite efficient to use REST API and TCP based
                   calls from different clients or interfaces as required. The
                   REST API detail docs on Swagger and Postman is documented here
                   and there is a separate doc on REST API details for reference.

@@ -70,7 +70,7 @@ export default function Motivation() {
                 />
 
                 <p>
-                  It will open the edit user page. Where you'll see the
+                  It will open the edit user page. Where you&apos;ll see the
                   following status change options:
                 </p>
 

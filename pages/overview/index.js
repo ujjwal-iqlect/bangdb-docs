@@ -70,10 +70,10 @@ export default function Overview() {
             timeseries data analysis system in place.
           </p>
           <p>
-            It's important to note that bringing another streaming system and
+            It&apos;s important to note that bringing another streaming system and
             integrating it with the NoSql database will not be able to do the
             justice to both the “ease of use & faster time to market” from
-            developers' perspective and “continuous intelligence with sub-sec
+            developers&apos; perspective and “continuous intelligence with sub-sec
             latency” from the use case requirement angle. Hence, we must have
             streaming component natively integrated within the NoSQL itself.
           </p>
@@ -151,10 +151,10 @@ export default function Overview() {
             in order to process another byte beyond memory size.
           </p>
           <p>
-            Therefore, we must get rid of the this "bug" and allow data to be
+            Therefore, we must get rid of the this &quot;bug&quot; and allow data to be
             overflowed to the disk. But going to disk makes the processing too
             slow and this was the main reasons why other platform went
-            “in-memory” only approach.
+            &quot;in-memory&quot; only approach.
           </p>
           <figure style={{ width: "50%", margin: "0 auto" }}>
             <Image

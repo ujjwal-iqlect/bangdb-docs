@@ -58,7 +58,7 @@ export default function FeatureDetails() {
                     <strong>Embedded</strong> - within the process or device
                   </li>
                   <p>
-                    BangDB embedded runs within and as part of the user's
+                    BangDB embedded runs within and as part of the user&apos;s
                     process. This allows users to build local apps. For IOT use
                     cases, the BangDB embedded can run within devices
                     (micro-processors) and deal with some state based complex

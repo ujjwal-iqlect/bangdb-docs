@@ -119,12 +119,12 @@ export default function TheBangdbStack() {
                   <li>
                     This reduces the cost by a huge margin, by reducing amount
                     of memory needed by the database. So, to handle 100GB of
-                    data, like other database we won't need 100GB of RAM, we
+                    data, like other database we won&apos;t need 100GB of RAM, we
                     could handle it with 16 or 32 GB of RAM in high performance
                     manner.
                   </li>
                   <li>
-                    The database doesn't stop accepting more data once the RAM
+                    The database doesn&apos;t stop accepting more data once the RAM
                     is full like many databases in the market, instead BangDB
                     simply overflows some data to disk in intelligent manner to
                     handle more data at run time.
@@ -241,7 +241,7 @@ export default function TheBangdbStack() {
                 <h2>Buffer Pool and Page Cache</h2>
 
                 <p>
-                  But this may not work if we don't have control on each byte
+                  But this may not work if we don&apos;t have control on each byte
                   that gets written into and read from the database. Hence
                   BangDB also implements its own Buffer pool and Page cache.
                   These give undue advantages to the database when it comes to
@@ -290,9 +290,9 @@ export default function TheBangdbStack() {
                 <h2>Memory handling - Slab Allocator</h2>
                 <p>
                   The other important factor in high performance systems is the
-                  ability to handle memory well. It would be best if we don't
+                  ability to handle memory well. It would be best if we don&apos;t
                   have to deal with creating memory on heap and deleting it
-                  after the use. Also, it would be amazing if we don't copy data
+                  after the use. Also, it would be amazing if we don&apos;t copy data
                   but copy the reference to the data, etc. For such purposes,
                   BangDB implements its own Slab Allocator for better memory
                   handling at run time.
@@ -336,7 +336,7 @@ export default function TheBangdbStack() {
                 </p>
 
                 <p>
-                  By concurrency, it doesn't mean if the operations are
+                  By concurrency, it doesn&apos;t mean if the operations are
                   synchronized or not. It means is the database using all
                   cores/cpus/threads available on the server in concurrent
                   manner. It means is the code written for multiple threads to
@@ -344,10 +344,10 @@ export default function TheBangdbStack() {
                   the algorithm implemented inside database fully capable of
                   running in parallel. It means are the operations running in
                   sequential mode or parallel mode wherever it can. And these
-                  are hard questions. Hard because it's extremely hard to write
+                  are hard questions. Hard because it&apos;s extremely hard to write
                   such code, especially within database at the core level. And
-                  that's why many databases, including very popular ones, don't
-                  do this properly. In fact, a majority of these don't have
+                  that&apos;s why many databases, including very popular ones, don&apos;t
+                  do this properly. In fact, a majority of these don&apos;t have
                   writes fully concurrent. This limits the optimal use of the
                   server. It also limits the performance, and it bloats the cost
                   in the end.
@@ -385,7 +385,7 @@ export default function TheBangdbStack() {
                   For primary and secondary keys, we can have two different
                   arrangements, ExtHASH (extensible hash+) and B+linkTree (BTREE
                   with links). Most of the time, BTREE works well as this
-                  supports range queries too. But in some cases when we don't
+                  supports range queries too. But in some cases when we don&apos;t
                   have range query requirements then EHASH is works better.
                   Secondary keys are properties in the document or events or
                   node/relation that we are storing, and we would like to use
@@ -482,7 +482,7 @@ Recursive scan - powerful concept, for any index combination scan`}
                   Geospatial index. Nested index is for the documents where the
                   key is nested somewhere in the document. The key could be
                   repeated as well, in fact BangDB supports repeated elements
-                  within the JSON doc (although the JSON doc doesn't support
+                  within the JSON doc (although the JSON doc doesn&apos;t support
                   this but in real world, we see such data). The geospatial
                   index is for search based on location, boundary, distance in
                   the real world.
