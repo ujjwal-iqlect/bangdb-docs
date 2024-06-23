@@ -138,12 +138,78 @@ export const leads_management_sidebar_data = [
   },
   {
     id: "4",
+    title: "Leads",
+    childrens: [
+      {
+        id: "0",
+        title: "Add lead manually",
+        path: path_prefix + "/add-lead-in-company",
+      },
+      {
+        id: "1",
+        title: "Upload leads from excel / csv",
+        path: path_prefix + "/upload-leads-from-csv",
+      },
+      {
+        id: "2",
+        title: "Setup web forms for lead collection",
+        path: path_prefix + "/setup-web-forms-for-lead-collection",
+      },
+      {
+        id: "3",
+        title: "Add website for click-stream analysis",
+        path: path_prefix + "/add-webiste-for-click-stream-analysis",
+      },
+      {
+        id: "4",
+        title: "Edit / Work on lead",
+        path: path_prefix + "/edit-lead",
+      },
+      {
+        id: "5",
+        title: "Send E-mail",
+        path: path_prefix + "/send-email",
+      },
+      {
+        id: "6",
+        title: "Make call",
+        path: path_prefix + "/make-calls",
+      },
+      {
+        id: "7",
+        title: "Setup an event",
+        path: path_prefix + "/setup-an-event",
+      },
+      {
+        id: "8",
+        title: "Delete a lead",
+        path: path_prefix + "/delete-a-lead",
+      },
+      {
+        id: "9",
+        title: "Add / Edit title of a lead",
+        path: path_prefix + "/edit-lead-title",
+      },
+      {
+        id: "10",
+        title: "Upload attachments / file to a lead",
+        path: path_prefix + "/upload-attachments-in-lead",
+      },
+      {
+        id: "11",
+        title: "Filter Leads",
+        path: path_prefix + "/filter-leads",
+      },
+    ],
+  },
+  {
+    id: "5",
     title: "Stats",
     childrens: [
       {
         id: "0",
         title: "Stats for lead pipeline / company",
-        path: path_prefix + '/stats-for-company',
+        path: path_prefix + "/stats-for-company",
       },
       {
         id: "1",
@@ -153,7 +219,7 @@ export const leads_management_sidebar_data = [
       {
         id: "2",
         title: "Clickstream & visitor analysis",
-        path: path_prefix + '/click-stream-and-visitor-analysis',
+        path: path_prefix + "/click-stream-and-visitor-analysis",
       },
     ],
   },
