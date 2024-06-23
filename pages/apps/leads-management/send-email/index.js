@@ -53,7 +53,7 @@ export default function Motivation() {
 
                 <p>
                   Open any lead, scroll down to email section and authenticate
-                  with Google if you haven't already.
+                  with Google if you haven&apos;t already.
                 </p>
 
                 <img
