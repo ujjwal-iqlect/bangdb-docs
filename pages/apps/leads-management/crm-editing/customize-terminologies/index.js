@@ -100,8 +100,8 @@ export default function Motivation() {
                     <strong>Work</strong>
                   </li>
                   <p>
-                    By default it is &quot;LeadCRM&quot;. But if you would like
-                    to call it something else, it can be changed by editing it
+                    By default it is &quot;LeadCRM&quot;. However, if you prefer
+                    to call it something else, you can change it by editing it
                     from here.
                   </p>
 
@@ -109,8 +109,8 @@ export default function Motivation() {
                     <strong>Pipe</strong>
                   </li>
                   <p>
-                    By default it is &quot;Company&quot;. But if you would like
-                    to call it something else, it can be changed by editing it
+                    By default it is &quot;Company&quot;. However, if you prefer
+                    to call it something else, you can change it by editing it
                     from here.
                   </p>
 
@@ -118,26 +118,27 @@ export default function Motivation() {
                     <strong>Job</strong>
                   </li>
                   <p>
-                    By default it is &quot;Lead&quot;. But if you would like
-                    to call it something else, it can be changed by editing it
-                    from here.
+                    By default it is &quot;Lead&quot;. However, if you prefer to
+                    call it something else, you can change it by editing it from
+                    here.
                   </p>
 
                   <li>
                     <strong>Classification</strong>
                   </li>
                   <p>
-                    By default it is &quot;Classification&quot;. But if you would like
-                    to call it something else, it can be changed by editing it
-                    from here.
+                    By default it is &quot;Classification&quot;. However, if you
+                    prefer to call it something else, you can change it by
+                    editing it from here.
                   </p>
 
                   <li>
-                    <strong>Created</strong> (affects lead creation time column in the lead listing page)
+                    <strong>Created</strong> (affects lead creation time column
+                    in the lead listing page)
                   </li>
                   <p>
-                    By default it is &quot;Created&quot;. But if you would like
-                    to call it something else, it can be changed by editing it
+                    By default it is &quot;Created&quot;. However, if you prefer
+                    to call it something else, you can change it by editing it
                     from here.
                   </p>
                 </ol>
