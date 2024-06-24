@@ -7,8 +7,55 @@ export const leads_management_sidebar_data = [
     childrens: [
       {
         id: "0",
-        title: "Introduction",
-        path: path_prefix + "/introduction",
+        title: "Overview",
+        path: path_prefix + "/crm-editing/overview",
+      },
+      {
+        id: "1",
+        title: "Edit CRM",
+        childrens: [
+          {
+            id: "0",
+            title: "Setup status",
+            path: path_prefix + "/crm-editing/setup-status",
+          },
+          {
+            id: "1",
+            title: "Setup states",
+            path: path_prefix + "/crm-editing/setup-states",
+          },
+          {
+            id: "2",
+            title: "Setup tags",
+            path: path_prefix + "/crm-editing/setup-tags",
+          },
+          {
+            id: "3",
+            title: "Setup classifications",
+            path: path_prefix + "/crm-editing/setup-classifications",
+          },
+          {
+            id: "4",
+            title: "Setup lead update template",
+            path: path_prefix + "/crm-editing/setup-lead-update-template",
+          },
+          {
+            id: "4",
+            title: "Customize terminologies",
+            path: path_prefix + "/crm-editing/customize-terminologies",
+          },
+          {
+            id: "4",
+            title: "Allow cross user view of leads",
+            path:
+              path_prefix + "/crm-editing/allow-cross-user-view-of-leads",
+          },
+          {
+            id: "4",
+            title: "Enable quota of leads for users",
+            path: path_prefix + "/crm-editing/enable-quota-of-leads",
+          },
+        ],
       },
     ],
   },
@@ -36,9 +83,29 @@ export const leads_management_sidebar_data = [
             path: path_prefix + "/edit-group-in-crm",
           },
           {
-            id: "0",
+            id: "1",
             title: "Manage group admins",
             path: path_prefix + "/group-editing/manage-group-admins",
+          },
+          {
+            id: "2",
+            title: "Set default severity",
+            path: path_prefix + "/group-editing/set-default-severity",
+          },
+          {
+            id: "3",
+            title: "Set default due date",
+            path: path_prefix + "/group-editing/set-default-due-date",
+          },
+          {
+            id: "4",
+            title: "Set business hours",
+            path: path_prefix + "/group-editing/set-business-hours",
+          },
+          {
+            id: "5",
+            title: "Set business update form",
+            path: path_prefix + "/group-editing/set-business-update-form",
           },
         ],
       },
@@ -79,8 +146,31 @@ export const leads_management_sidebar_data = [
           },
           {
             id: "2",
-            title: "Notification setup",
-            path: path_prefix + "/company-editing/notification-setup",
+            title: "Distribute leads",
+            path: path_prefix + "/company-editing/distribute-leads",
+          },
+          {
+            id: "3",
+            title: "Add leads distribution logic",
+            path: path_prefix + "/company-editing/add-leads-distribution-logic",
+          },
+          {
+            id: "5",
+            title: "Setup lead ID prefix",
+            path: path_prefix + "/company-editing/setup-lead-id-prefix",
+          },
+          {
+            id: "6",
+            title: "Enable auto assignment of leads",
+            path:
+              path_prefix + "/company-editing/enable-auto-assignment-of-leads",
+          },
+          {
+            id: "7",
+            title: "Allow anonymous reporter for leads",
+            path:
+              path_prefix +
+              "/company-editing/allow-anonymous-reporter-for-leads",
           },
         ],
       },

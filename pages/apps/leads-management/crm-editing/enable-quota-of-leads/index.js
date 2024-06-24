@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import Breadcrumb from "../../../../components/Breadcrumb";
+import Breadcrumb from "../../../../../components/Breadcrumb";
 
 export default function Motivation() {
   return (
@@ -43,7 +41,7 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Introduction</h1>
+              <h1 className="article-title">Enable quota of leads for users</h1>
 
               <aside className="doc-note">
                 <strong>Note: </strong>
@@ -52,7 +50,7 @@ export default function Motivation() {
               </aside>
 
               <div className="article-body">
-                <p>
+                {/* <p>
                   In order to access the CRM settings, Click on the &quot;CRM
                   Settings&quot; link thats given in the top header section.
                 </p>
@@ -62,27 +60,33 @@ export default function Motivation() {
                   width={"95%"}
                   height={"auto"}
                   src="/assets/apps/leads-management/click_on_crm_settings.jpg"
-                />
+                /> */}
 
-                <p>Click on &quot;Setup CRM&quot;</p>
+                <p>
+                  Go to the <strong>&quot;CRM settings&quot;</strong>
+                </p>
+
+                <p>
+                  Click on <strong>&quot;More CRM Settings&quot;</strong>
+                </p>
 
                 <img
                   alt="Click on setup crm - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/click_on_setup_crm.jpg"
+                  src="/assets/apps/leads-management/click_on_more_crm_settings.jpg"
                 />
 
                 <p>
-                  From here you can manage the CRM admins, groups, lead
-                  distribution at group level etc.
+                  Go to <strong>&quot;Advanced settings&quot;</strong> and
+                  enable the <strong>&quot;Apply quota&quot;</strong>
                 </p>
 
                 <img
                   alt="Crm editing - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/crm_editing.jpg"
+                  src="/assets/apps/leads-management/enable_apply_quota.jpg"
                 />
 
                 <p>
