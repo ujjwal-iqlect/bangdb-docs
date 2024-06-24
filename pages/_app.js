@@ -73,7 +73,7 @@ const sidebar = (pageProps) => {
       return (
         <CommonSidebar
           data={leads_management_sidebar_data}
-          overviewURI="/apps/leads-management/overview"
+          // overviewURI="/apps/leads-management/overview"
         />
       );
       break;

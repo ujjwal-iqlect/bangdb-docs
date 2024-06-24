@@ -303,7 +303,7 @@ export const leads_management_sidebar_data = [
       {
         id: "1",
         title: "Funnel analysis",
-        path: path_prefix,
+        path: path_prefix + "/funnel-analysis",
       },
       {
         id: "2",

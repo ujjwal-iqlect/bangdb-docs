@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumb from "../../../../components/Breadcrumb";
 
-export default function Motivation() {
+export default function FunnelAnalysis() {
   return (
     <React.Fragment>
       <Head>
@@ -43,9 +43,7 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">
-                Stats for leads pipeline / company
-              </h1>
+              <h1 className="article-title">Funnel analysis</h1>
               <div className="article-body">
                 <p>
                   Go to the
@@ -66,20 +64,19 @@ export default function Motivation() {
 
                 <p>
                   Once you select the company, you can now see new item added to
-                  the header as <strong>&quot;CRM Stats&quot;</strong>. Click on
-                  it
+                  the header as <strong>&quot;Funnel&quot;</strong>. Click on it
                 </p>
 
                 <p>
-                  Here, you can see all the company level, group level & CRM
-                  level statistics.
+                  In this page, you can see the funnel analysis and realted
+                  charts.
                 </p>
 
                 <img
                   alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/stats_page.jpg"
+                  src="/assets/apps/leads-management/funnel_analysis.jpg"
                 />
               </div>
             </article>

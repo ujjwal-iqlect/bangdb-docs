@@ -49,51 +49,56 @@ export default function Motivation() {
                   <strong> &quot;Home&quot; </strong> page, and select a company
                   from the <strong>&quot;My companies&quot;</strong> section.
                 </p>
-
                 <img
                   alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
                   src="/assets/apps/leads-management/home_page.jpg"
                 />
-
                 <p>
                   It will take you to the leads page, where you can see all the
                   leads for the selected company.
                 </p>
-
                 <img
                   alt="Click on manage company - BangDB"
                   width={"95%"}
                   height={"auto"}
                   src="/assets/apps/leads-management/leads_page.jpg"
                 />
-
                 <p>Now Click on the upload icon</p>
-
                 <img
                   alt="Click on manage company - BangDB"
                   width={"95%"}
                   height={"auto"}
                   src="/assets/apps/leads-management/click_on_upload_leads.jpg"
                 />
-
                 <p>
                   It will open the upload leads modal, Select a file and click
-                  on done.
+                  on done. Here&apos;s an example{" "}
+                  <Link
+                    className="external"
+                    href={"/assets/apps/leads-management/resources/leads.csv"}
+                    target="_blank"
+                  >
+                    excel / csv file
+                  </Link>
                 </p>
-
                 <img
                   alt="Click on create"
                   width={"95%"}
                   height={"auto"}
                   src="/assets/apps/leads-management/upload_leads_form.jpg"
                 />
-
                 <p>
-                  Map the fields, and Click on done. Your leads will get
-                  uploaded.
-                </p>
+                  Map your fields to existing or create new fields, and Click on
+                  done. Your leads will get uploaded.
+                </p>{" "}
+                <img
+                  alt="Click on create"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/leads_imported_from_excel.jpg"
+                />
               </div>
             </article>
           </div>

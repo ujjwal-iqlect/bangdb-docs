@@ -3,10 +3,11 @@ import styled from "styled-components";
 import SideAccord from "../SideAccord";
 import DevNavList from "../DevNavList";
 import { useGlobalContext } from "../../Context";
+import { classNames } from "../../config/functions";
 
 export default function CommonSidebar({
   data: sidebar_data,
-  overviewURI = "/overview",
+  overviewURI,
 }) {
   const { sidebar, setSidebar } = useGlobalContext();
   const [iconHover, setIconHover] = useState(false);
@@ -38,10 +39,19 @@ export default function CommonSidebar({
             <nav>
               <div>
                 <div>
-                  <ul style={{ paddingBottom: "150px" }}>
+                  <ul
+                    style={{ paddingBottom: "150px" }}
+                    className={classNames(
+                      overviewURI ? null : "expand-container"
+                    )}
+                  >
                     {/* <DevNavList text="Overview" /> */}
                     {/* Accords will appear here */}
-                    <DevNavList text="Overview" url={overviewURI} />
+
+                    {overviewURI && (
+                      <DevNavList text="Overview" url={overviewURI} />
+                    )}
+
                     {sidebar_data
                       .filter((data) =>
                         data.title.toLowerCase().includes(filterQuery)

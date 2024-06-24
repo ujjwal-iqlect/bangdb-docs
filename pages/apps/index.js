@@ -51,21 +51,21 @@ export default function Apps() {
       <div className="flex items-center mt-10 min-h-[80vh]">
         <BoxSectionWrapper>
           <BoxSection>
-            <Box
+            {/* <Box
               headline={"Bug Tracker"}
               para={
                 "Get started with BangDB Leads Management database and power your application."
               }
               link={"/apps/leads-management"}
-            />
+            /> */}
             <Box
               headline={"Leads Management"}
               para={
                 "Get started with BangDB Leads Management database and power your application."
               }
-              link={"/apps/leads-management"}
+              link={"/apps/leads-management/crm-editing/overview"}
             />
-            <Box
+            {/* <Box
               headline={"Leads Selling"}
               para={
                 "Get started with BangDB Leads Management database and power your application."
@@ -92,7 +92,7 @@ export default function Apps() {
                 "Get started with BangDB Leads Management database and power your application."
               }
               link={"/apps/leads-management"}
-            />
+            /> */}
           </BoxSection>
         </BoxSectionWrapper>
       </div>
