@@ -40,17 +40,17 @@ export const leads_management_sidebar_data = [
             path: path_prefix + "/crm-editing/setup-lead-update-template",
           },
           {
-            id: "4",
+            id: "5",
             title: "Customize terminologies",
             path: path_prefix + "/crm-editing/customize-terminologies",
           },
           {
-            id: "4",
+            id: "6",
             title: "Allow cross user view of leads",
             path: path_prefix + "/crm-editing/allow-cross-user-view-of-leads",
           },
           {
-            id: "4",
+            id: "7",
             title: "Enable quota of leads for users",
             path: path_prefix + "/crm-editing/enable-quota-of-leads",
           },
@@ -154,7 +154,7 @@ export const leads_management_sidebar_data = [
             path: path_prefix + "/company-editing/notification-setup",
           },
           {
-            id: "2",
+            id: "3",
             title: "Distribute leads",
             path: path_prefix + "/company-editing/distribute-leads",
           },

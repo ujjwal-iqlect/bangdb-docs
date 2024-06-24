@@ -93,6 +93,6 @@ export default function SetupWebForms() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { leads_management_sidebar: true, app: "leads_selling" },
+    props: { leads_management_sidebar: true },
   };
 }

@@ -65,6 +65,13 @@ export default function Apps() {
               }
               link={"/apps/leads-management/crm-editing/overview"}
             />
+            <Box
+              headline={"Leads Selling"}
+              para={
+                "Get started with BangDB Leads Selling database and power your application."
+              }
+              link={"/apps/leads-selling/create-crm?app=leads_selling"}
+            />
             {/* <Box
               headline={"Leads Selling"}
               para={

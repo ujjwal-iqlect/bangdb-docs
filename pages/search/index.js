@@ -1,7 +1,7 @@
-import { useRouter } from 'next/router';
-import React from 'react';
-import { SearchData } from '../../components/SearchData';
-import Link from 'next/link';
+import { useRouter } from "next/router";
+import React from "react";
+import { SearchData } from "../../components/SearchData";
+import Link from "next/link";
 
 export default function Search() {
   const router = useRouter();
@@ -16,13 +16,18 @@ export default function Search() {
       a.title.toLowerCase().startsWith(q.toLowerCase())
   );
 
+  const url_params =
+    Object.keys(router.query)?.length > 0
+      ? "?" + new URLSearchParams(router.query)?.toString()
+      : "";
+
   return (
     <>
       <main className="bangdb-search">
         <div className="search-results-stats">
           <span>
-            Showing {FilteredData.length}{' '}
-            {FilteredData.length > 1 ? 'results' : 'result'} for &quot;{q}
+            Showing {FilteredData.length}{" "}
+            {FilteredData.length > 1 ? "results" : "result"} for &quot;{q}
             &quot;
           </span>
         </div>
@@ -30,7 +35,7 @@ export default function Search() {
           {FilteredData.map((item, index) => {
             return (
               <div className="search-result" key={index}>
-                <Link href={item.path}>
+                <Link href={item.path + url_params}>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                 </Link>

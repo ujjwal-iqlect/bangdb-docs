@@ -18,11 +18,20 @@ import CommonSidebar from "../components/Sidebars/CommonSidebar";
 import { ApiSidebarData } from "../components/Sidebars/ApiSidebarData";
 
 import { leads_management_sidebar_data } from "../config/data/leads_management_sidebar_data";
-import { leads_selling_sidebar_data } from "../config/data/leads_selling_sidebar_data";
+import { create_crm_object } from "../config/data/leads_selling_sidebar_data";
 import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const updated_leads_management_sidebar_data = structuredClone(
+    leads_management_sidebar_data
+  );
+
+  updated_leads_management_sidebar_data[0].childrens.splice(
+    1,
+    0,
+    create_crm_object
+  );
 
   const sidebar = (pageProps) => {
     switch (true) {
@@ -65,12 +74,11 @@ function MyApp({ Component, pageProps }) {
       case pageProps.leads_management_sidebar:
         return (
           <CommonSidebar
-            data={[
-              ...(pageProps?.app === "leads_selling"
-                ? [leads_selling_sidebar_data?.[0]]
-                : []),
-              ...leads_management_sidebar_data,
-            ]}
+            data={
+              router.query.app === "leads_selling"
+                ? updated_leads_management_sidebar_data
+                : leads_management_sidebar_data
+            }
           />
         );
         break;

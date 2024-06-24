@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import styled from 'styled-components';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import ShortcutIcon from '@mui/icons-material/Shortcut';
+import React, { useState, useRef, useEffect } from "react";
+import styled from "styled-components";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import ShortcutIcon from "@mui/icons-material/Shortcut";
 
 export default function SideItem({
   item,
@@ -29,22 +29,27 @@ export default function SideItem({
     }
   }, []);
 
+  const url_params =
+    Object.keys(router.query)?.length > 0
+      ? "?" + new URLSearchParams(router.query)?.toString()
+      : "";
+
   return (
     <React.Fragment>
       {!item.childrens ? (
         <div>
           <DevNavAccordianSectionItem>
             <DevNavAccordianSectionTitle
-              href={`${item.path}`}
+              href={`${item.path}${url_params}`}
               style={{
-                background: router.asPath === item.path ? '#d7effe' : null,
+                background: router.pathname === item.path ? "#d7effe" : null,
               }}
             >
               <DevNavAccordianSectionText
                 ref={pathExists === item ? scrollToRef : undefined}
                 style={{
-                  fontWeight: router.asPath === item.path ? '700' : null,
-                  color: router.asPath === item.path ? 'black' : null,
+                  fontWeight: router.pathname === item.path ? "700" : null,
+                  color: router.pathname === item.path ? "black" : null,
                 }}
               >
                 {item.title}
@@ -59,17 +64,17 @@ export default function SideItem({
               <svg
                 style={{
                   transform: expandedChildAccordion
-                    ? 'rotate(0deg)'
-                    : 'rotate(-90deg)',
-                  position: 'absolute',
-                  cursor: 'pointer',
-                  textRendering: 'optimizeLegibility',
-                  textTransform: 'none',
-                  transition: 'transform 0.2s ease',
-                  wordWrap: 'normal',
-                  left: '20px',
-                  top: '6px',
-                  userSelect: 'none',
+                    ? "rotate(0deg)"
+                    : "rotate(-90deg)",
+                  position: "absolute",
+                  cursor: "pointer",
+                  textRendering: "optimizeLegibility",
+                  textTransform: "none",
+                  transition: "transform 0.2s ease",
+                  wordWrap: "normal",
+                  left: "20px",
+                  top: "6px",
+                  userSelect: "none",
                 }}
                 xmlns="http://www.w3.org/2000/svg"
                 height="18px"
@@ -85,7 +90,7 @@ export default function SideItem({
               <DevNavText>{item.title}</DevNavText>
             </DevNavTitle>
           </DevExpandableNav>
-          <ul style={{ display: !expandedChildAccordion ? 'none' : 'block' }}>
+          <ul style={{ display: !expandedChildAccordion ? "none" : "block" }}>
             {item.childrens.map((item) => {
               return (
                 <DevNavAccordianSectionItem
@@ -94,25 +99,25 @@ export default function SideItem({
                 >
                   <DevNavAccordianSectionTitle
                     style={{
-                      paddingLeft: '56px',
+                      paddingLeft: "56px",
                       background:
-                        router.asPath === item.path ? '#d7effe' : null,
+                        router.pathname === item.path ? "#d7effe" : null,
                     }}
-                    href={`${item.path}`}
+                    href={`${item.path}${url_params}`}
                   >
-                    {item.beforeIcon === 'nested' && (
+                    {item.beforeIcon === "nested" && (
                       <ShortcutIcon
                         sx={{
-                          color: '#202124',
-                          fontSize: '20px',
+                          color: "#202124",
+                          fontSize: "20px",
                           pr: 1,
                         }}
                       />
                     )}
                     <DevNavAccordianSectionText
                       style={{
-                        fontWeight: router.asPath === item.path ? '700' : null,
-                        color: router.asPath === item.path ? 'black' : null,
+                        fontWeight: router.pathname === item.path ? "700" : null,
+                        color: router.pathname === item.path ? "black" : null,
                       }}
                     >
                       {item.title}
@@ -154,7 +159,7 @@ const DevNavAccordianSectionText = styled.span`
   overflow: hidden;
   user-select: none;
   color: #202124;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-overflow: ellipsis;
 `;
 
