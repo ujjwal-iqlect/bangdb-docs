@@ -2,15 +2,12 @@ import React from "react";
 import Head from "next/head";
 import Breadcrumb from "../../../../components/Breadcrumb";
 
-export default function Motivation() {
+export default function SetupWebForms() {
   return (
     <React.Fragment>
       <Head>
-        <title>Overview</title>
-        <meta
-          name="description"
-          content="Motivation - Why BangDB?. The motivation behind BangDB."
-        ></meta>
+        <title>Setup web forms</title>
+        <meta name="description" content="Setup web forms"></meta>
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Motivation - Why BangDB?" />
@@ -41,40 +38,59 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Create new user</h1>
+              <h1 className="article-title">
+                Add website for click stream analysis
+              </h1>
               <div className="article-body">
-                <aside className="doc-note">
-                  <strong>Note: </strong>
-                  You need to be CRM admin in order to access manage account
-                  users settings.
-                </aside>
-
                 <p>
-                  In order to create a new user in the account, Go to the
-                  <strong> &quot;Manage Account Users&quot; </strong> tab from
-                  the top header.
+                  Go to the
+                  <strong> &quot;Get started&quot; </strong> page from the top
+                  header.
                 </p>
 
                 <p>
                   Click on
-                  <strong> &quot;Create New User&quot;</strong>
+                  <strong> &quot;Setup a lead source&quot;</strong>
                 </p>
 
                 <img
                   alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/mau_create_new_user.jpg"
+                  src="/assets/apps/leads-management/setup_lead_source.jpg"
                 />
 
-                <p>Fill the details and click on Create.</p>
+                <p>Select website.</p>
 
                 <img
                   alt="Click on manage company - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/create_new_user_form.jpg"
+                  src="/assets/apps/leads-management/select_any_source.jpg"
                 />
+
+                <p>Click on &quot;Add website&quot; button.</p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_add_website.jpg"
+                />
+
+                <p>
+                  It will open a modal. Enter the details and click on &quot;Add
+                  website&quot; button.
+                </p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/add_website_form.jpg"
+                />
+
+                <p>The website will get added.</p>
               </div>
             </article>
           </div>
