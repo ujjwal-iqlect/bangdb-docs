@@ -101,6 +101,16 @@ export const leads_management_sidebar_data = [
             title: "Set business hours",
             path: path_prefix + "/group-editing/set-business-hours",
           },
+          {
+            id: "5",
+            title: "Share companies",
+            path: path_prefix + "/group-editing/share-companies-between-groups",
+          },
+          {
+            id: "6",
+            title: "Move companies",
+            path: path_prefix + "/group-editing/move-companies-between-groups",
+          },
           // {
           //   id: "5",
           //   title: "Set business update form",

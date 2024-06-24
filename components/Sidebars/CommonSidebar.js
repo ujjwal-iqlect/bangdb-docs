@@ -53,10 +53,10 @@ export default function CommonSidebar({
                     )}
 
                     {sidebar_data
-                      .filter((data) =>
+                      ?.filter((data) =>
                         data.title.toLowerCase().includes(filterQuery)
                       )
-                      .map((item) => {
+                      ?.map((item) => {
                         return (
                           <SideAccord
                             setSidebar={setSidebar}
