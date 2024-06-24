@@ -102,11 +102,11 @@ export const leads_management_sidebar_data = [
             title: "Set business hours",
             path: path_prefix + "/group-editing/set-business-hours",
           },
-          {
-            id: "5",
-            title: "Set business update form",
-            path: path_prefix + "/group-editing/set-business-update-form",
-          },
+          // {
+          //   id: "5",
+          //   title: "Set business update form",
+          //   path: path_prefix + "/group-editing/set-business-update-form",
+          // },
         ],
       },
     ],

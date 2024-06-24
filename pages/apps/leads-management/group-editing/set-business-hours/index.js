@@ -41,7 +41,7 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Manage group admins</h1>
+              <h1 className="article-title">Setup business hours</h1>
               <div className="article-body">
                 <aside className="doc-note">
                   <strong>Note: </strong>
@@ -51,20 +51,32 @@ export default function Motivation() {
 
                 <p>
                   Open the <strong>&quot;Group Settings&quot;</strong> and click
-                  on &quot;Manage Group Admins&quot; tab.
+                  on &quot;Other setup&quot; tab.
                 </p>
 
                 <img
                   alt="Group editing - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/group_editing.jpg"
+                  src="/assets/apps/leads-management/setup_business_hours.jpg"
                 />
 
+                <p>Here, you can configure three settings.</p>
+
+                <ol>
+                  <li>Frequency</li>
+                  <li>From</li>
+                  <li>To</li>
+                </ol>
+
                 <p>
-                  From here, you can add an existing user as the group admin or
-                  create new. You can remove existing admins or disable / enable their
-                  status temperorarily.
+                  The first setting is Frequency, where you can select day,
+                  week, month, or year. Next, you can define the time range by
+                  choosing the from and to times. For example, if you set the
+                  frequency to &quot;day&quot; and specify the from day hour as
+                  10 and the to day hour as 14, leads will only be
+                  received by this group between 10:00 AM and 2:00 PM on a daily
+                  basis.
                 </p>
 
                 <p>

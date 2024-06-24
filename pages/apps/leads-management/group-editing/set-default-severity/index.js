@@ -41,7 +41,7 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Manage group admins</h1>
+              <h1 className="article-title">Set default severity</h1>
               <div className="article-body">
                 <aside className="doc-note">
                   <strong>Note: </strong>
@@ -51,20 +51,19 @@ export default function Motivation() {
 
                 <p>
                   Open the <strong>&quot;Group Settings&quot;</strong> and click
-                  on &quot;Manage Group Admins&quot; tab.
+                  on &quot;Other setup&quot; tab.
                 </p>
 
                 <img
                   alt="Group editing - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/group_editing.jpg"
+                  src="/assets/apps/leads-management/set_default_severity.jpg"
                 />
 
                 <p>
-                  From here, you can add an existing user as the group admin or
-                  create new. You can remove existing admins or disable / enable their
-                  status temperorarily.
+                  Here, whichever severity you select will be automatically
+                  assigned to each lead as it is received in this group.
                 </p>
 
                 <p>
