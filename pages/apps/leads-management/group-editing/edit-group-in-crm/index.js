@@ -41,16 +41,16 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Add company in group</h1>
+              <h1 className="article-title">Edit group in CRM</h1>
               <div className="article-body">
                 <aside className="doc-note">
                   <strong>Note: </strong>
-                  You need to be CRM admin OR Group Admin in order to access
-                  this setting.
+                  You need to be either the CRM admin or a Group admin of the
+                  group that you wish to edit, in order to edit the group.
                 </aside>
 
                 <p>
-                  In order to add company in a group, Go to the
+                  In order to add group in the CRM, Go to the
                   <strong> &quot;CRM Settings&quot; </strong>
                 </p>
 
@@ -62,41 +62,49 @@ export default function Motivation() {
                 />
 
                 <p>
-                  Click on
-                  <strong> &quot;Group settings&quot;</strong>
+                  Click on <strong>&quot;Group Settings&quot;</strong>
                 </p>
 
                 <img
-                  alt="Click on crm settings - BangDB"
+                  alt="Click on group settings - BangDB"
                   width={"95%"}
                   height={"auto"}
                   src="/assets/apps/leads-management/click_on_group_settings.jpg"
                 />
 
                 <p>
-                  Click on the settings icon next to the group where you want to
-                  add a company.
+                  Here, you will see list of all the groups you have access to.
                 </p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_manage_company.jpg"
-                />
-
-                <p>Click on the &quot;Distribute Lead to Company&quot; tab</p>
 
                 <p>
-                  Enter the company name and description, then click{" "}
-                  <strong>Add</strong>.
+                  There is a settings icon provided right next to all the listed
+                  groups. Click on that icon of the group you wish to edit
                 </p>
 
                 <img
-                  alt="Add company - BangDB"
+                  alt="Click on manage group - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/add_company.jpg"
+                  src="/assets/apps/leads-management/click_on_manage_group.jpg"
+                />
+
+                <p>
+                  Now it will expand the selected group and show all the related
+                  settings.
+                </p>
+
+                <p>
+                  From here you can edit the group description, manage group
+                  admins, create &amp; delete companies, lead distribution at
+                  company level, default severity, default due_date for the
+                  leads etc.
+                </p>
+
+                <img
+                  alt="Group editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/group_editing.jpg"
                 />
 
                 <p>

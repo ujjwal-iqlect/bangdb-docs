@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import Breadcrumb from "../../../../../components/Breadcrumb";
+import Breadcrumb from "../../../../components/Breadcrumb";
 
 export default function Motivation() {
   return (
