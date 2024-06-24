@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "../../../../components/Breadcrumb";
 
 export default function Motivation() {
@@ -41,39 +43,67 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Create new user</h1>
+              <h1 className="article-title">Make calls</h1>
               <div className="article-body">
-                <aside className="doc-note">
-                  <strong>Note: </strong>
-                  You need to be CRM admin in order to access manage account
-                  users settings.
-                </aside>
+                <h2>Setup call feature for users</h2>
 
                 <p>
-                  In order to create a new user in the account, Go to the
-                  <strong> &quot;Manage Account Users&quot; </strong> tab from
-                  the top header.
+                  Open the company settings and click on
+                  <strong> &quot;Manage users&quot; </strong>tab.
                 </p>
 
                 <p>
-                  Click on
-                  <strong> &quot;Create New User&quot;</strong>
+                  Expand the user for whom you want to enable the calling
+                  feature.
+                </p>
+
+                <img
+                  alt="Company editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/company_user_expanded.jpg"
+                />
+
+                <p>
+                  Once you&apos;re done with your changes. Click on{" "}
+                  <strong>Save Company (Draft)</strong>.
+                </p>
+
+                <p>
+                  Changes are now saved locally, in order to save these changes
+                  on the app. Click on <strong>Save</strong>.
+                </p>
+
+                <h2>Use calling feature</h2>
+
+                <p>
+                  Before using this feature, make sure that your setup is done
+                  correctly.
+                </p>
+
+                <p>
+                  Open any lead, scroll down to Calls section &amp; click on
+                  &quot;Call&quot; button.
                 </p>
 
                 <img
                   alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/mau_create_new_user.jpg"
+                  src="/assets/apps/leads-management/click_on_call.jpg"
                 />
 
-                <p>Fill the details and click on Create.</p>
+                <p>
+                  A modal will appear as shown below. Choose an operator
+                  (currently, we support Twilio and RingCentral). Enter the
+                  number you want to call and click the call button.
+                </p>
 
                 <img
-                  alt="Click on manage company - BangDB"
+                  alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/create_new_user_form.jpg"
+                  src="/assets/apps/leads-management/call_modal.jpg"
                 />
               </div>
             </article>
