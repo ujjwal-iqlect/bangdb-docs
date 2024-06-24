@@ -43,62 +43,87 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Notification setup in company</h1>
+              <h1 className="article-title">Distribute leads</h1>
               <div className="article-body">
                 <aside className="doc-note">
                   <strong>Note: </strong>
                   You need to be either the CRM admin or a Group admin or a
                   Company admin of the company that you wish to edit, in order
-                  to edit the company.
+                  to edit the group.
                 </aside>
 
                 <p>
-                  Open the <strong>&quot;Company Settings&quot;</strong> and
-                  click on &quot;Notification setup&quot; tab.
+                  Open the company settings and click on
+                  <strong> &quot;Distribute lead among users&quot; </strong>
                 </p>
 
                 <img
-                  alt="Company editing (notificaiton setup) - BangDB"
+                  alt="Company editing - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/company_notification_setup.jpg"
+                  src="/assets/apps/leads-management/setup_leads_distribution.jpg"
                 />
 
-                <h2>
-                  Send auto Email Notification when ever there are changes in
-                  Lead
-                </h2>
+                <h2>Rule options</h2>
 
-                <p>This setting has 2 options.</p>
+                <p>Here, you&apos;ll have four rule options to choose from</p>
 
-                <ul>
+                <ol>
                   <li>
-                    <strong>Send mail to Selected Groups only</strong>
+                    <strong>RR</strong> : Assign leads in a round-robin manner.
                   </li>
-
-                  <p>
-                    By selecting this option, you can provide list of email
-                    addresses where it will send notifications related to the
-                    company. Additionally, you can also provide a BCC list.
-                  </p>
-
                   <li>
-                    <strong>Email to Assignee & Reporter only</strong>{" "}
+                    <strong>RROBIN</strong> : Assign leads in a 1-1 round-robin
+                    manner.
                   </li>
+                  <li>
+                    <strong>FILTER</strong> : Filter leads based on attributes.
+                  </li>
+                  <li>
+                    <strong>FILTER_ONCE</strong> : Filter leads for only one
+                    user.
+                  </li>
+                </ol>
 
-                  <p>
-                    This will only send the notificaitons to the person who has
-                    created the lead (if created manually) and the to the person
-                    who is assigned to that lead.
-                  </p>
-                </ul>
-
-                <h2>Send Only New Job Email Notifications</h2>
+                <h2>Add Rules</h2>
 
                 <p>
-                  By enabling this option, company users will only receive the
-                  notifications when new lead arrives. This disables the lead
-                  update notifications.
+                  If you select FILTER or FILTER_ONCE, you can define lead
+                  assignment rules for each user. For instance, if the country
+                  field is India, you can assign those leads to the user
+                  &quot;sandeepb&quot;.
+                </p>
+
+                <p>
+                  To add lead assignment rule for a user. Click on{" "}
+                  <strong>&quot;Add/Edit Rule&quot;</strong>
+                  button{" "}
+                </p>
+
+                <img
+                  alt="Company editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/add_edit_rule_btn.jpg"
+                />
+
+                <p>It will open a dialog, where you can define the rules.</p>
+
+                <img
+                  alt="Company editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/rule_form.jpg"
+                />
+
+                <p>
+                  Once you&apos;re done with your changes. Click on{" "}
+                  <strong>Save Company (Draft)</strong>.
+                </p>
+
+                <p>
+                  Changes are now saved locally, in order to save these changes
+                  on the app. Click on <strong>Save</strong>.
                 </p>
               </div>
             </article>

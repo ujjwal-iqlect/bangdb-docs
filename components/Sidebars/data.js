@@ -47,8 +47,7 @@ export const leads_management_sidebar_data = [
           {
             id: "4",
             title: "Allow cross user view of leads",
-            path:
-              path_prefix + "/crm-editing/allow-cross-user-view-of-leads",
+            path: path_prefix + "/crm-editing/allow-cross-user-view-of-leads",
           },
           {
             id: "4",
@@ -149,11 +148,11 @@ export const leads_management_sidebar_data = [
             title: "Distribute leads",
             path: path_prefix + "/company-editing/distribute-leads",
           },
-          {
-            id: "3",
-            title: "Add leads distribution logic",
-            path: path_prefix + "/company-editing/add-leads-distribution-logic",
-          },
+          // {
+          //   id: "3",
+          //   title: "Add leads distribution logic",
+          //   path: path_prefix + "/company-editing/add-leads-distribution-logic",
+          // },
           {
             id: "5",
             title: "Setup lead ID prefix",
