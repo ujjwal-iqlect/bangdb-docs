@@ -62,30 +62,64 @@ export default function Motivation() {
                   src="/assets/apps/leads-management/click_on_crm_settings.jpg"
                 />
 
-                <p>Click on &quot;Setup CRM&quot;</p>
+                <p>Click on &quot;More CRM Settings&quot;</p>
 
                 <img
                   alt="Click on setup crm - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/click_on_setup_crm.jpg"
+                  src="/assets/apps/leads-management/click_on_more_crm_settings.jpg"
                 />
 
                 <p>
-                  From here you can manage the CRM admins, groups, lead
-                  distribution at group level etc.
+                  Go to the &quot;Lead Update Template&quot; and select a group.
+                  ( These fields are defined at the group level )
                 </p>
 
                 <img
                   alt="Crm editing - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/crm_editing.jpg"
+                  src="/assets/apps/leads-management/select_group_lut.jpg"
+                />
+
+                <p>
+                  Once the group is selected. Click on{" "}
+                  <strong>Start Adding</strong>.
+                </p>
+
+                <img
+                  alt="Crm editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_start_adding.jpg"
+                />
+
+                <p>Add the fields</p>
+
+                <img
+                  alt="Crm editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/lut_filled.jpg"
                 />
 
                 <p>
                   Once the changes are done. Click on <strong>Save</strong>.
                 </p>
+
+                <p>
+                  The fields you add here, will appear inside each leads ( for
+                  the companies which are inside this group ) and users will be
+                  able to edit those fields for each lead.
+                </p>
+
+                <img
+                  alt="Crm editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/user_form.jpg"
+                />
               </div>
             </article>
           </div>
