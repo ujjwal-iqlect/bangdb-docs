@@ -94,7 +94,7 @@ export default function Overview() {
 
                 <h2>Most Liked</h2>
                 <p>
-                  In this tab, you'll find posts that have received the most
+                  In this tab, you&apos;ll find posts that have received the most
                   likes from the community. To qualify for this tab, posts must
                   have more than 1 like.
                 </p>
