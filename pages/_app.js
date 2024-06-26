@@ -24,8 +24,8 @@ import { forum_sidebar_data } from "../config/data/forum_sidebar_data";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const updated_leads_management_sidebar_data = structuredClone(
-    leads_management_sidebar_data
+  const updated_leads_management_sidebar_data = JSON.parse(
+    JSON.stringify(leads_management_sidebar_data)
   );
 
   updated_leads_management_sidebar_data[0].childrens.splice(
