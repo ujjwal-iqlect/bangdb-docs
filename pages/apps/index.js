@@ -72,13 +72,15 @@ export default function Apps() {
               }
               link={"/apps/leads-selling/create-crm?app=leads_selling"}
             />
-            {/* <Box
-              headline={"Leads Selling"}
+            <Box
+              headline={"Forum"}
               para={
-                "Get started with BangDB Leads Management database and power your application."
+                "Get started with BangDB Forum app and start your online community."
               }
-              link={"/apps/leads-management"}
+              link={"/apps/forum"}
             />
+
+            {/* 
             <Box
               headline={"Click Stream"}
               para={

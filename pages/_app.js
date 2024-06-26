@@ -20,6 +20,7 @@ import { ApiSidebarData } from "../components/Sidebars/ApiSidebarData";
 import { leads_management_sidebar_data } from "../config/data/leads_management_sidebar_data";
 import { create_crm_object } from "../config/data/leads_selling_sidebar_data";
 import { useRouter } from "next/router";
+import { forum_sidebar_data } from "../config/data/forum_sidebar_data";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -81,6 +82,10 @@ function MyApp({ Component, pageProps }) {
             }
           />
         );
+        break;
+
+      case pageProps.forum_sidebar:
+        return <CommonSidebar data={forum_sidebar_data} />;
         break;
 
       case pageProps.noSidebar:

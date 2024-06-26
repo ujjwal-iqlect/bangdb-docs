@@ -113,8 +113,10 @@ export default function Motivation() {
                   <aside className="doc-warning">
                     <strong>Warning: </strong>
                     This action can&apos;t be undone, You can not un-terminate
-                    user.
-                    <p>Alternatively, you can delete the user &amp; re-create it.</p>
+                    the user.
+                    <p>
+                      Alternatively, you can delete the user &amp; re-create it.
+                    </p>
                   </aside>
 
                   <li>
