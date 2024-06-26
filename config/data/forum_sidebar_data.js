@@ -1,4 +1,4 @@
-const setup_path_prefix = `/apps/forum`;
+const setup_path_prefix = `/apps/forum/setup`;
 const user_guide_path_prefix = `/apps/forum/user-guide`;
 
 export const forum_sidebar_data = [
