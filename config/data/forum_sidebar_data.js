@@ -1,4 +1,5 @@
-const path_prefix = `/apps/forum`;
+const setup_path_prefix = `/apps/forum`;
+const user_guide_path_prefix = `/apps/forum/user-guide`;
 
 export const forum_sidebar_data = [
   {
@@ -8,47 +9,47 @@ export const forum_sidebar_data = [
       {
         id: "0",
         title: "Overview",
-        path: path_prefix + "/setup/overview",
+        path: setup_path_prefix + "/overview",
       },
       {
         id: "1",
         title: "Category and Tags",
-        path: path_prefix + "/setup/category-and-tags",
+        path: setup_path_prefix + "/category-and-tags",
       },
       {
         id: "2",
         title: "Status",
-        path: path_prefix + "/setup/status",
+        path: setup_path_prefix + "/status",
       },
       {
         id: "3",
         title: "Post types",
-        path: path_prefix + "/setup/post-types",
+        path: setup_path_prefix + "/post-types",
       },
       {
         id: "4",
         title: "Custom domain",
-        path: path_prefix + "/setup/domain",
+        path: setup_path_prefix + "/domain",
       },
       {
         id: "5",
         title: "Manage admins",
-        path: path_prefix + "/setup/manage-admins",
+        path: setup_path_prefix + "/manage-admins",
       },
       {
         id: "6",
         title: "Manage forum users",
-        path: path_prefix + "/setup/manage-forum-users",
+        path: setup_path_prefix + "/manage-forum-users",
       },
       {
         id: "7",
         title: "Manage posts",
-        path: path_prefix + "/setup/manage-posts",
+        path: setup_path_prefix + "/manage-posts",
       },
       {
         id: "8",
         title: "Review, Accept or Reject posts",
-        path: path_prefix + "/setup/accept-reject-posts",
+        path: setup_path_prefix + "/accept-reject-posts",
       },
     ],
   },
@@ -58,24 +59,28 @@ export const forum_sidebar_data = [
     childrens: [
       {
         id: "0",
-        title: "Add reply in a post",
-        path: path_prefix + "/add-reply-in-post",
+        title: "Create new post",
+        path: user_guide_path_prefix + "/create-new-post",
       },
       {
         id: "1",
-        title: "Like, Dislike & Follow post",
-        path: path_prefix + "/like-dislike-and-follow-post",
+        title: "Add reply in a post",
+        path: user_guide_path_prefix + "/add-reply-in-post",
       },
       {
         id: "2",
-        title: "Profile & reputation",
-        path: path_prefix + "/profile-and-reputation",
+        title: "Like & Follow post",
+        path: user_guide_path_prefix + "/like-and-follow-post",
       },
       {
         id: "3",
-        title:
-          "Most Popular, & Most Commented posts etc.",
-        path: path_prefix + "/home-page-posts-tabs",
+        title: "Profile & contribution",
+        path: user_guide_path_prefix + "/profile-and-contribution",
+      },
+      {
+        id: "4",
+        title: "Most Popular, & Most Commented posts etc.",
+        path: user_guide_path_prefix + "/home-page-posts-tabs",
       },
     ],
   },
