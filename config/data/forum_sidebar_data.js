@@ -82,6 +82,16 @@ export const forum_sidebar_data = [
         title: "Most Popular, & Most Commented posts etc.",
         path: user_guide_path_prefix + "/home-page-posts-tabs",
       },
+      {
+        id: "5",
+        title: "Search Posts",
+        path: user_guide_path_prefix + "/search-posts",
+      },
+      {
+        id: "6",
+        title: "Filter Posts",
+        path: user_guide_path_prefix + "/filter-posts",
+      },
     ],
   },
 ];
