@@ -59,6 +59,20 @@ export default function Apps() {
               link={"/apps/leads-management"}
             /> */}
             <Box
+              headline={"Bug Tracker"}
+              para={
+                "Get started with BangDB bug tracker app and start your online community."
+              }
+              link={"/apps/bug-tracker/setup/add-project"}
+            />
+            <Box
+              headline={"Forum"}
+              para={
+                "Get started with BangDB Forum app and start your online community."
+              }
+              link={"/apps/forum/setup/overview"}
+            />
+            <Box
               headline={"Leads Management"}
               para={
                 "Get started with BangDB Leads Management database and power your application."
@@ -70,14 +84,10 @@ export default function Apps() {
               para={
                 "Get started with BangDB Leads Selling database and power your application."
               }
-              link={"/apps/leads-selling/create-crm?app=leads_selling"}
-            />
-            <Box
-              headline={"Forum"}
-              para={
-                "Get started with BangDB Forum app and start your online community."
+              // link={"/apps/leads-selling/create-crm?app=leads_selling"}
+              link={
+                "/apps/leads-management/crm-editing/overview?app=leads_selling"
               }
-              link={"/apps/forum"}
             />
 
             {/* 

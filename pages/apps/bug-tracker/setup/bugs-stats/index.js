@@ -42,7 +42,7 @@ export default function Overview() {
               <div className="article-body">
                 <p>
                   Navigate to the Home page. In the My Bugs Stats section,
-                  you'll find the chart displaying the bugs assigned to you and
+                  you&apos;ll find the chart displaying the bugs assigned to you and
                   their status. You can select different projects from the
                   dropdown menu to view the data for each project individually.
                 </p>
