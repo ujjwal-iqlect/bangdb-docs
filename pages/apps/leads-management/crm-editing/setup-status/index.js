@@ -96,7 +96,7 @@ export default function Motivation() {
                 />
 
                 <p>
-                From here you can change the status, add new statuses, or remove statuses from the status list.You can also change the Default Open Status
+                From here you can change the status,(add new status, or remove status from the status list). You can also change the Default Open Status
                 and Default Close Status.
                 </p>
 
