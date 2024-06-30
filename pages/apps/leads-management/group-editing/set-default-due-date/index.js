@@ -62,7 +62,7 @@ export default function Motivation() {
                 />
 
                 <p>
-                  Here, whatevver due date you add will be automatically
+                  Here, whatever due date you add will be automatically
                   assigned to each lead as it is received in this group.
                 </p>
 
@@ -75,6 +75,14 @@ export default function Motivation() {
                   Changes are now saved locally, in order to save these changes
                   on the app. Click on <strong>Save</strong>.
                 </p>
+
+                <img
+                  alt="Group editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/save_group.png"
+                />
+
               </div>
             </article>
           </div>
