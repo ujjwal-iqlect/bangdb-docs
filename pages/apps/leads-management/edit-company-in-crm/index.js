@@ -119,6 +119,14 @@ export default function Motivation() {
                   Changes are now saved locally, in order to save these changes
                   on the app. Click on <strong>Save</strong>.
                 </p>
+
+                <img
+                  alt="Company editing - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/Save_btn_company.png"
+                />
+
               </div>
             </article>
           </div>

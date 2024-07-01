@@ -76,7 +76,7 @@ export default function FunnelAnalysis() {
                   alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/funnel_analysis.jpg"
+                  src="/assets/apps/leads-management/Funnel.png"
                 />
               </div>
             </article>

@@ -57,7 +57,7 @@ export default function Motivation() {
                 />
 
                 <p>
-                  It will take you to the leads page, where you can see all the
+                  It will take you to the lead Listing page, where you can see all the
                   leads for the selected company.
                 </p>
 
@@ -70,8 +70,9 @@ export default function Motivation() {
                   alt="Click on manage company - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/lead_details_page.jpg"
+                  src="/assets/apps/leads-management/Lead_listing_page_row_click.png"
                 />
+
 
                 <p>
                   Here, you can modify Lead details, such as custom fields and
@@ -79,6 +80,14 @@ export default function Motivation() {
                   state, due date, and category), add notes, attach files, make
                   calls, send emails, schedule events, etc.
                 </p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/lead_details_page.jpg"
+                />
+
               </div>
             </article>
           </div>

@@ -91,6 +91,14 @@ export default function Overview() {
                   Changes are now saved locally, in order to save these changes
                   on the app. Click on <strong>Save</strong>.
                 </p>
+
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/bug-tracker/Save_btn_btr.png"
+                />
+                    
               </div>
             </article>
           </div>
