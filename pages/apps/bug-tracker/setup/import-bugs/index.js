@@ -103,7 +103,7 @@ export default function Overview() {
                 />
 
                 <p>
-                  Map the users to existing users or create new, whatever suits
+                  Map the users to existing users or create new or u can import the users (which are present in zoho project) from zoho by clicking the checkbox import zoho profiles, whatever suits
                   the best. Click on <strong>&quot;Import users&quot;</strong>
                 </p>
 
