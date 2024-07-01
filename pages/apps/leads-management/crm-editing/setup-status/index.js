@@ -66,6 +66,13 @@ export default function Motivation() {
                   Go to the <strong>&quot;CRM settings&quot;</strong>
                 </p>
 
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
+
                 <p>
                   Click on <strong>&quot;More CRM Settings&quot;</strong>
                 </p>
@@ -89,8 +96,8 @@ export default function Motivation() {
                 />
 
                 <p>
-                  From here you can change the status list, Default Open Status
-                  & Default Close Status.
+                From here you can change the status,(add new status, or remove status from the status list). You can also change the Default Open Status
+                and Default Close Status.
                 </p>
 
                 <h2>Default Open Status</h2>
