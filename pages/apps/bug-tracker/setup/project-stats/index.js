@@ -69,15 +69,7 @@ export default function Overview() {
                   height={"auto"}
                   src="/assets/apps/bug-tracker/project-stats.jpg"
                 />
-
-                <img
-                  alt="Project reports & statistics - BangDB BugTracker"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/bug-tracker/Project_Stats.png"
-                />
-
-
+                  
               </div>
             </article>
           </div>
