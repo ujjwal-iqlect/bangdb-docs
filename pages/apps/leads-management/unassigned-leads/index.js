@@ -41,74 +41,72 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Filter leads</h1>
+              <h1 className="article-title">Unassigned leads</h1>
               <div className="article-body">
                 <div className="article-body">
-                  <p>
-                    In order to filter leads, Go to the
-                    <strong> &quot;Home&quot; </strong> page, and select a
-                    company from the <strong>&quot;My companies&quot;</strong>{" "}
-                    section.
-                  </p>
+                  <p>Click on the unassigned leads icon from the top header.</p>
 
                   <img
                     alt="Click on crm settings - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/home_page.jpg"
+                    src="/assets/apps/leads-management/click-on-unassigned-leads.jpg"
                   />
 
                   <p>
-                    It will take you to the leads page, where you can see all
-                    the leads for the selected company.
+                    In this section, you will see all the un-assigned leads for
+                    today.
                   </p>
+
+                  <h2>Setup</h2>
+
+                  <p>In order to setup this, click on the arrow down icon.</p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/leads_page.jpg"
+                    src="/assets/apps/leads-management/unassigned-leads.jpg"
                   />
 
-                  <p>Now click on the filter icon.</p>
+                  <p>It will open the setup section.</p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click_on_filter_leads.jpg"
+                    src="/assets/apps/leads-management/unassigned-leads-setup.jpg"
                   />
 
+                  <h3>Watch all my pipes</h3>
+
                   <p>
-                    It will open the create lead form, Filter slideover. Add
-                    which ever filter you want. In this example, we&apos;re
-                    adding assignee filter as &quot;sandeepb&quot;. That means
-                    it will filter and show only those leads which are assigned
-                    to the user &quot;sandeepb&quot;.
+                    By selecting this , you will see the unassigned leads for
+                    all the companies.
                   </p>
 
-                  <p>
-                    Once the filter is added, Click on{" "}
-                    <strong>&quot;Find All&quot;</strong>.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/apply_assignee_lead_filters.jpg"
-                  />
+                  <h3>Desktop notification</h3>
 
                   <p>
-                    Now it will filter and only show the leads which are assigned to the user &quot;sandeepb&quot;.
+                    By enabling this, you will start receiving the notifications
+                    on your desktop as soon as a new unassigned lead is arrived
+                    in selected company.
                   </p>
 
                   <img
-                    alt="Click on create"
-                    width={"95%"}
+                    alt="Click on manage company - BangDB"
+                    width={"50%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/filtered_leads.jpg"
+                    src="/assets/apps/leads-management/desktop-notification.jpg"
                   />
+
+                  <h3>Watch pipes</h3>
+
+                  <p>
+                    This is a dropdown from where you can selected companies and
+                    you will receive the unassigned notifications for only the
+                    companies that you select here.
+                  </p>
                 </div>
               </div>
             </article>

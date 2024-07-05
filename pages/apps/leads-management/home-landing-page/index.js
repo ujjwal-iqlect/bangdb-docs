@@ -41,15 +41,25 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Filter leads</h1>
+              <h1 className="article-title">Home / landing page</h1>
               <div className="article-body">
                 <div className="article-body">
-                  <p>
-                    In order to filter leads, Go to the
-                    <strong> &quot;Home&quot; </strong> page, and select a
-                    company from the <strong>&quot;My companies&quot;</strong>{" "}
-                    section.
-                  </p>
+                  <p>Home page has 4 sub-sections. They are defined below :</p>
+
+                  <ol>
+                    <li>
+                      <strong>My Companies</strong>
+                    </li>
+                    <li>
+                      <strong>Call logs</strong>
+                    </li>
+                    <li>
+                      <strong>Notifications</strong>
+                    </li>
+                    <li>
+                      <strong>Today&apos;s events</strong>
+                    </li>
+                  </ol>
 
                   <img
                     alt="Click on crm settings - BangDB"
@@ -58,57 +68,80 @@ export default function Motivation() {
                     src="/assets/apps/leads-management/home_page.jpg"
                   />
 
+                  <h2>My Companies</h2>
+
                   <p>
-                    It will take you to the leads page, where you can see all
-                    the leads for the selected company.
+                    This section lists all the companies the current user is
+                    assigned to.
+                  </p>
+
+                  <h3>Search company using ID</h3>
+                  <p>
+                    There is also a search field provided here using which the
+                    users can search the company list ( using company ID ).
                   </p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/leads_page.jpg"
+                    src="/assets/apps/leads-management/my-companies-search.jpg"
                   />
 
-                  <p>Now click on the filter icon.</p>
+                  <h3>Default company selection</h3>
+
+                  <p>
+                    There is a check-box provided in front of each company. By
+                    selecting a company as default, it means that if you
+                    navigate to the leads listing page without selecting a pipe
+                    from home page. You will see leads of the default selected
+                    company.
+                  </p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click_on_filter_leads.jpg"
+                    src="/assets/apps/leads-management/default-pipe-selection.jpg"
                   />
 
+                  <h2>Call logs</h2>
+
                   <p>
-                    It will open the create lead form, Filter slideover. Add
-                    which ever filter you want. In this example, we&apos;re
-                    adding assignee filter as &quot;sandeepb&quot;. That means
-                    it will filter and show only those leads which are assigned
-                    to the user &quot;sandeepb&quot;.
+                    This section l  ists all the calls logs for the user ( from
+                    Twillio ).
                   </p>
 
-                  <p>
-                    Once the filter is added, Click on{" "}
-                    <strong>&quot;Find All&quot;</strong>.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/apply_assignee_lead_filters.jpg"
-                  />
+                  <h2>Notifications</h2>
 
                   <p>
-                    Now it will filter and only show the leads which are assigned to the user &quot;sandeepb&quot;.
+                    This section lists all the notifications for the user from
+                    all the companies. Users can also select and see the
+                    notifications for only one company using the given dropdown.
                   </p>
 
                   <img
-                    alt="Click on create"
+                    alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/filtered_leads.jpg"
+                    src="/assets/apps/leads-management/home-notifications.jpg"
                   />
+
+                  <h2>Today&apos;s events</h2>
+
+                  <p>
+                    In this section, you&apos;ll see all the events scheduled in
+                    the leads that are assigned to you.
+                  </p>
+
+
+                  <img
+                    alt="Click on manage company - BangDB"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/today-events.jpg"
+                  />
+
                 </div>
               </div>
             </article>

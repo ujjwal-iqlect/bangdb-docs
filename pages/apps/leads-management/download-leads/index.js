@@ -41,11 +41,11 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Filter leads</h1>
+              <h1 className="article-title">Download leads</h1>
               <div className="article-body">
                 <div className="article-body">
                   <p>
-                    In order to filter leads, Go to the
+                    In order to download the leads, Go to the
                     <strong> &quot;Home&quot; </strong> page, and select a
                     company from the <strong>&quot;My companies&quot;</strong>{" "}
                     section.
@@ -70,45 +70,29 @@ export default function Motivation() {
                     src="/assets/apps/leads-management/leads_page.jpg"
                   />
 
-                  <p>Now click on the filter icon.</p>
+                  <p>Now click on the download icon.</p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click_on_filter_leads.jpg"
+                    src="/assets/apps/leads-management/click-on-download-leads.jpg"
                   />
 
                   <p>
-                    It will open the create lead form, Filter slideover. Add
-                    which ever filter you want. In this example, we&apos;re
-                    adding assignee filter as &quot;sandeepb&quot;. That means
-                    it will filter and show only those leads which are assigned
-                    to the user &quot;sandeepb&quot;.
-                  </p>
-
-                  <p>
-                    Once the filter is added, Click on{" "}
-                    <strong>&quot;Find All&quot;</strong>.
+                    It will open the download modal, where you need to select
+                    file type & formatting details etc. Once you&apos;re done,
+                    click on the blue button.
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/apply_assignee_lead_filters.jpg"
+                    src="/assets/apps/leads-management/download-leads-form.jpg"
                   />
 
-                  <p>
-                    Now it will filter and only show the leads which are assigned to the user &quot;sandeepb&quot;.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/filtered_leads.jpg"
-                  />
+                  <p>The leads will get downloaded.</p>
                 </div>
               </div>
             </article>

@@ -74,6 +74,68 @@ export default function Motivation() {
                   on the app. Click on <strong>Save</strong>.
                 </p>
 
+                <h2>Setup for RingCentral</h2>
+
+                <ol>
+                  <li>Go to ringcentral.com.</li>
+                  <li>Click Get started, it&apos;s free.</li>
+                  <li>
+                    Verify your age. You must be at least 16 years old to create
+                    an account.
+                  </li>
+                  <li>Enter your email address.</li>
+                  <li>
+                    Accept the Terms of Service, Privacy Notice, and Acceptable
+                    Use Policy.
+                  </li>
+                  <li>
+                    Click Next. An email will be sent to the account you
+                    provided. Check your junk/spam folder if you cannot find the
+                    email.
+                  </li>
+                  <li>
+                    Open the email and click Activate account or copy and paste
+                    the URL into your browser.
+                  </li>
+
+                  <ul>
+                    <li>Set up your account.Enter your first and last name.</li>
+                    <li>Enter your company name (optional).</li>
+                    <li>Create a password.</li>
+                    <li>
+                      Accept the Terms of Service, Privacy Notice, and
+                      Acceptable Use Policy.
+                    </li>
+                  </ul>
+                  <li>Click Create your free account.</li>
+                  <li>
+                    Once your account is created you can login to your BangDB
+                    account and go to the ringcentral tab while making a call
+                    and login to the ringcentral account.
+                  </li>
+                </ol>
+
+                <h2>Setup Twilio</h2>
+
+                <ol>
+                  <li>
+                    Visit the twilio console and look for &quot;Buy a
+                    number&quot;
+                  </li>
+                  <li>
+                    Select all the criteria you are looking for in a number and
+                    purchase it.
+                  </li>
+                  <li>
+                    Visit the Company Settings and look for the user you want to
+                    assign this number to.
+                  </li>
+                  <li>
+                    Add this number in the &quot;To make phone calls&quot;
+                    field.
+                  </li>
+                </ol>
+
                 <h2>Use calling feature</h2>
 
                 <p>

@@ -41,11 +41,11 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Filter leads</h1>
+              <h1 className="article-title">Customize columns</h1>
               <div className="article-body">
                 <div className="article-body">
                   <p>
-                    In order to filter leads, Go to the
+                    In order to customize the lead table columns, Go to the
                     <strong> &quot;Home&quot; </strong> page, and select a
                     company from the <strong>&quot;My companies&quot;</strong>{" "}
                     section.
@@ -70,45 +70,43 @@ export default function Motivation() {
                     src="/assets/apps/leads-management/leads_page.jpg"
                   />
 
-                  <p>Now click on the filter icon.</p>
+                  <p>Now click on the customize columns icon.</p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click_on_filter_leads.jpg"
+                    src="/assets/apps/leads-management/click-on-customize-columns.jpg"
                   />
 
                   <p>
-                    It will open the create lead form, Filter slideover. Add
-                    which ever filter you want. In this example, we&apos;re
-                    adding assignee filter as &quot;sandeepb&quot;. That means
-                    it will filter and show only those leads which are assigned
-                    to the user &quot;sandeepb&quot;.
+                    It will open a popover, where you can enable / disable the
+                    columns as per your requirement. Additionally, you will see
+                    two tabs :
                   </p>
 
-                  <p>
-                    Once the filter is added, Click on{" "}
-                    <strong>&quot;Find All&quot;</strong>.
-                  </p>
+                  <ol>
+                    <li>
+                      <strong>For you</strong> : whichever columns you edit
+                      here, will affect only your table view.
+                    </li>
+                    <li>
+                      <strong>For everyone</strong> : whichever columns you edit
+                      here, will affect everyone&apos;s table view.
+                    </li>
+                  </ol>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/apply_assignee_lead_filters.jpg"
+                    src="/assets/apps/leads-management/customize-columns-popover.jpg"
                   />
 
                   <p>
-                    Now it will filter and only show the leads which are assigned to the user &quot;sandeepb&quot;.
+                    Enable / Disable the columns using the switch buttons, and
+                    the changes will automatically be applied.
                   </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/filtered_leads.jpg"
-                  />
                 </div>
               </div>
             </article>

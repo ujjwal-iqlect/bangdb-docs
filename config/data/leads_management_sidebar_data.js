@@ -149,6 +149,11 @@ export const leads_management_sidebar_data = [
             path: path_prefix + "/company-editing/add-an-existing-user",
           },
           {
+            id: "1a",
+            title: "Add quota for user",
+            path: path_prefix + "/company-editing/add-quota-for-user",
+          },
+          {
             id: "2",
             title: "Notification setup",
             path: path_prefix + "/company-editing/notification-setup",
@@ -240,6 +245,21 @@ export const leads_management_sidebar_data = [
     title: "Leads",
     childrens: [
       {
+        id: "0a",
+        title: "Home page",
+        path: path_prefix + "/home-landing-page",
+      },
+      {
+        id: "0b",
+        title: "Profile",
+        path: path_prefix + "/view-profile",
+      },
+      {
+        id: "0b",
+        title: "Unassigned leads",
+        path: path_prefix + "/unassigned-leads",
+      },
+      {
         id: "0",
         title: "Add lead manually",
         path: path_prefix + "/add-lead-in-company",
@@ -280,6 +300,16 @@ export const leads_management_sidebar_data = [
         path: path_prefix + "/setup-an-event",
       },
       {
+        id: "7a",
+        title: "Edit an event",
+        path: path_prefix + "/edit-an-event",
+      },
+      {
+        id: "7b",
+        title: "Cancel an event",
+        path: path_prefix + "/cancel-an-event",
+      },
+      {
         id: "8",
         title: "Delete a lead",
         path: path_prefix + "/delete-a-lead",
@@ -298,6 +328,21 @@ export const leads_management_sidebar_data = [
         id: "11",
         title: "Filter Leads",
         path: path_prefix + "/filter-leads",
+      },
+      {
+        id: "12",
+        title: "Search Leads",
+        path: path_prefix + "/search-leads",
+      },
+      {
+        id: "13",
+        title: "Download Leads",
+        path: path_prefix + "/download-leads",
+      },
+      {
+        id: "14",
+        title: "Customize columns",
+        path: path_prefix + "/customize-columns",
       },
     ],
   },

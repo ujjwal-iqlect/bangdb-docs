@@ -41,74 +41,44 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Filter leads</h1>
+              <h1 className="article-title">Profile</h1>
               <div className="article-body">
                 <div className="article-body">
                   <p>
-                    In order to filter leads, Go to the
-                    <strong> &quot;Home&quot; </strong> page, and select a
-                    company from the <strong>&quot;My companies&quot;</strong>{" "}
-                    section.
+                    In order to view or edit the profile, click on the mini
+                    profile icon on top header.
                   </p>
 
                   <img
                     alt="Click on crm settings - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/home_page.jpg"
+                    src="/assets/apps/leads-management/mini_profile.jpg"
+                  />
+
+                  <p>Then click on &quot;Edit profile&quot;.</p>
+
+                  <img
+                    alt="Click on manage company - BangDB"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/click-on-edit-profile.jpg"
                   />
 
                   <p>
-                    It will take you to the leads page, where you can see all
-                    the leads for the selected company.
+                    This is the profile page, from here you can edit first name,
+                    last name, e-mail address, phone number, profile picture,
+                    country , state etc. You can change password and re-generate
+                    and in-validate the API key etc.
                   </p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/leads_page.jpg"
+                    src="/assets/apps/leads-management/profile.jpg"
                   />
 
-                  <p>Now click on the filter icon.</p>
-
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/click_on_filter_leads.jpg"
-                  />
-
-                  <p>
-                    It will open the create lead form, Filter slideover. Add
-                    which ever filter you want. In this example, we&apos;re
-                    adding assignee filter as &quot;sandeepb&quot;. That means
-                    it will filter and show only those leads which are assigned
-                    to the user &quot;sandeepb&quot;.
-                  </p>
-
-                  <p>
-                    Once the filter is added, Click on{" "}
-                    <strong>&quot;Find All&quot;</strong>.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/apply_assignee_lead_filters.jpg"
-                  />
-
-                  <p>
-                    Now it will filter and only show the leads which are assigned to the user &quot;sandeepb&quot;.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/filtered_leads.jpg"
-                  />
                 </div>
               </div>
             </article>

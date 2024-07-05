@@ -41,11 +41,11 @@ export default function Motivation() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Filter leads</h1>
+              <h1 className="article-title">Search leads</h1>
               <div className="article-body">
                 <div className="article-body">
                   <p>
-                    In order to filter leads, Go to the
+                    In order to search leads, Go to the
                     <strong> &quot;Home&quot; </strong> page, and select a
                     company from the <strong>&quot;My companies&quot;</strong>{" "}
                     section.
@@ -70,44 +70,26 @@ export default function Motivation() {
                     src="/assets/apps/leads-management/leads_page.jpg"
                   />
 
-                  <p>Now click on the filter icon.</p>
+                  <p>Now click on the search icon.</p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click_on_filter_leads.jpg"
+                    src="/assets/apps/leads-management/click-on-search.jpg"
                   />
 
                   <p>
-                    It will open the create lead form, Filter slideover. Add
-                    which ever filter you want. In this example, we&apos;re
-                    adding assignee filter as &quot;sandeepb&quot;. That means
-                    it will filter and show only those leads which are assigned
-                    to the user &quot;sandeepb&quot;.
-                  </p>
-
-                  <p>
-                    Once the filter is added, Click on{" "}
-                    <strong>&quot;Find All&quot;</strong>.
+                    It will open the search modal, where you can enter the
+                    search query and hit Enter. It will show the search results
+                    based on the search query.
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/apply_assignee_lead_filters.jpg"
-                  />
-
-                  <p>
-                    Now it will filter and only show the leads which are assigned to the user &quot;sandeepb&quot;.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/filtered_leads.jpg"
+                    src="/assets/apps/leads-management/leads-search-results.jpg"
                   />
                 </div>
               </div>
