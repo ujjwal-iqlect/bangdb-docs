@@ -69,6 +69,7 @@ export default function Overview() {
                   height={"auto"}
                   src="/assets/apps/bug-tracker/project-stats.jpg"
                 />
+                  
               </div>
             </article>
           </div>

@@ -75,6 +75,12 @@ export default function Motivation() {
                   Changes are now saved locally, in order to save these changes
                   on the app. Click on <strong>Save</strong>.
                 </p>
+                <img
+                  alt="Click on setup crm - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/save_group.png"
+                />
               </div>
             </article>
           </div>

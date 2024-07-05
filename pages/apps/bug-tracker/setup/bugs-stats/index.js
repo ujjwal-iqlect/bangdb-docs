@@ -53,6 +53,19 @@ export default function Overview() {
                   height={"auto"}
                   src="/assets/apps/bug-tracker/my-bugs-stats.jpg"
                 />
+               
+               <br></br>
+                <p>
+                  Open any project from my project list and there u get the tabs as stats when we click on taht there also u will get the detailed stats
+                </p>
+
+                <img
+                  alt="Project reports & statistics - BangDB BugTracker"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/bug-tracker/Project_Stats.png"
+                />
+
               </div>
             </article>
           </div>

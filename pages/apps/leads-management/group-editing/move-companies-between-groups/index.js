@@ -117,6 +117,14 @@ export default function Motivation() {
                   Once you&apos;re done with your changes. Click on{" "}
                   <strong>Save</strong>.
                 </p>
+
+                <img
+                  alt="Click on setup crm - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/save_group.png"
+                />
+                
               </div>
             </article>
           </div>

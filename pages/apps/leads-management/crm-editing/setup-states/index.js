@@ -66,6 +66,13 @@ export default function Motivation() {
                   Go to the <strong>&quot;CRM settings&quot;</strong>
                 </p>
 
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_crm_settings.jpg"
+                />
+
                 <p>
                   Click on <strong>&quot;More CRM Settings&quot;</strong>
                 </p>
