@@ -38,224 +38,209 @@ export default function SetupWebForms() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">
-                Monitor data
-              </h1>
+              <h1 className="article-title">Monitor data</h1>
               <div className="article-body">
                 <p>
-                  Go to the
-                  <strong> &quot;Get started&quot; </strong> page from the top
-                  header.
-                </p>
-
-                <p>
-                  Click on
-                  <strong> &quot;Setup a lead source&quot;</strong>
+                  From the header, select clickstream you want to monitor /
+                  visualize.
                 </p>
 
                 <img
                   alt="Click on crm settings - BangDB"
-                  width={"95%"}
+                  width={"40%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/setup_lead_source.jpg"
+                  src="/assets/apps/click-stream/choose-cs.jpg"
                 />
 
                 <p>
-                  Select any one source. ( For this example - we&apos;re
-                  choosing &quot;Website&quot; )
+                  We have 13 visualization sections in the click-stream app,
+                  they are as follows:
                 </p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/select_any_source.jpg"
-                />
-
-                <p>Click on &quot;Add website&quot; button.</p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_add_website.jpg"
-                />
-
-                <p>
-                  It will open a modal. Enter the details and click on &quot;Add
-                  website&quot; button.
-                </p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/add_website_form.jpg"
-                />
-
-                <p>
-                  Once the website is added, click on &quot;Collectors&quot;
-                  button.
-                </p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_collectors.jpg"
-                />
-
-                <p>
-                  Now choose any form template you wish. (For this example
-                  we&apos;re choosing Marketing one).
-                </p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/choose_form_templates.jpg"
-                />
-
-                <h2>If you already have a form</h2>
 
                 <ol>
-                  <li>
-                    Provide the URL of the page where your form is located.
-                  </li>
-
-                  <p>Enter the URL and click on &quot;Get page&quot;</p>
-
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/enter_form_url.jpg"
-                  />
-
-                  <li>Selct the form from the dropdown</li>
-
-                  <p>
-                    You will see a dropdown list of all the available forms on
-                    the page. Select the one from which you want to get the lead
-                    data.
-                  </p>
-
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/form_selected.jpg"
-                  />
-
-                  <li>
-                    Enter the details, Map the fields and click on{" "}
-                    <strong>&quot;Create&quot;</strong>
-                  </li>
-
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/url_form_create.jpg"
-                  />
-
-                  <li>The form will get created successfully!</li>
+                  <li>Location based Traffic</li>
+                  <li>Real-Time Stats</li>
+                  <li>Visit Trends</li>
+                  <li>Page Stats</li>
+                  <li>Page Event Analysis</li>
+                  <li>Traffic Analysis</li>
+                  <li>Demographic Analysis</li>
+                  <li>Visitor Stats</li>
+                  <li>Visitor Segmentations</li>
+                  <li>Session Analysis</li>
+                  <li>Cross Website Visits</li>
+                  <li>REAN Indexes</li>
+                  <li>Lead / Campaign Analysis</li>
+                  <ul>
+                    <li>Campaign Data</li>
+                    <li>Non Campaign Data</li>
+                    <li>Call Analysis Table</li>
+                    <li>Call Button Clicked Data</li>
+                    <li>Form-field lead stats</li>
+                  </ul>
                 </ol>
 
-                <h2>Create new form ( from scratch )</h2>
+                <h2>Location based Traffic</h2>
 
-                <ol>
-                  <li>
-                    Go to <strong>&quot;Create new form&quot;</strong> tab.
-                  </li>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/location-based-traffic.jpg"
+                />
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/click_on_create_new_form_tab.jpg"
-                  />
+                <h2>Real-Time Stats</h2>
 
-                  <li>Edit the form & get the code</li>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/real-time-stats.jpg"
+                />
 
-                  <p>
-                    Once you are done editing the form, click on &quot;Code
-                    Preview&quot;
-                  </p>
+                <h2>Visit Trends</h2>
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/click_on_code_preview.jpg"
-                  />
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/visit-trends.jpg"
+                />
 
-                  <li>
-                    Copy the code and use it in your website. That&apos;s it, no
-                    extra configuration required!
-                  </li>
+                <h2>Page Stats</h2>
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/code_preview.jpg"
-                  />
-                </ol>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/page-stats.jpg"
+                />
 
-                <h2>Create new form ( from template )</h2>
+                <h2>Page Event Analysis</h2>
 
-                <ol>
-                  <li>
-                    Go to <strong>&quot;Choose Template&quot;</strong> tab.
-                  </li>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/page-event-analysis.jpg"
+                />
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/click_on_choose_template_tab.jpg"
-                  />
+                <h2>Traffic Analysis</h2>
 
-                  <li>Get the code</li>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/traffic-analysis.jpg"
+                />
 
-                  <p>
-                    Choose the template and click on &quot;Code Preview&quot;
-                  </p>
+                <h2>Demographic Analysis</h2>
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/click_on_code_preview2.jpg"
-                  />
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/demographic-analysis.jpg"
+                />
 
-                  <li>
-                    Copy the code and use it in your website. That&apos;s it, no
-                    extra configuration required!
-                  </li>
+                <h2>Visitor Stats</h2>
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/code_preview2.jpg"
-                  />
-                </ol>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/visitor-stats.jpg"
+                />
 
-                <h2>Publish form</h2>
+                <h2>Visitor Segmentations</h2>
 
-                <p>Once the form is created, Click on <strong>&quot;Publish&quot;</strong></p>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/visitor-segmentations.jpg"
+                />
 
-                  <img
-                    alt="Click on manage company - BangDB"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/click_on_publish_form.jpg"
-                  />
+                <h2>Session Analysis</h2>
 
-                  <p>The form changes will get published. Changes may take 30-45 mins to reflect.</p>
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/session-analysis.jpg"
+                />
+
+                <h2>Cross Website Visits</h2>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/cross-website-visits.jpg"
+                />
+
+                <h2>REAN Indexes</h2>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/rean-indexes.jpg"
+                />
+
+                <h2>Lead / Campaign Analysis</h2>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/lead-campaign-analysis.jpg"
+                />
+
+                <h3>Campaign Data</h3>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/campaign-data.jpg"
+                />
+
+                <h3>Non Campaign Data</h3>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/non-campaign-data.jpg"
+                />
+
+                <h3>Call Analysis Table</h3>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/call-analysis-table.jpg"
+                />
+
+                <h3>Call Button Clicked Data</h3>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/call-button-clicked-data.jpg"
+                />
+
+                <h3>Form-field lead stats</h3>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/form-field-lead-stats.jpg"
+                />
               </div>
             </article>
           </div>
