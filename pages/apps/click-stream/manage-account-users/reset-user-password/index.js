@@ -1,13 +1,18 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "../../../../../components/Breadcrumb";
 
-export default function SetupWebForms() {
+export default function Motivation() {
   return (
     <React.Fragment>
       <Head>
-        <title>Setup web forms</title>
-        <meta name="description" content="Setup web forms"></meta>
+        <title>Overview</title>
+        <meta
+          name="description"
+          content="Motivation - Why BangDB?. The motivation behind BangDB."
+        ></meta>
         <meta property="og:site_name" content="BangDB Docs" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Motivation - Why BangDB?" />
@@ -38,59 +43,54 @@ export default function SetupWebForms() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">
-                Add website for click stream analysis
-              </h1>
+              <h1 className="article-title">Reset password for a user</h1>
               <div className="article-body">
+                <aside className="doc-note">
+                  <strong>Note: </strong>
+                  You need to be CRM admin in order to access manage account
+                  users settings.
+                </aside>
+
                 <p>
                   Go to the
-                  <strong> &quot;Get started&quot; </strong> page from the top
-                  header.
+                  <strong> &quot;Manage Account Users&quot; </strong> page from
+                  the top header.
                 </p>
 
                 <p>
-                  Click on
-                  <strong> &quot;Setup a lead source&quot;</strong>
+                  Find the user you want to change the status for, and click on
+                  <strong> &quot;Edit User&quot;</strong>
                 </p>
 
                 <img
                   alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/setup_lead_source.jpg"
-                />
-
-                <p>Select website.</p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/select_any_source.jpg"
-                />
-
-                <p>Click on &quot;Add website&quot; button.</p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_add_website.jpg"
+                  src="/assets/apps/leads-management/click_on_edit_user.jpg"
                 />
 
                 <p>
-                  It will open a modal. Enter the details and click on &quot;Add
-                  website&quot; button.
+                  It will open the edit user page. From here, Go to{" "}
+                  <strong>&quot;Reset Password&quot;</strong> tab
                 </p>
 
                 <img
-                  alt="Click on manage company - BangDB"
+                  alt="Click on crm settings - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/add_website_form.jpg"
+                  src="/assets/apps/leads-management/edit_user_screen.jpg"
                 />
 
-                <p>The website will get added.</p>
+                <p>
+                  Enter the new password, and click on{" "}
+                  <strong>&quot;Update Password&quot;</strong>.
+                </p>
+                <img
+                  alt="Click on crm settings - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/reset_password_screen.jpg"
+                />
               </div>
             </article>
           </div>
@@ -102,6 +102,6 @@ export default function SetupWebForms() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { click_stream_sidebar: true },
+    props: { leads_management_sidebar: true },
   };
 }

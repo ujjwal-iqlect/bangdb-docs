@@ -38,9 +38,7 @@ export default function SetupWebForms() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">
-                Add website for click stream analysis
-              </h1>
+              <h1 className="article-title">Setup call to action</h1>
               <div className="article-body">
                 <p>
                   Go to the
@@ -60,7 +58,10 @@ export default function SetupWebForms() {
                   src="/assets/apps/leads-management/setup_lead_source.jpg"
                 />
 
-                <p>Select website.</p>
+                <p>
+                  Select any one source. ( For this example - we&apos;re
+                  choosing &quot;Website&quot; )
+                </p>
 
                 <img
                   alt="Click on manage company - BangDB"
@@ -69,28 +70,59 @@ export default function SetupWebForms() {
                   src="/assets/apps/leads-management/select_any_source.jpg"
                 />
 
-                <p>Click on &quot;Add website&quot; button.</p>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/leads-management/click_on_add_website.jpg"
-                />
-
                 <p>
-                  It will open a modal. Enter the details and click on &quot;Add
-                  website&quot; button.
+                  Click on &quot;Collectors&quot; button for the website where
+                  you want to setup the &quot;Call to action&quot;.
                 </p>
 
                 <img
                   alt="Click on manage company - BangDB"
                   width={"95%"}
                   height={"auto"}
-                  src="/assets/apps/leads-management/add_website_form.jpg"
+                  src="/assets/apps/leads-management/click_on_collectors.jpg"
                 />
 
-                <p>The website will get added.</p>
+                <p>Now choose &quot;Call to action&quot;.</p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/choose_form_templates.jpg"
+                />
+
+                <p>Select the call to action element and add its unique ID.</p>
+
+                <p>
+                  Once you&apos;re done, Click on &quot;Save Call To
+                  Actions&quot;.
+                </p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/click-stream/add-cta.jpg"
+                />
+
+                <h2>Publish form</h2>
+
+                <p>
+                  Once the form is created, Click on{" "}
+                  <strong>&quot;Publish&quot;</strong>.
+                </p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/leads-management/click_on_publish_form.jpg"
+                />
+
+                <p>
+                  The form changes will get published. Changes may take 30-45
+                  mins to reflect.
+                </p>
               </div>
             </article>
           </div>

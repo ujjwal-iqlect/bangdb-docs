@@ -22,6 +22,7 @@ import { create_crm_object } from "../config/data/leads_selling_sidebar_data";
 import { useRouter } from "next/router";
 import { forum_sidebar_data } from "../config/data/forum_sidebar_data";
 import { bugtracker_sidebar_data } from "../config/data/bugtracker_sidebar_data";
+import { click_stream_sidebar_data } from "../config/data/click_stream_data";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -91,6 +92,10 @@ function MyApp({ Component, pageProps }) {
 
       case pageProps.bugt_sidebar:
         return <CommonSidebar data={bugtracker_sidebar_data} />;
+        break;
+
+      case pageProps.click_stream_sidebar:
+        return <CommonSidebar data={click_stream_sidebar_data} />;
         break;
 
       case pageProps.noSidebar:
