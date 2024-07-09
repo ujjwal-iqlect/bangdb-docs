@@ -277,7 +277,7 @@ export const leads_management_sidebar_data = [
       {
         id: "3",
         title: "Add website for click-stream analysis",
-        path: path_prefix + "/add-webiste-for-click-stream-analysis",
+        path: path_prefix + "/add-website-for-click-stream-analysis",
       },
       {
         id: "4",
