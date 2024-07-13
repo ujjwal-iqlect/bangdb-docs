@@ -53,12 +53,12 @@ export const app_mon_sidebar_data = [
       {
         id: "1",
         title: "Edit service",
-        path: setup_path_prefix + "/edit-service",
+        path: setup_path_prefix + "/services/edit-service",
       },
       {
         id: "2",
         title: "Delete service",
-        path: setup_path_prefix + "/delete-service",
+        path: setup_path_prefix + "/services/delete-service",
       },
     ],
   },
