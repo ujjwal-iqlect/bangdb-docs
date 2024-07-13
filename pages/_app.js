@@ -23,6 +23,7 @@ import { useRouter } from "next/router";
 import { forum_sidebar_data } from "../config/data/forum_sidebar_data";
 import { bugtracker_sidebar_data } from "../config/data/bugtracker_sidebar_data";
 import { click_stream_sidebar_data } from "../config/data/click_stream_data";
+import { app_mon_sidebar_data } from "../config/data/app_mon_data";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -88,6 +89,10 @@ function MyApp({ Component, pageProps }) {
 
       case pageProps.forum_sidebar:
         return <CommonSidebar data={forum_sidebar_data} />;
+        break;
+
+      case pageProps.app_mon_sidebar:
+        return <CommonSidebar data={app_mon_sidebar_data} />;
         break;
 
       case pageProps.bugt_sidebar:

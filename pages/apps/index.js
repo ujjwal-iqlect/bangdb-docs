@@ -51,13 +51,13 @@ export default function Apps() {
       <div className="flex items-center mt-10 min-h-[80vh]">
         <BoxSectionWrapper>
           <BoxSection>
-            {/* <Box
-              headline={"Bug Tracker"}
+            <Box
+              headline={"AppMon"}
               para={
-                "Get started with BangDB Leads Management database and power your application."
+                "Get started with BangDB AppMon and start monitoring your applications."
               }
-              link={"/apps/leads-management"}
-            /> */}
+              link={"/apps/app-mon"}
+            />
             <Box
               headline={"Bug Tracker"}
               para={
