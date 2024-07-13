@@ -68,72 +68,20 @@ export default function SnmpMonitoring() {
                   src="/assets/apps/app-mon/go-to-snmp-mon.jpg"
                 />
 
+                <p>It will take you to the SNMP monitoring page.</p>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"95%"}
+                  height={"auto"}
+                  src="/assets/apps/app-mon/snmp.png"
+                />
+
                 <p>
-                  It will take you to the SNMP monitoring page.
+                  Additionally, you can also filter the data based on a specific
+                  &quot;Network&quot; OR &quot;Disk&quot; using the drop-down
+                  above.
                 </p>
-
-                <h2>Summary</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-summary.jpg"
-                />
-
-                <h2>Network</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-network.jpg"
-                />
-
-                <h2>Disk</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-disk.jpg"
-                />
-
-                <h2>CPU</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-cpu.jpg"
-                />
-
-                <h2>Memory</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-memory.jpg"
-                />
-
-                <h2>Power</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-power.jpg"
-                />
-
-                <h2>Realtime overview</h2>
-
-                <img
-                  alt="Click on manage company - BangDB"
-                  width={"95%"}
-                  height={"auto"}
-                  src="/assets/apps/app-mon/linux-realtime-overview.jpg"
-                />
               </div>
             </article>
           </div>
