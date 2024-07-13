@@ -1,5 +1,5 @@
-const setup_path_prefix = `/apps/app-mon/setup`;
-const user_guide_path_prefix = `/apps/app-mon/user-guide`;
+const path_prefix = `/apps/app-mon`;
+const setup_path_prefix = path_prefix + `/setup`;
 
 export const app_mon_sidebar_data = [
   {
@@ -42,12 +42,36 @@ export const app_mon_sidebar_data = [
         id: "0",
         title: "Add service",
         childrens: [
-          { id: "0", title: "Web Monitoring", path: setup_path_prefix + "/services/add-service/web-mon" },
-          { id: "1", title: "Linux Monitoring", path: setup_path_prefix + "/services/add-service/linux-mon" },
-          { id: "2", title: "Click-stream Monitoring", path: setup_path_prefix + "/services/add-service/click-stream-mon" },
-          { id: "3", title: "Linux System Log Monitoring", path: setup_path_prefix + "/services/add-service/log-mon" },
-          { id: "4", title: "Generic Log Monitoring", path: setup_path_prefix + "/services/add-service/gen-log-mon" },
-          { id: "5", title: "SNMP Monitoring", path: setup_path_prefix + "/services/add-service/snmp-mon" },
+          {
+            id: "0",
+            title: "Web Monitoring",
+            path: setup_path_prefix + "/services/add-service/web-mon",
+          },
+          {
+            id: "1",
+            title: "Linux Monitoring",
+            path: setup_path_prefix + "/services/add-service/linux-mon",
+          },
+          // {
+          //   id: "2",
+          //   title: "Click-stream Monitoring",
+          //   path: setup_path_prefix + "/services/add-service/click-stream-mon",
+          // },
+          {
+            id: "3",
+            title: "Linux System Log Monitoring",
+            path: setup_path_prefix + "/services/add-service/log-mon",
+          },
+          {
+            id: "4",
+            title: "Generic Log Monitoring",
+            path: setup_path_prefix + "/services/add-service/gen-log-mon",
+          },
+          {
+            id: "5",
+            title: "SNMP Monitoring",
+            path: setup_path_prefix + "/services/add-service/snmp-mon",
+          },
         ],
       },
       {
@@ -59,6 +83,67 @@ export const app_mon_sidebar_data = [
         id: "2",
         title: "Delete service",
         path: setup_path_prefix + "/services/delete-service",
+      },
+    ],
+  },
+  {
+    id: "3",
+    title: "Monitor services",
+    childrens: [
+      {
+        id: "0",
+        title: "Website monitoring",
+        childrens: [
+          {
+            id: "0",
+            title: "Overview",
+            path: path_prefix + "/services/web-mon",
+          },
+        ],
+      },
+      {
+        id: "1",
+        title: "Linux Monitoring",
+        childrens: [
+          {
+            id: "0",
+            title: "Overview",
+            path: path_prefix + "/services/linux-mon",
+          },
+        ],
+      },
+      // {
+      //   id: "2",
+      //   title: "Click-stream Monitoring",
+      //   childrens: [
+      //     {
+      //       id: "0",
+      //       title: "Overview",
+      //       path: path_prefix + "/services/click-stream-mon",
+      //     },
+      //   ],
+      // },
+      {
+        id: "3",
+        title: "Log Monitoring",
+        childrens: [
+          {
+            id: "0",
+            title: "Overview",
+            path: path_prefix + "/services/logs",
+          },
+        ],
+      },
+      {
+        id: "5",
+        title: "SNMP Monitoring",
+        childrens: [
+          {
+            id: "0",
+            title: "Overview",
+            path: path_prefix + "/services/snmp-mon",
+          },
+        ],
       },
     ],
   },
