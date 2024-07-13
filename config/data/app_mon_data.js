@@ -158,8 +158,8 @@ export const app_mon_sidebar_data = [
       },
       {
         id: "1",
-        title: "Switch theme",
-        path: path_prefix + "/user-guide/switch-theme",
+        title: "Switch color theme",
+        path: path_prefix + "/user-guide/switch-color-theme",
       },
     ],
   },

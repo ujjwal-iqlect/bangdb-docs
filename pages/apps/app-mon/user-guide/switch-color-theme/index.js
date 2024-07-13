@@ -6,7 +6,7 @@ export default function SnmpMonitoring() {
   return (
     <React.Fragment>
       <Head>
-        <title>Switch theme</title>
+        <title>Switch color theme</title>
         <meta
           name="description"
           content="Motivation - Why BangDB?. The motivation behind BangDB."
@@ -41,10 +41,10 @@ export default function SnmpMonitoring() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Switch theme</h1>
+              <h1 className="article-title">Switch color theme</h1>
               <div className="article-body">
                 <p>
-                  In order to switch theme, Click on
+                  In order to switch color theme, Click on
                   <strong> &quot;Switch theme&quot; </strong> icon.
                 </p>
 
