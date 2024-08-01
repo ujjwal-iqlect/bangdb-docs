@@ -54,42 +54,42 @@ export default function Apps() {
             <Box
               headline={"AppMon"}
               para={
-                "Get started with BangDB AppMon and start monitoring your applications."
+                "Get started with BangDB AppMon and start real-time monitoring for your IT infrastructure, apps, logs, websites, and devices."
               }
               link={"/apps/app-mon"}
             />
             <Box
               headline={"Bug Tracker"}
               para={
-                "Get started with BangDB bug tracker app and start your online community."
+                "Get started with BangDB bug tracker and start releasing high quality products with automated bug tracking and management."
               }
               link={"/apps/bug-tracker/setup/add-project"}
             />
             <Box
               headline={"Click Stream"}
               para={
-                "Get started with BangDB click stream app and start your online community."
+                "Get started with BangDB click stream app and start real time visitor analysis for better insights and much higher conversions."
               }
               link={"/apps/click-stream/setup/add-website"}
             />
             <Box
               headline={"Forum"}
               para={
-                "Get started with BangDB Forum app and start your online community."
+                "Get started with BangDB Forum app and open an online community forum for your products, services, users & customers."
               }
               link={"/apps/forum/setup/overview"}
             />
             <Box
               headline={"Leads Management"}
               para={
-                "Get started with BangDB Leads Management database and power your application."
+                "Get started with BangDB Leads Management app and Generate, Nurture, Convert, Manage and Sell Leads with Integrated CRM."
               }
               link={"/apps/leads-management/crm-editing/overview"}
             />
             <Box
               headline={"Leads Selling"}
               para={
-                "Get started with BangDB Leads Selling database and power your application."
+                "Get started with BangDB Leads Selling app and Generate, Nurture, Convert, Manage and Sell Leads with Integrated CRM."
               }
               // link={"/apps/leads-selling/create-crm?app=leads_selling"}
               link={
