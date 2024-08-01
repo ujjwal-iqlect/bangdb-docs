@@ -63,14 +63,14 @@ export default function Apps() {
               para={
                 "Get started with BangDB bug tracker app and start your online community."
               }
-              link={"/apps/click-stream/setup/add-website"}
+              link={"/apps/bug-tracker/setup/add-project"}
             />
             <Box
               headline={"Click Stream"}
               para={
                 "Get started with BangDB click stream app and start your online community."
               }
-              link={"/apps/bug-tracker/setup/add-project"}
+              link={"/apps/click-stream/setup/add-website"}
             />
             <Box
               headline={"Forum"}
