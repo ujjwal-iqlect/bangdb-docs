@@ -75,7 +75,7 @@ export default function Apps() {
             <Box
               headline={"Forum"}
               para={
-                "Get started with BangDB Forum app and open an online community forum for your products, services, users & customers."
+                "Get started with BangDB Forum app, open and online community forum for your products, services, users & customers."
               }
               link={"/apps/forum/setup/overview"}
             />
