@@ -285,6 +285,11 @@ export const leads_management_sidebar_data = [
         path: path_prefix + "/edit-lead",
       },
       {
+        id: "4a",
+        title: "See leads distribution",
+        path: path_prefix + "/lead-distribution",
+      },
+      {
         id: "5",
         title: "Send E-mail",
         path: path_prefix + "/send-email",
