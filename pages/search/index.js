@@ -1,11 +1,16 @@
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { SearchData } from "../../components/SearchData";
 import Link from "next/link";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 export default function Search() {
   const router = useRouter();
   const { q } = router.query;
+
+  const [data, setData] = useState([]);
+
   const FilteredData = SearchData.filter(
     (item) =>
       item.title.toLowerCase().includes(q) ||
@@ -21,23 +26,37 @@ export default function Search() {
       ? "?" + new URLSearchParams(router.query)?.toString()
       : "";
 
+  const fetch_data = useQuery({
+    queryKey: ["fetch_data", q],
+    queryFn: async () => {
+      const res = await axios.get(
+        `https://customsearch.googleapis.com/customsearch/v1/siterestrict?key=${process.env.NEXT_PUBLIC_GOOGLE_CUSTOM_SEARCH_API_KEY}&cd=${process.env.NEXT_PUBLIC_GOOGLE_CUSTOM_SEARCH_ENGINE_ID}&q=${q}`
+      );
+
+      if (res?.data?.items?.length > 0) {
+        setData(res?.data?.items);
+      }
+    },
+    enabled: Boolean(q),
+  });
+
   return (
     <>
       <main className="bangdb-search">
         <div className="search-results-stats">
           <span>
-            Showing {FilteredData.length}{" "}
-            {FilteredData.length > 1 ? "results" : "result"} for &quot;{q}
+            Showing {data.length} {data.length > 1 ? "results" : "result"} for
+            &quot;{q}
             &quot;
           </span>
         </div>
         <div className="search-results-wrapper">
-          {FilteredData.map((item, index) => {
+          {data?.map((item, index) => {
             return (
               <div className="search-result" key={index}>
-                <Link href={item.path + url_params}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
+                <Link href={item?.formattedUrl + url_params}>
+                  <h3>{item?.title}</h3>
+                  <p>{item?.snippet}</p>
                 </Link>
               </div>
             );

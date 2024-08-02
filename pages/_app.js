@@ -25,6 +25,16 @@ import { bugtracker_sidebar_data } from "../config/data/bugtracker_sidebar_data"
 import { click_stream_sidebar_data } from "../config/data/click_stream_data";
 import { app_mon_sidebar_data } from "../config/data/app_mon_data";
 
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const updated_leads_management_sidebar_data = JSON.parse(
@@ -116,10 +126,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <AppProvider>
-        {header_footer(pageProps, "h")}
-        <Component {...pageProps} />
-        {sidebar(pageProps)}
-        {header_footer(pageProps, "f")}
+        <QueryClientProvider client={queryClient}>
+          {header_footer(pageProps, "h")}
+          <Component {...pageProps} />
+          {sidebar(pageProps)}
+          {header_footer(pageProps, "f")}
+        </QueryClientProvider>
       </AppProvider>
     </div>
   );
