@@ -56,7 +56,7 @@ export default function Apps() {
               para={
                 "Get started with BangDB AppMon and start real-time monitoring for your IT infrastructure, apps, logs, websites, and devices."
               }
-              link={"/apps/app-mon"}
+              link={"/apps/app-mon/setup/add-cluster"}
             />
             <Box
               headline={"Bug Tracker"}

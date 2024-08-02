@@ -30,7 +30,7 @@ export default function Search() {
     queryKey: ["fetch_data", q],
     queryFn: async () => {
       const res = await axios.get(
-        `https://customsearch.googleapis.com/customsearch/v1/siterestrict?key=${process.env.NEXT_PUBLIC_GOOGLE_CUSTOM_SEARCH_API_KEY}&cx=${process.env.NEXT_PUBLIC_GOOGLE_CUSTOM_SEARCH_ENGINE_ID}&q=${q}`
+        `https://www.googleapis.com/customsearch/v1?key=${process.env.NEXT_PUBLIC_GOOGLE_CUSTOM_SEARCH_API_KEY}&cx=${process.env.NEXT_PUBLIC_GOOGLE_CUSTOM_SEARCH_ENGINE_ID}&q=${q}`
       );
 
       if (res?.data?.items?.length > 0) {
