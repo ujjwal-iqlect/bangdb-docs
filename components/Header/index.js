@@ -96,11 +96,11 @@ export default function Header() {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? 'bg-gray-900 text-white'
-                              : 'text-black hover:text-gray-900',
-                            'px-3 py-2 rounded-md text-sm font-medium'
+                              ? "bg-gray-900 text-white"
+                              : "text-black hover:text-gray-900",
+                            "px-3 py-2 rounded-md text-sm font-medium"
                           )}
-                          aria-current={item.current ? 'page' : undefined}
+                          aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
                         </a>
@@ -110,14 +110,14 @@ export default function Header() {
                           <>
                             <Popover.Button
                               className={classNames(
-                                'text-black hover:text-gray-900 group inline-flex items-center rounded-md bg-white text-base font-medium'
+                                "text-black hover:text-gray-900 group inline-flex items-center rounded-md bg-white text-base font-medium"
                               )}
                             >
                               <span className="px-3 py-2 rounded-md text-sm font-medium">
                                 Products
                               </span>
                               <ChevronDownIcon
-                                className={classNames('ml-2 h-5 w-5')}
+                                className={classNames("ml-2 h-5 w-5")}
                                 aria-hidden="true"
                               />
                             </Popover.Button>
@@ -187,12 +187,12 @@ export default function Header() {
                 </div>
                 <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
                   <HeaderSearchbar />
-                  <Link
+                  {/* <Link
                     href="https://cloud.bangdb.com"
                     className="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900 ml-8"
                   >
                     Get Started
-                  </Link>
+                  </Link> */}
                   <Link
                     href="https://bangdb.com/download"
                     className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-dbblue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700"
@@ -212,11 +212,11 @@ export default function Header() {
                     href={item.href}
                     className={classNames(
                       item.current
-                        ? 'bg-gray-900 text-white'
-                        : 'text-gray-300 hover:text-gray-900',
-                      'block px-3 py-2 rounded-md text-base font-medium'
+                        ? "bg-gray-900 text-white"
+                        : "text-gray-300 hover:text-gray-900",
+                      "block px-3 py-2 rounded-md text-base font-medium"
                     )}
-                    aria-current={item.current ? 'page' : undefined}
+                    aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}
                   </Disclosure.Button>

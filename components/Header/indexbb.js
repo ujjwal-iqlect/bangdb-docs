@@ -28,7 +28,7 @@ export default function Header() {
         <div className="header-wrapper">
           <div className="top-header-wrapper">
             <div className="logo-wrapper">
-              <Link className="logo-link" href={'https://bangdb.com/'}>
+              <Link className="logo-link" href={"https://bangdb.com/"}>
                 <Image
                   src="https://bangdb.com/wp-content/uploads/2022/09/BangDB-LOGO-black.png"
                   alt="BangDB Logo"
@@ -56,26 +56,26 @@ export default function Header() {
                 <div className="skid-row-tabs">
                   <nav>
                     <tab>
-                      <Link href={'https://bangdb.com/pricing'} className="srt">
+                      <Link href={"https://bangdb.com/pricing"} className="srt">
                         Pricing
                       </Link>
                     </tab>
                     <tab className="srt-activated">
-                      <Link href={'/'}>Docs</Link>
+                      <Link href={"/"}>Docs</Link>
                     </tab>
                     <tab>
-                      <Link href={'https://bangdb.com/blog'} className="srt">
+                      <Link href={"https://bangdb.com/blog"} className="srt">
                         Blog
                       </Link>
                     </tab>
                     <tab>
-                      <Link href={'https://bangdb.com/about'} className="srt">
+                      <Link href={"https://bangdb.com/about"} className="srt">
                         About
                       </Link>
                     </tab>
                     <tab>
                       <Link
-                        href={'https://bangdb.com/contact-us'}
+                        href={"https://bangdb.com/contact-us"}
                         className="srt"
                       >
                         Contact
@@ -83,7 +83,7 @@ export default function Header() {
                     </tab>
                     <tab>
                       <Link
-                        href={'https://bangdb.com/resources'}
+                        href={"https://bangdb.com/resources"}
                         className="srt"
                       >
                         Resources
@@ -94,7 +94,7 @@ export default function Header() {
                       onMouseOver={showDropdown}
                       onMouseOut={hideDropdown}
                     >
-                      <Link href={'#'} className={dropdownTabTextClass}>
+                      <Link href={"#"} className={dropdownTabTextClass}>
                         Products
                       </Link>
                       <div
@@ -103,10 +103,10 @@ export default function Header() {
                         onMouseOut={hideDropdown}
                       >
                         <tab>
-                          <Link href={'https://bangdb.com/ampere'}>Ampere</Link>
+                          <Link href={"https://bangdb.com/ampere"}>Ampere</Link>
                         </tab>
                         <tab>
-                          <Link href={'https://bangdb.com/product'}>
+                          <Link href={"https://bangdb.com/product"}>
                             BangDB
                           </Link>
                         </tab>
@@ -114,18 +114,18 @@ export default function Header() {
                     </tab>
                     <div className="download">
                       <div className="download-wrapper">
-                        <Link href={'https://bangdb.com/download'}>
+                        <Link href={"https://bangdb.com/download"}>
                           Download
                         </Link>
                       </div>
                     </div>
-                    <div className="download">
+                    {/* <div className="download">
                       <div className="download-wrapper">
-                        <Link href={'https://cloud.bangdb.com'}>
+                        <Link href={"https://cloud.bangdb.com"}>
                           Get Started
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </nav>
                 </div>
               </div>
@@ -135,15 +135,15 @@ export default function Header() {
       </header>
       <div
         style={{
-          display: mobileHeader ? 'flex' : 'none',
+          display: mobileHeader ? "flex" : "none",
         }}
         className="mobile-nav-container"
       >
         <div
           style={{
-            display: 'flex',
-            width: '100%',
-            flexDirection: 'column',
+            display: "flex",
+            width: "100%",
+            flexDirection: "column",
           }}
         >
           <div className="mobile-nav-header">
@@ -223,11 +223,11 @@ export default function Header() {
                   <p>Download</p>
                 </div>
               </Link>
-              <Link href="https://cloud.bangdb.com">
+              {/* <Link href="https://cloud.bangdb.com">
                 <div className="mobile-gs-button">
                   <p>Get Started</p>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
