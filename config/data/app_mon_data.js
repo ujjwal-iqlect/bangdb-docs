@@ -161,6 +161,11 @@ export const app_mon_sidebar_data = [
         title: "Switch color theme",
         path: path_prefix + "/user-guide/switch-color-theme",
       },
+      {
+        id: "2",
+        title: "Setup configuration for SNMP",
+        path: path_prefix + "/user-guide/setup-config-for-snmp",
+      },
     ],
   },
   // {
