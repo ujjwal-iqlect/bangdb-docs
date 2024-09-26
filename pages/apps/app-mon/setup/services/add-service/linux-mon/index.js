@@ -105,13 +105,6 @@ export default function Motivation() {
                         means that you have to install agent on the host and you
                         will have more control over the data.
                       </p>
-                      <li>
-                        Agentless
-                        <p>
-                          If you choose this method, then you just need to add
-                          the service. The App will handle the rest.{" "}
-                        </p>
-                      </li>
                     </ol>
                   </li>
                   <li>
