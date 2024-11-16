@@ -135,6 +135,8 @@ export default function Motivation() {
                   </li>
                 </ul>
 
+                <h2>Using Agent</h2>
+
                 <img
                   alt="Click on manage company - BangDB"
                   width={"100%"}
@@ -153,6 +155,26 @@ export default function Motivation() {
                   width={"100%"}
                   height={"auto"}
                   src="/assets/apps/app-mon/web-mon-install-steps.jpg"
+                />
+
+                <h2>Agentless</h2>
+
+                <p>
+                  Select agentless from the radio button and click on add
+                  service. The service will get added.
+                </p>
+
+                <aside className="doc-note">
+                  <strong>NOTE: </strong>
+                  As of now agentless option is available for only website
+                  monitoring and Linux SNMP.
+                </aside>
+
+                <img
+                  alt="Click on manage company - BangDB"
+                  width={"100%"}
+                  height={"auto"}
+                  src="/assets/apps/app-mon/agent-less-web-mon.jpg"
                 />
               </div>
             </article>
