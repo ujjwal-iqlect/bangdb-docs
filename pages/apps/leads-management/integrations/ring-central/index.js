@@ -78,157 +78,98 @@ export default function RingCentralIntegration() {
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twilio-login.jpg"
+                    src="/assets/apps/leads-management/ring-central-developers.jpg"
                   />
 
                   <p>
-                    After successfully logging in, on the Twilio Admin Console
-                    Page you can find the following credentials which need to be
-                    pasted in &quot;Manage Extensions&quot; tab in ampere.
-                  </p>
-
-                  <ul>
-                    <li>Account SID</li>
-                    <li>Auth Token</li>
-                  </ul>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/twilio-develop-dashboard.jpg"
-                  />
-
-                  <p>
-                    To receive and make calls using Twilio you will also need a
-                    phone number from Twilio. If you already have this then you
-                    can use the same one. Else you can buy a new one or get one
-                    for trial.
+                    Once logged in you can click on &quot;App&quot; from the
+                    sidebar.
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click-on-get-a-trial-phone-number.jpg"
+                    src="/assets/apps/leads-management/ring-central-apps.jpg"
+                  />
+
+                  <p>Click on the &quot;Register App&quot; button.</p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/click-on-register-app.jpg"
                   />
 
                   <p>
-                    This number will also have to be linked with a TWIML app. To
-                    do that :
+                    Select &quot;REST API App&quot; as the type of your app.
                   </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/rc-rest-api-app.jpg"
+                  />
+
+                  <p>Click on &quot;Next&quot;</p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/rc-rest-api-next.jpg"
+                  />
+
+                  <p>
+                    Fill your app name and description. For other settings you
+                    can refer to your Ampere&apos;s page where these configs
+                    will be mentioned.
+                  </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/rc-setup-app.jpg"
+                  />
 
                   <ol>
-                    <li>select the TwiML apps option from the sidebar</li>
-
-                    <img
-                      alt="Click on create"
-                      width={"95%"}
-                      height={"auto"}
-                      src="/assets/apps/leads-management/twiml-apps.jpg"
-                    />
-
-                    <li>Click on &quot;Create New App&quot;</li>
-
-                    <img
-                      alt="Click on create"
-                      width={"95%"}
-                      height={"auto"}
-                      src="/assets/apps/leads-management/create-new-twiml-app.jpg"
-                    />
-
+                    <li>Select 3-legged OAuth flow for Authentication.</li>
+                    <li>Client-side web App as the app type.</li>
                     <li>
-                      Paste the URL provided on your extensions panel in ampere
-                      as the Voice Configuration URL and messaging URL
+                      The OAuth Redirect URI can be taken from the extensions
+                      tab in Ampere.
+                    </li>
+                    <li>
+                      The scopes can also be taken from the extensions tab in
+                      Ampere.
                     </li>
                   </ol>
 
                   <p>
-                    After successfully registering the App you can take the
-                    TwiML App SID and paste it in Ampere&apos;s extensions tab.
+                    Once all things are filled up you can click on the
+                    &quot;Create&quot; button, after that it will give you the
+                    &quot;Client ID&quot; and the &quot;Client Secret&quot;,
+                    which you can copy and paste in the Ampere&apos;s extensions
+                    tab.
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twiml-app-sid.jpg"
+                    src="/assets/apps/leads-management/rc-app-dashboard.jpg"
                   />
 
                   <p>
-                    You will also need to link the number you have to the TwiML
-                    app. To do that you can - Click on &quot;Active
-                    Numbers&quot; from the sidebar
+                    Once you have pasted these in Ampere. It will show you the
+                    option to login, where you can login using the same account
+                    you have created with RingCentral. And once the
+                    authentication is completed, you will be able to send
+                    receive calls and messages straight from Ampere.
                   </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/twilio-active-numbers.jpg"
-                  />
-
-                  <p>Select the just created number</p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/select-twilio-number.jpg"
-                  />
-
-                  <p>
-                    After clicking it will give you an option to &quot;configure
-                    with&quot; in which you can select the &quot;TwiML App&quot;
-                    that you have setup to work with Ampere.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/select-twiml-app.jpg"
-                  />
-
-                  <p>
-                    After the Twiml app set up is done As a last step you need
-                    to create an APIKEY and API Secret. To do this simply click
-                    on the &quot;Go to API keys&quot; button on the Admin Panel
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/go-to-twilio-api-keys.jpg"
-                  />
-
-                  <p>
-                    From this page now you can create your API key and secret to
-                    paste it in the Ampere&apos;s extension tab.
-                  </p>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/twilio-secret.jpg"
-                  />
-
-                  <p>
-                    Once you have successfully generated and submitted the
-                    following credentials in ampere. Your Twilio extension will
-                    get validated and if its successful you will be able to make
-                    and receive calls directly from your Ampere.
-                  </p>
-
-                  <ul>
-                    <li>AccountSid</li>
-                    <li>AuthToken</li>
-                    <li>Application SID</li>
-                    <li>API KEY</li>
-                    <li>API SECRET </li>
-                  </ul>
                 </div>
               </div>
             </article>

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Breadcrumb from "../../../../../components/Breadcrumb";
+import Link from "next/link";
 
 export default function WhatsappIntegration() {
   return (
@@ -45,191 +46,327 @@ export default function WhatsappIntegration() {
               <div className="article-body">
                 <div className="article-body">
                   <p>
-                    From the top right settings drop down select
-                    <strong> &quot;Manage Extensions&quot; </strong>
-                    and click on Twilio.
+                    Open the leads management app and click on &quot;Get
+                    Started&quot; button
                   </p>
 
                   <img
                     alt="Click on crm settings - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/go-to-manage-extensions.jpg"
+                    src="/assets/apps/leads-management/click-on-get-started.jpg"
                   />
 
                   <p>
-                    Click on <strong>Twilio Developer Console </strong>
-                    which is highlighted in blue color text.
+                    Click on the
+                    <strong> &quot;Enable Extensions&quot; </strong>
+                    button
+                  </p>
+
+                  <img
+                    alt="Click on crm settings - BangDB"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/enable-extensions.jpg"
+                  />
+
+                  <p>
+                    Select<strong> WhatsApp </strong>
+                    from the sidebar.
                   </p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twilio-dev-console.jpg"
+                    src="/assets/apps/leads-management/whatsapp-dev-tools.jpg"
                   />
 
                   <p>
-                    After clicking on the link it will redirect you to Twilio
-                    Login Screen. Here you need to create an account. Else if
-                    you already have an account then login.
+                    Click on{" "}
+                    <Link
+                      className="external"
+                      href={`https://developers.facebook.com/docs/development/register`}
+                    >
+                      learn more about registering as a Meta developer
+                    </Link>
                   </p>
 
                   <img
                     alt="Click on manage company - BangDB"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twilio-login.jpg"
+                    src="/assets/apps/leads-management/wa-dev-link.jpg"
                   />
 
                   <p>
-                    After successfully logging in, on the Twilio Admin Console
-                    Page you can find the following credentials which need to be
-                    pasted in &quot;Manage Extensions&quot; tab in ampere.
-                  </p>
-
-                  <ul>
-                    <li>Account SID</li>
-                    <li>Auth Token</li>
-                  </ul>
-
-                  <img
-                    alt="Click on create"
-                    width={"95%"}
-                    height={"auto"}
-                    src="/assets/apps/leads-management/twilio-develop-dashboard.jpg"
-                  />
-
-                  <p>
-                    To receive and make calls using Twilio you will also need a
-                    phone number from Twilio. If you already have this then you
-                    can use the same one. Else you can buy a new one or get one
-                    for trial.
+                    After redirecting, click on{" "}
+                    <Link
+                      className="external"
+                      href={`https://developers.facebook.com/async/registration`}
+                    >
+                      https://developers.facebook.com/async/registration
+                    </Link>
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/click-on-get-a-trial-phone-number.jpg"
+                    src="/assets/apps/leads-management/meta-dev-link.jpg"
                   />
 
                   <p>
-                    This number will also have to be linked with a TWIML app. To
-                    do that :
+                    If your Facebook account is already login then you will get
+                    the below page
                   </p>
 
-                  <ol>
-                    <li>select the TwiML apps option from the sidebar</li>
+                  <aside className="doc-note">
+                    <strong>NOTE: </strong>
+                    If you are not logged in, you will get a login screen for
+                    Facebook
+                  </aside>
 
-                    <img
-                      alt="Click on create"
-                      width={"95%"}
-                      height={"auto"}
-                      src="/assets/apps/leads-management/twiml-apps.jpg"
-                    />
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-after-register.jpg"
+                  />
 
-                    <li>Click on &quot;Create New App&quot;</li>
+                  <p>Click on the continue button</p>
 
-                    <img
-                      alt="Click on create"
-                      width={"95%"}
-                      height={"auto"}
-                      src="/assets/apps/leads-management/create-new-twiml-app.jpg"
-                    />
-
-                    <li>
-                      Paste the URL provided on your extensions panel in ampere
-                      as the Voice Configuration URL and messaging URL
-                    </li>
-                  </ol>
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-dev-account-setup-continue.jpg"
+                  />
 
                   <p>
-                    After successfully registering the App you can take the
-                    TwiML App SID and paste it in Ampere&apos;s extensions tab.
+                    Add a primary email and click on the checkbox and click on
+                    send verification email
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twiml-app-sid.jpg"
+                    src="/assets/apps/leads-management/meta-add-primary-email.jpg"
                   />
 
                   <p>
-                    You will also need to link the number you have to the TwiML
-                    app. To do that you can - Click on &quot;Active
-                    Numbers&quot; from the sidebar
+                    After adding the primary email and enabling the checkbox
+                    click on the Send verification link button
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twilio-active-numbers.jpg"
+                    src="/assets/apps/leads-management/send-verification-email.jpg"
                   />
 
-                  <p>Select the just created number</p>
+                  <p>Enter the code you might have received in your email</p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/select-twilio-number.jpg"
+                    src="/assets/apps/leads-management/verification-code.jpg"
+                  />
+
+                  <p>After adding the code click on the Continue button</p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-code-continue.jpg"
                   />
 
                   <p>
-                    After clicking it will give you an option to &quot;configure
-                    with&quot; in which you can select the &quot;TwiML App&quot;
-                    that you have setup to work with Ampere.
+                    If you are using the Facebook account for the first time on
+                    the browser then it will not take automatically it will say
+                    a message like You can't make this change at the moment
+                  </p>
+
+                  <aside className="doc-note">
+                    <strong>NOTE: </strong>
+                    It will not show for all users
+                  </aside>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-error-message.jpg"
+                  />
+
+                  <p>
+                    Once it is done, then after adding the Code you will be
+                    redirected to the Below page
+                  </p>
+
+                  <p>
+                    Select the Developer and click on complete registration [you
+                    can choose any one of these that describes you]
+                  </p>
+
+                  <p>
+                    After choosing Click on the Complete Registration button
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/select-twiml-app.jpg"
+                    src="/assets/apps/leads-management/meta-account-type.jpg"
                   />
 
                   <p>
-                    After the Twiml app set up is done As a last step you need
-                    to create an APIKEY and API Secret. To do this simply click
-                    on the &quot;Go to API keys&quot; button on the Admin Panel
+                    Select the radio button &quot;I don&apos;t want to connect a
+                    business portfolio yet&quot;
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/go-to-twilio-api-keys.jpg"
+                    src="/assets/apps/leads-management/i-dont-want-to-connect-a-business-portfolio-yet.jpg"
+                  />
+
+                  <p>Give the app Details and click on the Next button</p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/create-a-meta-app.jpg"
                   />
 
                   <p>
-                    From this page now you can create your API key and secret to
-                    paste it in the Ampere&apos;s extension tab.
+                    You will be taken to the next step. Select the use case from
+                    the list and click on the next button.
                   </p>
 
                   <img
                     alt="Click on create"
                     width={"95%"}
                     height={"auto"}
-                    src="/assets/apps/leads-management/twilio-secret.jpg"
+                    src="/assets/apps/leads-management/select-other-use-case.jpg"
                   />
 
                   <p>
-                    Once you have successfully generated and submitted the
-                    following credentials in ampere. Your Twilio extension will
-                    get validated and if its successful you will be able to make
-                    and receive calls directly from your Ampere.
+                    After redirecting you can choose the app that you want for
+                    business or consumer [select as a business]
                   </p>
 
-                  <ul>
-                    <li>AccountSid</li>
-                    <li>AuthToken</li>
-                    <li>Application SID</li>
-                    <li>API KEY</li>
-                    <li>API SECRET </li>
-                  </ul>
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/select-app-type.jpg"
+                  />
+
+                  <p>
+                    You can fill in the details and click on the Create App
+                    button from the details page
+                  </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-create-app.jpg"
+                  />
+
+                  <p>
+                    After clicking on the Create App button, it will ask for the
+                    password of your Facebook account. Enter the password and
+                    click on the submit button. Then it will redirect you to the
+                    app listing page
+                  </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-products.jpg"
+                  />
+
+                  <p>
+                    Select WhatsApp from the app listing page and click on set
+                    up
+                  </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/meta-setup-app.jpg"
+                  />
+
+                  <p>After clicking on Set up Click on the Continue button </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/whatsapp-business-platform-api.jpg"
+                  />
+
+                  <p>
+                    It will redirect to the next step and then you can add the
+                    number. From that page, you can generate the token and you
+                    will get a phone ID. Copy them and keep it somewhere with
+                    you
+                  </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/generate-access-token.jpg"
+                  />
+
+                  <p>
+                    After these steps, you need to click on the configuration
+                    from the side panel there you need to add the webhook URL to
+                    configure this URL you get from your ampere in the same
+                    manage extension page
+                  </p>
+
+                  <aside className="doc-note">
+                    <strong>NOTE: </strong>
+                    The below image is an example you need to add from your
+                    ampere
+                  </aside>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/wa-webhook-url.jpg"
+                  />
+
+                  <p>
+                    Copy and paste the call back URL from ampere into whatsapp
+                    setup. And paste your API key in the verify token and click
+                    on the verify and save button.
+                  </p>
+
+                  <img
+                    alt="Click on create"
+                    width={"95%"}
+                    height={"auto"}
+                    src="/assets/apps/leads-management/verify-wa-webhook.jpg"
+                  />
+
+                  <p>
+                    Subscribe to the messaging webhook. And your whatsapp setup
+                    is complete.
+                  </p>
                 </div>
               </div>
             </article>
