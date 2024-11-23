@@ -372,25 +372,4 @@ export const leads_management_sidebar_data = [
       },
     ],
   },
-  {
-    id: "6",
-    title: "Integrations",
-    childrens: [
-      {
-        id: "0",
-        title: "Twilio",
-        path: path_prefix + "/integrations/twilio",
-      },
-      {
-        id: "1",
-        title: "Ring Central",
-        path: path_prefix + "/integrations/ring-central",
-      },
-      {
-        id: "2",
-        title: "WhatsApp",
-        path: path_prefix + "/integrations/whatsapp",
-      },
-    ],
-  },
 ];

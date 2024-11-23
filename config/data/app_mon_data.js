@@ -16,11 +16,6 @@ export const app_mon_sidebar_data = [
         title: "Delete cluster",
         path: setup_path_prefix + "/delete-cluster",
       },
-      {
-        id: "2",
-        title: "Cluster overview",
-        path: setup_path_prefix + "/cluster-overview",
-      },
     ],
   },
   {
@@ -89,11 +84,6 @@ export const app_mon_sidebar_data = [
         title: "Delete service",
         path: setup_path_prefix + "/services/delete-service",
       },
-      {
-        id: "3",
-        title: "Pause service",
-        path: setup_path_prefix + "/services/pause-service",
-      },
     ],
   },
   {
@@ -155,17 +145,6 @@ export const app_mon_sidebar_data = [
           },
         ],
       },
-      {
-        id: "5",
-        title: "Website Traffic/Visitor Monitoring",
-        childrens: [
-          {
-            id: "0",
-            title: "Overview",
-            path: path_prefix + "/services/click-stream-mon",
-          },
-        ],
-      },
     ],
   },
   {
@@ -186,26 +165,6 @@ export const app_mon_sidebar_data = [
         id: "2",
         title: "Setup configuration for SNMP",
         path: path_prefix + "/user-guide/setup-config-for-snmp",
-      },
-      {
-        id: "3",
-        title: "Manage ticket pipelines",
-        path: path_prefix + "/user-guide/manage-ticket-pipelines",
-      },
-      {
-        id: "3",
-        title: "Ticket stats",
-        path: path_prefix + "/user-guide/ticket-stats",
-      },
-      {
-        id: "4",
-        title: "Convert notifications to tickets",
-        path: path_prefix + "/user-guide/convert-notifications-to-tickets",
-      },
-      {
-        id: "5",
-        title: "Report issue & open ticket for BangDB",
-        path: path_prefix + "/user-guide/report-issue",
       },
     ],
   },
