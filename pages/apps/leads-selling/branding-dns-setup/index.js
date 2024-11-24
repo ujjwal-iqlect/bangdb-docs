@@ -69,6 +69,12 @@ export default function BrandingDNSSetup() {
                     <p>
                       After clicking on <strong>DNS Setup</strong>, you need to provide:
                     </p>
+                    <img
+                      alt="DNS Setup Tab"
+                      width="95%"
+                      height="auto"
+                      src="/assets/apps/leads-management/dns_setup_tab.jpg"
+                    />
                     <ul>
                       <li>
                         <strong>Subdomain Name:</strong> Optional field if you want to create a subdomain.
