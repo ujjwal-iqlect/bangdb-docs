@@ -107,6 +107,6 @@ export default function BrandingDNSSetup() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { branding_sidebar: true },
+    props: { leads_management_sidebar: true },
   };
 }

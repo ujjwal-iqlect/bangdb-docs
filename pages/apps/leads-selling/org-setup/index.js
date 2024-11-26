@@ -89,6 +89,6 @@ export default function OrganizationSetup() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { company_management_sidebar: true },
+    props: { leads_management_sidebar: true },
   };
 }

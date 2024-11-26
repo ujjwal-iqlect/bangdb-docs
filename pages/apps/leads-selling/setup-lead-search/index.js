@@ -68,7 +68,7 @@ export default function SetupLeadSearch() {
                   <li>
                     <p>
                       Select a category from the dropdown labeled 
-                      <strong> "Select a category to show on your lead search"</strong>.
+                      <strong> &quot;Select a category to show on your lead search&quot;</strong>.
                     </p>
                     <img
                       alt="Select Category"

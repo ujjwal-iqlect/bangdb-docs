@@ -119,6 +119,6 @@ export default function SendLeadsWhatsApp() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { lead_management_sidebar: true },
+    props: { leads_management_sidebar: true },
   };
 }

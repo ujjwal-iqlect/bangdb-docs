@@ -47,6 +47,30 @@ function MyApp({ Component, pageProps }) {
     create_crm_object
   );
 
+  const toPush = updated_leads_management_sidebar_data.find(x => x.title === "Leads")?.childrens
+
+  toPush.push({
+    id: '15',
+    title: 'Create Organization',
+    path: '/apps/leads-selling/org-setup'
+  }, {
+    id: '16',
+    title: 'Purchase Leads',
+    path: '/apps/leads-selling/purchase-leads'
+  }, {
+    id: '17',
+    title: 'Setup custom domain',
+    path: '/apps/leads-selling/branding-dns-setup'
+  }, {
+    id: '18',
+    title: 'Send Leads Via WhatsApp',
+    path: '/apps/leads-selling/send-lead-whatsapp'
+  }, {
+    id: '19',
+    title: 'Send Leads Via Email',
+    path: '/apps/leads-selling/send-lead-email'
+  })
+
   const sidebar = (pageProps) => {
     switch (true) {
       case pageProps.helpGuideSidebar:

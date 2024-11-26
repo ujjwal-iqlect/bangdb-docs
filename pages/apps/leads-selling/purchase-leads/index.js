@@ -84,7 +84,7 @@ export default function PurchaseLeads() {
 
                   <li>
                     <p>
-                      If you don't have an account, click on <strong>Don't have an account</strong>.
+                      If you don&apos;t have an account, click on <strong>Don&apos;t have an account</strong>.
                     </p>
                     <img
                       alt="Create Account Option"
@@ -121,7 +121,7 @@ export default function PurchaseLeads() {
 
                   <li>
                     <p>
-                      After login, enter your <strong>Company Name</strong> and <strong>Company Description</strong> 
+                      After login, enter your <strong>Company Name</strong> and <strong>Company Description </strong> 
                       in the popup. <strong>Note:</strong> The company name cannot be changed after adding.
                     </p>
                     <img
@@ -215,6 +215,6 @@ export default function PurchaseLeads() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { company_management_sidebar: true },
+    props: { leads_management_sidebar: true },
   };
 }

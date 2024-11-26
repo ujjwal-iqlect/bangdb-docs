@@ -148,7 +148,7 @@ export default function OnboardCompany() {
                     <p>
                       On your website, you have a field <strong>Part</strong> with options 
                       <em>engine</em> and <em>transmission</em>. 
-                      If you want leads with "Part = engine" to flow to this company, 
+                      If you want leads with &quot;Part = engine&quot; to flow to this company, 
                       set the filter accordingly. Use operations like equals, not equals, etc., 
                       and specify the value.
                     </p>
@@ -251,6 +251,6 @@ export default function OnboardCompany() {
 
 export async function getServerSideProps(context) {
   return {
-    props: { company_management_sidebar: true },
+    props: { leads_management_sidebar: true },
   };
 }

@@ -91,7 +91,6 @@ export default function Apps() {
               para={
                 "Get started with BangDB Leads Selling app and Generate, Nurture, Convert, Manage and Sell Leads with Integrated CRM."
               }
-              // link={"/apps/leads-selling/create-crm?app=leads_selling"}
               link={
                 "/apps/leads-management/crm-editing/overview?app=leads_selling"
               }
