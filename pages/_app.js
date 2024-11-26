@@ -69,6 +69,18 @@ function MyApp({ Component, pageProps }) {
     id: '19',
     title: 'Send Leads Via Email',
     path: '/apps/leads-selling/send-lead-email'
+  }, {
+    id: '20',
+    title: 'Onboard Company',
+    path: '/apps/leads-selling/onboard-company'
+  }, {
+    id: '21',
+    title: 'Setup Lead Search',
+    path: '/apps/leads-selling/setup-lead-search'
+  }, {
+    id: '22',
+    title: 'Setup Category for Lead Search',
+    path: '/apps/leads-selling/setup-category-for-lead-search'
   })
 
   const sidebar = (pageProps) => {
