@@ -136,7 +136,7 @@ export default function AppMonInstall() {
                   width={"95%"}
                   height={"auto"}
                   className="mt-5 shadow"
-                  src="/assets/apps/app-mon/signu_up_popup.jpg"
+                  src="/assets/apps/app-mon/signup_button_click.jpg"
                 />
 
 
