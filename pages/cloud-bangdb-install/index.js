@@ -53,7 +53,7 @@ export default function CloudBangDBInstall() {
                   >
                     link
                   </a>{" "}
-                  or paste the URL in your browser.
+                  or paste the URL in your browser <strong>https://bangdb.com/</strong> .
                 </p>
                 <img
                   alt="BangDB Website Home"
