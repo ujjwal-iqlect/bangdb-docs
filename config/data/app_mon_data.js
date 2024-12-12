@@ -3,6 +3,17 @@ const setup_path_prefix = path_prefix + `/setup`;
 
 export const app_mon_sidebar_data = [
   {
+    id: "1",
+    title: "Get Started",
+    childrens: [
+      {
+        id: "00a",
+        title: "How to Install",
+        path: "/appmon-install",
+      },
+    ],
+  },
+  {
     id: "0",
     title: "Clusters",
     childrens: [
