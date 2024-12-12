@@ -53,7 +53,8 @@ export default function CloudBangDBInstall() {
                   >
                     link
                   </a>{" "}
-                  or paste the URL in your browser <strong>https://bangdb.com/</strong> .
+                  or paste the URL in your browser{" "}
+                  <strong>https://bangdb.com/</strong> .
                 </p>
                 <img
                   alt="BangDB Website Home"
@@ -91,9 +92,9 @@ export default function CloudBangDBInstall() {
 
                 <h2>Step 4: Explore Pricing Options</h2>
                 <p>
-                  On the pricing page, you can view both <strong>monthly</strong>{" "}
-                  and <strong>yearly</strong> pricing. Toggle between USD and
-                  INR currencies to see changes.
+                  On the pricing page, you can view both{" "}
+                  <strong>monthly</strong> and <strong>yearly</strong> pricing.
+                  Toggle between USD and INR currencies to see changes.
                 </p>
                 <img
                   alt="Pricing Options"
@@ -172,10 +173,12 @@ export default function CloudBangDBInstall() {
                 />
                 <h2>Step 10: Installation Confirmation</h2>
                 <p>
-                  Once all the steps are completed, the same page will display an
-                  <strong>installation confirmation</strong>. You will also receive the
-                  <strong>Ampere link</strong> in the same popup. Use the link to visit your
-                  configured instance.
+                  Once all the steps are completed, the same page will display
+                  an
+                  <strong>installation confirmation</strong>. You will also
+                  receive the
+                  <strong>Ampere link</strong> in the same popup. Use the link
+                  to visit your configured instance.
                 </p>
                 <img
                   alt="Installation Confirmation Popup"
@@ -184,7 +187,6 @@ export default function CloudBangDBInstall() {
                   className="mt-5 shadow"
                   src="/assets/cloud-bangdb-install/steps_completion.jpg"
                 />
-
 
                 <h2>Step 11: Completion</h2>
                 <p>
@@ -219,10 +221,4 @@ export default function CloudBangDBInstall() {
       </section>
     </React.Fragment>
   );
-}
-
-export async function getServerSideProps(context) {
-  return {
-    props: { app_mon_sidebar: true },
-  };
 }
