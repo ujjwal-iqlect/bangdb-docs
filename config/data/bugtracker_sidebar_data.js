@@ -4,13 +4,13 @@ const user_guide_path_prefix = `/apps/forum/user-guide`;
 export const bugtracker_sidebar_data = [
   {
     id: "0",
-    title: "Setup",
+    title: "Get Started",
     childrens: [
-    //   {
-    //     id: "0",
-    //     title: "Overview",
-    //     path: setup_path_prefix + "/overview",
-    //   },
+      {
+        id: "0",
+        title: "How to Insatall",
+        path: "/install-bugtracker",
+      },
       {
         id: "1",
         title: "Add project",
