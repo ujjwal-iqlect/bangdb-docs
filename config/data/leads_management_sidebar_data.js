@@ -2,6 +2,17 @@ const path_prefix = `/apps/leads-management`;
 
 export const leads_management_sidebar_data = [
   {
+    id: "0qq",
+    title: "Get Started",
+    childrens: [
+      {
+        id: "00aaaa",
+        title: "How to Install",
+        path: "/install-leads-management",
+      },
+    ],
+  },
+  {
     id: "0",
     title: "Manage CRM",
     childrens: [
