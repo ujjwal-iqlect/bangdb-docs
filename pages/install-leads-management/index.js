@@ -250,8 +250,8 @@ export default function LeadsManagementAppInstall() {
   );
 }
 
-export async function getServerSideProps(context) {
-  return {
-    props: { leads_management_sidebar: true },
-  };
-}
+// // export async function getServerSideProps(context) {
+// //   return {
+// //     // props: { leads_management_sidebar: true },
+// //   };
+// }

@@ -2,7 +2,7 @@ const path_prefix = `/apps/leads-management`;
 
 export const leads_management_sidebar_data = [
   {
-    id: "0qq",
+    id: "qq",
     title: "Get Started",
     childrens: [
       {
