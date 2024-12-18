@@ -3,6 +3,17 @@ const user_guide_path_prefix = `/apps/forum/user-guide`;
 
 export const forum_sidebar_data = [
   {
+    id: "aabb1",
+    title: "Get Started",
+    childrens: [
+      {
+        id: "00ddaa",
+        title: "How to Install",
+        path: "/install-forum",
+      },
+    ],
+  },
+  {
     id: "0",
     title: "Setup Forum",
     childrens: [

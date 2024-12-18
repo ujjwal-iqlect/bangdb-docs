@@ -4,6 +4,17 @@ const user_guide_path_prefix = `/apps/click-stream/user-guide`;
 
 export const click_stream_sidebar_data = [
   {
+    id: "0aaq",
+    title: "Get Started",
+    childrens: [
+      {
+        id: "000aa",
+        title: "How to Install",
+        path: "/install-clickstream",
+      },
+    ],
+  },
+  {
     id: "0",
     title: "Setup Click Stream",
     childrens: [
