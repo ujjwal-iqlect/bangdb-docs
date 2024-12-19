@@ -43,6 +43,22 @@ export default function TicketingSystemBangDB() {
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
               <h1 className="article-title">Ticketing System within BangDB</h1>
               <div className="article-body">
+                <h2>From All the Apps</h2>
+                <p>
+                  You can access the <strong>Ticketing System</strong> from any
+                  BangDB app that supports the feature. Navigate to the{" "}
+                  <strong>Help</strong> or <strong>Support</strong> section
+                  within the app and follow the instructions to raise a ticket.
+                </p>
+
+                <h2>From Website</h2>
+                <p>
+                  Visit the BangDB website and navigate to the{" "}
+                  <strong>Support</strong> or <strong>Help Center</strong>.
+                  Locate the <strong>Raise a Ticket</strong> option and click on
+                  it. Follow the prompts to create a ticket and provide the
+                  required details.
+                </p>
                 <h2>From Leads Management App</h2>
                 <h3>Step 1: Open the Leads Management App</h3>
                 <p>
@@ -181,7 +197,7 @@ export default function TicketingSystemBangDB() {
                 <p>
                   <strong>Note:</strong> You can view the created post without
                   logging in only if it is reviewed and made public by the <strong>BangDB
-                  team</strong>
+                  team.</strong>
                 </p>
               </div>
             </article>
