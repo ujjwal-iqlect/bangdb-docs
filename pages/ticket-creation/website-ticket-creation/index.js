@@ -61,6 +61,13 @@ export default function TicketingSystemBangDB() {
                   After clicking the link, you will be redirected to the BangDB
                   website.
                 </p>
+                <img
+                  alt="BangDB Homepage"
+                  width={"95%"}
+                  height={"auto"}
+                  className="mt-5 shadow"
+                  src="/assets/ticketing/website_hpme_page.jpg"
+                />
 
                 <h2>Step 3: Go to Footer for Issue Reporting</h2>
                 <p>
