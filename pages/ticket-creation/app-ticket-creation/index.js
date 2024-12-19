@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import Breadcrumb from "../../components/Breadcrumb"
+import Breadcrumb from "../../../components/Breadcrumb";
 
 export default function TicketingSystemBangDB() {
   return (
     <React.Fragment>
       <Head>
-        <title>Ticketing System within BangDB</title>
+        <title>Apps Ticket Creation</title>
         <meta
           name="description"
           content="Step-by-step guide for using the Ticketing System within BangDB."
@@ -41,7 +41,7 @@ export default function TicketingSystemBangDB() {
           <div className="article-content">
             <article className="article">
               <Breadcrumb text="Introduction" url="/bangdb-introduction" />
-              <h1 className="article-title">Ticketing System within BangDB</h1>
+              <h1 className="article-title">Apps Ticket Creation</h1>
               <div className="article-body">
                 <h2>From All the Apps</h2>
                 <p>
@@ -88,9 +88,7 @@ export default function TicketingSystemBangDB() {
                 />
 
                 <h3>Step 3: Open the Issue Creation Popup</h3>
-                <p>
-                  A small popup will open to allow you to create an issue.
-                </p>
+                <p>A small popup will open to allow you to create an issue.</p>
                 <img
                   alt="Issue Creation Popup"
                   width={"95%"}
@@ -111,8 +109,9 @@ export default function TicketingSystemBangDB() {
                   <li>D. Feature Request</li>
                 </ul>
                 <p>
-                  Add a <strong>Title</strong> and a <strong>Description</strong>
-                  . If required, attach any files to support your ticket.
+                  Add a <strong>Title</strong> and a{" "}
+                  <strong>Description</strong>. If required, attach any files to
+                  support your ticket.
                 </p>
                 <img
                   alt="Fill Issue Details"
@@ -137,9 +136,9 @@ export default function TicketingSystemBangDB() {
 
                 <h3>Step 6: Confirmation and Email Notification</h3>
                 <p>
-                  After submitting, you will receive a confirmation of the ticket
-                  creation along with an email to track the ticket. Below is a
-                  sample image of the email you will receive.
+                  After submitting, you will receive a confirmation of the
+                  ticket creation along with an email to track the ticket. Below
+                  is a sample image of the email you will receive.
                 </p>
                 <img
                   alt="Email Notification for Ticket"
@@ -197,8 +196,8 @@ export default function TicketingSystemBangDB() {
                 />
                 <p>
                   <strong>Note:</strong> You can view the created post without
-                  logging in only if it is reviewed and made public by the <strong>BangDB
-                  team.</strong>
+                  logging in only if it is reviewed and made public by the{" "}
+                  <strong>BangDB team.</strong>
                 </p>
               </div>
             </article>
@@ -207,4 +206,10 @@ export default function TicketingSystemBangDB() {
       </section>
     </React.Fragment>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: { helpGuideSidebar: true },
+  };
 }
