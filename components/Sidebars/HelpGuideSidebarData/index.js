@@ -21,4 +21,20 @@ export const HelpGuideSidebarData = [
       },
     ],
   },
+  {
+    id: "2",
+    title: "Ticket Creation Guide",
+    childrens: [
+      {
+        id: "0",
+        title: "Website Ticket Creation",
+        path: "/ticket-creation/website-ticket-creation",
+      },
+      {
+        id: "1",
+        title: "App Ticket Creation",
+        path: "/ticket-creation/app-ticket-creation",
+      },
+    ],
+  },
 ];
