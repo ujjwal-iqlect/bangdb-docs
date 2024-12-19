@@ -59,14 +59,15 @@ export default function TicketingSystemBangDB() {
                   it. Follow the prompts to create a ticket and provide the
                   required details.
                 </p>
-                <h2>From Leads Management App</h2>
-                <h3>Step 1: Open the Leads Management App</h3>
+
+                <h2>From Any App Supporting Ticketing</h2>
+                <h3>Step 1: Open the App</h3>
                 <p>
-                  Open the Leads Management App. This will take you to the
-                  <strong> Review Page</strong>.
+                  Open the BangDB app that supports the ticketing feature. This
+                  will take you to the <strong>Help/Support Section</strong>.
                 </p>
                 <img
-                  alt="Leads Management App Review Page"
+                  alt="App Home Page"
                   width={"95%"}
                   height={"auto"}
                   className="mt-5 shadow"
@@ -165,8 +166,8 @@ export default function TicketingSystemBangDB() {
                 <p>
                   If you already have a BangDB Forum account, use your user ID
                   and password to log in. If you don’t have an account, sign up
-                  using the same email ID you used for the Ampere account. You
-                  can sign up using:
+                  using the same email ID you used for the app. You can sign up
+                  using:
                 </p>
                 <ul>
                   <li>Google</li>
@@ -207,4 +208,3 @@ export default function TicketingSystemBangDB() {
     </React.Fragment>
   );
 }
-
